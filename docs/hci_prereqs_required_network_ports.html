@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Network ports used by NetApp HCI</title>
+  <title>Required network ports</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Network ports used by NetApp HCI" />
+  <meta property="og:title" content="Required network ports" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/hci/docs/hci_prereqs_required_network_ports.html" />
 	<meta property="og:description" content="TCP and UDP ports used by NetApp HCI." />
@@ -826,7 +826,7 @@
           <a href="/hci/">HCI</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          Network ports used by NetApp HCI
+          Required network ports
         </li>
       </ul>
     </div>
@@ -983,7 +983,7 @@
     <li class="active">
       <a target="_blank" href="/hci/pdfs/pages/docs/hci_prereqs_required_network_ports.pdf" >
         <img src="/hci/images/pdf.png" width="20" height="20"/>
-        Network ports used by NetApp HCI
+        Required network ports
       </a>
     </li>
   
@@ -1787,7 +1787,7 @@
     <li class="  active ">
       
         <a class="na-navbar-padding" href="hci_prereqs_required_network_ports.html">
-          Network ports used by NetApp HCI
+          Network port requirements
         </a>
       
     </li>
@@ -3521,13 +3521,13 @@
 
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Network ports used by NetApp HCI</h1>
+  <h1 class="n-doc__component-detail-heading">Required network ports</h1>
 </div>
 
 <p class="page-details">
   
     
-    <time datetime="2020-06-09 19:39:03 +0000">06/09/2020</time>
+    <time datetime="2020-08-04 01:12:50 +0000">08/04/2020</time>
     
   
 
@@ -3554,7 +3554,38 @@
 </p>
 
 <div class="paragraph lead">
-<p>You might need to allow the following ports through your datacenter&#8217;s edge firewall so that you can manage the system remotely and allow clients outside of your datacenter to connect to resources. Some of these ports might not be required, depending on how you use the system. All ports are TCP unless stated otherwise, and should be open bidirectionally.</p>
+<p>You might need to allow the following ports through your datacenter&#8217;s edge firewall so that you can manage the system remotely, allow clients outside of your datacenter to connect to resources, and ensure that internal services can function properly. Some of these ports, URLs, or IP addresses might not be required, depending on how you use the system. All ports are TCP unless stated otherwise, and should be open bidirectionally.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The NetApp Hybrid Cloud Control web UI and API download software packages from the NetApp online software repository, which uses JFrog Bintray as a distribution hub and Akamai Technologies for file hosting. Because of this, some URLs or IP addresses might resolve to other URLs or IP addresses based on the content delivery network. If possible, you should work with a network engineer to add these URLs or IP addresses to the firewall rules, using the following general steps:</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Use the Wget or cURL utilities to access a URL (repo.netapp.com, for example).</p>
+</li>
+<li>
+<p>Receive a failure to access the URL (different from repo.netapp.com).</p>
+</li>
+<li>
+<p>Edit the firewall rules to allow the new URL.</p>
+</li>
+<li>
+<p>Repeat the above steps until the access attempt succeeds.</p>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>The following abbreviations are used in the table:</p>
@@ -3641,7 +3672,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Management node</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Online software repository: <a href="https://repo.netapp.com/bintray/api/package" class="bare">https://repo.netapp.com/bintray/api/package</a>, <a href="https://netapp-downloads.bintray.com" class="bare">https://netapp-downloads.bintray.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>repo.netapp.com/api/repos/netapp-downloads</code>, <code>repo.netapp.com/bintray/dl/</code>, <code>repo.netapp.com/bintray/api/package</code>, <code>netapp-downloads.bintray.com</code>, <code>bintray.com</code>, <code>repo.netapp.com</code>, <code>library.netapp.com</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Management node service upgrades</p></td>
 </tr>
@@ -3659,9 +3690,9 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Management node</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>repo.netapp.com</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>23.32.54.122</code>, <code>216.240.21.15</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Provides access to components necessary to install/update on-premises deployment.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element software upgrades</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Management node</p></td>
@@ -3838,16 +3869,16 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS storage cluster creation, post-deployment UI access to storage cluster</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vCenter Server</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Storage cluster MVIP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vCenter Plug-in API access</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">System administrator PC</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Witness Node</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8080</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Witness Node per-node web UI</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vCenter Server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Storage cluster MVIP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vCenter Plug-in API access</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">vCenter Server</p></td>
@@ -3891,7 +3922,7 @@
     <div class="page-nav-contribute"  >
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
       <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/hci_prereqs_required_network_ports.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/images/github.png" class="github-icon" /> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20[Network ports used by NetApp HCI](https://docs.netapp.com/us-en/hci/docs/hci_prereqs_required_network_ports.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/images/github.png" class="github-icon" /> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20[Required network ports](https://docs.netapp.com/us-en/hci/docs/hci_prereqs_required_network_ports.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/images/github.png" class="github-icon" /> Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
