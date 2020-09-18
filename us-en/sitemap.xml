@@ -15,7 +15,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/concept_architecture_cloudinsights.html</loc>
       
-      <lastmod>2019-11-20T21:31:50+00:00</lastmod>
+      <lastmod>2019-11-22T19:46:29+00:00</lastmod>
       
     </url>
   
@@ -85,7 +85,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/concept_hci_storage.html</loc>
       
-      <lastmod>2020-04-08T18:06:04+00:00</lastmod>
+      <lastmod>2020-04-08T18:29:49+00:00</lastmod>
       
     </url>
   
@@ -211,14 +211,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/reference_notices_hci.html</loc>
       
-      <lastmod>2020-08-27T18:45:49+00:00</lastmod>
+      <lastmod>2020-09-16T21:10:17+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/reference_requirements_beforeyoubegin.html</loc>
       
-      <lastmod>2020-04-08T18:06:04+00:00</lastmod>
+      <lastmod>2020-04-08T18:29:49+00:00</lastmod>
       
     </url>
   
@@ -230,44 +230,51 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.27.html</loc>
+      
+      <lastmod>2020-09-16T22:01:34+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/rn_firmware_12.2.109.html</loc>
       
-      <lastmod>2020-07-27T15:11:34+00:00</lastmod>
+      <lastmod>2020-09-15T22:13:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/rn_relatedrn.html</loc>
       
-      <lastmod>2020-08-27T17:04:21+00:00</lastmod>
+      <lastmod>2020-09-16T21:10:17+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/rn_whatsnew.html</loc>
       
-      <lastmod>2020-08-19T16:55:08+00:00</lastmod>
+      <lastmod>2020-09-04T20:49:42+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/search.html</loc>
       
-      <lastmod>2020-09-18T04:50:12+00:00</lastmod>
+      <lastmod>2020-09-18T20:29:11+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/hci/solutions/search.html</loc>
       
-      <lastmod>2020-09-18T04:50:12+00:00</lastmod>
+      <lastmod>2020-09-18T20:29:11+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/hci//search.html</loc>
       
-      <lastmod>2020-09-18T04:50:05+00:00</lastmod>
+      <lastmod>2020-09-18T20:29:04+00:00</lastmod>
       
     </url>
   
@@ -281,14 +288,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/task_deploying_overview.html</loc>
       
-      <lastmod>2020-04-08T18:06:04+00:00</lastmod>
+      <lastmod>2020-04-08T18:29:49+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/task_hcc_access.html</loc>
       
-      <lastmod>2020-04-08T18:06:04+00:00</lastmod>
+      <lastmod>2020-04-08T18:29:49+00:00</lastmod>
       
     </url>
   
@@ -358,7 +365,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/task_hcc_license_convert.html</loc>
       
-      <lastmod>2019-11-20T21:31:50+00:00</lastmod>
+      <lastmod>2019-11-22T19:46:29+00:00</lastmod>
       
     </url>
   
