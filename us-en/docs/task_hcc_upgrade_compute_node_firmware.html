@@ -3830,7 +3830,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-08-25 22:58:56 +0000">08/25/2020</time>
+    <time datetime="2020-09-18 15:32:56 +0000">09/18/2020</time>
     
   
 
@@ -4425,7 +4425,7 @@ For dark site upgrades, you can reduce upload time if the upgrade package and th
 </table>
 </li>
 <li>
-<p>Locate the compute controller ID and the node hardware tag for the node you intend to upgrade:</p>
+<p>Locate the compute controller ID and node hardware ID for the node you intend to upgrade:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -4480,7 +4480,35 @@ For dark site upgrades, you can reduce upload time if the upgrade package and th
 <p>Click <strong>Execute</strong>.</p>
 </li>
 <li>
-<p>From the response, copy and save the cluster controller ID (<code>"controllerId"</code>) and node hardware tag (<code>"hardwareTag"</code>) for use in a later step.</p>
+<p>From the response, copy and save the cluster controller ID (<code>"controllerId"</code>)and node hardware ID (<code>"hardwareId"</code>) for use in a later step:</p>
+<div class="listingblock">
+<div class="content">
+<pre>"compute": {
+  "errors": [],
+  "inventory": {
+    "clusters": [
+      {
+        "clusterId": "Test-1B",
+        "controllerId": "a1b23456-c1d2-11e1-1234-a12bcdef123a",</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>"nodes": [
+  {
+    "bmcDetails": {
+      "bmcAddress": "10.111.0.111",
+      "credentialsAvailable": true,
+      "credentialsValidated": true
+    },
+    "chassisSerialNumber": "111930011231",
+    "chassisSlot": "D",
+    "hardwareId": "123a4567-01b1-1243-a12b-11ab11ab0a15",
+    "hardwareTag": "00000000-0000-0000-0000-ab1c2de34f5g",
+    "id": "e1111d10-1a1a-12d7-1a23-ab1cde23456f",
+    "model": "H410C",</pre>
+</div>
+</div>
 </li>
 </ol>
 </div>
@@ -4523,7 +4551,7 @@ For dark site upgrades, you can reduce upload time if the upgrade package and th
 <p>Click <strong>Try it out</strong>.</p>
 </li>
 <li>
-<p>Enter the hardware host asset ID (<code>"hardwareTag"</code> saved from a previous step) in the parameter field.</p>
+<p>Enter the hardware host asset ID (<code>"hardwareId"</code> saved from a previous step) in the parameter field.</p>
 </li>
 <li>
 <p>Do the following with the payload values:</p>
@@ -4544,7 +4572,7 @@ For dark site upgrades, you can reduce upload time if the upgrade package and th
     "force": false,
     "maintenanceMode": true
   },
-  "controllerId": "00000000-0000-0000-0000-AC1F6BC4ECF6",
+  "controllerId": "a1b23456-c1d2-11e1-1234-a12bcdef123a",
   "packageName": "compute-firmware-12.2.109",
   "packageVersion": "12.2.109"
 }</pre>
@@ -4570,7 +4598,7 @@ The upgrade cannot be paused after you begin. Firmware will be updated sequentia
 </div>
 </li>
 <li>
-<p>Copy the upgrade task ID (<code>"taskId"</code>) that is part of the response.</p>
+<p>Copy the upgrade task ID that is part of the resource link (<code>"resourceLink"</code>) URL in the response.</p>
 </li>
 </ol>
 </div>
@@ -4687,7 +4715,7 @@ The upgrade cannot be paused after you begin. Firmware will be updated sequentia
 <p>(Optional) Enter date and status parameters to filter the results.</p>
 </li>
 <li>
-<p>Enter the hardware host asset ID (BIOS UUID saved from a previous step) in the parameter field.</p>
+<p>Enter the hardware host asset ID (<code>"hardwareId"</code> saved from a previous step) in the parameter field.</p>
 </li>
 <li>
 <p>Click <strong>Try it out</strong>.</p>
