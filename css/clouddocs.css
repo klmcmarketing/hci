@@ -484,18 +484,22 @@ h1.n-doc__component-detail-heading {
   box-shadow: 2px 0px 0px rgba(0,0,0,.08);
 }
 .n-pdf-button {
-  color: #454545; 
+  color: #454545;
   font-family: proxima-nova,Arial,"Helvetica Neue",Helvetica,sans-serif;
-  font-style: normal; 
+  font-style: normal;
   text-decoration: none !important;
-  font-weight: 600; 
+  font-weight: 600;
   width: 100%
 }
+.n-pdf-button:before {
+  content: '\22ee';
+  color: #444;
+}
 .n-pdf-body {
-  border-bottom: 1px solid #e3e3e3 !important; 
-  margin-left: 0px; 
+  border-bottom: 1px solid #e3e3e3 !important;
+  margin-left: 0px;
   margin-bottom: 20px;
-  width: 265px; 
+  width: 265px;
   box-shadow: 2px 0px 0px rgba(0,0,0,.08);
 }
 
@@ -540,5 +544,3 @@ h1.n-doc__component-detail-heading {
     width: 100%;
 
 }
-
-

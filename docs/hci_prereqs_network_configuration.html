@@ -9,7 +9,7 @@
   <meta property="og:title" content="Network configuration" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/hci/docs/hci_prereqs_network_configuration.html" />
-	<meta property="og:description" content="Learn what's new in this version of NetApp HCI." />
+	<meta property="og:description" content="Learn about network configuration options for NetApp HCI." />
   <meta property="og:image" content="https://docs.netapp.com/hci/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="Learn what's new in this version of NetApp HCI.">
+  <meta name="description" content="Learn about network configuration options for NetApp HCI.">
   <meta name="keywords" content=" netapp, hci, cabling, network configuration">
   
   
@@ -841,21 +841,15 @@
   <!-- Sidebar Column -->
   
   <div class="col-md-3" >
-      
-
-
-
-<div class="n-pdf-header">
+      <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    &vellip; Download PDF
+    Download PDF
     <span>
       <img src="/hci/images/pdf.png" width="20" height="20"/>
     </span>
   </a>
 </div>
-<ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
-  
-    <div class="n-pdf-section">
+<ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><div class="n-pdf-section">
       <span class="n-pdf-section-title">
         Site
       </span>
@@ -866,8 +860,6 @@
         NetApp HCI configuration and management documentation
       </a>
     </li>
-  
-  
   
 
 
@@ -963,6 +955,9 @@
   
 
 
+  
+
+
 
 
           
@@ -1026,6 +1021,19 @@
 
 
   
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/pdfs/docs_sidebar/Network_configuration.pdf" >
+            <img src="/hci/images/pdf.png" width="20" height="20"/>
+            Network configuration
+          </a>
+        </li>
+        <span>
+          
+  
     <div class="n-pdf-section">
   <span class="n-pdf-section-title">
     This page
@@ -1038,6 +1046,28 @@
     Network configuration
   </a>
 </li>
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
 
 
   
@@ -1520,7 +1550,6 @@
   
 
 
-
 </ul>
 
 <script>
@@ -1529,2286 +1558,210 @@
   $("#toggleButtonPdf").click(function () {
     $("#toggleContainerPdf").toggle('display');
   });
-</script>
-
-
-
-<ul id="mysidebar" class="nav">
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="..../../../index.html">
-          NetApp HCI Documentation
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="index.html">
-          NetApp HCI Configuration and Management
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Release Notes</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="rn_whatsnew.html">
-          What's new in NetApp HCI
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="rn_relatedrn.html">
-          Additional release information
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Concepts</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="concept_hci_product_overview.html">
-          Product overview
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="concept_cg_hci_accounts.html">
-          Accounts
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="concept_hci_dataprotection.html">
-          Data protection
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="concept_hci_clusters.html">
-          Clusters
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="concept_hci_nodes.html">
-          Nodes
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Storage</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="concept_hci_volumes.html">
-          Volumes
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="concept_cg_hci_licensing.html">
-          Licensing
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="concept_cg_hci_security.html">
-          Security
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="concept_hci_performance.html">
-          Performance
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Requirements and pre-deployment tasks</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_required_network_ports.html">
-          Network port requirements
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_network_switch.html">
-          Network and switch requirements
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_network_cables.html">
-          Network cable requirements
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_ip_address.html">
-          IP address requirements
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="  active ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_network_configuration.html">
-          Network configuration
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_timekeeping.html">
-          DNS and timekeeping requirements
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_environmental.html">
-          Environmental requirements
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_protection_domains.html">
-          Protection Domains
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_witness_nodes.html">
-          Witness Node resource requirements for two-node storage clusters
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Get started with NetApp HCI</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hci_getstarted.html">
-          NetApp HCI installation and deployment overview
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hci_installhw.html">
-          Install H-series hardware
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_LACP_configuration.html">
-          Configure LACP for optimal storage performance
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_task_validate_config_advisor.html">
-          Validate your environment with Active IQ Config Advisor
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="hci_prereqs_final_prep.html">
-          Configure IPMI for each node
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Manage NetApp HCI</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Monitor your NetApp HCI system</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_dashboard.html">
-          View resources on the HCC Dashboard
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_nodes.html">
-          View your inventory in the Nodes page
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_edit_bmc_info.html">
-          Edit BMC connection information
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_volumes.html">
-          Monitor volumes on your storage cluster
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_activeiq.html">
-          Monitor performance, capacity, and cluster health with Active IQ
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_collectlogs.html">
-          Collect logs for troubleshooting
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Work with the management node</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_work_overview.html">
-          Management node overview
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Install or recover a management node</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_install.html">
-          Install a management node
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_install_add_storage_NIC.html">
-          Configure a storage Network Interface Controller (NIC)
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_recover.html">
-          Recover a management node
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_access_ui.html">
-          Access the management node
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Work with the management node UI</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_work_overview_UI.html">
-          Management node UI overview
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_enable_alerts.html">
-          Configure alert monitoring on NetApp HCI
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_settings.html">
-          Modify and test the management node network, cluster, and system settings
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_run_system_utilities.html">
-          Run system utilities from the management node
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Work with the management node REST API</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_work_overview_API.html">
-          Management node REST API UI overview
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_api_get_authorizationtouse.html">
-          Get authorization to use REST APIs
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_enable_activeIQ.html">
-          Enable Active IQ and NetApp HCI monitoring
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_add_assets.html">
-          Add compute and controller assets to the management node
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_edit_vcenter_assets.html">
-          View or edit existing controller assets
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_configure_proxy_server.html">
-          Configure a proxy server for the management node
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_manage_storage_cluster_assets.html">
-          Manage storage cluster assets
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_mnode_enable_remote_support_connections.html">
-          Enable remote NetApp Support connections
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Upgrade your NetApp HCI or SolidFire system</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="concept_hci_upgrade_overview.html">
-          Upgrades overview
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Upgrade sequences</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_upgrade_all.html">
-          Upgrade your NetApp HCI system for version 1.8
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_sf_upgrade_all.html">
-          Upgrade your NetApp SolidFire all-flash storage system for Element 12.0
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> System upgrade procedures</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_update_management_services.html">
-          Update management services
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_upgrade_element_latest_healthtools.html">
-          Upgrade to the latest HealthTools
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_upgrade_element_prechecks.html">
-          Run Element storage health checks prior to upgrading storage
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_upgrade_element_software.html">
-          Upgrade Element software
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_upgrade_storage_firmware.html">
-          Upgrade storage firmware
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_upgrade_management_node.html">
-          Upgrade a management node
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_vcp_upgrade_plugin.html">
-          Upgrade the NetApp Element Plug-in for vCenter Server
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_upgrade_compute_prechecks.html">
-          Run compute node health checks prior to upgrading compute firmware
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_upgrade_compute_node_drivers.html">
-          Update compute node drivers
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_upgrade_compute_node_firmware.html">
-          Upgrade compute node firmware
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> vSphere upgrade sequences with vCenter Plug-in</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hci_upgrade_all_vsphere.html">
-          Upgrade your vSphere components for a NetApp HCI system with the Element Plug-in for vCenter Server
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_sf_upgrade_all_vsphere.html">
-          Upgrade your vSphere components for a NetApp SolidFire storage system with the Element Plug-in for vCenter Server
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> Expand your NetApp HCI system</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="concept_hcc_expandoverview.html">
-          Expand overview
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_expand_storage.html">
-          Expand NetApp HCI storage resources
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_expand_compute.html">
-          Expand NetApp HCI compute resources
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hcc_expand_compute_and_storage.html">
-          Expand NetApp storage and compute resources
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="task_hci_removewn.html">
-          Remove Witness Nodes after expanding cluster
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="reference_notices_hci.html">
-          Legal notices
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-</ul>
+</script><ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="..../../../index.html">
+        NetApp HCI Documentation
+      </a></li><li class=" "><a class="na-navbar-padding" href="index.html">
+        NetApp HCI Configuration and Management
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Release Notes</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="rn_whatsnew.html">
+        What's new in NetApp HCI
+      </a></li><li class=" "><a class="na-navbar-padding" href="rn_relatedrn.html">
+        Additional release information
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Concepts</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="concept_hci_product_overview.html">
+        Product overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="concept_cg_hci_accounts.html">
+        Accounts
+      </a></li><li class=" "><a class="na-navbar-padding" href="concept_hci_dataprotection.html">
+        Data protection
+      </a></li><li class=" "><a class="na-navbar-padding" href="concept_hci_clusters.html">
+        Clusters
+      </a></li><li class=" "><a class="na-navbar-padding" href="concept_hci_nodes.html">
+        Nodes
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Storage</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="concept_hci_volumes.html">
+        Volumes
+      </a></li><li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
+        Maintenance mode
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="concept_cg_hci_licensing.html">
+        Licensing
+      </a></li><li class=" "><a class="na-navbar-padding" href="concept_cg_hci_security.html">
+        Security
+      </a></li><li class=" "><a class="na-navbar-padding" href="concept_hci_performance.html">
+        Performance
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Requirements and pre-deployment tasks</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="hci_prereqs_required_network_ports.html">
+        Network port requirements
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_network_switch.html">
+        Network and switch requirements
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_network_cables.html">
+        Network cable requirements
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_ip_address.html">
+        IP address requirements
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Network configuration</div>
+      </a>
+      <ul><li class="  active "><a class="na-navbar-padding" href="hci_prereqs_network_configuration.html">
+        Network configuration options overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_network_configuration_option_A.html">
+        Network configuration option A
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_network_configuration_option_B.html">
+        Network configuration option B
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_network_configuration_option_C.html">
+        Network configuration option C
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_timekeeping.html">
+        DNS and timekeeping requirements
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_timekeeping.html">
+        DNS and timekeeping requirements
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_environmental.html">
+        Environmental requirements
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_protection_domains.html">
+        Protection Domains
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_witness_nodes.html">
+        Witness Node resource requirements for two-node storage clusters
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Get started with NetApp HCI</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_getstarted.html">
+        NetApp HCI installation and deployment overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hci_installhw.html">
+        Install H-series hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_LACP_configuration.html">
+        Configure LACP for optimal storage performance
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_task_validate_config_advisor.html">
+        Validate your environment with Active IQ Config Advisor
+      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_final_prep.html">
+        Configure IPMI for each node
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Manage NetApp HCI</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Monitor your NetApp HCI system</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hcc_dashboard.html">
+        View resources on the HCC Dashboard
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_nodes.html">
+        View your inventory on the Nodes page
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_edit_bmc_info.html">
+        Edit BMC connection information
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_volumes.html">
+        Monitor volumes on your storage cluster
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_activeiq.html">
+        Monitor performance, capacity, and cluster health with Active IQ
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_collectlogs.html">
+        Collect logs for troubleshooting
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Work with the management node</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_mnode_work_overview.html">
+        Management node overview
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install or recover a management node</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_mnode_install.html">
+        Install a management node
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_mnode_install_add_storage_NIC.html">
+        Configure a storage Network Interface Controller (NIC)
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_mnode_recover.html">
+        Recover a management node
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="task_mnode_access_ui.html">
+        Access the management node
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Work with the management node UI</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_mnode_work_overview_UI.html">
+        Management node UI overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_mnode_enable_alerts.html">
+        Configure alert monitoring on NetApp HCI
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_mnode_settings.html">
+        Modify and test the management node network, cluster, and system settings
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_mnode_run_system_utilities.html">
+        Run system utilities from the management node
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Work with the management node REST API</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_mnode_work_overview_API.html">
+        Management node REST API UI overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_mnode_api_get_authorizationtouse.html">
+        Get authorization to use REST APIs
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_mnode_enable_activeIQ.html">
+        Enable Active IQ and NetApp HCI monitoring
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_mnode_add_assets.html">
+        Add compute and controller assets to the management node
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_mnode_edit_vcenter_assets.html">
+        View or edit existing controller assets
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_mnode_configure_proxy_server.html">
+        Configure a proxy server for the management node
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_mnode_manage_storage_cluster_assets.html">
+        Manage storage cluster assets
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="task_mnode_enable_remote_support_connections.html">
+        Enable remote NetApp Support connections
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Upgrade your NetApp HCI or SolidFire system</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="concept_hci_upgrade_overview.html">
+        Upgrades overview
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Upgrade sequences</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_all.html">
+        Upgrade your NetApp HCI system for version 1.8
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_sf_upgrade_all.html">
+        Upgrade your NetApp SolidFire all-flash storage system for Element 12.0
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> System upgrade procedures</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hcc_update_management_services.html">
+        Update management services
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_upgrade_element_latest_healthtools.html">
+        Upgrade to the latest HealthTools
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_element_prechecks.html">
+        Run Element storage health checks prior to upgrading storage
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_element_software.html">
+        Upgrade Element software
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_storage_firmware.html">
+        Upgrade storage firmware
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_management_node.html">
+        Upgrade a management node
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_vcp_upgrade_plugin.html">
+        Upgrade the NetApp Element Plug-in for vCenter Server
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_upgrade_compute_prechecks.html">
+        Run compute node health checks prior to upgrading compute firmware
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_compute_node_drivers.html">
+        Update compute node drivers
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_compute_node_firmware.html">
+        Upgrade compute node firmware
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> vSphere upgrade sequences with vCenter Plug-in</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_upgrade_all_vsphere.html">
+        Upgrade your vSphere components for a NetApp HCI system with the Element Plug-in for vCenter Server
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_sf_upgrade_all_vsphere.html">
+        Upgrade your vSphere components for a NetApp SolidFire storage system with the Element Plug-in for vCenter Server
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Expand your NetApp HCI system</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="concept_hcc_expandoverview.html">
+        Expand overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_expand_storage.html">
+        Expand NetApp HCI storage resources
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_expand_compute.html">
+        Expand NetApp HCI compute resources
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hcc_expand_compute_and_storage.html">
+        Expand NetApp storage and compute resources
+      </a></li><li class=" "><a class="na-navbar-padding" href="task_hci_removewn.html">
+        Remove Witness Nodes after expanding cluster
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="reference_notices_hci.html">
+        Legal notices
+      </a></li></ul>
 
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
@@ -3830,7 +1783,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-05-29 21:40:32 +0000">05/29/2020</time>
+    <time datetime="2020-09-23 22:29:48 +0000">09/23/2020</time>
     
   
 
@@ -3867,7 +1820,7 @@
 <h2 id="required-network-segments">Required network segments</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>NetApp HCI requires a minimum of three network segments: management, storage, and virtualization traffic (which includes virtual machines and vMotion traffic). You can also separate virtual machine and vMotion traffic. These network segments usually exist as logically separated VLANs in the NetApp HCI network infrastructure.</p>
+<p>NetApp HCI requires a minimum of three network segments: management, storage, and virtualization traffic (which includes virtual machines and VMware vMotion traffic). You can also separate virtual machine and vMotion traffic. These network segments usually exist as logically separated VLANs in the NetApp HCI network infrastructure.</p>
 </div>
 <div class="paragraph">
 <p>How compute and storage nodes connect to these networks depends on how you design the network and cable the nodes. The sample network illustrations in this guide assume the following networks:</p>
@@ -3906,7 +1859,7 @@
 <p>For automatic discovery and configuration of your NetApp HCI nodes in the NetApp Deployment Engine, you must have a network segment that is available as an untagged or native VLAN on all switch ports that are used for the SFP+/SFP28 interfaces on the nodes. This will provide layer 2 communication between all nodes for discovery and deployment. Without a native VLAN, you must configure the SFP+/SFP28 interfaces of all nodes manually with a VLAN and IPv4 address to be discoverable. In the network configuration examples in this document, the management network (VLAN ID 100) is used for this purpose.</p>
 </div>
 <div class="paragraph">
-<p>The NetApp Deployment Engine enables you to quickly configure networks for compute and storage nodes during the initial deployment. You can place certain built-in management components such as vCenter and the management node on their own network segment if needed. These network segments require routing to allow vCenter and the management node to communicate with storage and compute management networks. In most deployments those components use the same management network (in this example, VLAN ID 100).</p>
+<p>The NetApp Deployment Engine enables you to quickly configure networks for compute and storage nodes during the initial deployment. You can place certain built-in management components such as vCenter and the management node on their own network segment. These network segments require routing to allow vCenter and the management node to communicate with storage and compute management networks. In most deployments those components use the same management network (VLAN ID 100 in this example).</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3915,7 +1868,7 @@
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-You configure virtual machine networks using vCenter. The default virtual machine network (port group "VM_Network") in NetApp HCI deployments is configured without a VLAN ID. If you plan to use multiple tagged virtual machine networks (VLAN IDs 200, 201 in the example above), be sure to include them in the initial network planning.
+You configure virtual machine networks using vCenter. The default virtual machine network (port group "VM_Network") in NetApp HCI deployments is configured without a VLAN ID. If you plan to use multiple tagged virtual machine networks (VLAN IDs 200 and 201 in the preceding example), ensure you include them in the initial network planning.
 </td>
 </tr>
 </table>
@@ -3926,34 +1879,45 @@ You configure virtual machine networks using vCenter. The default virtual machin
 <h2 id="network-configuration-and-cabling-options">Network configuration and cabling options</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can use a two-cable network configuration for the H300E, H500E, H700E, and H410C compute nodes, simplifying cable routing. This configuration uses two SFP+/SFP28 interfaces plus an optional (but recommended) RJ45 interface for IPMI communication. These nodes can also use a six-cable configuration with two RJ45 and four SFP28/SFP+ interfaces.</p>
+<p>You can use a two-cable network configuration for the H410C compute nodes, simplifying cable routing. This configuration uses two SFP+/SFP28 interfaces plus an optional (but recommended) RJ45 interface for IPMI communication. These nodes can also use a six-cable configuration with two RJ45 and four SFP28/SFP+ interfaces.</p>
 </div>
 <div class="paragraph">
-<p>All storage nodes support a network topology that uses four network ports; this topology uses ports A through D on H300S, H500S, H700S, and H610S nodes. Compute nodes support three network topologies:</p>
+<p>The H410S and H610S storage nodes support a network topology that uses four network ports (ports A through D).</p>
+</div>
+<div class="paragraph">
+<p>Compute nodes support three network topologies, depending on the hardware platform:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Configuration option</th>
-<th class="tableblock halign-left valign-top">Cabling and description</th>
+<th class="tableblock halign-left valign-top">Cabling for H410C nodes</th>
+<th class="tableblock halign-left valign-top">Cabling for H610C nodes</th>
+<th class="tableblock halign-left valign-top">Cabling for H615C nodes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Option A</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Two-cable configuration using ports D and E (two SFP28/SFP+ interfaces) on H300E, H500E, H700E and H410C nodes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Two cables using ports D and E</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Two cables using ports C and D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Two cables using ports A and B</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Option B</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Six-cable configuration using ports A through F (two RJ45 and four SFP28/SFP+ interfaces) on H300E, H500E, H700E and H410C nodes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Six cables using ports A through F</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not available</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not available</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Option C</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cable configuration similar to option B, but using native VLANs (or "access ports") on the switch for the management, storage, and vMotion networks</p></td>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Similar to option B, but with native VLANs (or "access ports") on the switch for the management, storage, and vMotion networks</p></td>
 </tr>
 </tbody>
 </table>
@@ -3972,298 +1936,19 @@ You can adjust the NetApp HCI network configuration after deployment to meet inf
 </tr>
 </table>
 </div>
-<div class="sect2">
-<h3 id="configuration-option-a-two-cables-for-compute-nodes">Configuration option A: Two cables for compute nodes</h3>
-<div class="paragraph">
-<p>The NetApp H300E, H500E, H700E, H410C, and H610C compute nodes support using two network cables for connectivity to all NetApp HCI networks. This configuration requires that the storage, vMotion and any virtual machine networks use VLAN tagging. All compute and storage nodes must use the same VLAN ID scheme. This configuration uses vSphere Distributed Switches that require VMware vSphere Enterprise Plus licensing.</p>
-</div>
-<div class="sect3">
-<h4 id="vlan-configuration">VLAN configuration</h4>
-<div class="paragraph">
-<p>As a best practice, you should configure the required network segments on all switch ports that the nodes are using. For example:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Network name</th>
-<th class="tableblock halign-left valign-top">VLAN ID</th>
-<th class="tableblock halign-left valign-top">Switch port configuration</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Management</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Native</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Storage</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">105</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tagged</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vMotion</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">107</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tagged</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Virtual machines</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">200, 201</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tagged</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>The following illustration shows the recommended cabling configuration for two-cable H300E, H500E, H700E, and H410C compute nodes and four-cable H300S, H500S, H700S, and H410S storage nodes. All switch ports in this example share the same configuration.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../media/hci_networking_config_scenario_1.png" alt="HCI networking configuration option A image">
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="example-switch-commands">Example switch commands</h4>
-<div class="paragraph">
-<p>You can use the following example commands to configure all switch ports used for NetApp HCI nodes. These commands are based on a Cisco configuration, but might require only small changes to apply to Mellanox switches. See your switch documentation for the specific commands you need to implement this configuration. Replace the interface name, description, and VLANs with the values for your environment.</p>
-</div>
-<div class="paragraph">
-<p><code>interface {interface name, such as EthernetX/Y or GigabitEthernetX/Y/Z}</code><br>
-<code>description {desired description, such as NetApp-HCI-NodeX-PortY}</code><br>
-<code>mtu 9216</code><br>
-<code>switchport mode trunk</code><br>
-<code>switchport trunk native vlan 100</code><br>
-<code>switchport trunk allowed vlan 105,107,200,201</code><br>
-<code>spanning-tree port type edge trunk</code></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Some switches might require inclusion of the native VLAN in the allowed VLAN list. See the documentation for your specific switch model and software version.
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="configuration-option-b-six-cables-for-compute-nodes">Configuration option B: Six cables for compute nodes</h3>
-<div class="paragraph">
-<p>As a secondary network configuration option, the H300E, H500E, H700E and H410C compute nodes support using six network cables for connectivity to all NetApp HCI networks. This configuration requires that the storage, vMotion and any virtual machine networks use VLAN tagging. You can use this configuration with vSphere Standard Switches or vSphere Distributed Switches (which require VMware vSphere Enterprise Plus licensing).</p>
-</div>
-<div class="sect3">
-<h4 id="vlan-configuration-2">VLAN configuration</h4>
-<div class="paragraph">
-<p>When you deploy compute nodes using six cables and storage nodes using four cables, as a best practice, you should configure the required network segments on all switch ports that the nodes are using. For example:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Network name</th>
-<th class="tableblock halign-left valign-top">VLAN ID</th>
-<th class="tableblock halign-left valign-top">Switch port configuration</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Management</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Native</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Storage</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">105</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tagged</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vMotion</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">107</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tagged</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Virtual machines</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">200, 201</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tagged</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>The following illustration shows the recommended cabling configuration for six-cable compute nodes and four-cable storage nodes. All switch ports in this example share the same configuration.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../media/hci_networking_config_scenario_2.png" alt="HCI networking configuration option B image">
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="example-switch-commands-2">Example switch commands</h4>
-<div class="paragraph">
-<p>You can use the following example commands to configure all switch ports used for NetApp HCI nodes. These commands are based on a Cisco configuration, but might require only small changes to apply to Mellanox switches. See your switch documentation for the specific commands you need to implement this configuration. Replace the interface name, description, and VLANs with the values for your environment.</p>
-</div>
-<div class="paragraph">
-<p><code>interface {interface name, such as EthernetX/Y or GigabitEthernetX/Y/Z}</code><br>
-<code>description {desired description, such as NetApp-HCI-NodeX-PortY}</code><br>
-<code>mtu 9216</code><br>
-<code>switchport mode trunk</code><br>
-<code>switchport trunk native vlan 100</code><br>
-<code>switchport trunk allowed vlan 105,107,200,201</code><br>
-<code>spanning-tree port type edge trunk</code></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Some switches might require inclusion of the native VLAN in the allowed VLAN list. See the documentation for your specific switch model and software version.
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="configuration-option-c-six-cables-for-compute-nodes-with-native-vlans">Configuration option C: Six cables for compute nodes with native VLANs</h3>
-<div class="paragraph">
-<p>You can deploy NetApp HCI without using tagged VLANs for storage and virtualization traffic, and instead rely on the switch configuration to separate the network segments. You can use this configuration with vSphere Standard Switches or vSphere Distributed Switches (which require VMware vSphere Enterprise Plus licensing).</p>
-</div>
-<div class="sect3">
-<h4 id="vlan-configuration-3">VLAN configuration</h4>
-<div class="paragraph">
-<p>This topology option uses the following VLAN configuration:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Node ports used</th>
-<th class="tableblock halign-left valign-top">Network name</th>
-<th class="tableblock halign-left valign-top">VLAN ID</th>
-<th class="tableblock halign-left valign-top">Connected switch port configuration</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ports A and B on compute and storage nodes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Management</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Native</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ports D and E on compute nodes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Storage</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">105</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Native</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ports C and D on storage nodes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Storage</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">105</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Native</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ports C and F on compute nodes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vMotion</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">107</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Native</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ports C and F on compute nodes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Virtual machines</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">200, 201</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tagged</p></td>
-</tr>
-</tbody>
-</table>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-Deploying this configuration requires careful switch port configuration. Configuration errors in this network topology can result in deployment problems that are difficult to diagnose.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The following illustration shows the network configuration overview for this topology option. In the example, individual switch ports are configured with the appropriate network segment as the native network.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../media/hci_networking_config_scenario_2.png" alt="HCI networking configuration option C image">
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="example-switch-commands-3">Example switch commands</h4>
-<div class="paragraph">
-<p>You can use the following example switch commands to configure switch ports used for the NetApp HCI nodes. These commands are based on a Cisco configuration, but might require only minimal changes to apply to Mellanox switches. See your switch documentation for the specific commands you need to implement this configuration.</p>
-</div>
-<div class="paragraph">
-<p>You can use the following example commands to configure the switch ports used for the management network. Replace the interface name, description, and VLANs with the values for your configuration.</p>
-</div>
-<div class="paragraph">
-<p><code>interface {interface name, such as EthernetX/Y or GigabitEthernetX/Y/Z}<code></code><br>
-<code>description {desired description, such as NetApp-HCI-NodeX-PortA|B}</code></code><br>
-<code>switchport access vlan 100</code><br>
-<code>spanning-tree port type edge</code></p>
-</div>
-<div class="paragraph">
-<p>You can use the following example commands to configure the switch ports used for the storage network. Replace the interface name, description, and VLANs with the values for your configuration.</p>
-</div>
-<div class="paragraph">
-<p><code>interface {interface name, such as EthernetX/Y or GigabitEthernetX/Y/Z}<code></code><br>
-<code>description {desired description, such as NetApp-HCI-NodeX-PortC|D}</code></code><br>
-<code>mtu 9216</code><br>
-<code>switchport access vlan 105</code><br>
-<code>spanning-tree port type edge</code></p>
-</div>
-<div class="paragraph">
-<p>You can use the following example commands to configure the switch ports used for the vMotion and virtual machines network. Replace the interface name, description, and VLANs with the values for your configuration.</p>
-</div>
-<div class="paragraph">
-<p><code>interface {interface name, such as EthernetX/Y or GigabitEthernetX/Y/Z}</code><br>
-<code>description {desired description, such as NetApp-HCI-NodeX-PortC|F}</code><br>
-<code>mtu 9216</code><br>
-<code>switchport mode trunk</code><br>
-<code>switchport trunk native vlan 107</code><br>
-<code>switchport trunk allowed vlan 200,201</code><br>
-<code>spanning-tree port type edge trunk</code></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Some switches might require inclusion of the native VLAN in the allowed VLAN list. See the documentation for your specific switch model and software version.
-</td>
-</tr>
-</table>
+<div class="ulist">
+<div class="title">Network configuration options</div>
+<ul>
+<li>
+<p><a href="hci_prereqs_network_configuration_option_A.html">Network configuration option A</a></p>
+</li>
+<li>
+<p><a href="hci_prereqs_network_configuration_option_B.html">Network configuration option B</a></p>
+</li>
+<li>
+<p><a href="hci_prereqs_network_configuration_option_C.html">Network configuration option C</a></p>
+</li>
+</ul>
 </div>
 <h2 id="find-more-information" class="discrete">Find more information</h2>
 <div class="ulist">
@@ -4275,8 +1960,6 @@ Some switches might require inclusion of the native VLAN in the allowed VLAN lis
 <p><a href="https://docs.netapp.com/hci/index.jsp" target="_blank" rel="noopener">NetApp HCI Documentation Center</a></p>
 </li>
 </ul>
-</div>
-</div>
 </div>
 </div>
 </div>

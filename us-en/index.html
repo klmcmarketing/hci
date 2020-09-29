@@ -841,21 +841,15 @@
   <!-- Sidebar Column -->
   
   <div class="col-md-3" >
-      
-
-
-
-<div class="n-pdf-header">
+      <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    &vellip; Download PDF
+    Download PDF
     <span>
       <img src="/hci/us-en/images/pdf.png" width="20" height="20"/>
     </span>
   </a>
 </div>
-<ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
-  
-    <div class="n-pdf-section">
+<ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><div class="n-pdf-section">
       <span class="n-pdf-section-title">
         Site
       </span>
@@ -866,8 +860,6 @@
         NetApp HCI Documentation
       </a>
     </li>
-  
-  
   
 
     
@@ -905,7 +897,6 @@
   
 
 
-
 </ul>
 
 <script>
@@ -914,96 +905,14 @@
   $("#toggleButtonPdf").click(function () {
     $("#toggleContainerPdf").toggle('display');
   });
-</script>
-
-
-
-<ul id="mysidebar" class="nav">
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class="subfolders ">
-      
-        <a href="#">
-          <div class="na-navbar-padding"> NetApp HCI Documentation</div>
-        </a>
-        <ul>
-          
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="docs/index.html">
-          NetApp HCI Configuration and Management
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-  
-
-  
-
-  
-  
-
-  
-    
-
-    
-
-    <li class=" ">
-      
-        <a class="na-navbar-padding" href="https://docs.netapp.com/us-en/hci-solutions/index.html">
-          NetApp HCI Solutions
-        </a>
-      
-    </li>
-
-
-
-  
-
-
-        </ul>
-
-      
-    </li>
-
-
-
-  
-
-
-</ul>
+</script><ul id="mysidebar" class="nav"><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> NetApp HCI Documentation</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="docs/index.html">
+        NetApp HCI Configuration and Management
+      </a></li><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/hci-solutions/index.html">
+        NetApp HCI Solutions
+      </a></li></ul></li></ul>
 
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
