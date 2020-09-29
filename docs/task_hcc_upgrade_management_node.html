@@ -1715,7 +1715,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_all.html">
         Upgrade your NetApp HCI system for version 1.8
       </a></li><li class=" "><a class="na-navbar-padding" href="task_sf_upgrade_all.html">
-        Upgrade your NetApp SolidFire all-flash storage system for Element 12.0
+        Upgrade your NetApp SolidFire all-flash storage system for Element 12.2
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> System upgrade procedures</div>
       </a>
@@ -1783,7 +1783,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-09-21 23:30:10 +0000">09/21/2020</time>
+    <time datetime="2020-09-29 18:27:32 +0000">09/29/2020</time>
     
   
 
@@ -1805,19 +1805,19 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" href="https://github.com/amgrissino">
-    <img  class="avatar avatar-small"
-          alt="amgrissino"
-          width="20" height="20"
-          src="https://avatars2.githubusercontent.com/u/36450105?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
   <a target="_blank" href="https://github.com/netapp-mwallis">
     <img  class="avatar avatar-small"
           alt="netapp-mwallis"
           width="20" height="20"
           src="https://avatars3.githubusercontent.com/u/53353653?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/amgrissino">
+    <img  class="avatar avatar-small"
+          alt="amgrissino"
+          width="20" height="20"
+          src="https://avatars2.githubusercontent.com/u/36450105?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -1836,7 +1836,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>You can upgrade your management node to management node version 12.0 from version 11.0 or later.</p>
+<p>You can upgrade your management node to management node version 12.2 from version 11.0 or later.</p>
 </div>
 <div class="ulist">
 <div class="title">What you&#8217;ll need</div>
@@ -1858,7 +1858,7 @@
 </li>
 <li>
 <p>If you are upgrading from management node 11.0 or 11.1:<br>
-<a href="#upgrade-a-management-node-to-version-12-0-from-11-1-or-11-0">Upgrade a management node to version 12.0 from 11.1 or 11.0</a></p>
+<a href="#upgrade-a-management-node-to-version-12-2-from-11-1-or-11-0">Upgrade a management node to version 12.2 from 11.1 or 11.0</a></p>
 </li>
 <li>
 <p>If you are upgrading from a management node version 10.x:<br>
@@ -1895,7 +1895,7 @@ If you do not sequentially update your management services followed by Element s
 <h2 id="upgrade-a-management-node-to-version-12-2-from-11-3-or-later">Upgrade a management node to version 12.2 from 11.3 or later</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can perform an in-place upgrade of the management node from 11.3 or later to version 12.0 without needing to provision a new management node virtual machine. You can use this procedure if you are upgrading from any of the following management node versions: 11.3, 11.5, 11.7, 11.8, or 12.0.</p>
+<p>You can perform an in-place upgrade of the management node from 11.3 or later to version 12.2 without needing to provision a new management node virtual machine. You can use this procedure if you are upgrading from any of the following management node versions: 11.3, 11.5, 11.7, 11.8, or 12.0.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1913,7 +1913,7 @@ The Element 12.2 management node is an optional upgrade. It is not required for 
 <div class="title">What you&#8217;ll need</div>
 <ul>
 <li>
-<p>The management node you are intending to upgrade is version 11.3 or later and uses IPv4 networking. The management node version 12.0 does not support IPv6.</p>
+<p>The management node you are intending to upgrade is version 11.3 or later and uses IPv4 networking. The management node version 12.2 does not support IPv6.</p>
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -1956,6 +1956,22 @@ Persistent volumes might require an additional network adapter if eth0 is not ab
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
+<li>
+<p>(For Element 12.2 upgrades only) Do the following:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Power off the management node VM.</p>
+</li>
+<li>
+<p>Change the RAM of the management node VM from 12GB to 24GB RAM.</p>
+</li>
+<li>
+<p>Power on the management node VM.</p>
+</li>
+</ol>
+</div>
+</li>
 <li>
 <p>Log in to the management node virtual machine using SSH or console access.</p>
 </li>
@@ -2066,10 +2082,10 @@ The script retains previous management services configuration, including configu
 </div>
 </div>
 <div class="sect1">
-<h2 id="upgrade-a-management-node-to-version-12-0-from-11-1-or-11-0">Upgrade a management node to version 12.0 from 11.1 or 11.0</h2>
+<h2 id="upgrade-a-management-node-to-version-12-2-from-11-1-or-11-0">Upgrade a management node to version 12.2 from 11.1 or 11.0</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can perform an in-place upgrade of the management node from 11.0 or 11.1 to version 12.0 without needing to provision a new management node virtual machine.</p>
+<p>You can perform an in-place upgrade of the management node from 11.0 or 11.1 to version 12.2 without needing to provision a new management node virtual machine.</p>
 </div>
 <div class="ulist">
 <div class="title">Before you begin</div>
@@ -2090,7 +2106,7 @@ Use the latest HealthTools to upgrade Element software.
 </div>
 </li>
 <li>
-<p>The management node you are intending to upgrade is version 11.0 or 11.1 and uses IPv4 networking. The management node version 12.0 does not support IPv6.</p>
+<p>The management node you are intending to upgrade is version 11.0 or 11.1 and uses IPv4 networking. The management node version 12.2 does not support IPv6.</p>
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -2124,6 +2140,22 @@ Persistent volumes might require an additional network adapter if eth0 is not ab
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
+<li>
+<p>(For Element 12.2 upgrades only) Do the following:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Power off the management node VM.</p>
+</li>
+<li>
+<p>Change the RAM of the management node VM from 12GB to 24GB RAM.</p>
+</li>
+<li>
+<p>Power on the management node VM.</p>
+</li>
+</ol>
+</div>
+</li>
 <li>
 <p>Log in to the management node virtual machine using SSH or console access.</p>
 </li>
@@ -2219,7 +2251,7 @@ The name of the ISO is similar to <code>solidfire-fdva-&lt;Element release&gt;-p
 </div>
 </li>
 <li>
-<p>On the 12.0 management node, run the <code>upgrade-mnode</code> script to retain previous configuration settings.</p>
+<p>On the 12.2 management node, run the <code>upgrade-mnode</code> script to retain previous configuration settings.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2270,7 +2302,7 @@ If you are migrating from an 11.0 or 11.1 management node, the script copies the
 </div>
 </li>
 <li>
-<p>(For all NetApp HCI installations and SolidFire all-flash storage installations with NetApp Element Plug-in for vCenter Server) Update the vCenter Plug-in on the 12.0 management node by following the steps in the <a href="task_vcp_upgrade_plugin.html">Upgrade the Element Plug-in for vCenter Server</a> topic.</p>
+<p>(For all NetApp HCI installations and SolidFire all-flash storage installations with NetApp Element Plug-in for vCenter Server) Update the vCenter Plug-in on the 12.2 management node by following the steps in the <a href="task_vcp_upgrade_plugin.html">Upgrade the Element Plug-in for vCenter Server</a> topic.</p>
 </li>
 <li>
 <p>Locate the asset ID for your installation using the management node API:</p>

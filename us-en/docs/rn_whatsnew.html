@@ -1715,7 +1715,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_all.html">
         Upgrade your NetApp HCI system for version 1.8
       </a></li><li class=" "><a class="na-navbar-padding" href="task_sf_upgrade_all.html">
-        Upgrade your NetApp SolidFire all-flash storage system for Element 12.0
+        Upgrade your NetApp SolidFire all-flash storage system for Element 12.2
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> System upgrade procedures</div>
       </a>
@@ -1783,7 +1783,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-09-04 20:49:42 +0000">09/04/2020</time>
+    <time datetime="2020-09-29 16:01:45 +0000">09/29/2020</time>
     
   
 
@@ -1828,31 +1828,25 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>NetApp periodically updates NetApp HCI to bring you new features, enhancements, and bug fixes. NetApp HCI 1.8 includes Element 12.0 for storage clusters.</p>
+<p>NetApp periodically updates NetApp HCI to bring you new features, enhancements, and bug fixes. NetApp HCI 1.8P1 includes Element 12.2 for storage clusters.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The <a href="#netapp-hci-1-8">NetApp HCI 1.8</a> section describes new features and updates in NetApp HCI version 1.8.</p>
+<p>The <a href="#netapp-hci-1-8p1">NetApp HCI 1.8P1</a> section describes new features and updates in NetApp HCI version 1.8P1.</p>
 </li>
 <li>
-<p>The <a href="#element-12-0">Element 12.0</a> section describes new features and updates in NetApp Element 12.0.</p>
+<p>The <a href="#element-12-2">Element 12.2</a> section describes new features and updates in NetApp Element 12.2.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="netapp-hci-1-8">NetApp HCI 1.8</h2>
+<h2 id="netapp-hci-1-8p1">NetApp HCI 1.8P1</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>NetApp HCI 1.8 introduces two-node and three-node storage cluster capability, multi-factor authentication, and NetApp Hybrid Cloud Control enhancements.</p>
-</div>
-<div class="sect2">
-<h3 id="active-iq-config-advisor">Active IQ Config Advisor</h3>
-<div class="paragraph">
-<p>Active IQ Config Advisor is a tool that helps streamline the installation experience and reduce networking failures during deployment. It validates that the configuration is ready for deployment and generates a report that you can use to resolve issues and send to NetApp Professional Services before hardware installation. See the <a href="https://docs.netapp.com/hci/topic/com.netapp.doc.hci-ude-180/home.html" target="_blank" rel="noopener">Deployment Guide</a> for details.</p>
-</div>
+<p>NetApp HCI 1.8P1 includes security and stability improvements.</p>
 </div>
 <div class="sect2">
 <h3 id="netapp-hci-documentation-enhancements">NetApp HCI documentation enhancements</h3>
@@ -1863,262 +1857,187 @@
 <div class="sect2">
 <h3 id="netapp-element-plug-in-for-vcenter-server-4-5-availability">NetApp Element Plug-in for vCenter Server 4.5 availability</h3>
 <div class="paragraph">
-<p>The NetApp Element Plug-in for vCenter Server 4.5 is available outside of the management node 12.0 and NetApp HCI 1.8 releases. To upgrade the plug-in, follow the instructions in the <a href="concept_hci_upgrade_overview.html" target="_blank" rel="noopener">NetApp HCI Upgrades</a> documentation.</p>
+<p>The NetApp Element Plug-in for vCenter Server 4.5 is available outside of the management node 12.2 and NetApp HCI 1.8P1 releases. To upgrade the plug-in, follow the instructions in the <a href="concept_hci_upgrade_overview.html" target="_blank" rel="noopener">NetApp HCI Upgrades</a> documentation.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="netapp-hybrid-cloud-control-enhancements">NetApp Hybrid Cloud Control enhancements</h3>
 <div class="paragraph">
-<p>NetApp Hybrid Cloud Control is enhanced for version 1.8. <a href="https://kb.netapp.com/app/answers/answer_view/a_id/1087586" target="_blank" rel="noopener">Learn more</a>.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="support-for-two-node-and-three-node-storage-clusters">Support for two-node and three-node storage clusters</h3>
-<div class="paragraph">
-<p>With version 1.8, you can set up NetApp HCI to use a storage cluster with two or three storage nodes. When you deploy with a two-node or three-node storage cluster, the deployment process automatically configures two NetApp Witness Nodes as virtual machines. Witness Nodes are virtual nodes that enable storage node redundancy in the event of a storage node failure. NetApp HCI supports the H410S-0, H410S-1, and H610S-1 storage nodes in two-node or three-node storage clusters. <a href="concept_hci_clusters.html" target="_blank" rel="noopener">Learn more</a>.</p>
+<p>NetApp Hybrid Cloud Control is enhanced for version 1.8P1. <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes" target="_blank" rel="noopener">Learn more</a>.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="element-12-0">Element 12.0</h2>
+<h2 id="element-12-2">Element 12.2</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>NetApp HCI 1.8 includes Element 12.0 for storage clusters. Element 12.0 introduces multi-factor authentication, session-based web UI logins, external key management (EKM) enhancements, faster upgrades, customizable protection domains, and contains stability and functionality improvements.</p>
+<p>NetApp HCI 1.8P1 includes Element 12.2 for storage clusters. Element 12.2 introduces SolidFire Enterprise SDS, software encryption at rest, maintenance mode, enhanced volume access security, Fully Qualified Domain Name (FQDN) access to UIs, storage node firmware updates, and security updates.</p>
 </div>
 <div class="sect2">
-<h3 id="element-12-0-firmware-updates">Element 12.0 firmware updates</h3>
+<h3 id="solidfire-enterprise-sds">SolidFire Enterprise SDS</h3>
 <div class="paragraph">
-<p>The following firmware updates for H610S storage node hardware components are included with this release:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Component</th>
-<th class="tableblock halign-left valign-top">Firmware version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BIOS</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3B03</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDIMM Gen1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NVDIMM BPM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.16</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CPLD</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">v122</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BMC</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3.78.07</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">YafuFlash2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4.16.21</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="multiple-vcenter-vasa-support">Multiple vCenter VASA support</h3>
-<div class="paragraph">
-<p>VASA support for up to 10 vCenters is available as an upgrade patch if you have already registered a VASA provider with your vCenter. To install, follow the directions in the VASA39 manifest and download the .tar.gz file from the <a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab/download/62654/vasa39" target="_blank" rel="noopener">NetApp Software Downloads</a> site.<br>
-NOTE: The NetApp Element VASA provider uses a NetApp certificate. With this patch, the certificate is used unmodified by vCenter to support multiple vCenters for VASA and VVols use. Do not modify the certificate. Custom SSL certificates are not supported by VASA.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="customizable-protection-domains">Customizable Protection Domains</h3>
-<div class="paragraph">
-<p>Beginning with Element 12.0, you can customize protection domain layouts to cover zones of storage nodes within a rack, or between multiple racks. This enables you to have more flexibility in data resiliency and to improve storage availability, especially in large scale installations. When you enable the feature, you must have at least 3 domains, and at least 2 storage nodes per domain.</p>
+<p>Element 12.2 introduces SolidFire Enterprise SDS (eSDS). SolidFire eSDS provides the benefits of SolidFire scale out technology and NetApp Element software data services on the hardware of your choice that meets the reference configuration for SolidFire eSDS. <a href="http://docs.netapp.com/sfe-122/index.jsp?topic=%2Fcom.netapp.doc.sfe-sds-ig%2FGUID-F1BDD19F-AF33-4CDE-B67F-C5E17D4E6DE9.html" target="_blank" rel="noopener">Learn more</a>.</p>
 </div>
 <div class="paragraph">
-<p>The following are Element API methods related to Protection Domains (the <a href="http://docs.netapp.com/sfe-120/topic/com.netapp.doc.sfe-api/home.html" target="_blank" rel="noopener">Element API Reference Guide</a> has more information):</p>
+<p>The following are new Element API methods related to SolidFire eSDS (<a href="http://docs.netapp.com/sfe-122/index.jsp?topic=%2Fcom.netapp.doc.sfe-sds-ug%2FGUID-4D335B61-6B68-4B81-AD6E-BCA1E7ABACD5.html">Element 12.2 API information for SolidFire eSDS</a> has more information):</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>SetProtectionDomainLayout</p>
+<p><code>GetLicenseKey</code></p>
 </li>
 <li>
-<p>GetProtectionDomainLayout</p>
-</li>
-<li>
-<p>ListAllNodes</p>
-</li>
-<li>
-<p>ListActiveNodes</p>
-</li>
-<li>
-<p>ListPendingNodes</p>
-</li>
-<li>
-<p>AddDrives</p>
-</li>
-<li>
-<p>ListProtectionDomainLevels</p>
-</li>
-<li>
-<p>CheckProposedNodeAdditions</p>
-</li>
-<li>
-<p>CheckProposedCluster</p>
+<p><code>SetLicenseKey</code></p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="faster-upgrades">Faster upgrades</h3>
+<h3 id="software-encryption-at-rest">Software encryption at rest</h3>
 <div class="paragraph">
-<p>Element 12.0 brings decreases in upgrade times. Upgrades from Element 12.0 to future Element releases are significantly faster than upgrades from previous versions.</p>
+<p>Element 12.2 introduces software encryption at rest, which you can enable when you create a storage cluster (and is enabled by default when you create a SolidFire Enterprise SDS storage cluster). This feature encrypts all data stored on the SSDs in the storage nodes and causes only a very small (~2%) performance impact on client IO.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="enhanced-external-key-management">Enhanced external key management</h3>
 <div class="paragraph">
-<p>Element 12.0 external key management (EKM) now supports the following key management<br>
-services:</p>
+<p>The following are Element API methods related to software encryption at rest (the <a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/home.html" target="_blank" rel="noopener">Element API Reference Guide</a> has more information):</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Gemalto SafeNet KeySecure</p>
-</li>
-<li>
-<p>SafeNet AT KeySecure</p>
-</li>
-<li>
-<p>HyTrust KeyControl</p>
-</li>
-<li>
-<p>Vormetric Data Security Manager (new in Element 12.0)</p>
-</li>
-<li>
-<p>IBM Security Key Lifecycle Manager (new in Element 12.0)<br>
-<a href="http://docs.netapp.com/sfe-120/topic/com.netapp.doc.sfe-ug/GUID-057D852C-9C1C-458A-9161-328EDA349B00.html" target="_blank" rel="noopener">Learn more.</a></p>
+<p><code>CreateCluster</code></p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="multi-factor-authentication">Multi-factor authentication</h3>
+<h3 id="maintenance-mode">Maintenance mode</h3>
 <div class="paragraph">
-<p>With multi-factor authentication (MFA) support, you can now integrate the Element web UI and the storage per-node web UI with your single sign-on (SSO) infrastructure.<br>
-MFA supports the following SAML 2.0-based identity providers (IdPs):</p>
+<p>Element 12.2 introduces maintenance mode, which enables you to take a storage node offline for maintenance such as software upgrades or host repairs, while preventing a full sync of all data. If one or more nodes need maintenance, you can minimize the I/O impact to the rest of the storage cluster by enabling maintenance mode for those nodes before you begin. You can use maintenance mode with both appliance nodes as well as SolidFire eSDS nodes.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="enhanced-volume-access-security">Enhanced volume access security</h3>
+<div class="paragraph">
+<p>You can now restrict volume access to certain initiators based on VLAN (virtual network) association. You can associate new or existing initiators with one or more virtual networks, restricting that initiator to iSCSI targets accessible via those virtual networks.</p>
+</div>
+<div class="paragraph">
+<p>The following are updated Element API methods related to these security improvements (the <a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/home.html" target="_blank" rel="noopener">Element API Reference Guide</a> has more information):</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Microsoft Active Directory Federation Services (ADFS) 2016</p>
+<p><code>CreateInitiators</code></p>
 </li>
 <li>
-<p>Shibboleth 3.4.4</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The following are Element API methods related to MFA (the Element API Reference Guide has more information):</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>CreateIdpConfiguration</p>
+<p><code>ModifyInitiators</code></p>
 </li>
 <li>
-<p>UpdateIdpConfiguration</p>
+<p><code>AddAccount</code></p>
 </li>
 <li>
-<p>DeleteIdpConfiguration</p>
-</li>
-<li>
-<p>ListIdpConfigurations</p>
-</li>
-<li>
-<p>EnableIdpAuthentication</p>
-</li>
-<li>
-<p>DisableIdpAuthentication</p>
-</li>
-<li>
-<p>ListProtectionDomainLevels</p>
-</li>
-<li>
-<p>GetIdpAuthenticationState</p>
-</li>
-<li>
-<p>ListCurrentClusterAdmins</p>
-</li>
-<li>
-<p>DeleteAuthSession</p>
-</li>
-<li>
-<p>DeleteAuthSessionsByClusterAdmin</p>
-</li>
-<li>
-<p>DeleteAuthSessionsByUsername</p>
-</li>
-<li>
-<p>ListActiveAuthSessions</p>
-</li>
-<li>
-<p>ListAuthSessionsByClusterAdmin</p>
-</li>
-<li>
-<p>ListAuthSessionsByUsername</p>
+<p><code>ModifyAccount</code></p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="new-storage-node-terminal-user-interface-tui">New storage node terminal user interface (TUI)</h3>
+<h3 id="fully-qualified-domain-name-fqdn-access-to-uis">Fully Qualified Domain Name (FQDN) access to UIs</h3>
 <div class="paragraph">
-<p>The Element TUI is now restructured and features easier to use navigation and input fields.</p>
+<p>Element 12.2 supports cluster web interface access using FQDNs. On Element 12.2 storage clusters, if you use the FQDN to access web user interfaces such as the Element web UI, per-node UI, or management node UI, you must first add a storage cluster setting to identify the FQDN used by the cluster. This setting enables the cluster to properly redirect a login session and facilitates better integration with external services like key managers and identity providers for multi-factor authentication. This feature requires management services version 2.15 or later.</p>
+</div>
+<div class="paragraph">
+<p>You can do this by following these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create the following cluster interface preference using the <code>CreateClusterInterfacePreference</code> API method, inserting the cluster MVIP FQDN for the preference value:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Name: <code>mvip_fqdn</code></p>
+</li>
+<li>
+<p>Value: &lt;Fully Qualified Domain Name for the Cluster MVIP&gt;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Change the management node settings using the management node REST API:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Access the REST API UI for the management node by entering the management node IP address followed by <code>/mnode/2/</code>. For example: <code>https://[management node IP]/mnode/2/</code></p>
+</li>
+<li>
+<p>Click <strong>Authorize</strong> or any lock icon and complete the following:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Enter the cluster user name and password.</p>
+</li>
+<li>
+<p>Enter the client ID as <code>mnode-client</code>.</p>
+</li>
+<li>
+<p>Click <strong>Authorize</strong> to begin a session.</p>
+</li>
+<li>
+<p>Close the window.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Click <strong>GET /settings</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Try it out</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Execute</strong>.</p>
+</li>
+<li>
+<p>Record any proxy settings reported in the response body.</p>
+</li>
+<li>
+<p>Click <strong>PUT /settings</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Try it out</strong>.</p>
+</li>
+<li>
+<p>In the request body area, enter the management node FQDN as the value for the <code>mnode_fqdn</code> parameter.</p>
+</li>
+<li>
+<p>Enter any proxy setting values you recorded earlier in the remaining parameters in the request body. If you leave the proxy parameters empty or do not include them in the request body, existing proxy settings will be removed.</p>
+</li>
+<li>
+<p>Click <strong>Execute</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
 </div>
 </div>
 <div class="sect2">
-<h3 id="new-storage-per-node-web-ui">New storage per-node web UI</h3>
+<h3 id="storage-node-firmware-updates">Storage node firmware updates</h3>
 <div class="paragraph">
-<p>The Element 12.0 storage per-node web UI now uses the look and feel of NetApp Hybrid Cloud<br>
-Control. You can access this UI at <a href="https://&lt;Node" class="bare">https://&lt;Node</a> IP address&gt;:442/hcc.</p>
+<p>Element 12.2 includes firmware updates for storage nodes. <a href="http://docs.netapp.com/us-en/hci/docs/rn_relatedrn.html" target="_blank" rel="noopener">Learn more</a>.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="security-enhancements">Security enhancements</h3>
 <div class="paragraph">
-<p>Element 12.0 resolves many security vulnerabilities for storage nodes and the management node.<br>
-<a href="http://security.netapp.com/" target="_blank" rel="noopener">Learn more</a> about these security enhancements.</p>
+<p>Element 12.2 resolves security vulnerabilities for storage nodes and the management node. <a href="http://security.netapp.com/" target="_blank" rel="noopener">Learn more</a> about these security enhancements.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="session-based-authentication">Session-based authentication</h3>
+<h3 id="new-smart-warning-for-failing-drives">New SMART warning for failing drives</h3>
 <div class="paragraph">
-<p>The Element API now supports token authentication and authorization, enabling you to log on to the Element web UI or individual storage per-node web UIs with either the local cluster admin credentials or LDAP-based cluster admin credentials. One browser login session token covers multiple web UI logins, so you can log in to the Element web UI and then log in to all individual storage per-node web UIs in that storage cluster and not have to re-authenticate with each one.</p>
-</div>
-<div class="paragraph">
-<p>The following are Element API methods related to session-based authentication (the Element API Reference Guide has more information):</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>ListAuthSessionsByClusterAdmin</p>
-</li>
-<li>
-<p>ListActiveAuthSessions</p>
-</li>
-<li>
-<p>ListAuthSessionsByUsername</p>
-</li>
-</ul>
+<p>Element 12.2 now performs periodic health checks on SolidFire appliance drives using SMART health data from the drives. A drive that fails the SMART health check might be close to failure. If a drive fails the SMART health check, a new critical severity cluster fault appears: <code>Drive with serial: &lt;serial number&gt; in slot: &lt;node slot&gt;&lt;drive slot&gt; has failed the SMART overall health check. To resolve this fault, replace the drive</code>.</p>
 </div>
 <h2 id="find-more-information" class="discrete">Find more information</h2>
 <div class="ulist">
@@ -2127,10 +2046,10 @@ Control. You can access this UI at <a href="https://&lt;Node" class="bare">https
 <p><a href="http://docs.netapp.com/hci/index.jsp" target="_blank" rel="noopener">NetApp HCI Documentation Center</a></p>
 </li>
 <li>
-<p><a href="http://docs.netapp.com/sfe-120/index.jsp" target="_blank" rel="noopener">SolidFire and Element Software Documentation Center</a></p>
+<p><a href="http://docs.netapp.com/sfe-122/index.jsp" target="_blank" rel="noopener">SolidFire and Element Software Documentation Center</a></p>
 </li>
 <li>
-<p><a href="https://kb.netapp.com/app/answers/answer_view/a_id/1088658" target="_blank" rel="noopener">Firmware and driver versions for NetApp HCI and NetApp Element software</a></p>
+<p><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software" target="_blank" rel="noopener">Firmware and driver versions for NetApp HCI and NetApp Element software</a></p>
 </li>
 </ul>
 </div>

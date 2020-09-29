@@ -1715,7 +1715,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_all.html">
         Upgrade your NetApp HCI system for version 1.8
       </a></li><li class=" "><a class="na-navbar-padding" href="task_sf_upgrade_all.html">
-        Upgrade your NetApp SolidFire all-flash storage system for Element 12.0
+        Upgrade your NetApp SolidFire all-flash storage system for Element 12.2
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> System upgrade procedures</div>
       </a>
@@ -1783,7 +1783,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-09-21 23:30:10 +0000">09/21/2020</time>
+    <time datetime="2020-09-29 17:37:52 +0000">09/29/2020</time>
     
   
 
@@ -1903,7 +1903,7 @@ You must upgrade to the latest management services bundle before upgrading your 
 <i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
-If you are upgrading an H610S cluster running a pre-11.8 version of Element to Element 12.0 or later, you will need to upgrade Element software (phase 1) and then perform additional upgrade steps (phase 2) for each H610S node in the cluster.
+If you are upgrading an H610S cluster running a pre-11.8 version of Element to Element 12.2, you will need to upgrade Element software (phase 1) and then perform additional upgrade steps (phase 2) for each H610S node in the cluster.
 </td>
 </tr>
 </table>
@@ -2596,7 +2596,7 @@ After the upgrade is complete, the UI prompts you to perform phase 2 of the proc
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>See <a href="#upgrading-h610s-storage-nodes-to-element-12-0-or-later-phase-2">Upgrading H610S storage nodes to Element 12.0 or later (phase 2)</a> and complete the process for each node.</p>
+<p>See <a href="#Upgrading H610S storage nodes to Element 12.2 or later (phase 2)">[Upgrading H610S storage nodes to Element 12.2 or later (phase 2)]</a> and complete the process for each node.</p>
 </li>
 <li>
 <p>Reauthenticate if needed and click <strong>PUT ​/upgrades/{upgradeId}</strong>.</p>
@@ -2898,7 +2898,7 @@ Starting light cluster block service check</pre>
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-If you are upgrading an H610S series node to Element 12.0 or later, you will need to perform additional upgrade steps (phase 2) for each storage node. See <a href="#upgrading-h610s-storage-nodes-to-element-12-0-or-later-phase-2">Upgrading H610S storage nodes to Element 12.0 or later (phase 2)</a>.
+If you are upgrading an H610S series node to Element 12.2, you will need to perform additional upgrade steps (phase 2) for each storage node. See <a href="#upgrading-h610s-storage-nodes-to-element-12-2-phase-2">Upgrading H610S storage nodes to Element 12.2 (phase 2)</a>.
 </td>
 </tr>
 </table>
@@ -3015,7 +3015,7 @@ You can do this by using, for example, SCP. When you upload the ISO file, make s
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-If you are upgrading an H610S series node to Element 12.0 or later, you will need to perform additional upgrade steps (phase 2) for each storage node. See <a href="#upgrading-h610s-storage-nodes-to-element-12-0-or-later-phase-2">Upgrading H610S storage nodes to Element 12.0 or later (phase 2)</a>.
+If you are upgrading an H610S series node to Element 12.2, you will need to perform additional upgrade steps (phase 2) for each storage node. See <a href="#upgrading-h610s-storage-nodes-to-element-12-2-phase-2">Upgrading H610S storage nodes to Element 12.2 (phase 2)</a>.
 </td>
 </tr>
 </table>
@@ -3088,13 +3088,13 @@ Aborting the cluster upgrade while a node is being updated might result in the d
 </div>
 </div>
 <div class="sect1">
-<h2 id="upgrading-h610s-storage-nodes-to-element-12-0-or-later-phase-2">Upgrading H610S storage nodes to Element 12.0 or later (phase 2)</h2>
+<h2 id="upgrading-h610s-storage-nodes-to-element-12-2-phase-2">Upgrading H610S storage nodes to Element 12.2 (phase 2)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If you are upgrading an H610S series node to Element 12.0 or later, the upgrade process involves two phases.</p>
+<p>If you are upgrading an H610S series node to Element 12.2, the upgrade process involves two phases.</p>
 </div>
 <div class="paragraph">
-<p>Phase 1, which is performed first, follows the same steps as the standard upgrade to Element 12.0 process. It installs Element Software and all 5 firmware updates in a rolling fashion across the cluster one node at a time. Due to the firmware payload, the process is estimated to take approximately 1.5 to 2 hours per H610S node, including a single cold-boot cycle at the end of the upgrade for each node.</p>
+<p>Phase 1, which is performed first, follows the same steps as the standard upgrade to Element 12.2 process. It installs Element Software and all 5 firmware updates in a rolling fashion across the cluster one node at a time. Due to the firmware payload, the process is estimated to take approximately 1.5 to 2 hours per H610S node, including a single cold-boot cycle at the end of the upgrade for each node.</p>
 </div>
 <div class="paragraph">
 <p>Phase 2 involves completing steps to perform a complete node shutdown and power disconnect for each H610S node that are described in a required <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB</a>. This phase is estimated to take approximately one hour per H610S node.</p>
@@ -3157,7 +3157,7 @@ If the cluster also has non-H610S nodes, these non-H610S nodes are exempt from p
 <p>Contact NetApp Support for assistance and to schedule this upgrade.</p>
 </li>
 <li>
-<p>Follow the phase 2 upgrade procedure in this <a href="https://kb.netapp.com/app/answers/answer_view/a_id/1103627" target="_blank" rel="noopener">KB</a> that is required to complete an upgrade for each H610S node.</p>
+<p>Follow the phase 2 upgrade procedure in this <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB</a> that is required to complete an upgrade for each H610S node.</p>
 </li>
 </ol>
 </div>

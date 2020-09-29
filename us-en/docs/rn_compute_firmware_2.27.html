@@ -1700,7 +1700,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_all.html">
         Upgrade your NetApp HCI system for version 1.8
       </a></li><li class=" "><a class="na-navbar-padding" href="task_sf_upgrade_all.html">
-        Upgrade your NetApp SolidFire all-flash storage system for Element 12.0
+        Upgrade your NetApp SolidFire all-flash storage system for Element 12.2
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> System upgrade procedures</div>
       </a>
@@ -1768,7 +1768,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-09-16 22:01:34 +0000">09/16/2020</time>
+    <time datetime="2020-09-24 18:19:40 +0000">09/24/2020</time>
     
   
 
@@ -2082,7 +2082,7 @@ Instructions for updating are available in PDF format on the download page.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CSESF-309</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H410C and H300E/H500E/H700E nodes are unable to bring the Mellanox NIC port up after manually bringing the port down when running VMware EXSi 6.7u1.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Run the following command to recover the ports: <code>sxcli network nic set -n vmnic2 -a</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Run the following command to recover the ports: <code>esxcli network nic set -n vmnic2 -a</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CSESF-303</p></td>
@@ -2091,20 +2091,8 @@ Instructions for updating are available in PDF format on the download page.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CSESF-293 / PE-10130</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Mellanox NIC firmware can be downgraded by the compute firmware 12.2.91 package.</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>If you want to upgrade other firmware on H410C or H300E/H500E/H700E nodes and upgrade Mellanox NIC out-of-band, perform the following steps:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Upgrade other firmware via compute firmware bundle 12.2.91.</p>
-</li>
-<li>
-<p>Upgrade Mellanox firmware via out-of-band methods.</p>
-</li>
-</ol>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mellanox NIC firmware can be downgraded by BootstrapOS after you upgrade to the Compute Firmware Bundle version 2.27.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reinstall Compute Firmware Bundle version 2.27.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PE-11033</p></td>
