@@ -26,6 +26,10 @@ function redirectToWebserver(pathChunks, originUrl, proxyUrl) {
 	}
 }
 
+function pageRedirect(url) {
+		location.href = url;
+}
+
 function getBrowserLocale(browserLocales, siteLocales) {
 	for (var s = 0; s < browserLocales.length; s++) {
 		if (siteLocales.indexOf(browserLocales[s]) != -1) {
