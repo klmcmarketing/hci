@@ -1067,9 +1067,6 @@
   
 
 
-  
-
-
 
 
           
@@ -1604,8 +1601,6 @@
         Network configuration option C
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_timekeeping.html">
         DNS and timekeeping requirements
-      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_timekeeping.html">
-        DNS and timekeeping requirements
       </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_environmental.html">
         Environmental requirements
       </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_protection_domains.html">
@@ -1768,7 +1763,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-09-24 18:19:40 +0000">09/24/2020</time>
+    <time datetime="2020-10-02 21:07:44 +0000">10/02/2020</time>
     
   
 
@@ -1950,10 +1945,16 @@
 <div class="ulist">
 <ul>
 <li>
-<p><strong>ESXi 6.5</strong>: Version 4.16.13.5</p>
+<p><strong>ESXi 7.0</strong>: H300E/H500E/H700E/H410C: Version 4.19.16.1</p>
+</li>
+<li>
+<p><strong>ESXi 7.0</strong>: H610C/H615C: Version 4.17.15.16</p>
 </li>
 <li>
 <p><strong>ESXi 6.7</strong>: Version 4.17.15.16</p>
+</li>
+<li>
+<p><strong>ESXi 6.5</strong>: Version 4.16.13.5</p>
 </li>
 </ul>
 </div>
@@ -1968,6 +1969,9 @@ Before upgrading to version 2.27, make sure you check the current ESXi driver ve
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>While NetApp Deployment Engine 1.8P1 does not deploy ESXi version 7.0, ESXi 7.0 is supported as a self-install or manual upgrade option. When you manually install or upgrade host OSes, NetApp cannot control the drivers and firmware for these OSes.</p>
 </div>
 </div>
 </div>
@@ -2091,7 +2095,7 @@ Instructions for updating are available in PDF format on the download page.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CSESF-293 / PE-10130</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Mellanox NIC firmware can be downgraded by BootstrapOS after you upgrade to the Compute Firmware Bundle version 2.27.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mellanox NIC firmware can be downgraded by Bootstrap OS after you upgrade to the Compute Firmware Bundle version 2.27.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Reinstall Compute Firmware Bundle version 2.27.</p></td>
 </tr>
 <tr>

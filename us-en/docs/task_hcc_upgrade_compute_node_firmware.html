@@ -1067,9 +1067,6 @@
   
 
 
-  
-
-
 
 
           
@@ -1619,8 +1616,6 @@
         Network configuration option C
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_timekeeping.html">
         DNS and timekeeping requirements
-      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_timekeeping.html">
-        DNS and timekeeping requirements
       </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_environmental.html">
         Environmental requirements
       </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_protection_domains.html">
@@ -1783,7 +1778,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-09-18 15:32:56 +0000">09/18/2020</time>
+    <time datetime="2020-10-05 16:17:46 +0000">10/05/2020</time>
     
   
 
@@ -1846,7 +1841,7 @@
 <p><strong>System ports</strong>: If you are using NetApp Hybrid Cloud Control for upgrades, you have ensured that the necessary ports are open. See <a href="hci_prereqs_required_network_ports.html">Network ports</a> for more information.</p>
 </li>
 <li>
-<p><strong>Minimum BMC and BIOS versions</strong>: The node you intend to upgrade meets the following minimum requirements:</p>
+<p><strong>Minimum BMC and BIOS versions</strong>: The node you intend to upgrade using NetApp Hybrid Cloud Control meets the following minimum requirements:</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -1862,6 +1857,11 @@
 </thead>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H300E, H500E, H700E​</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.84.00</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NA2.1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H410C​</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">All versions supported (no upgrade required)​</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">All versions supported (no upgrade required)​</p></td>
@@ -1869,10 +1869,39 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">H610C​</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3.96.07​</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3B01 ​ ​</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3B01</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H615C​</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.68.07</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3B08.CO ​ ​</p></td>
 </tr>
 </tbody>
 </table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+H615C compute nodes must update BMC firmware to version 4.68 using the <a href="https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.27.html">compute firmware bundle 2.27</a> to enable NetApp Hybrid Cloud Control to perform future firmware upgrades.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+A Redfish license is required for H300E, H500E, and H700E compute nodes to enable NetApp Hybrid Cloud Control to perform future firmware upgrades. Contact NetApp Support to get the license installed manually until a new compute firmware bundle automates this process in a follow-on release.
+</td>
+</tr>
+</table>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1920,10 +1949,10 @@ For a complete matrix of firmware and driver firmware for your hardware, see <a 
 <div class="ulist">
 <ul>
 <li>
-<p>For H610C and H410C: <a href="#use-netapp-hybrid-cloud-control-ui-to-upgrade-a-compute-node">Use NetApp Hybrid Cloud Control UI to upgrade a compute node</a> (Recommended)</p>
+<p><a href="#use-netapp-hybrid-cloud-control-ui-to-upgrade-a-compute-node">Use NetApp Hybrid Cloud Control UI to upgrade a compute node</a> (Recommended)</p>
 </li>
 <li>
-<p>For H610C and H410C: <a href="#use-netapp-hybrid-cloud-control-api-to-upgrade-a-compute-node">Use NetApp Hybrid Cloud Control API to upgrade a compute node</a></p>
+<p><a href="#use-netapp-hybrid-cloud-control-api-to-upgrade-a-compute-node">Use NetApp Hybrid Cloud Control API to upgrade a compute node</a></p>
 </li>
 <li>
 <p>For compute node image 12.0: <a href="#use-a-usb-drive-with-the-latest-firmware-image-downloaded">Use a USB drive with the latest firmware image downloaded</a></p>

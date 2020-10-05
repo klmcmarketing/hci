@@ -1067,9 +1067,6 @@
   
 
 
-  
-
-
 
 
           
@@ -1604,8 +1601,6 @@
         Network configuration option C
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_timekeeping.html">
         DNS and timekeeping requirements
-      </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_timekeeping.html">
-        DNS and timekeeping requirements
       </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_environmental.html">
         Environmental requirements
       </a></li><li class=" "><a class="na-navbar-padding" href="hci_prereqs_protection_domains.html">
@@ -1768,7 +1763,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-09-17 15:37:42 +0000">09/17/2020</time>
+    <time datetime="2020-10-05 16:37:58 +0000">10/05/2020</time>
     
   
 
@@ -1816,7 +1811,7 @@
 <p>H610S BMC 3.84.07 contains various bug fixes and new features. This release brings to the field critical updated BMC firmware ahead of subsequent Element software and storage firmware bundle releases, which will also include this updated BMC firmware for H610S nodes.</p>
 </div>
 <div class="paragraph">
-<p>You can upgrade the H610S BMC firmware directly out-of-band, and upgrade instructions can be found in <a href="#upgrading-bmc-firmware-on-h610s-nodes">Upgrading BMC firmware on H610S nodes</a>.</p>
+<p>This firmware package is supported on Element versions 11.8, 12.0, and 12.2. You can upgrade the H610S BMC firmware directly out-of-band, and upgrade instructions can be found in <a href="#upgrading-bmc-firmware-on-h610s-nodes">Upgrading BMC firmware on H610S nodes</a>.</p>
 </div>
 </div>
 </div>
@@ -1921,7 +1916,13 @@
 <p>You have checked for alerts by clicking <strong>Reporting</strong> &gt; <strong>Alerts</strong> in the NetApp Element software web UI to ensure that there are no errors.</p>
 </li>
 <li>
-<p>You have downloaded the BMC update file.</p>
+<p>You have downloaded the BMC update package.</p>
+</li>
+<li>
+<p>You have ensured that the BMC and the computer you are using to perform the update are located on the same network.</p>
+</li>
+<li>
+<p>You have contacted NetApp Support for assistance with the BMC upgrade.</p>
 </li>
 </ul>
 </div>
@@ -1932,14 +1933,17 @@
 <p>Log in to the BMC console using your web browser: <code><a href="https://&lt;BMC_IP&gt;/#login" class="bare">https://&lt;BMC_IP&gt;/#login</a></code>, where <code>&lt;BMC_IP&gt;</code> is the IP address of the BMC.</p>
 </li>
 <li>
-<p>Click <strong>Maintenance</strong> &gt; <strong>Firmware Update</strong>.</p>
+<p>Click <strong>Maintenance</strong>.</p>
 </li>
 <li>
-<p>On the <strong>Firmware Update</strong> screen, do the following:</p>
+<p>Click <strong>Preserve Configuration</strong>.</p>
+</li>
+<li>
+<p>Do the following:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Disable the <strong>Preserve all configuration</strong> checkbox.</p>
+<p>Disable the <strong>Check All</strong> checkbox.</p>
 </li>
 <li>
 <p>Enable the <strong>IPMI</strong> checkbox.</p>
@@ -1959,18 +1963,6 @@
 </li>
 <li>
 <p>The <strong>Authentication</strong> setting is used to preserve custom accounts configured for BMC login.</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Ensure that you have disabled the <strong>Preserve all configuration</strong> checkbox.
-</td>
-</tr>
-</table>
-</div>
 </li>
 </ul>
 </div>
@@ -1979,18 +1971,65 @@ Ensure that you have disabled the <strong>Preserve all configuration</strong> ch
 </div>
 </li>
 <li>
-<p>Choose the BMC update file you downloaded and click <strong>Start firmware update</strong> to start the upgrade process.</p>
-<div class="paragraph">
-<p>The process can take up to 5 minutes to complete if the BMC firmware file is in the node&#8217;s network; otherwise the process will take longer.</p>
+<p>Click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Firmware Update</strong>.</p>
+</li>
+<li>
+<p>Disable the <strong>Preserve all Configuration</strong> checkbox.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Ensure that you have disabled the <strong>Preserve all Configuration</strong> checkbox.
+</td>
+</tr>
+</table>
 </div>
 </li>
 <li>
-<p>Verify the firmware version by looking at the version listed on the <strong>Dashboard</strong> &gt; <strong>More info</strong> page.</p>
+<p>On the computer you are using to perform the update, extract the contents of the BMC update package.</p>
+</li>
+<li>
+<p>In the BMC web UI, under the <strong>Select Firmware Image</strong> section of the <strong>Firmware Update</strong> page, click <strong>Choose File</strong>.</p>
+</li>
+<li>
+<p>Browse to the <code>rom.ima_enc</code> file within the extracted package contents and select it.</p>
+</li>
+<li>
+<p>Click <strong>Start firmware update</strong> and click <strong>OK</strong> when the prompt appears asking if you want to continue.</p>
+</li>
+<li>
+<p>Click <strong>OK</strong> when a prompt appears indicating that a firmware reset is happening.</p>
+</li>
+<li>
+<p>After several minutes, use a new browser tab to log in to the BMC web UI.</p>
+</li>
+<li>
+<p>On the BMC dashboard, go to <strong>Device Information</strong> &gt; <strong>More info</strong>.</p>
+</li>
+<li>
+<p>Confirm that the <strong>Firmware Revision</strong> is <strong>3.84.07</strong>.</p>
 </li>
 <li>
 <p>Perform this procedure for the remaining H610S storage nodes in your cluster.</p>
 </li>
 </ol>
+</div>
+<h2 id="find-more-information" class="discrete">Find more Information</h2>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/hci/index.jsp" target="_blank" rel="noopener">NetApp HCI Documentation Center</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/documentation/hci.aspx" target="_blank" rel="noopener">NetApp HCI Resources Page</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
