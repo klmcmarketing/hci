@@ -1,0 +1,2849 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head class="at-element-marker">
+  <title>Upgrade Element software</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Upgrade Element software">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://docs.netapp.com/hci/ja-jp/docs/task_hcc_upgrade_element_software.html">
+	<meta property="og:description" content="As part of a NetApp HCI or SolidFire system upgrade, you upgrade NetApp Element software.">
+  <meta property="og:image" content="https://docs.netapp.com/hci/ja-jp/images/logo-tophat-social.png">
+  <meta property="og:image:alt" content="NetApp Logo">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation">
+  <meta http-equiv="nss-subtype" content="User Guide">
+  
+  <meta name="description" content="As part of a NetApp HCI or SolidFire system upgrade, you upgrade NetApp Element software.">
+  <meta name="keywords" content=" netapp, hci, HealthTools, cluster, element, H610S upgrade, hcc">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/hci/ja-jp/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/hci/ja-jp/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/hci/ja-jp/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/hci/ja-jp/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/hci/ja-jp/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/hci/ja-jp/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/hci/ja-jp/css/www-netapp-library-critical.min.css" media="all">
+  <link rel="stylesheet" href="/hci/ja-jp/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/hci/ja-jp/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href="/hci/ja-jp/css/na-utility.css" type="text/css">
+  <link rel="stylesheet" href="/hci/ja-jp/css/na-sidebar.css" type="text/css">
+  <link rel="stylesheet" href="/hci/ja-jp/css/clouddocs.css" type="text/css">
+  <link rel="stylesheet" href="/hci/ja-jp/css/na-pagenav.css" type="text/css">
+
+  
+
+  
+  <link rel="stylesheet" href="/hci/ja-jp/css/na-feature.css" type="text/css">
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src="/hci/ja-jp/js/na-search.js"></script>
+  
+
+  
+  <script src="/hci/ja-jp/js/na-pagenav.js"></script>
+  
+
+  <link rel="stylesheet" href="/hci/ja-jp/css/prism.css" type="text/css">
+  <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
+
+
+<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/clouddocs.js"></script>
+  
+  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
+  
+
+  <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="/hci/ja-jp/js/toc.js"></script>
+  <script src="/hci/ja-jp/js/customscripts.js"></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+
+  <!-- Controls the i18n Browser Redirection -->
+  <script>
+    
+    var siteLocales = [];
+    
+      siteLocales.push("us-en");
+    
+      siteLocales.push("ja-jp");
+    
+
+    standardizeUrl(siteLocales, "clouddocs.netapp.com", "https://docs.netapp.com");
+    
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Product and Solutions</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Support and Training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Customer Stories</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/hci/ja-jp/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/hci/ja-jp/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/hci/ja-jp/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search"></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/hci/ja-jp/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+        <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-property-bar__toolbar">
+<div id="ie-i18n-tooltip" class="luci-tooltip luci-tooltip--right-bottom">
+        <div class="luci-tooltip__trigger" aria-describedby="luci-tooltip-1">
+          <svg class="luci-icon" aria-hidden="true">
+            <use xlink:href="/hci/ja-jp/common/svg/sprite.svg#circle-info">
+            </use>
+          </svg>
+        </div>
+        <div class="luci-tooltip__content" role="tooltip" id="luci-tooltip-1">
+          <div class="luci-tooltip__content-inner">
+            <div id="nmt-disclaimer" class="luci-tooltip__text"> NetAppは、業界をリードするニューラル機械翻訳ツールを利用して、このコンテンツを提供しています。 </div>
+          </div>
+        </div>
+      </div>
+<!-- Start Language Selector -->
+      <div id="ie-i18n" class="n-property-bar__lang-selector">
+        <div id="ie-i18n-menu">
+        <span class="ie-i18n-lang">日本語</span>
+          <button class="ie-i18n-icon-container" type="button">
+            <svg class="n-globe__icon" aria-labelledby="title">
+              <title>globe</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/hci/ja-jp/common/svg/sprite.svg#globe"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+          <div class="n-language-selector-menu">
+            <div class="n-language-selector-menu__header">
+              <span class="n-language-selector-menu__title">Select Your Language</span>
+            </div>
+            <ul class="n-menu__list">
+              <li class="n-menu__list-column">
+                <ul class="n-menu__list">
+                  
+                  
+                  
+                  
+                  <li class="n-menu__list-item n-menu__list-item--level-1">
+                    <a href="/hci/us-en/" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <li class="n-menu__list-item n-menu__list-item--level-1">
+                    <a href="/hci/ja-jp/" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </ul>
+              </li>
+            </ul>
+            <div class="menu__footer">
+              <p>Current Language: 日本語
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Language Selector -->
+
+      <div class="n-property-bar__cta"></div>
+    </div>
+
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">Home</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">Documentation</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/hci/ja-jp/">HCI</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          Upgrade Element software
+        </li>
+      </ul>
+    </div>
+
+    <div style="clear: both"></div>
+<!-- Main needs to have height -->
+  </div>
+</div>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    Download PDF
+    <span>
+      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+    </span>
+  </a>
+</div>
+<ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
+<div class="n-pdf-section">
+      <span class="n-pdf-section-title">
+        Site
+      </span>
+    </div>
+    <li>
+      <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
+        <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+        NetApp HCI configuration and management documentation
+      </a>
+    </li>
+  
+
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              
+                Sections
+              
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Release_Notes.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Release Notes
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              
+                Sections
+              
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Concepts.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Concepts
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Storage.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Storage
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              
+                Sections
+              
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Requirements_and_pre_deployment_tasks.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Requirements and pre-deployment tasks
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Network_configuration.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Network configuration
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              
+                Sections
+              
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Get_started_with_NetApp_HCI.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Get started with NetApp HCI
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              
+                Sections
+              
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Deploy_NetApp_HCI.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Deploy NetApp HCI
+          </a>
+        </li>
+        <span>
+          
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Access_the_NetApp_Deployment_Engine.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Access the NetApp Deployment Engine
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Configure_VMware_vSphere.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Configure VMware vSphere
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Inventory_selection.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Inventory selection
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Post_deployment_tasks.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Post-deployment tasks
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              
+                Sections
+              
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Manage_NetApp_HCI.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Manage NetApp HCI
+          </a>
+        </li>
+        <span>
+          
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Monitor your NetApp HCI system
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Work_with_the_management_node.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Work with the management node
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Install_or_recover_a_management_node.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Install or recover a management node
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Work_with_the_management_node_UI.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Work with the management node UI
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Work_with_the_management_node_REST_API.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Work with the management node REST API
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Power_your_NetApp_HCI_system_off_or_on.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Power your NetApp HCI system off or on
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              
+                Sections
+              
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Upgrade_your_NetApp_HCI_or_SolidFire_system.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Upgrade your NetApp HCI or SolidFire system
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Upgrade_sequences.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Upgrade sequences
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/System_upgrade_procedures.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            System upgrade procedures
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+    <div class="n-pdf-section">
+  <span class="n-pdf-section-title">
+    This page
+  </span>
+</div>
+
+<li class="active">
+  <a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_element_software.pdf">
+    <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+    Upgrade Element software
+  </a>
+</li>
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/vSphere_upgrade_sequences_with_vCenter_Plug_in.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            vSphere upgrade sequences with vCenter Plug-in
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              
+                Sections
+              
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Expand_your_NetApp_HCI_system.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Expand your NetApp HCI system
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              
+                Sections
+              
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Maintain_H_series_hardware.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Maintain H-series hardware
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+
+</ul>
+
+<script>
+  $("#toggleContainerPdf li.active").parents('li').toggle('display');
+  $("#toggleContainerPdf li.active").parents('span.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+  });
+</script><ul id="mysidebar" class="nav">
+<li class=" "><a class="na-navbar-padding" href="..../../../index.html">
+        NetApp HCI Documentation
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="index.html">
+        NetApp HCI Configuration and Management
+      </a></li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Release Notes</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="rn_whatsnew.html">
+        What's new in NetApp HCI
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="rn_relatedrn.html">
+        Additional release information
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Concepts</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_product_overview.html">
+        Product overview
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="concept_cg_hci_accounts.html">
+        Accounts
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_dataprotection.html">
+        Data protection
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_clusters.html">
+        Clusters
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_nodes.html">
+        Nodes
+      </a></li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Storage</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_volumes.html">
+        Volumes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
+        Maintenance mode
+      </a></li>
+</ul>
+</li>
+<li class=" "><a class="na-navbar-padding" href="concept_cg_hci_licensing.html">
+        Licensing
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="concept_cg_hci_security.html">
+        Security
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_performance.html">
+        Performance
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Requirements and pre-deployment tasks</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_overview.html">
+        Requirements for NetApp HCI deployment
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_required_network_ports.html">
+        Network port requirements
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_network_switch.html">
+        Network and switch requirements
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_network_cables.html">
+        Network cable requirements
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_ip_address.html">
+        IP address requirements
+      </a></li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Network configuration</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_network_configuration.html">
+        Network configuration options overview
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_network_configuration_option_A.html">
+        Network configuration option A
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_network_configuration_option_B.html">
+        Network configuration option B
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_network_configuration_option_C.html">
+        Network configuration option C
+      </a></li>
+</ul>
+</li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_timekeeping.html">
+        DNS and timekeeping requirements
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_environmental.html">
+        Environmental requirements
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_protection_domains.html">
+        Protection Domains
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_witness_nodes.html">
+        Witness Node resource requirements for two-node storage clusters
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Get started with NetApp HCI</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_hci_getstarted.html">
+        NetApp HCI installation and deployment overview
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_installhw.html">
+        Install H-series hardware
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_LACP_configuration.html">
+        Configure LACP for optimal storage performance
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_task_validate_config_advisor.html">
+        Validate your environment with Active IQ Config Advisor
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="hci_prereqs_final_prep.html">
+        Configure IPMI for each node
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Deploy NetApp HCI</div>
+      </a>
+      <ul>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Access the NetApp Deployment Engine</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_nde_access_overview.html">
+        NetApp Deployment Engine access options overview
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_access_no_dhcp.html">
+        Access the NetApp Deployment Engine in environments without DHCP
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_access_dhcp.html">
+        Access the NetApp Deployment Engine in environments with DHCP
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_access_manual_ip.html">
+        Manually assign IP addresses to access the NetApp Deployment Engine
+      </a></li>
+</ul>
+</li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_start_deployment.html">
+        Start your deployment
+      </a></li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Configure VMware vSphere</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_nde_config_vsphere_overview.html">
+        vSphere configuration overview
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_configure_new_vsphere.html">
+        Configure a new VMware vSphere environment
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_join_existing_vsphere.html">
+        Join an existing VMware vSphere deployment
+      </a></li>
+</ul>
+</li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_configure_credentials.html">
+        Configure credentials
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_select_net_topology.html">
+        Select a network topology
+      </a></li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Inventory selection</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_nde_node_compatibility.html">
+        Inventory selection and node compatibility
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_select_inventory.html">
+        Select inventory
+      </a></li>
+</ul>
+</li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_configure_net_settings.html">
+        Configure network settings
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_review_deploy.html">
+        Review and deploy
+      </a></li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Post-deployment tasks</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_nde_post_deployment_overview.html">
+        Post-deployment tasks overview
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_supported_net_changes.html">
+        Supported networking changes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_disable_smartd.html">
+        Disable the smartd service on NetApp HCI compute nodes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_update_vsphere.html">
+        Keep VMware vSphere up to date
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_install_GPU_drivers.html">
+        Install GPU drivers for GPU-enabled compute nodes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_access_ui_fqdn.html">
+        Configure Fully Qualified Domain Name web UI access
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_access_hcc.html">
+        Access NetApp Hybrid Cloud Control
+      </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Manage NetApp HCI</div>
+      </a>
+      <ul>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Monitor your NetApp HCI system</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_dashboard.html">
+        View resources on the HCC Dashboard
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_nodes.html">
+        View your inventory on the Nodes page
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_edit_bmc_info.html">
+        Edit BMC connection information
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_volumes.html">
+        Monitor volumes on your storage cluster
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_activeiq.html">
+        Monitor performance, capacity, and cluster health with Active IQ
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_collectlogs.html">
+        Collect logs for troubleshooting
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Work with the management node</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_work_overview.html">
+        Management node overview
+      </a></li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Install or recover a management node</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_install.html">
+        Install a management node
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_install_add_storage_NIC.html">
+        Configure a storage Network Interface Controller (NIC)
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_recover.html">
+        Recover a management node
+      </a></li>
+</ul>
+</li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_access_ui.html">
+        Access the management node
+      </a></li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Work with the management node UI</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_work_overview_UI.html">
+        Management node UI overview
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_enable_alerts.html">
+        Configure alert monitoring on NetApp HCI
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_settings.html">
+        Modify and test the management node network, cluster, and system settings
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_run_system_utilities.html">
+        Run system utilities from the management node
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Work with the management node REST API</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_work_overview_API.html">
+        Management node REST API UI overview
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_api_get_authorizationtouse.html">
+        Get authorization to use REST APIs
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_enable_activeIQ.html">
+        Enable Active IQ and NetApp HCI monitoring
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_add_assets.html">
+        Add compute and controller assets to the management node
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_remove_assets.html">
+        Remove an asset from the management node
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_edit_vcenter_assets.html">
+        View or edit existing controller assets
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_configure_proxy_server.html">
+        Configure a proxy server for the management node
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_manage_storage_cluster_assets.html">
+        Manage storage cluster assets
+      </a></li>
+</ul>
+</li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_enable_remote_support_connections.html">
+        Enable remote NetApp Support connections
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Power your NetApp HCI system off or on</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_nde_hci_power_off_on.html">
+        NetApp HCI power overview
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_hci_power_off_compute.html">
+        Power off compute resources for a NetApp HCI system
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_hci_power_off_storage.html">
+        Power off storage resources for a NetApp HCI system
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_hci_power_on_storage.html">
+        Power on storage resources for a NetApp HCI system
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_nde_hci_power_on_compute.html">
+        Power on compute resources for a NetApp HCI system
+      </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Upgrade your NetApp HCI or SolidFire system</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_upgrade_overview.html">
+        Upgrades overview
+      </a></li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Upgrade sequences</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_all.html">
+        Upgrade your NetApp HCI system for version 1.8
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_sf_upgrade_all.html">
+        Upgrade your NetApp SolidFire all-flash storage system for Element 12.2
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> System upgrade procedures</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_update_management_services.html">
+        Update management services
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_upgrade_element_latest_healthtools.html">
+        Upgrade to the latest HealthTools
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_element_prechecks.html">
+        Run Element storage health checks prior to upgrading storage
+      </a></li>
+<li class="  active "><a class="na-navbar-padding" href="task_hcc_upgrade_element_software.html">
+        Upgrade Element software
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_storage_firmware.html">
+        Upgrade storage firmware
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_management_node.html">
+        Upgrade a management node
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_vcp_upgrade_plugin.html">
+        Upgrade the NetApp Element Plug-in for vCenter Server
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_upgrade_compute_prechecks.html">
+        Run compute node health checks prior to upgrading compute firmware
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_compute_node_drivers.html">
+        Update compute node drivers
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_upgrade_compute_node_firmware.html">
+        Upgrade compute node firmware
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> vSphere upgrade sequences with vCenter Plug-in</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_hci_upgrade_all_vsphere.html">
+        Upgrade your vSphere components for a NetApp HCI system with the Element Plug-in for vCenter Server
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_sf_upgrade_all_vsphere.html">
+        Upgrade your vSphere components for a NetApp SolidFire storage system with the Element Plug-in for vCenter Server
+      </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Expand your NetApp HCI system</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_hcc_expandoverview.html">
+        Expand overview
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_expand_storage.html">
+        Expand NetApp HCI storage resources
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_expand_compute.html">
+        Expand NetApp HCI compute resources
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_expand_compute_and_storage.html">
+        Expand NetApp storage and compute resources
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_removewn.html">
+        Remove Witness Nodes after expanding cluster
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Maintain H-series hardware</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_hci_hwmainoverview.html">
+        H-series hardware maintenance overview
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_hserieschassisrepl.html">
+        Replace 2U H-series chassis
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_dcpsurepl.html">
+        Replace DC power supply units in H615C and H610S nodes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_dimmcomputerepl.html">
+        Replace DIMMs in compute nodes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_driverepl.html">
+        Replace drives for storage nodes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_h410crepl.html">
+        Replace H410C nodes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_h410srepl.html">
+        Replace H410S nodes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_h610ch615crepl.html">
+        Replace H610C and H615C nodes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_h610srepl.html">
+        Replace H610S nodes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_psurepl.html">
+        Replace power supply units
+      </a></li>
+</ul>
+</li>
+<li class=" "><a class="na-navbar-padding" href="reference_notices_hci.html">
+        Legal notices
+      </a></li>
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">Elementソフトウェアのアップグレード</h1></div>
+<p class="page-details"><time datetime="2020-10-28 22:20:51 +0000">2020年10月28日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_element_software.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<div id="preamble"><div class="sectionbody">
+<div class="paragraph lead"><p>NetApp Elementソフトウェアをアップグレードするには、NetAppハイブリッドクラウドコントロールUI、REST API、またはHealthToolsスイートのツールを使用できます。 Elementソフトウェアのアップグレード中は、ノードの追加と削除、ドライブの追加と削除、イニシエーター、ボリュームアクセスグループ、仮想ネットワークなどに関連付けられたコマンドなど、特定の操作が抑制されます。</p></div>
+<div class="ulist">
+<div class="title">必要なもの</div>
+<ul>
+<li><p><strong>管理者権限</strong>：アップグレードを実行するためのストレージクラスター管理者権限があります。</p></li>
+<li><p><strong>有効なアップグレードパス</strong>：アップグレード先のElementバージョンのアップグレードパス情報を確認し、アップグレードパスが有効であることを確認しました。<br> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software">NetApp KB：NetAppElementソフトウェアを実行しているストレージクラスターのアップグレードマトリックス</a></p></li>
+<li><p><strong>システム時刻の同期</strong>：すべてのノードのシステム時刻が同期され、ストレージクラスターとノードに対してNTPが正しく構成されていることを確認しました。各ノードは、ノードごとのWeb UI（ <code>https://[IP address]:442</code> ）でDNSネームサーバーを使用して構成する必要があり、タイムスキューに関連する未解決のクラスター障害はありません。</p></li>
+<li><p><strong>システムポート</strong>：アップグレードにNetApp Hybrid Cloud Controlを使用している場合は、必要なポートが開いていることを確認しました。詳細については、<a href="hci_prereqs_required_network_ports.html">ネットワークポート</a>を参照してください。</p></li>
+<li><p><strong>管理ノード</strong>：NetApp Hybrid Cloud Control UIおよびAPIの場合、環境内の管理ノードはバージョン11.3を実行しています。</p></li>
+<li><p><strong>管理サービス</strong>：管理サービスバンドルを最新バージョンに更新しました。</p></li>
+</ul>
+</div>
+<div class="admonitionblock important"><table><tr>
+<td class="icon"><i class="fa icon-important" title="重要"></i></td>
+<td class="content"> Elementソフトウェアをバージョン12にアップグレードする前に、最新の管理サービスバンドルにアップグレードする必要があります。Elementソフトウェアをバージョン12.2に更新する場合は、続行するために管理サービス2.14.60以降が必要です。</td>
+</tr></table></div>
+<div class="ulist"><ul>
+<li><p><strong>クラスターの状態</strong>：<strong>クラスターを</strong>アップグレードする準備ができていることを確認しました。<a href="task_hcc_upgrade_element_prechecks.html">ストレージをアップグレードする前に、要素ストレージのヘルスチェック</a>を<a href="task_hcc_upgrade_element_prechecks.html">実行するを</a>参照してください。</p></li>
+<li><p> <strong>H610Sノード用のBMCの更新</strong>： <strong>H610Sノード用</strong>のBMCバージョンをアップグレードしました。<a href="rn_H610S_BMC_3.84.07.html" target="_blank" rel="noopener">リリースノートとアップグレード手順を</a>参照して<a href="rn_H610S_BMC_3.84.07.html" target="_blank" rel="noopener">ください</a>。</p></li>
+</ul></div>
+<div class="paragraph">
+<div class="title">アップグレードオプション</div>
+<p>次のElementソフトウェアアップグレードオプションのいずれかを選択します。</p>
+</div>
+<div class="ulist"><ul>
+<li><p> <a href="#use-netapp-hybrid-cloud-control-ui-to-upgrade-element-storage">NetApp Hybrid Cloud ControlUIを使用してElementストレージをアップグレードする</a></p></li>
+<li><p><a href="#use-netapp-hybrid-cloud-control-api-to-upgrade-element-storage">NetApp Hybrid Cloud ControlAPIを使用してElementストレージをアップグレードする</a></p></li>
+<li><p><a href="#upgrade-element-software-at-connected-sites-using-healthtools">HealthToolsを使用して、接続されたサイトでElementソフトウェアをアップグレードします</a></p></li>
+<li><p><a href="#upgrade-element-software-at-dark-sites-using-healthtools">HealthToolsを使用して暗いサイトでElementソフトウェアをアップグレードする</a></p></li>
+</ul></div>
+<div class="admonitionblock important"><table><tr>
+<td class="icon"><i class="fa icon-important" title="重要"></i></td>
+<td class="content">H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合は、ストレージノードごとに追加のアップグレード手順（<a href="#upgrading-h610s-storage-nodes-to-element-12-2-phase-2">フェーズ2</a> ）を実行する必要があります。 Element 11.8以降を実行している場合、追加のアップグレード手順（フェーズ2）は必要ありません。</td>
+</tr></table></div>
+</div></div>
+<div class="sect1">
+<h2 id="use-netapp-hybrid-cloud-control-ui-to-upgrade-element-storage"> NetApp Hybrid Cloud ControlUIを使用してElementストレージをアップグレードする</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>NetApp Hybrid Cloud Control UIを使用して、ストレージクラスターをアップグレードできます。</p></div>
+<div class="ulist">
+<div class="title">必要なもの</div>
+<ul><li>
+<p>管理ノードがインターネットに接続されていない場合は、関連する場所からパッケージをダウンロードしています。</p>
+<div class="ulist"><ul>
+<li><p> <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab" target="_blank" rel="noopener">NetAppHCIストレージクラスター用のストレージファームウェアパッケージ</a></p></li>
+<li><p><a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab" target="_blank" rel="noopener">Elementソフトウェアを実行しているSolidFireストレージクラスター用のストレージファームウェアパッケージ</a></p></li>
+</ul></div>
+</li></ul>
+</div>
+<div class="admonitionblock caution"><table><tr>
+<td class="icon"><i class="fa icon-caution" title="注意"></i></td>
+<td class="content">NetApp Hybrid Cloud Controlを使用してストレージクラスターをアップグレードする際の潜在的な問題とその回避策については、 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">KBの記事を</a>参照して<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">ください</a>。</td>
+</tr></table></div>
+<div class="admonitionblock tip"><table><tr>
+<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="content"> H610S以外のプラットフォームの場合、アップグレードプロセスにはノードあたり約30分かかります。</td>
+</tr></table></div>
+<div class="olist arabic">
+<div class="title">ステップ</div>
+<ol class="arabic">
+<li>
+<p>Webブラウザーを開き、管理ノードのIPアドレスを参照します。</p>
+<div class="listingblock"><div class="content"><pre> https：// &lt;ManagementNodeIP&gt;</pre></div></div>
+</li>
+<li><p>ストレージクラスター管理者の資格情報を入力して、NetApp Hybrid CloudControlにログインします。</p></li>
+<li><p>インターフェイスの右上にある[<strong>アップグレード]を</strong>クリックします。</p></li>
+<li>
+<p> [<strong>アップグレード]</strong>ページで、[<strong>ストレージ]を</strong>選択します。</p>
+<div class="paragraph"><p> [<strong>ストレージ</strong>]タブには、インストールの一部であるストレージクラスターが一覧表示されます。 NetApp Hybrid Cloud Controlがクラスターにアクセスできない場合、そのクラスターは[<strong>アップグレード]</strong>ページに表示されません。</p></div>
+</li>
+<li>
+<p>次のオプションから選択し、クラスターに適用可能な一連の手順を実行します。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead><tr>
+<th class="tableblock halign-left valign-top">オプション</th>
+<th class="tableblock halign-left valign-top">ステップ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。</p></td>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="olist arabic"><ol class="arabic">
+<li><p>アップグレードするクラスターの横にあるドロップダウン矢印をクリックし、[<strong>要素</strong>]タブで利用可能なアップグレードバージョンから選択します。</p></li>
+<li><p> [<strong>アップグレードの開始]を</strong>クリックします。</p></li>
+</ol></div>
+<div class="admonitionblock tip"><table><tr>
+<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="content">
+<strong>アップグレードステータス</strong>は、プロセスのステータスを反映するためにアップグレード中に変更されます。また、アップグレードの一時停止やアップグレードがエラーを返した場合など、実行したアクションに応じて変化します。<a href="#upgrade-status-changes">アップグレードステータスの変更を</a>参照してください。</td>
+</tr></table></div>
+<div class="admonitionblock note"><table><tr>
+<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="content">アップグレードの進行中は、ページを離れて後でページに戻り、進行状況の監視を続けることができます。クラスタ行が折りたたまれている場合、ページはステータスと現在のバージョンを動的に更新しません。テーブルを更新するには、クラスター行を展開する必要があります。そうしないと、ページを更新できます。</td>
+</tr></table></div>
+<div class="paragraph"><p>アップグレードの完了後にログをダウンロードできます。</p></div>
+</div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。</p></td>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="olist arabic"><ol class="arabic">
+<li><p> [<strong>参照]</strong>をクリックして、ダウンロードしたアップグレードパッケージをアップロードします。</p></li>
+<li><p>アップロードが完了するのを待ちます。プログレスバーにアップロードのステータスが表示されます。</p></li>
+</ol></div>
+<div class="admonitionblock caution"><table><tr>
+<td class="icon"><i class="fa icon-caution" title="注意"></i></td>
+<td class="content">ブラウザウィンドウから移動すると、ファイルのアップロードは失われます。</td>
+</tr></table></div>
+<div class="paragraph"><p>ファイルが正常にアップロードおよび検証されると、画面上のメッセージが表示されます。検証には数分かかる場合があります。この段階でブラウザウィンドウから移動すると、ファイルのアップロードは保持されます。</p></div>
+</div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> 11.8より前のElementバージョンを実行しているH610Sクラスターをアップグレードしています。</p></td>
+<td class="tableblock halign-left valign-top"><div class="content">
+<div class="olist arabic"><ol class="arabic">
+<li><p>アップグレードするクラスターの横にあるドロップダウン矢印をクリックし、使用可能なアップグレードバージョンから選択します。</p></li>
+<li><p> [<strong>アップグレードの開始]を</strong>クリックします。<br>アップグレードが完了すると、UIにより、プロセスのフェーズ2を実行するように求められます。</p></li>
+<li><p> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB記事</a>で必要な追加の手順（フェーズ2）を完了し、UIでフェーズ2を完了したことを確認します。</p></li>
+</ol></div>
+<div class="paragraph"><p>アップグレードの完了後にログをダウンロードできます。さまざまなアップグレードのステータスの変更に関する情報は、以下を参照してください<a href="#upgrade-status-changes">アップグレードのステータスの変更を</a>。</p></div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="upgrade-status-changes">アップグレードステータスの変更</h3>
+<div class="paragraph"><p>UIの[<strong>アップグレードステータス</strong>]列に、アップグレードプロセスの前、最中、および後に表示されるさまざまな状態を次に示します。</p></div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead><tr>
+<th class="tableblock halign-left valign-top">アップグレード状態</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">最新の</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスターは、利用可能な最新のElementバージョンにアップグレードされました。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">利用可能なバージョン</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elementおよび/またはストレージファームウェアの新しいバージョンがアップグレードに利用できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">進行中</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アップグレードが進行中です。プログレスバーにアップグレードステータスが表示されます。画面上のメッセージには、ノードレベルの障害も表示され、アップグレードの進行に合わせてクラスター内の各ノードのノードIDが表示されます。 ElementUIまたはvCenterServerUI用のNetAppElementプラグインを使用して、各ノードのステータスを監視できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アップグレードの一時停止</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アップグレードを一時停止することを選択できます。アップグレードプロセスの状態に応じて、一時停止操作が成功または失敗する可能性があります。一時停止操作の確認を求めるUIプロンプトが表示されます。アップグレードを一時停止する前にクラスターが安全な場所にあることを確認するために、アップグレード操作が完全に一時停止されるまでに最大2時間かかる場合があります。アップグレードを再開するには、[<strong>再開</strong>]をクリックします。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一時停止</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アップグレードを一時停止しました。 [<strong>再開]</strong>をクリックして、プロセスを再開します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">エラー</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アップグレード中にエラーが発生しました。エラーログをダウンロードして、ネットアップサポートに送信できます。エラーを解決したら、ページに戻って[<strong>再開</strong>]をクリックします。アップグレードを再開すると、システムがヘルスチェックを実行してアップグレードの現在の状態をチェックしている間、進行状況バーが数分間逆戻りします。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">検出できません</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NetApp Hybrid Cloud Controlは、オンラインソフトウェアリポジトリにアクセスするための外部接続がない場合、<strong>利用可能なバージョン</strong>ではなくこのステータスを表示します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">フォローアップを完了する</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11.8より前のElementバージョンからアップグレードするH610Sノードの場合のみ。アップグレードプロセスのフェーズ1が完了すると、この状態により、アップグレードのフェーズ2を実行するように求められます（ <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB記事を参照</a>）。あなたの完全なフェーズ2の後、あなたはそれを完了したことを認め、ステータスが<strong>最新のもの</strong>に変更されます。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="use-netapp-hybrid-cloud-control-api-to-upgrade-element-storage"> NetApp Hybrid Cloud ControlAPIを使用してElementストレージをアップグレードする</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>APIを使用して、クラスター内のストレージノードを最新のElementソフトウェアバージョンにアップグレードできます。選択した自動化ツールを使用して、APIを実行できます。ここで説明するAPIワークフローでは、例として管理ノードで使用可能なREST APIUIを使用しています。</p></div>
+<div class="olist arabic">
+<div class="title">ステップ</div>
+<ol class="arabic">
+<li>
+<p>接続に応じて、次のいずれかを実行します。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead><tr>
+<th class="tableblock halign-left valign-top">オプション</th>
+<th class="tableblock halign-left valign-top">ステップ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
+<li>
+<p>リポジトリ接続を確認します。</p>
+<div class="olist loweralpha"><ol class="loweralpha" type="a">
+<li>
+<p>管理ノードで管理ノードRESTAPIUIを開きます。</p>
+<div class="listingblock"><div class="content"><pre> https：// [管理ノードIP] / package-repository / 1 /</pre></div></div>
+</li>
+<li>
+<p> [<strong>承認]</strong>をクリックして、以下を完了します。</p>
+<div class="olist lowerroman"><ol class="lowerroman" type="i">
+<li><p>クラスターのユーザー名とパスワードを入力します。</p></li>
+<li><p>クライアントIDを<code>mnode-client</code>として入力します。</p></li>
+<li><p> [<strong>承認]</strong>をクリックしてセッションを開始します。</p></li>
+<li><p>承認ウィンドウを閉じます。</p></li>
+</ol></div>
+</li>
+<li><p> REST API UIから、[ <strong>GET / packages / remote-repository / connection</strong> ]をクリックします。</p></li>
+<li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li><p>コード200が返された場合は、次の手順に進みます。リモートリポジトリへの接続がない場合は、接続を確立するか、ダークサイトオプションを使用します。</p></li>
+</ol></div>
+</li>
+<li>
+<p>アップグレードパッケージIDを見つけます。</p>
+<div class="olist loweralpha"><ol class="loweralpha" type="a">
+<li><p> REST API UIから、[ <strong>GET / packages</strong> ]をクリックし<strong>ます</strong>。</p></li>
+<li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li><p>応答から、後のステップで使用するためにパッケージIDをコピーして保存します。</p></li>
+</ol></div>
+</li>
+</ol></div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
+<li>
+<p>管理ノードからアクセス可能なデバイスにストレージアップグレードパッケージをダウンロードします。</p>
+<div class="ulist"><ul>
+<li><p> NetApp HCIシステムの場合は、NetApp HCIソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">ダウンロードページ</a>に移動して、最新のストレージノードイメージをダウンロードします。</p></li>
+<li><p> SolidFireストレージシステムの場合は、Elementソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">ダウンロードページ</a>に移動して、最新のストレージノードイメージをダウンロードします。</p></li>
+</ul></div>
+</li>
+<li>
+<p>ストレージアップグレードパッケージを管理ノードにアップロードします。</p>
+<div class="olist loweralpha"><ol class="loweralpha" type="a">
+<li>
+<p>管理ノードで管理ノードRESTAPIUIを開きます。</p>
+<div class="listingblock"><div class="content"><pre> https：// [管理ノードIP] / package-repository / 1 /</pre></div></div>
+</li>
+<li>
+<p> [<strong>承認]</strong>をクリックして、以下を完了します。</p>
+<div class="olist lowerroman"><ol class="lowerroman" type="i">
+<li><p>クラスターのユーザー名とパスワードを入力します。</p></li>
+<li><p>クライアントIDを<code>mnode-client</code>として入力します。</p></li>
+<li><p> [<strong>承認]</strong>をクリックしてセッションを開始します。</p></li>
+<li><p>承認ウィンドウを閉じます。</p></li>
+</ol></div>
+</li>
+<li><p> REST API UIから、[ <strong>POST / packages</strong> ]をクリックし<strong>ます</strong>。</p></li>
+<li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
+<li><p> [<strong>参照]</strong>をクリックして、アップグレードパッケージを選択します。</p></li>
+<li><p> [<strong>実行]</strong>をクリックしてアップロードを開始します。</p></li>
+<li><p>応答から、後のステップで使用するためにパッケージID（ <code>"id"</code> ）をコピーして保存します。</p></li>
+</ol></div>
+</li>
+<li>
+<p>アップロードのステータスを確認します。</p>
+<div class="olist loweralpha"><ol class="loweralpha" type="a">
+<li><p> REST API UIから、 <strong>GET / packages / {id} / statusを</strong>クリックし<strong>ます</strong>。</p></li>
+<li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
+<li><p>前の手順でコピーしたパッケージIDを<strong>idに</strong>入力します。</p></li>
+<li>
+<p> [<strong>実行]</strong>をクリックして、ステータス要求を開始します。</p>
+<div class="paragraph"><p>応答は、完了時に<code>state</code>を<code>SUCCESS</code>として示します。</p></div>
+</li>
+</ol></div>
+</li>
+</ol></div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>ストレージクラスターIDを見つけます。</p>
+<div class="olist loweralpha"><ol class="loweralpha" type="a">
+<li>
+<p>管理ノードで管理ノードRESTAPIUIを開きます。</p>
+<div class="listingblock"><div class="content"><pre> https：// [管理ノードIP] / Inventory / 1 /</pre></div></div>
+</li>
+<li>
+<p> [<strong>承認]</strong>をクリックして、以下を完了します。</p>
+<div class="olist lowerroman"><ol class="lowerroman" type="i">
+<li><p>クラスターのユーザー名とパスワードを入力します。</p></li>
+<li><p>クライアントIDを<code>mnode-client</code>として入力します。</p></li>
+<li><p> [<strong>承認]</strong>をクリックしてセッションを開始します。</p></li>
+<li><p>承認ウィンドウを閉じます。</p></li>
+</ol></div>
+</li>
+<li><p> REST API UIから、[ <strong>GET / installations</strong> ]をクリックし<strong>ます</strong>。</p></li>
+<li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li><p>応答から、インストール資産ID（ <code>"id"</code> ）をコピーします。</p></li>
+<li><p> REST API UIから、[ <strong>GET / settings / {id}</strong> ]をクリックします。</p></li>
+<li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
+<li><p>インストール資産IDを<strong>id</strong>フィールドに貼り付けます。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li><p>応答から、アップグレードするクラスターのストレージクラスターID（ <code>"id"</code> ）をコピーして保存し、後の手順で使用できるようにします。</p></li>
+</ol></div>
+</li>
+<li>
+<p>ストレージのアップグレードを実行します。</p>
+<div class="olist loweralpha"><ol class="loweralpha" type="a">
+<li>
+<p>管理ノードでストレージRESTAPIUIを開きます。</p>
+<div class="listingblock"><div class="content"><pre> https：// [管理ノードIP] / storage / 1 /</pre></div></div>
+</li>
+<li>
+<p> [<strong>承認]</strong>をクリックして、以下を完了します。</p>
+<div class="olist lowerroman"><ol class="lowerroman" type="i">
+<li><p>クラスターのユーザー名とパスワードを入力します。</p></li>
+<li><p>クライアントIDを<code>mnode-client</code>として入力します。</p></li>
+<li><p> [<strong>承認]</strong>をクリックしてセッションを開始します。</p></li>
+<li><p>承認ウィンドウを閉じます。</p></li>
+</ol></div>
+</li>
+<li><p> <strong>POST / upgradesを</strong>クリックし<strong>ます</strong>。</p></li>
+<li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
+<li><p>パラメータフィールドにアップグレードパッケージIDを入力します。</p></li>
+<li><p>パラメータフィールドにストレージクラスタIDを入力します。</p></li>
+<li>
+<p> [<strong>実行]</strong>をクリックしてアップグレードを開始します。</p>
+<div class="paragraph"><p>応答は、状態を<code>initializing</code>として示す必要があり<code>initializing</code> 。</p></div>
+<div class="listingblock"><div class="content"><pre> {{
+  "_links"：{
+    "コレクション"： "https：// localhost：442 / storage / uploads"、
+    "self"： "https：// localhost：442 / storage / uploads / 3fa85f64-1111-4562-b3fc-2c963f66abc1"、
+    「ログ」：https：// localhost：442 / storage / uploads / 3fa85f64-1111-4562-b3fc-2c963f66abc1 / log
+  }、
+  "storageId"： "114f14a4-1a1a-11e9-9088-6c0b84e200b4"、
+  "upgradeId"： "334f14a4-1a1a-11e9-1055`-6c0b84e2001b4"、
+  "packageId"： "774f14a4-1a1a-11e9-8888-6c0b84e200b4"、
+  "config"：{}、
+  「状態」：「初期化中」、
+  "状態"： {
+    "利用可能なアクション"： [
+      "ストリング"
+    ]、
+    「メッセージ」：「文字列」、
+    "nodeDetails"：[
+      {{
+        「メッセージ」：「文字列」、
+        "ステップ"： "NodePreStart"、
+        "nodeID"：0、
+        "numAttempt"：0
+      }
+    ]、
+    「パーセント」：0、
+    "ステップ"： "ClusterPreStart"、
+    "タイムスタンプ"： "2020-04-21T22：10：57.057Z"、
+    "failedHealthChecks"：[
+      {{
+        「checkID」：0、
+        "名前"： "文字列"、
+        "displayName"： "文字列"、
+        「合格」：true、
+        "kb"： "文字列"、
+        "説明"： "文字列"、
+        「救済」：「文字列」、
+        「重大度」：「文字列」、
+        「データ」：{}、
+        "nodeID"：0
+      }
+    ]
+  }、
+  "taskId"： "123f14a4-1a1a-11e9-7777-6c0b84e123b2"、
+  "dateCompleted"： "2020-04-21T22：10：57.057Z"、
+  "dateCreated"： "2020-04-21T22：10：57.057Z"
+}</pre></div></div>
+</li>
+<li><p>応答の一部であるアップグレードID（ <code>"upgradeId"</code> ）をコピーします。</p></li>
+</ol></div>
+</li>
+<li>
+<p>アップグレードの進行状況と結果を確認します。</p>
+<div class="olist loweralpha"><ol class="loweralpha" type="a">
+<li><p> <strong>GET / upgrades / {upgradeId}を</strong>クリックし<strong>ます</strong>。</p></li>
+<li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
+<li><p>前の手順のアップグレードIDを<strong>upgradeIdに</strong>入力します。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li>
+<p>アップグレード中に問題または特別な要件がある場合は、次のいずれかを実行します。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead><tr>
+<th class="tableblock halign-left valign-top">オプション</th>
+<th class="tableblock halign-left valign-top">ステップ</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">応答本文の<code>failedHealthChecks</code>メッセージによるクラスターヘルスの問題を修正する必要があります。</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
+<li><p>各問題にリストされている特定のKB記事に移動するか、指定された対処法を実行してください。</p></li>
+<li><p> KBが指定されている場合は、関連するKBの記事に記載されているプロセスを完了してください。</p></li>
+<li><p>クラスタの問題を解決したら、必要に応じて再認証し、[ <strong>PUT / upgrades / {upgradeId}</strong> ]をクリックします。</p></li>
+<li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
+<li><p>前の手順のアップグレードIDを<strong>upgradeIdに</strong>入力します。</p></li>
+<li>
+<p>リクエスト本文に<code>"action":"resume"</code>と入力します。</p>
+<div class="listingblock"><div class="content"><pre> {{
+  「アクション」：「再開」
+}</pre></div></div>
+</li>
+<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+</ol></div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">メンテナンスウィンドウが閉じているなどの理由で、アップグレードを一時停止する必要があります。</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
+<li><p>必要に応じて再認証し、 <strong>PUT / upgrades / {upgradeId}</strong>をクリックします。</p></li>
+<li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
+<li><p>前の手順のアップグレードIDを<strong>upgradeIdに</strong>入力します。</p></li>
+<li>
+<p>リクエストの本文に<code>"action":"pause"</code>と入力します。</p>
+<div class="listingblock"><div class="content"><pre> {{
+  「アクション」：「一時停止」
+}</pre></div></div>
+</li>
+<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+</ol></div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> 11.8より前のElementバージョンを実行しているH610Sクラスターをアップグレードする場合は、応答本文に状態<code>finishedNeedsAck</code>れます。 H610Sストレージノードごとに追加のアップグレード手順（フェーズ2）を実行する必要があります。</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
+<li><p> <a href="#Upgrading%20H610S%20storage%20nodes%20to%20Element%2012.2%20or%20later%20(phase%202)">[H610Sストレージノードのエレメント12.2以降へのアップグレード（フェーズ2）]</a>を参照して、各ノードのプロセスを完了してください。</p></li>
+<li><p>必要に応じて再認証し、 <strong>PUT / upgrades / {upgradeId}</strong>をクリックします。</p></li>
+<li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
+<li><p>前の手順のアップグレードIDを<strong>upgradeIdに</strong>入力します。</p></li>
+<li>
+<p>リクエストの本文に<code>"action":"acknowledge"</code>と入力します。</p>
+<div class="listingblock"><div class="content"><pre> {{
+  「アクション」：「確認」
+}</pre></div></div>
+</li>
+<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+</ol></div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>プロセスが完了するまで、必要に応じて<strong>GET / upgrades / {upgradeId}</strong> APIを複数回実行します。</p>
+<div class="paragraph"><p>アップグレード中、エラーが発生しなかった場合、 <code>status</code>は<code>running</code>中<code>status</code>示します。各ノードがアップグレードされると、 <code>step</code>値は<code>NodeFinished</code>ます。</p></div>
+<div class="paragraph"><p> <code>percent</code>値が<code>100</code>で、 <code>state</code>が<code>finished</code>示している場合、アップグレードは正常に<code>finished</code>ます。</p></div>
+</li>
+</ol></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="what-happens-if-an-upgrade-fails-using-netapp-hybrid-cloud-control"> NetApp Hybrid CloudControlを使用してアップグレードが失敗した場合はどうなりますか</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>アップグレード中にドライブまたはノードに障害が発生した場合、ElementUIにはクラスター障害が表示されます。アップグレードプロセスは次のノードに進まず、クラスター障害が解決するのを待ちます。 UIの進行状況バーは、アップグレードがクラスター障害の解決を待機していることを示しています。この段階では、アップグレードはクラスターが正常になるのを待つため、UIで[<strong>一時停止</strong>]をクリックしても機能しません。障害調査を支援するには、ネットアップサポートを利用する必要があります。</p></div>
+<div class="paragraph"><p> NetApp Hybrid Cloud Controlには、事前に設定された3時間の待機期間があり、その間に次のいずれかのシナリオが発生する可能性があります。</p></div>
+<div class="ulist"><ul>
+<li><p>クラスタ障害は3時間以内に解決され、アップグレードが再開されます。このシナリオでは、アクションを実行する必要はありません。</p></li>
+<li><p>問題は3時間後も続き、アップグレードステータスは赤いバナーで<strong>エラー</strong>を示します。問題が解決し<strong>たら</strong>、[<strong>再開</strong>]をクリックしてアップグレードを再開できます。</p></li>
+<li><p> NetAppサポートは、3時間以内に修正措置を講じるために、アップグレードを一時的に中止する必要があると判断しました。サポートはAPIを使用してアップグレードを中止します。</p></li>
+</ul></div>
+<div class="admonitionblock caution"><table><tr>
+<td class="icon"><i class="fa icon-caution" title="注意"></i></td>
+<td class="content">ノードの更新中にクラスターのアップグレードを中止すると、ドライブがノードから正常に削除されない場合があります。ドライブが正常に取り外されていない場合、アップグレード中にドライブを追加し直すには、ネットアップサポートによる手動の介入が必要になります。ノードは、ファームウェアの更新または更新後の同期アクティビティの実行に時間がかかる場合があります。アップグレードの進行が停滞していると思われる場合は、ネットアップサポートにお問い合わせください。</td>
+</tr></table></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="upgrade-element-software-at-connected-sites-using-healthtools"> HealthToolsを使用して、接続されたサイトでElementソフトウェアをアップグレードします</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<div class="title">ステップ</div>
+<ol class="arabic">
+<li>
+<p>ストレージアップグレードパッケージをダウンロードします。</p>
+<div class="admonitionblock note"><table><tr>
+<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="content"> Elementストレージソフトウェアをアップグレードするには、HealthToolsの最新バージョンが必要です。</td>
+</tr></table></div>
+<div class="ulist"><ul>
+<li><p> NetApp HCIシステムの場合は、NetApp HCIソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">ダウンロードページ</a>に移動し、最新のストレージノードイメージを管理ノードではないデバイスにダウンロードします。</p></li>
+<li><p> SolidFireストレージシステムの場合は、Elementソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">ダウンロードページ</a>に移動し、最新のストレージノードイメージを管理ノードではないデバイスにダウンロードします。</p></li>
+</ul></div>
+</li>
+<li>
+<p> ISOファイルを/ tmpなどのアクセス可能な場所の管理ノードにコピーします。</p>
+<div class="paragraph"><p> ISOファイルをアップロードするときは、ファイルの名前が変更されていないことを確認してください。変更されていない場合、後の手順は失敗します。</p></div>
+</li>
+<li>
+<p><strong>オプション</strong>：アップグレードの前に、管理ノードからクラスターノードにISOをダウンロードします。</p>
+<div class="paragraph"><p>この手順では、ストレージノードでISOを事前ステージングし、追加の内部チェックを実行して、クラスターがアップグレードに適した状態にあることを確認することにより、アップグレード時間を短縮します。この操作を実行しても、クラスターは「アップグレード」モードにならず、クラスター操作も制限されません。</p></div>
+<div class="listingblock"><div class="content"><pre> sfinstall &lt;MVIP&gt; -u &lt;cluster_username&gt; &lt;path-toinstall-file-ISO&gt; --stage</pre></div></div>
+<div class="admonitionblock note"><table><tr>
+<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="content">コマンドラインからパスワードを省略して、 <code>sfinstall</code>が情報の入力を求められるようにします。特殊文字を含むパスワードの場合、各特殊文字の前に円記号（ <code>\</code> ）を追加します。たとえば、 <code>mypass!@1</code>は<code>mypass\!\@</code>として入力する必要があります。</td>
+</tr></table></div>
+<div class="paragraph"><p><strong>例</strong><br>次のサンプル入力を参照してください。</p></div>
+<div class="listingblock"><div class="content"><pre> sfinstall 10.117.0.244 -u admin /tmp/solidfire-rtfisodium-11.0.0.345.iso --stage</pre></div></div>
+<div class="paragraph"><p>そのサンプルショーの出力<code>sfinstall</code>の新しいバージョン場合試みが確認する<code>sfinstall</code>利用可能です。</p></div>
+<div class="listingblock"><div class="content"><pre> sfinstall 10.117.0.244 -u admin
+/tmp/solidfire-rtfisodium-11.0.0.345.iso 2018-10-01 16:52:15：
+新しいバージョンのsfinstallが利用可能です。
+このバージョン：2018.09.01.130、最新バージョン：2018.06.05.901。
+HealthToolsの最新バージョンは、次の場所からダウンロードできます。
+https://mysupport.netapp.com/NOW/cgi-bin/software/
+または--skip-version-checkで再実行します</pre></div></div>
+<div class="paragraph"><p>成功した前段階操作からの次のサンプル抜粋を参照してください。</p></div>
+<div class="admonitionblock note"><table><tr>
+<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="content">ステージングが完了すると、アップグレードイベント後に<code>Storage Node Upgrade Staging Successful</code>したというメッセージが表示されます。</td>
+</tr></table></div>
+<div class="listingblock"><div class="content"><pre> flabv0004〜＃sfinstall -u admin
+10.117.0.87 solidfire-rtfi-sodium-patch3-11.3.0.14171.iso --stage
+2019-04-03 13：19：58：sfinstallリリースバージョン：2019.01.01.49管理ノードプラットフォーム：
+残り火の改訂：26b042c3e15aビルド日：2019-03-12 18:45
+2019-04-03 13：19：58：MVIP10.117.0.87への接続を確認しています
+2019-04-03 13:19:58：ノード10.117.0.86への接続を確認しています
+2019-04-03 13:19:58：ノード10.117.0.87への接続を確認しています
+..。
+2019-04-03 13:19:58：クラスターとすべてのノードに正常に接続されました
+..。
+2019-04-03 13:20:00：続行しますか？ [「はい」、「いいえ」]：はい
+..。
+2019-04-03 13:20:55：クラスターノードでのインストールパックのステージング
+2019-04-03 13：20：55：newVersion：11.3.0.14171
+2019-04-03 13：21：01：nodeToStage：nlabp2814、nlabp2815、nlabp2816、nlabp2813
+2019-04-03 13:21:02：ステージングノードnlabp2815 mip = [10.117.0.87] nodeID = [2]（4ノードのうちの1つ）
+2019-04-03 13:21:02：ノードアップグレードサービングイメージ
+http://10.117.0.204/rtfi/solidfire-rtfisodium-
+patch3-11.3.0.14171 / filesystem.squashfs
+..。
+2019-04-03 13:25:40：ステージングが終了しました。 --stageオプションを指定せずにupgradeコマンドを繰り返して、アップグレードを開始します。</pre></div></div>
+<div class="paragraph"><p>ステージングされたISOは、アップグレードの完了後に自動的に削除されます。ただし、アップグレードが開始されておらず、スケジュールを変更する必要がある場合は、次のコマンドを使用してISOを手動でデステージできます。</p></div>
+<div class="paragraph"><p> <code>sfinstall &lt;MVIP&gt; -u &lt;cluster_username&gt; --destage</code></p></div>
+<div class="paragraph"><p>アップグレードが開始されると、デステージオプションは使用できなくなります。</p></div>
+</li>
+<li>
+<p> <code>sfinstall</code>コマンドとISOファイルへのパスを使用してアップグレードを開始します。</p>
+<div class="paragraph"><p> <code>sfinstall &lt;MVIP&gt; -u &lt;cluster_username&gt; &lt;path-toinstall-file-ISO&gt;</code></p></div>
+<div class="paragraph"><p><strong>例</strong></p></div>
+<div class="paragraph"><p>次のサンプル入力コマンドを参照してください。</p></div>
+<div class="listingblock"><div class="content"><pre> sfinstall 10.117.0.244 -u admin /tmp/solidfire-rtfi-sodium-11.0.0.345.iso</pre></div></div>
+<div class="paragraph"><p>そのサンプルショーの出力<code>sfinstall</code>の新しいバージョン場合試みが確認する<code>sfinstall</code>利用可能です。</p></div>
+<div class="listingblock"><div class="content"><pre> sfinstall 10.117.0.244 -u admin /tmp/solidfire-rtfi-sodium-11.0.0.345.iso
+2018-10-01 16:52:15：新しいバージョンのsfinstallが利用可能です。
+このバージョン：2018.09.01.130、最新バージョン：2018.06.05.901。
+HealthToolsの最新バージョンは、次の場所からダウンロードできます。
+https://mysupport.netapp.com/NOW/cgi-bin/software/または--skip-version-checkで再実行</pre></div></div>
+<div class="paragraph"><p>正常にアップグレードされた次のサンプルの抜粋を参照してください。アップグレードイベントを使用して、アップグレードの進行状況を監視できます。</p></div>
+<div class="listingblock"><div class="content"><pre> ＃sfinstall 10.117.0.161 -u admin solidfire-rtfi-sodium-11.0.0.761.iso
+2018-10-11 18:28
+MVIP10.117.0.161への接続を確認しています
+ノード10.117.0.23への接続を確認しています
+ノード10.117.0.24への接続を確認しています
+..。
+クラスターとすべてのノードに正常に接続されました
+################################################## #################
+新しいアップグレードを開始しようとしています
+10.117.0.161
+10.3.0.161
+solidfire-rtfi-sodium-11.0.0.761.iso
+ノード：
+10.117.0.23 nlabp1023 SF3010 10.3.0.161
+10.117.0.24 nlabp1025 SF3010 10.3.0.161
+10.117.0.26 nlabp1027 SF3010 10.3.0.161
+10.117.0.28 nlabp1028 SF3010 10.3.0.161
+################################################## #################
+続けたいですか？ [「はい」、「いいえ」]：はい
+..。
+新しいネットワーク障害を監視しています。既存の障害IDが設定されます（[]）。
+名前の変更が必要なレガシーネットワークインターフェイス名の確認
+10.3.0.161から11.0.0.761へのアップグレードupgrademethod = rtfi
+クラスタ障害がクリアされるまで300秒待機します
+キャッシュがしきい値を下回るのを待っています
+..。
+mip = [10.117.0.23] nodeID = [1]のインストール（4ノードのうちの1つ）
+プライマリーの移動を開始します。
+ボリュームリストを読み込んでいます
+プライマリスライス= [7]をmip [10.117.0.23] nodeID [1] ssid [11]から新しいssid [15]に移動します
+プライマリスライス= [12]をmip [10.117.0.23] nodeID [1] ssid [11]から新しいssid [15]に移動します
+..。
+mip = [10.117.114.24] nodeID = [2]のインストール（4ノードのうち2ノード）
+プライマリーの移動を開始します。
+ボリュームリストを読み込んでいます
+プライマリスライス= [5]をmip [10.117.114.24] nodeID [2] ssid [7]から新しいssid [11]に移動します
+..。
+solidfire-rtfi-sodium-11.0.0.761のインストールが完了しました。
+古いソフトウェアの削除
+nodeID = [1]にステージングされたビルドは存在しません
+nodeID = [2]にステージングされたビルドは存在しません
+..。
+ライトクラスターブロックサービスチェックの開始</pre></div></div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important"><table><tr>
+<td class="icon"><i class="fa icon-important" title="重要"></i></td>
+<td class="content">H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合は、ストレージノードごとに追加のアップグレード手順（<a href="#upgrading-h610s-storage-nodes-to-element-12-2-phase-2">フェーズ2</a> ）を実行する必要があります。 Element 11.8以降を実行している場合、追加のアップグレード手順（フェーズ2）は必要ありません。</td>
+</tr></table></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="upgrade-element-software-at-dark-sites-using-healthtools"> HealthToolsを使用して暗いサイトでElementソフトウェアをアップグレードする</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>HealthToolsツールスイートを使用して、暗いサイトでNetAppElementソフトウェアを更新できます。</p></div>
+<div class="olist arabic">
+<div class="title">必要なもの</div>
+<ol class="arabic">
+<li><p>NetApp HCIシステムの場合は、NetAppHCIソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">ダウンロードページ</a>にアクセスし<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">ます</a>。 SolidFireストレージシステムの場合は、Elementソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">ダウンロードページに</a>アクセスして<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">ください</a>。</p></li>
+<li>
+<p>正しいソフトウェアリリースを選択し、最新のストレージノードイメージを管理ノードではないコンピューターにダウンロードします。</p>
+<div class="admonitionblock note"><table><tr>
+<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="content"> Elementストレージソフトウェアをアップグレードするには、HealthToolsの最新バージョンが必要です。</td>
+</tr></table></div>
+</li>
+<li><p>この<a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740">JSONファイル</a>（ <a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740" class="bare">https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740</a> ）を管理ノードではないコンピューターのNetAppサポートサイトからダウンロードし、名前を<code>metadata.json</code>変更します。</p></li>
+<li>
+<p> ISOファイルを<code>/tmp</code>などのアクセス可能な場所の管理ノードにコピーします。</p>
+<div class="admonitionblock tip"><table><tr>
+<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="content">これは、たとえばSCPを使用して行うことができます。 ISOファイルをアップロードするときは、ファイルの名前が変更されていないことを確認してください。変更されていない場合、後の手順は失敗します。</td>
+</tr></table></div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">ステップ</div>
+<ol class="arabic">
+<li>
+<p><code>sfupdate-healthtools</code>コマンドを実行します。</p>
+<div class="listingblock"><div class="content"><pre> sfupdate-healthtools &lt;path-to-healthtools-package&gt;</pre></div></div>
+</li>
+<li>
+<p>インストールされているバージョンを確認します。</p>
+<div class="listingblock"><div class="content"><pre> sfupdate-healthtools -v</pre></div></div>
+</li>
+<li>
+<p>最新バージョンをメタデータJSONファイルと照合します。</p>
+<div class="listingblock"><div class="content"><pre> sfupdate-healthtools -l --metadata = &lt;path-to-metadata-json&gt;</pre></div></div>
+</li>
+<li>
+<p>クラスターの準備ができていることを確認します。</p>
+<div class="listingblock"><div class="content"><pre> sudo sfupgradecheck -u &lt;cluster_username&gt; -p &lt;cluster_password&gt; MVIP --metadata = &lt;path-to-metadata-json&gt;</pre></div></div>
+</li>
+<li>
+<p> ISOファイルとメタデータJSONファイルへのパスを指定して<code>sfinstall</code>コマンドを実行します。</p>
+<div class="listingblock"><div class="content"><pre> sfinstall -u &lt;cluster_username&gt; &lt;MVIP&gt; &lt;path-toinstall-file-ISO&gt; --metadata = &lt;path-to-metadata-json-file&gt;</pre></div></div>
+<div class="paragraph"><p>次のサンプル入力コマンドを参照してください。</p></div>
+<div class="listingblock"><div class="content"><pre> sfinstall -u admin 10.117.78.244 /tmp/solidfire-rtfi-11.3.0.345.iso --metadata = / tmp / metadata.json</pre></div></div>
+<div class="paragraph"><p><strong>オプション</strong><code>--stage</code>フラグを<code>sfinstall</code>コマンドに追加して、アップグレードを事前にステージングすることができます。</p></div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important"><table><tr>
+<td class="icon"><i class="fa icon-important" title="重要"></i></td>
+<td class="content"> H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合は、ストレージノードごとに追加のアップグレード手順（<a href="#upgrading-h610s-storage-nodes-to-element-12-2-phase-2">フェーズ2</a> ）を実行する必要があります。 Element 11.8以降を実行している場合、追加のアップグレード手順（フェーズ2）は必要ありません。</td>
+</tr></table></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="what-happens-if-an-upgrade-fails-using-healthtools"> HealthToolsを使用してアップグレードが失敗した場合はどうなりますか</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>ソフトウェアのアップグレードが失敗した場合は、アップグレードを一時停止できます。</p></div>
+<div class="admonitionblock tip"><table><tr>
+<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="content"> Ctrl-Cでのみアップグレードを一時停止する必要があります。これにより、システムはそれ自体をクリーンアップできます。</td>
+</tr></table></div>
+<div class="paragraph"><p> <code>sfinstall</code>がクラスター障害がクリアされるのを待機し、障害が発生して障害が残る場合、 <code>sfinstall</code>は次のノードに進みません。</p></div>
+<div class="olist arabic">
+<div class="title">ステップ</div>
+<ol class="arabic">
+<li><p>Ctrl + Cで<code>sfinstall</code>を停止する必要があります。</p></li>
+<li><p>ネットアップサポートに連絡して、障害調査を支援してください。</p></li>
+<li><p>同じ<code>sfinstall</code>コマンドを使用してアップグレードを再開します。</p></li>
+<li>
+<p> Ctrl + Cを使用してアップグレードを一時停止し、アップグレードが現在ノードをアップグレードしている場合は、次のいずれかのオプションを選択します。</p>
+<div class="ulist"><ul>
+<li><p><strong>待機</strong>：クラスター定数をリセットする前に、現在アップグレード中のノードが終了するのを<strong>待ち</strong>ます。</p></li>
+<li><p><strong>続行</strong>：アップグレードを続行すると、一時停止がキャンセルされます。</p></li>
+<li>
+<p><strong>中止</strong>：クラスター定数をリセットし、アップグレードをただちに中止します。</p>
+<div class="admonitionblock note"><table><tr>
+<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="content">ノードの更新中にクラスターのアップグレードを中止すると、ドライブがノードから正常に削除されない場合があります。ドライブが正常に取り外されていない場合、アップグレード中にドライブを追加し直すには、ネットアップサポートによる手動の介入が必要になります。ノードは、ファームウェアの更新または更新後の同期アクティビティの実行に時間がかかる場合があります。アップグレードの進行が停滞していると思われる場合は、ネットアップサポートにお問い合わせください。</td>
+</tr></table></div>
+</li>
+</ul></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="upgrading-h610s-storage-nodes-to-element-12-2-phase-2"> H610Sストレージノードのエレメント12.2へのアップグレード（フェーズ2）</h2>
+<div class="sectionbody">
+<div class="paragraph"><p> H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合、アップグレードプロセスには2つのフェーズが含まれます。</p></div>
+<div class="paragraph"><p>最初に実行されるフェーズ1は、Element12.2プロセスへの標準アップグレードと同じ手順に従います。 Element Softwareと5つのファームウェアアップデートすべてを、一度に1ノードずつクラスター全体にローリング方式でインストールします。ファームウェアのペイロードにより、このプロセスには、H610Sノードごとに約1.5〜2時間かかると推定されます。これには、各ノードのアップグレード終了時の1回のコールドブートサイクルが含まれます。</p></div>
+<div class="paragraph"><p>フェーズ2には、必要な<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KBに</a>記載されている各H610Sノードの完全なノードシャットダウンと電源切断を実行する手順を完了することが含まれます。このフェーズは、H610Sノードごとに約1時間かかると推定されます。</p></div>
+<div class="admonitionblock important"><table><tr>
+<td class="icon"><i class="fa icon-important" title="重要"></i></td>
+<td class="content">フェーズ1を完了すると、5つのファームウェアアップデートのうち4つが、各H610Sノードのコールドブート中にアクティブ化されます。ただし、Complex Programmable Logic Device（CPLD）ファームウェアを完全にインストールするには、完全な電源切断と再接続が必要です。 CPLDファームウェアアップデートは、将来の再起動または電源の再投入時に、NVDIMMの障害とメタデータドライブの削除から保護します。この電源リセットには、H610Sノードごとに約1時間かかると推定されます。これには、ノードのシャットダウン、電源ケーブルの取り外し、またはスマートPDUを介した電源の切断、約3分間の待機、および電源の再接続が必要です。</td>
+</tr></table></div>
+<div class="ulist">
+<div class="title">あなたが始める前に</div>
+<ul><li><p>H610Sアップグレードプロセスのフェーズ1を完了し、標準のElementストレージアップグレード手順の1つを使用してストレージノードをアップグレードしました。</p></li></ul>
+</div>
+<div class="admonitionblock note"><table><tr>
+<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="content">フェーズ2には、現場の担当者が必要です。</td>
+</tr></table></div>
+<div class="olist arabic">
+<div class="title">ステップ</div>
+<ol class="arabic"><li><p>（フェーズ2）クラスター内の各H610Sノードに必要な電源リセットプロセスを完了します。</p></li></ol>
+</div>
+<div class="admonitionblock note"><table><tr>
+<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="content">クラスタに非H610Sノードもある場合、これらの非H610Sノードはフェーズ2から免除されるため、シャットダウンしたり、電源を切断したりする必要はありません。</td>
+</tr></table></div>
+<div class="olist loweralpha"><ol class="loweralpha" type="a">
+<li><p>ネットアップサポートにサポートを依頼し、このアップグレードをスケジュールしてください。</p></li>
+<li><p>各H610Sノードのアップグレードを完了するために必要なこの<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB</a>のフェーズ2アップグレード手順に従います。</p></li>
+</ol></div>
+<h2 id="find-more-information" class="discrete">詳細情報を探す</h2>
+<div class="ulist"><ul>
+<li><p><a href="https://docs.netapp.com/hci/index.jsp" target="_blank" rel="noopener">NetAppHCIドキュメンテーションセンター</a></p></li>
+<li><p><a href="https://docs.netapp.com/us-en/documentation/hci.aspx" target="_blank" rel="noopener">NetAppHCIリソースページ</a></p></li>
+</ul></div>
+</div>
+</div></article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div class="page-nav-contribute">
+      <div class="page-nav-contribute-title">CONTRIBUTE</div>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_upgrade_element_software.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20Element%20software%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_upgrade_element_software.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div>
+<!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2020 NetApp</a>
+            </li>
+            <li class="n-footer__language">
+              <!-- <a class="n-footer__corp-link modaal" href="#n-language-selector-menu" data-modaal-scope="modaal_154143812867626e487b1a03c9"> -->
+              <a class="n-footer__corp-link modaal" href="#n-language-selector-menu">
+                <svg class="n-icon-baseline-language" aria-labelledby="title">
+                  <title>netapp-globe</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/hci/ja-jp/common/svg/sprite.svg#globe"></use>
+                </svg>
+                English
+              </a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/hci/ja-jp/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/hci/ja-jp/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/hci/ja-jp/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/hci/ja-jp/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/hci/ja-jp/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/hci/ja-jp/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/hci/ja-jp/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">
+
+
+  Have feedback for our website?
+
+  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src="/hci/ja-jp/js/bundle.js"></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src="/hci/ja-jp/js/prism.js"></script>
+      <script type="text/javascript" src="/hci/ja-jp/js/prism-curl.js"></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src="/hci/ja-jp/js/www-ntap.js"></script>
+  </body>
+
+  
+</html>
