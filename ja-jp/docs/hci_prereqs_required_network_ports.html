@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ネットワークポートの要件</h1></div>
-<p class="page-details"><time datetime="2020-10-29 17:43:02 +0000">2020年10月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/hci_prereqs_required_network_ports.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-11-02 17:14:38 +0000">2020年11月2日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/hci_prereqs_required_network_ports.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>システムをリモートで管理し、データセンター外のクライアントがリソースに接続できるようにし、内部サービスが正しく機能できるようにするには、データセンターのエッジファイアウォールを通過する次のポートを許可する必要がある場合があります。システムの使用方法によっては、これらのポート、URL、またはIPアドレスの一部が不要な場合があります。特に明記されていない限り、すべてのポートはTCPです。</p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -1978,19 +1978,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ベースボード管理コントローラー（BMC）</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノード</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">139<br> 445</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ファームウェアアップグレードパッケージをBMCに転送するためのSambaポート。</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ベースボード管理コントローラー（BMC）</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノード</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">111 TCP / UDP<br> 2049 TCP / UDP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ファームウェアアップグレードパッケージをBMCに転送するためのNFSポート。</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> iSCSIクライアント</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iSCSIクライアント</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ストレージクラスターMVIP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> 443</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> （オプション）UIおよびAPIアクセス</p></td>
@@ -2122,7 +2110,13 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">ノードごとの構成APIサービス</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SNMPサーバー</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノード</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vCenter Server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> 9443</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> vCenterプラグインの登録。登録が完了したら、ポートを閉じることができます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> SNMPサーバー</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ストレージクラスターMVIP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> 161 UDP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> SNMPポーリング</p></td>
