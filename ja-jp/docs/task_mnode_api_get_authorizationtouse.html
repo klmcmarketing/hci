@@ -1937,8 +1937,8 @@
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
-    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">RESTAPIを使用するための承認を取得する</h1></div>
-<p class="page-details"><time datetime="2020-06-09 20:02:44 +0000">2020年6月9日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_api_get_authorizationtouse.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> RESTAPIを使用するための承認を取得する</h1></div>
+<p class="page-details"><time datetime="2020-06-09 20:02:44 +0000">2020年6月9日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_api_get_authorizationtouse.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>REST API UIで管理サービスにAPIを使用する前に、承認する必要があります。これを行うには、アクセストークンを取得します。</p></div>
 <div class="paragraph"><p>トークンを取得するには、クラスター管理者の資格情報とクライアントIDを指定します。各トークンは約10分続きます。トークンの有効期限が切れたら、新しいアクセストークンを再度承認できます。</p></div>
 <div class="paragraph"><p>許可機能は、管理ノードのインストールおよびデプロイメント中にセットアップされます。トークンサービスは、セットアップ中に定義したストレージクラスターに基づいています。</p></div>
@@ -1957,7 +1957,7 @@
 <div class="listingblock"><div class="content"><pre> https：// [管理ノードのIPアドレス] / mnode</pre></div></div>
 </li>
 <li>
-<p> [<strong>承認]を</strong>クリックします。</p>
+<p> [<strong>承認]を</strong>クリックします。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">または、サービスAPIの横にある鍵のアイコンをクリックすることもできます。</td>
@@ -1971,7 +1971,7 @@
 <li><p>クライアントIDを<code>mnode-client</code>として入力します。</p></li>
 <li><p>クライアントシークレットの値を入力しないでください。</p></li>
 <li>
-<p> [<strong>承認]</strong>をクリックしてセッションを開始します。</p>
+<p> [<strong>承認]</strong>をクリックしてセッションを開始します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">許可しようとした後にエラーメッセージ「 <code>Auth Error TypeError: Failed to fetch</code>が返された場合は、クラスターのMVIPのSSL証明書を受け入れる必要がある場合があります。トークンURLのIPをコピーし、IPを別のブラウザタブに貼り付けて、再度認証します。</td>
@@ -1981,7 +1981,7 @@
 <div class="paragraph"><p>利用可能な権限画面は、<strong>許可</strong>を示しています。</p></div>
 </li>
 <li>
-<p> [使用可能な認証]ダイアログボックスを閉じます。</p>
+<p> [使用可能な認証]ダイアログボックスを閉じます。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">トークンの有効期限が切れた後にコマンドを実行しようとすると、 <code>401 Error: UNAUTHORIZED</code>メッセージが表示されます。これが表示された場合は、再度承認してください。</td>

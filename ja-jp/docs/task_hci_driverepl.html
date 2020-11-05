@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ストレージノードのドライブを交換してください</h1></div>
-<p class="page-details"><time datetime="2020-10-29 18:59:10 +0000">2020年10月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hci_driverepl.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-29 18:59:10 +0000">2020年10月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hci_driverepl.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>ドライブに障害がある場合、またはドライブの摩耗レベルがしきい値を下回っている場合は、ドライブを交換する必要があります。 ElementソフトウェアUIおよびVMwarevSphere Web Clientのアラームは、ドライブに障害が発生した場合、または障害が発生する場合に通知します。故障したドライブをホットスワップできます。</p></div>
 <div class="paragraph">
@@ -1969,7 +1969,7 @@
 <div class="title">ステップ</div>
 <ol class="arabic">
 <li>
-<p>NetAppElementソフトウェアUIまたはvCenterServer用ElementプラグインのNetAppElement Management拡張ポイントを使用して、クラスターからドライブを削除します。</p>
+<p>NetAppElementソフトウェアUIまたはvCenterServer用ElementプラグインのNetAppElement Management拡張ポイントを使用して、クラスターからドライブを削除します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1984,7 +1984,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">ElementUIの使用</p></td>
 <td class="tableblock halign-left valign-top"><div class="content">
 <div class="olist arabic"><ol class="arabic">
-<li><p>Element UIから、[ <strong>Cluster]&gt; [Drives]を</strong>選択します。</p></li>
+<li><p> Element UIから、[ <strong>Cluster]&gt; [Drives]を</strong>選択します。</p></li>
 <li><p> [<strong>失敗]</strong>をクリック<strong>し</strong>て、失敗したドライブのリストを表示します。</p></li>
 <li><p>故障したドライブのスロット番号をメモします。シャーシ内の故障したドライブを見つけるには、この情報が必要です。</p></li>
 <li><p>削除するドライブの[<strong>アクション]</strong>をクリックします。</p></li>
@@ -1996,13 +1996,13 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> vCenter ServerUI用のElementプラグインの使用</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
-<li><p>vSphere WebClientのNetAppElement Management拡張ポイントから、[ <strong>NetApp Element Management]&gt; [Cluster]を</strong>選択します。</p></li>
+<li><p> vSphere WebClientのNetAppElement Management拡張ポイントから、[ <strong>NetApp Element Management]&gt; [Cluster]を</strong>選択します。</p></li>
 <li><p> 2つ以上のクラスターを追加する場合は、タスクに使用するクラスターがナビゲーションバーで選択されていることを確認してください。</p></li>
 <li><p>ドライブの完全なリストを表示するには、ドロップダウンリストから[<strong>すべて]</strong>を選択します。</p></li>
 <li><p>削除する各ドライブのチェックボックスを選択します。</p></li>
 <li><p> [<strong>ドライブの削除]を</strong>クリックします。</p></li>
 <li>
-<p>アクションを確認します。</p>
+<p>アクションを確認します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">ノードを削除する前にアクティブなドライブを削除するのに十分な容量がない場合、ドライブの削除を確認するとエラーメッセージが表示されます。エラーを解決したら、ドライブをシャーシから物理的に取り外すことができます。</td>
@@ -2017,11 +2017,11 @@
 <p>シャーシからドライブを交換します。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li>
-<p>交換用ドライブを開梱し、ラックの近くの平らで静電気のない面に置きます。<br>故障したドライブをネットアップに返却するときのために、梱包材を保存します。<br>ドライブを備えたH610SおよびH410Sストレージノードの正面図は次のとおりです。</p>
+<p>交換用ドライブを開梱し、ラックの近くの平らで静電気のない面に置きます。<br>故障したドライブをネットアップに返却するときのために、梱包材を保存します。<br>ドライブを備えたH610SおよびH410Sストレージノードの正面図は次のとおりです。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h610s_h410s.png" alt="H610SおよびH410Sストレージノードの正面図を示します。"></div></div>
 </li>
 <li>
-<p>ノードモデルに基づいて手順を実行します。</p>
+<p>ノードモデルに基づいて手順を実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2033,12 +2033,12 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H410S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H410S </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li><p>シリアル番号（サービスタグ）を要素UIから書き留めた番号と照合して、ノードを識別します。<br>シリアル番号は、各ノードの背面にあるステッカーに記載されています。<br>ノードを特定したら、スロット情報を使用して、障害が発生したドライブが入っているスロットを特定できます。ドライブは、AからDおよび0から5のアルファベット順に並べられています。</p></li>
 <li><p>ベゼルを取り外します。</p></li>
 <li>
-<p>故障したドライブのリリースボタンを押します。</p>
+<p>故障したドライブのリリースボタンを押します。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h410s_drive.png" alt="H410Sストレージノードのドライブにリリースボタンを表示します。"></div></div>
 <div class="paragraph"><p>リリースボタンを押すと、ドライブスプリングのカムハンドルが部分的に開き、ドライブがミッドプレーンからリリースされます。</p></div>
 </li>
@@ -2047,20 +2047,20 @@
 <li><p>両手を使用して、交換用ドライブをシャーシのスロットに完全に挿入します。</p></li>
 <li><p>カチッと音がするまでカムハンドルを押し下げます。</p></li>
 <li><p>ベゼルを再度取り付けます。</p></li>
-<li><p>ドライブの交換についてネットアップサポートに通知してください。<br>ネットアップサポートは、故障したドライブを返却するための手順を提供します。</p></li>
+<li><p>ドライブの交換についてネットアップサポートに通知してください。<br>ネットアップサポートは、故障したドライブを返却するための手順を提供します。 </p></li>
 </ol></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> H610S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> H610S </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li><p> Element UIの故障したドライブのスロット番号を、シャーシの番号と一致させます。<br>故障したドライブのLEDがオレンジ色に点灯します。</p></li>
 <li><p>ベゼルを取り外します。</p></li>
 <li>
-<p>次の図に示すように、リリースボタンを押して、故障したドライブを取り外します。</p>
+<p>次の図に示すように、リリースボタンを押して、故障したドライブを取り外します。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h610s_driveremove.png" alt="H610Sノードから取り外されているドライブを示します。"></div></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">ドライブをシャーシからスライドさせて外す前に、トレイハンドルが完全に開いていることを確認してください。</td>
+<td class="content">ドライブをシャーシからスライドさせる前に、トレイハンドルが完全に開いていることを確認してください。</td>
 </tr></table></div>
 </li>
 <li><p>ドライブを引き出し、静電気のない平らな面に置きます。</p></li>
@@ -2077,10 +2077,10 @@
 </ol></div>
 </li>
 <li>
-<p> ElementUIまたはvCenterServerのElementプラグインのNetAppElement Management拡張ポイントを使用して、ドライブをクラスターに追加し直します。</p>
+<p> ElementUIまたはvCenterServerのElementプラグインのNetAppElement Management拡張ポイントを使用して、ドライブをクラスターに追加し直します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">既存のノードに新しいドライブをインストールすると、そのドライブはElementUIで<strong>Available</strong>として自動的に登録され<strong>ます</strong>。ドライブをクラスターに参加させる前に、ドライブをクラスターに追加する必要があります。</td>
+<td class="content">既存のノードに新しいドライブをインストールすると、そのドライブはElementUIで<strong>Available</strong>として自動的に登録され<strong>ます</strong>。ドライブをクラスターに参加させる前に、ドライブをクラスターに追加する必要があります。 </td>
 </tr></table></div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2095,17 +2095,17 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ElementUIの使用</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
-<li><p>Element UIから、[ <strong>Cluster]&gt; [Drives]を</strong>選択します。</p></li>
+<li><p> Element UIから、[ <strong>Cluster]&gt; [Drives]を</strong>選択します。</p></li>
 <li><p> [<strong>利用可能]</strong>をクリックして、利用可能なドライブのリストを表示します。</p></li>
-<li><p>追加するドライブの[アクション]アイコンをクリックし、[<strong>追加</strong>]<strong>を</strong>クリックします。</p></li>
+<li><p>追加するドライブの[アクション]アイコンをクリックし、[<strong>追加</strong>]<strong>を</strong>クリックします。 </p></li>
 </ol></div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> vCenter ServerUI用のElementプラグインの使用</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
-<li><p>vSphere WebClientのNetAppElement Management拡張ポイントから、[ <strong>NetApp Element Management]&gt; [Cluster]&gt; [Drives]を</strong>選択します。</p></li>
+<li><p> vSphere WebClientのNetAppElement Management拡張ポイントから、[ <strong>NetApp Element Management]&gt; [Cluster]&gt; [Drives]を</strong>選択します。</p></li>
 <li><p> [利用可能]ドロップダウンリストからドライブを選択し、[<strong>追加</strong>]<strong>を</strong>クリックします。</p></li>
-<li><p>アクションを確認します。</p></li>
+<li><p>アクションを確認します。 </p></li>
 </ol></div></div></td>
 </tr>
 </tbody>

@@ -1937,8 +1937,8 @@
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
-    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">vCenterServer用のElementPlug-inを使用して、NetAppHCIシステムのvSphereコンポーネントをアップグレードします。</h1></div>
-<p class="page-details"><time datetime="2020-10-02 21:04:04 +0000"> 2020年10月2日</time><span>寄稿者<a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hci_upgrade_all_vsphere.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> vCenterServer用のElementPlug-inを使用して、NetAppHCIシステムのvSphereコンポーネントをアップグレードします。</h1></div>
+<p class="page-details"><time datetime="2020-10-02 21:04:04 +0000"> 2020年10月2日</time><span>寄稿者<a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hci_upgrade_all_vsphere.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>NetAppHCIインストールのVMwarevSphereコンポーネントをアップグレードする場合、vCenterServer用のElementPlug-inに対して実行する必要のある追加の手順がいくつかあります。</p></div>
 <div class="olist arabic">
 <div class="title">ステップ</div>
@@ -1946,13 +1946,13 @@
 <li><p>vCSAアップグレードの場合は、プラグインのmNode設定を<a href="http://docs.netapp.com/hci/topic/com.netapp.doc.hci-vcp-ug-170/GUID-2AA0DA12-A3E3-4BAE-9413-A01A54B9B7CE.html" target="_blank" rel="noopener">クリアし</a>ます（ <strong>NetApp Element Configuration&gt; mNode Settings</strong> ）。プロセスの完了後、[ <strong>mNodeステータス]</strong>フィールドに[ <code>Not Configured</code>表示されます。</p></li>
 <li><p> vCSAおよびWindowsのアップグレードの場合は、登録ユーティリティを使用して、関連付けられているvCenterServerからプラグインの<a href="http://docs.netapp.com/hci/topic/com.netapp.doc.hci-vcp-ug-170/GUID-6EC12854-37E6-421E-A5AA-8686AB0712FC.html" target="_blank" rel="noopener">登録を解除</a>します。</p></li>
 <li>
-<p> <a href="https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vcenter.upgrade.doc/GUID-7AFB6672-0B0B-4902-B254-EE6AE81993B2.html" target="_blank" rel="noopener">vCenter Server、ESXi、VM、およびその他のVMwareコンポーネントを含むvSphereをアップグレードします</a>。</p>
+<p> <a href="https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vcenter.upgrade.doc/GUID-7AFB6672-0B0B-4902-B254-EE6AE81993B2.html" target="_blank" rel="noopener">vCenter Server、ESXi、VM、およびその他のVMwareコンポーネントを含むvSphereをアップグレードします</a>。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> <a href="https://www.netapp.com/us/media/tr-4823.pdf">2ノードクラスターの</a>計算ノードのESXiをアップグレードする場合は、一度に1つの計算ノードのみをアップグレードして、一時的に1つの監視ノードのみが使用できなくなり、クラスタークォーラムを維持できるようにします。</td>
 </tr></table></div>
 </li>
-<li><p><a href="https://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-mg-vcp/GUID-9F20918F-19A3-4FA7-B58D-F8FF49716BF1.html" target="_blank" rel="noopener">登録</a>要素プラグインをvCenter Serverのために再びvCenterと。</p></li>
+<li><p> <a href="https://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-mg-vcp/GUID-9F20918F-19A3-4FA7-B58D-F8FF49716BF1.html" target="_blank" rel="noopener">登録</a>要素プラグインをvCenter Serverのために再びvCenterと。</p></li>
 <li><p>プラグインを使用して<a href="http://docs.netapp.com/hci/topic/com.netapp.doc.hci-vcp-ug-170/GUID-4F1BC760-D73D-4872-9C1D-EE90A80FB75A.html" target="_blank" rel="noopener">クラスター</a>を<a href="http://docs.netapp.com/hci/topic/com.netapp.doc.hci-vcp-ug-170/GUID-4F1BC760-D73D-4872-9C1D-EE90A80FB75A.html" target="_blank" rel="noopener">追加</a>します。</p></li>
 <li><p>プラグインを使用して<a href="http://docs.netapp.com/hci/topic/com.netapp.doc.hci-vcp-ug-170/GUID-A4BBF368-47B3-45B1-A1FD-966AA9A24C30.html" target="_blank" rel="noopener">QoSSIOC設定</a>を<a href="http://docs.netapp.com/hci/topic/com.netapp.doc.hci-vcp-ug-170/GUID-A4BBF368-47B3-45B1-A1FD-966AA9A24C30.html" target="_blank" rel="noopener">構成します</a>。</p></li>
 <li><p>プラグインによって制御されるすべてのデータストアに対して<a href="http://docs.netapp.com/hci/topic/com.netapp.doc.hci-vcp-ug-170/GUID-5ACAE926-CC41-4A45-8AF2-D39756F8C93F.html" target="_blank" rel="noopener">QoSSIOC</a>を<a href="http://docs.netapp.com/hci/topic/com.netapp.doc.hci-vcp-ug-170/GUID-5ACAE926-CC41-4A45-8AF2-D39756F8C93F.html" target="_blank" rel="noopener">有効</a>にします。</p></li>

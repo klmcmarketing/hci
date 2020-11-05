@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">管理ノードをアップグレードする</h1></div>
-<p class="page-details"><time datetime="2020-10-28 22:45:12 +0000">2020年10月28日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_management_node.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-28 22:45:12 +0000">2020年10月28日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_management_node.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>管理ノードをバージョン11.0以降から管理ノードバージョン12.2にアップグレードできます。</p></div>
 <div class="ulist">
@@ -1955,7 +1955,7 @@
 <li><p>管理ノード11.0または11.1からアップグレードする場合：<br><a href="#upgrade-a-management-node-to-version-12-2-from-11-1-or-11-0">管理ノードを11.1または11.0からバージョン12.2にアップグレードします。</a></p></li>
 <li><p>管理ノードバージョン10.xからアップグレードする場合：<br><a href="#migrating-from-management-node-version-10-x-to-11-x">管理ノードバージョン10.xから11.xへの移行</a></p></li>
 </ul></div>
-<div class="paragraph"><p>（1）管理サービスのバージョンと（2）Elementストレージのバージョンを<strong>順次</strong>更新し、既存の管理ノードを<strong>保持</strong>する場合は、このオプションを選択します。</p></div>
+<div class="paragraph"><p>（1）管理サービスのバージョンと（2）Elementストレージのバージョンを<strong>順次</strong>更新し、既存の管理ノードを<strong>保持</strong>する場合は、このオプションを選択します。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">管理サービスに続いてエレメントストレージを順番に更新しない場合、この手順を使用して再認証を再構成することはできません。代わりに、適切なアップグレード手順に従ってください。</td>
@@ -1965,7 +1965,7 @@
 <div class="sect1">
 <h2 id="upgrade-a-management-node-to-version-12-2-from-12-0">管理ノードを12.0からバージョン12.2にアップグレードします</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>新しい管理ノード仮想マシンをプロビジョニングする必要なしに、バージョン12.0からバージョン12.2への管理ノードのインプレースアップグレードを実行できます。</p></div>
+<div class="paragraph"><p>新しい管理ノード仮想マシンをプロビジョニングする必要なしに、バージョン12.0からバージョン12.2への管理ノードのインプレースアップグレードを実行できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> Element12.2管理ノードはオプションのアップグレードです。既存の展開には必要ありません。</td>
@@ -1974,7 +1974,7 @@
 <div class="title">必要なもの</div>
 <ul>
 <li>
-<p>アップグレードする予定の管理ノードはバージョン12.0であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。</p>
+<p>アップグレードする予定の管理ノードはバージョン12.0であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">管理ノードのバージョンを確認するには、管理ノードにログインし、ログインバナーに要素のバージョン番号を表示します。</td>
@@ -1983,7 +1983,7 @@
 <li><p> NetApp Hybrid Cloud Control（HCC）を使用して、管理サービスバンドルを最新バージョンに更新しました。次のIPからHCCにアクセスできます<code><a href="https://&lt;ManagementNodeIP&amp;gt" class="bare">https://&lt;ManagementNodeIP&amp;gt</a> ;</code></p></li>
 <li><p>管理ノードをバージョン12.2に更新する場合、続行するには管理サービス2.14.60以降が必要です。</p></li>
 <li>
-<p><a href="task_mnode_install_add_storage_NIC.html">追加のストレージNIC</a>を<a href="task_mnode_install_add_storage_NIC.html">構成する</a>手順を使用して、追加のネットワークアダプター（必要な場合）を<a href="task_mnode_install_add_storage_NIC.html">構成しました</a>。</p>
+<p><a href="task_mnode_install_add_storage_NIC.html">追加のストレージNIC</a>を<a href="task_mnode_install_add_storage_NIC.html">構成する</a>手順を使用して、追加のネットワークアダプター（必要な場合）を<a href="task_mnode_install_add_storage_NIC.html">構成しました</a>。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> eth0をSVIPにルーティングできない場合、永続ボリュームには追加のネットワークアダプターが必要になる場合があります。永続ボリュームの構成を可能にするために、iSCSIストレージネットワーク上に新しいネットワークアダプターを構成します。</td>
@@ -2005,7 +2005,7 @@
 </li>
 <li><p> SSHまたはコンソールアクセスを使用して、管理ノード仮想マシンにログインします。</p></li>
 <li>
-<p> <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">NetAppHCI</a>または<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">Element</a>ソフトウェアの管理ノードISOをNetAppサポートサイトから管理ノード仮想マシンにダウンロードします。</p>
+<p> <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">NetAppHCI</a>または<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">Element</a>ソフトウェアの管理ノードISOをNetAppサポートサイトから管理ノード仮想マシンにダウンロードします。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> ISOの名前は、 <code>solidfire-fdva-&lt;Element release&gt;-patchX-XX.XXXXXX.iso</code>
@@ -2045,12 +2045,12 @@
 mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div></div>
 </li>
 <li>
-<p>管理ノードで、 <code>redeploy-mnode</code>スクリプトを実行して、以前の管理サービス構成設定を保持します。</p>
+<p>管理ノードで、 <code>redeploy-mnode</code>スクリプトを実行して、以前の管理サービス構成設定を保持します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">スクリプトは、設定に応じて、Active IQコレクターサービス、コントローラー（vCenter）、またはプロキシからの構成を含む、以前の管理サービス構成を保持します。</td>
 </tr></table></div>
-<div class="listingblock"><div class="content"><pre> sudo / sf / packages / mnode / redeploy-mnode -mu &lt;mnodeユーザー&gt;</pre></div></div>
+<div class="listingblock"><div class="content"><pre> sudo / sf / packages / mnode / redeploy-mnode -mu &lt;mnodeユーザー&gt; </pre></div></div>
 </li>
 </ol>
 </div>
@@ -2059,7 +2059,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <div class="sect1">
 <h2 id="upgrade-a-management-node-to-version-12-2-from-11-3-through-11-8">管理ノードを11.3から11.8へのバージョン12.2にアップグレードします。</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>新しい管理ノード仮想マシンをプロビジョニングする必要なしに、バージョン11.3、11.5、11.7、または11.8からバージョン12.2への管理ノードのインプレースアップグレードを実行できます。</p></div>
+<div class="paragraph"><p>新しい管理ノード仮想マシンをプロビジョニングする必要なしに、バージョン11.3、11.5、11.7、または11.8からバージョン12.2への管理ノードのインプレースアップグレードを実行できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> Element12.2管理ノードはオプションのアップグレードです。既存の展開には必要ありません。</td>
@@ -2068,7 +2068,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <div class="title">必要なもの</div>
 <ul>
 <li>
-<p>アップグレードする予定の管理ノードはバージョン11.3、11.5、11.7、または11.8であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。</p>
+<p>アップグレードする予定の管理ノードはバージョン11.3、11.5、11.7、または11.8であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">管理ノードのバージョンを確認するには、管理ノードにログインし、ログインバナーに要素のバージョン番号を表示します。</td>
@@ -2077,7 +2077,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li><p> NetApp Hybrid Cloud Control（HCC）を使用して、管理サービスバンドルを最新バージョンに更新しました。次のIPからHCCにアクセスできます<code><a href="https://&lt;ManagementNodeIP&amp;gt" class="bare">https://&lt;ManagementNodeIP&amp;gt</a> ;</code></p></li>
 <li><p>管理ノードをバージョン12.2に更新する場合、続行するには管理サービス2.14.60以降が必要です。</p></li>
 <li>
-<p><a href="task_mnode_install_add_storage_NIC.html">追加のストレージNIC</a>を<a href="task_mnode_install_add_storage_NIC.html">構成する</a>手順を使用して、追加のネットワークアダプター（必要な場合）を<a href="task_mnode_install_add_storage_NIC.html">構成しました</a>。</p>
+<p><a href="task_mnode_install_add_storage_NIC.html">追加のストレージNIC</a>を<a href="task_mnode_install_add_storage_NIC.html">構成する</a>手順を使用して、追加のネットワークアダプター（必要な場合）を<a href="task_mnode_install_add_storage_NIC.html">構成しました</a>。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> eth0をSVIPにルーティングできない場合、永続ボリュームには追加のネットワークアダプターが必要になる場合があります。永続ボリュームの構成を可能にするために、iSCSIストレージネットワーク上に新しいネットワークアダプターを構成します。</td>
@@ -2099,7 +2099,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 </li>
 <li><p> SSHまたはコンソールアクセスを使用して、管理ノード仮想マシンにログインします。</p></li>
 <li>
-<p> <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">NetAppHCI</a>または<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">Element</a>ソフトウェアの管理ノードISOをNetAppサポートサイトから管理ノード仮想マシンにダウンロードします。</p>
+<p> <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">NetAppHCI</a>または<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">Element</a>ソフトウェアの管理ノードISOをNetAppサポートサイトから管理ノード仮想マシンにダウンロードします。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> ISOの名前は、 <code>solidfire-fdva-&lt;Element release&gt;-patchX-XX.XXXXXX.iso</code>
@@ -2130,12 +2130,12 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <div class="paragraph"><p>アップグレードプロセスが完了した後、管理ノードは新しいOSで再起動します。</p></div>
 </li>
 <li>
-<p>管理ノードで、 <code>redeploy-mnode</code>スクリプトを実行して、以前の管理サービス構成設定を保持します。</p>
+<p>管理ノードで、 <code>redeploy-mnode</code>スクリプトを実行して、以前の管理サービス構成設定を保持します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">スクリプトは、設定に応じて、Active IQコレクターサービス、コントローラー（vCenter）、またはプロキシからの構成を含む、以前の管理サービス構成を保持します。</td>
 </tr></table></div>
-<div class="listingblock"><div class="content"><pre> sudo / sf / packages / mnode / redeploy-mnode -mu &lt;mnodeユーザー&gt;</pre></div></div>
+<div class="listingblock"><div class="content"><pre> sudo / sf / packages / mnode / redeploy-mnode -mu &lt;mnodeユーザー&gt; </pre></div></div>
 </li>
 </ol>
 </div>
@@ -2149,21 +2149,21 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <div class="title">あなたが始める前に</div>
 <ul>
 <li>
-<p>ストレージノードはElement11.3以降を実行しています。</p>
+<p>ストレージノードはElement11.3以降を実行しています。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">最新のHealthToolsを使用して、Elementソフトウェアをアップグレードします。</td>
 </tr></table></div>
 </li>
 <li>
-<p>アップグレードする予定の管理ノードはバージョン11.0または11.1であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。</p>
+<p>アップグレードする予定の管理ノードはバージョン11.0または11.1であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">管理ノードのバージョンを確認するには、管理ノードにログインし、ログインバナーに要素のバージョン番号を表示します。管理ノード11.0の場合、VMメモリを手動で12GBに増やす必要があります。</td>
 </tr></table></div>
 </li>
 <li>
-<p>製品の管理ノードユーザーガイドでストレージNIC（eth1）を構成するための手順を使用して、追加のネットワークアダプター（必要な場合）を構成しました。</p>
+<p>製品の管理ノードユーザーガイドでストレージNIC（eth1）を構成するための手順を使用して、追加のネットワークアダプター（必要な場合）を構成しました。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> eth0をSVIPにルーティングできない場合、永続ボリュームには追加のネットワークアダプターが必要になる場合があります。永続ボリュームの構成を可能にするために、iSCSIストレージネットワーク上に新しいネットワークアダプターを構成します。</td>
@@ -2184,7 +2184,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 </li>
 <li><p> SSHまたはコンソールアクセスを使用して、管理ノード仮想マシンにログインします。</p></li>
 <li>
-<p> <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">NetAppHCI</a>または<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">Element</a>ソフトウェアの管理ノードISOをNetAppサポートサイトから管理ノード仮想マシンにダウンロードします。</p>
+<p> <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">NetAppHCI</a>または<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">Element</a>ソフトウェアの管理ノードISOをNetAppサポートサイトから管理ノード仮想マシンにダウンロードします。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> ISOの名前は、 <code>solidfire-fdva-&lt;Element release&gt;-patchX-XX.XXXXXX.iso</code>
@@ -2228,7 +2228,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 </ol></div>
 </li>
 <li>
-<p> 12.2管理ノードで、 <code>upgrade-mnode</code>スクリプトを実行して、以前の構成設定を保持します。</p>
+<p> 12.2管理ノードで、 <code>upgrade-mnode</code>スクリプトを実行して、以前の構成設定を保持します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> 11.0または11.1管理ノードから移行する場合、スクリプトはActiveIQコレクターを新しい構成形式にコピーします。</td>
@@ -2307,7 +2307,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p>クリップボードにコピーした親ベースアセットIDを<strong>asset_id</strong>フィールドに<strong>入力し</strong>ます。</p></li>
 <li><p>ペイロードに、[モデル]タブで定義されている必要なペイロード値を入力します。 <code>type</code>として<code>ESXi Host</code>入力し、hardware_tagの前の手順で保存したハードウェアタグを貼り付け<code>hardware_tag</code> 。</p></li>
-<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。 </p></li>
 </ol></div>
 </li>
 </ol>
@@ -2332,7 +2332,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li><p> vSphereで、[ <strong>NetApp Element Configuration</strong> <strong>]</strong> &gt; [ <strong>mNodeSettings]を</strong>選択します。 （古いバージョンでは、最上位メニューは<strong>NetApp SolidFire構成</strong>です。）</p></li>
 <li><p> [<strong>アクション]</strong> &gt; [<strong>クリア]を</strong>クリックし<strong>ます</strong>。</p></li>
 <li>
-<p>確認するには、[<strong>はい</strong>]をクリックします。 mNodeステータスフィールドは、未構成を報告する必要があります。</p>
+<p>確認するには、[<strong>はい</strong>]をクリックします。 mNodeステータスフィールドは、未構成を報告する必要があります。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">初めて[ <strong>mNode設定</strong>]タブに移動すると、 <strong>[</strong> mNodeステータス]フィールドに、予想される<strong>UP</strong>ではなく[<strong>未構成]と</strong>表示される場合が<strong>あり</strong>ます。 [<strong>アクション]</strong> &gt; [<strong>クリア]</strong>を選択できない場合があります。ブラウザを更新します。 mNodeステータスフィールドには、最終的に<strong>UP</strong>が表示されます。</td>
@@ -2344,7 +2344,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <div class="listingblock"><div class="content"><pre> https：// &lt;mNode 11.1 IPアドレス&gt;：9443</pre></div></div>
 </li>
 <li>
-<p>新しいQoSSIOCパスワードを設定します。</p>
+<p>新しいQoSSIOCパスワードを設定します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">デフォルトのパスワードは<code>solidfire</code>です。このパスワードは、新しいパスワードを設定するために必要です。</td>
@@ -2399,7 +2399,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 </li>
 <li><p> vSphereでは、[ <strong>NetApp Element Configuration</strong> ]&gt; [ <strong>mNodeSettings]</strong>タブにmNodeステータスが<strong>UP</strong>として表示されます。</p></li>
 <li><p> NMAがシステムアラートとONTAPSelectアラートを報告していることを確認します。</p></li>
-<li><p>すべてが期待どおりに機能している場合は、管理ノード10.xVMをシャットダウンして削除します。</p></li>
+<li><p>すべてが期待どおりに機能している場合は、管理ノード10.xVMをシャットダウンして削除します。 </p></li>
 </ol>
 </div>
 </div>

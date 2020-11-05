@@ -1938,12 +1938,12 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ベースボード管理コントローラーの接続情報を編集する</h1></div>
-<p class="page-details"><time datetime="2020-08-18 19:39:32 +0000">2020年8月18日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_edit_bmc_info.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-08-18 19:39:32 +0000">2020年8月18日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_edit_bmc_info.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>コンピューティングノードごとに、NetApp Hybrid CloudControlでBaseboardManagement Controller（BMC）管理者の資格情報を変更できます。 BMCファームウェアをアップグレードする前に資格情報を変更するか、 <code>Hardware ID not available</code> <code>Unable to Detect</code> <code>Hardware ID not available</code>を解決するか、NetApp Hybrid CloudControlに示されているエラー<code>Unable to Detect</code> <code>Hardware ID not available</code> 。</p></div>
 <div class="paragraph">
 <div class="title">必要なもの</div>
-<p>BMC資格情報を変更するためのクラスター管理者権限。</p>
+<p>BMC資格情報を変更するためのクラスター管理者権限。 </p>
 </div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -1959,7 +1959,7 @@
 </ul></div>
 </div></div>
 <div class="sect1">
-<h2 id="use-netapp-hybrid-cloud-control-to-edit-bmc-information">NetApp Hybrid CloudControlを使用してBMC情報を編集します</h2>
+<h2 id="use-netapp-hybrid-cloud-control-to-edit-bmc-information"> NetApp Hybrid CloudControlを使用してBMC情報を編集します</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>ネットアップハイブリッドクラウドコントロールダッシュボードを使用して、保存されているBMC認証情報を編集できます。</p></div>
 <div class="olist arabic">
@@ -1982,17 +1982,17 @@
 <li><p> BMC接続エラーのある計算ノードに保存されているBMC資格情報を追加または編集するには、エラーメッセージテキストの[<strong>接続設定の編集</strong>]をクリックします。</p></li>
 <li><p>表示されるダイアログで、この計算ノードのBMCの正しい管理者ユーザー名とパスワードを追加します。</p></li>
 <li><p> [<strong>保存]を</strong>クリックし<strong>ます</strong>。</p></li>
-<li><p>保存されているBMC資格情報が欠落しているか正しくない計算ノードについて、手順6〜8を繰り返します。</p></li>
+<li><p>保存されているBMC資格情報が欠落しているか正しくない計算ノードについて、手順6〜8を繰り返します。 </p></li>
 </ol>
 </div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> BMC情報を更新すると、インベントリが更新され、管理ノードサービスがアップグレードを完了するために必要なすべてのハードウェアパラメータを認識できるようになります。</td>
+<td class="content"> BMC情報を更新すると、インベントリが更新され、管理ノードサービスがアップグレードを完了するために必要なすべてのハードウェアパラメータを認識できるようになります。 </td>
 </tr></table></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="use-the-rest-api-to-edit-bmc-information"> RESTAPIを使用してBMC情報を編集します</h2>
+<h2 id="use-the-rest-api-to-edit-bmc-information">RESTAPIを使用してBMC情報を編集します</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp Hybrid Cloud Control REST APIを使用して、保存されているBMC認証情報を編集できます。</p></div>
 <div class="olist arabic">
@@ -2056,7 +2056,7 @@
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p>以前に保存したノードアセットIDを<code>hardware_id</code>パラメーターに入力します。</p></li>
 <li>
-<p>ペイロードに次の情報を入力します。</p>
+<p>ペイロードに次の情報を入力します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">

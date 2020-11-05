@@ -1937,10 +1937,10 @@
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
-    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">2ノードストレージクラスターの監視ノードリソース要件</h1></div>
-<p class="page-details"><time datetime="2020-05-29 21:40:32 +0000">2020年5月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/hci_prereqs_witness_nodes.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> 2ノードストレージクラスターの監視ノードリソース要件</h1></div>
+<p class="page-details"><time datetime="2020-05-29 21:40:32 +0000">2020年5月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/hci_prereqs_witness_nodes.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>NetApp HCIは、2つのストレージノードと2つの計算ノードの最小インストールサイズをサポートします。 2ノードまたは3ノードのストレージクラスタを使用してNetAppHCIをインストールする場合は、NetAppHCIウィットネスノードとそのVMリソース要件に注意する必要があります。</p></div>
-<div class="paragraph"><p>ストレージクラスターが2つまたは3つのノードを使用する場合、各ストレージクラスターの横に1組の監視ノードも展開します。ウィットネスノードには、次のVMリソース要件があります。</p></div>
+<div class="paragraph"><p>ストレージクラスターが2つまたは3つのノードを使用する場合、各ストレージクラスターの横に1組の監視ノードも展開します。ウィットネスノードには、次のVMリソース要件があります。 </p></div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1965,7 +1965,7 @@
 </tr>
 </tbody>
 </table>
-<div class="paragraph"><p> NetApp HCIは、2ノードまたは3ノードのストレージクラスター内の特定のストレージノードモデルのみをサポートします。詳細については、NetAppHCIバージョンのリリースノートを参照してください。</p></div>
+<div class="paragraph"><p> NetApp HCIは、2ノードまたは3ノードのストレージクラスター内の特定のストレージノードモデルのみをサポートします。詳細については、NetAppHCIバージョンのリリースノートを参照してください。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> NetApp HCIインストールプロセスでウィットネスノードをインストールすると、仮想マシンテンプレートがVMware vCenterに保存され、誤って削除、紛失、または破損した場合にウィットネスノードを再デプロイするために使用できます。ウィットネスノードをホストしていた障害のある計算ノードを置き換える必要がある場合は、テンプレートを使用してウィットネスノードを再デプロイすることもできます。手順については、 <a href="https://docs.netapp.com/hci/index.jsp?topic=%2Fcom.netapp.doc.hs-comnode-repl%2FGUID-0947FD01-0BA6-4650-A36F-8BF096B0B81C.html" target="_blank" rel="noopener">NetAppHCIのドキュメントを</a>参照してください。</td>

@@ -1937,8 +1937,8 @@
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
-    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">NetAppHCIストレージリソースを展開する</h1></div>
-<p class="page-details"><time datetime="2020-06-01 15:34:42 +0000">2020年6月1日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_expand_storage.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> NetAppHCIストレージリソースを展開する</h1></div>
+<p class="page-details"><time datetime="2020-06-01 15:34:42 +0000">2020年6月1日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_expand_storage.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>NetApp HCIの導入が完了したら、NetApp Hybrid CloudControlを使用してNetAppHCIストレージリソースを拡張および構成できます。</p></div>
 <div class="ulist">
 <div class="title">あなたが始める前に</div>
@@ -1959,7 +1959,7 @@
 </ul></div>
 </li>
 <li><p>すでにインストールされているストレージノードの管理IPv4アドレスがあることを確認してください。 IPアドレスは、 <strong>vCenterServer</strong>用のNetAppElementプラグインの[ <strong>NetAppElement Management</strong> ]&gt; [ <strong>Cluster</strong> ]&gt; [ <strong>Nodes</strong> ]タブにあります。</p></li>
-<li><p>新しい各ノードが、既存のストレージまたはコンピューティングクラスターと同じネットワークトポロジとケーブルを使用していることを確認します。</p></li>
+<li><p>新しい各ノードが、既存のストレージまたはコンピューティングクラスターと同じネットワークトポロジとケーブルを使用していることを確認します。 </p></li>
 </ul>
 </div>
 <div class="admonitionblock tip"><table><tr>
@@ -1988,7 +1988,7 @@
 <li><p><strong>管理アドレス</strong>：管理ネットワークサブネット内にある新しいストレージノードの管理IPアドレスを入力します。</p></li>
 <li><p><strong>ストレージ（iSCSI）IPアドレス</strong>：iSCSIネットワークサブネット内にある新しいストレージノードのiSCSIIPアドレスを入力します。</p></li>
 <li>
-<p> [<strong>続行]を</strong>クリックします。</p>
+<p> [<strong>続行]を</strong>クリックします。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> NetApp HCIは、入力したIPアドレスの検証に時間がかかる場合があります。 IPアドレスの検証が完了すると、[続行]ボタンが使用可能になります。</td>
@@ -1997,7 +1997,7 @@
 </ol></div>
 </li>
 <li>
-<p> [ネットワーク設定]セクションの[<strong>レビュー]</strong>ページで、新しいノードが太字で表示されます。セクションを変更するには、次の手順を実行します。</p>
+<p> [ネットワーク設定]セクションの[<strong>レビュー]</strong>ページで、新しいノードが太字で表示されます。セクションに変更を加えるには、次の手順を実行します。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li><p>そのセクションの[<strong>編集]</strong>をクリックします。</p></li>
 <li><p>終了したら、後続のページで[<strong>続行</strong>]をクリックして、[レビュー]ページに戻ります。</p></li>
@@ -2012,7 +2012,7 @@
 <div class="paragraph"><p> NetApp HCIがリソースを追加および構成している間、進行状況を監視できます。</p></div>
 </li>
 <li>
-<p><strong>オプション</strong>：新しいストレージノードがvCenterServerのElementPlug-inに表示されていることを確認します。</p>
+<p><strong>オプション</strong>：新しいストレージノードがvCenterServerのElementPlug-inに表示されていることを確認します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> 2ノードのストレージクラスターを4ノード以上に拡張した場合、以前にストレージクラスターによって使用されていたWitnessノードのペアは、vSphereのスタンバイ仮想マシンとして引き続き表示されます。新しく拡張されたストレージクラスターはそれらを使用しません。 VMリソースを再利用する場合は、WitnessNode仮想マシンを<a href="task_hci_removewn.html" target="_blank" rel="noopener">手動で削除</a>できます。</td>

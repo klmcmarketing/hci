@@ -1937,8 +1937,8 @@
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
-    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">Elementソフトウェアのアップグレード</h1></div>
-<p class="page-details"><time datetime="2020-10-28 22:20:51 +0000">2020年10月28日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_element_software.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> Elementソフトウェアのアップグレード</h1></div>
+<p class="page-details"><time datetime="2020-10-28 22:20:51 +0000">2020年10月28日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_element_software.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>NetApp Elementソフトウェアをアップグレードするには、NetAppハイブリッドクラウドコントロールUI、REST API、またはHealthToolsスイートのツールを使用できます。 Elementソフトウェアのアップグレード中は、ノードの追加と削除、ドライブの追加と削除、イニシエーター、ボリュームアクセスグループ、仮想ネットワークなどに関連付けられたコマンドなど、特定の操作が抑制されます。</p></div>
 <div class="ulist">
@@ -1949,7 +1949,7 @@
 <li><p><strong>システム時刻の同期</strong>：すべてのノードのシステム時刻が同期され、ストレージクラスターとノードに対してNTPが正しく構成されていることを確認しました。各ノードは、ノードごとのWeb UI（ <code>https://[IP address]:442</code> ）でDNSネームサーバーを使用して構成する必要があり、タイムスキューに関連する未解決のクラスター障害はありません。</p></li>
 <li><p><strong>システムポート</strong>：アップグレードにNetApp Hybrid Cloud Controlを使用している場合は、必要なポートが開いていることを確認しました。詳細については、<a href="hci_prereqs_required_network_ports.html">ネットワークポート</a>を参照してください。</p></li>
 <li><p><strong>管理ノード</strong>：NetApp Hybrid Cloud Control UIおよびAPIの場合、環境内の管理ノードはバージョン11.3を実行しています。</p></li>
-<li><p><strong>管理サービス</strong>：管理サービスバンドルを最新バージョンに更新しました。</p></li>
+<li><p><strong>管理サービス</strong>：管理サービスバンドルを最新バージョンに更新しました。 </p></li>
 </ul>
 </div>
 <div class="admonitionblock important"><table><tr>
@@ -1972,7 +1972,7 @@
 </ul></div>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
-<td class="content">H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合は、ストレージノードごとに追加のアップグレード手順（<a href="#upgrading-h610s-storage-nodes-to-element-12-2-phase-2">フェーズ2</a> ）を実行する必要があります。 Element 11.8以降を実行している場合、追加のアップグレード手順（フェーズ2）は必要ありません。</td>
+<td class="content"> H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合は、ストレージノードごとに追加のアップグレード手順（<a href="#upgrading-h610s-storage-nodes-to-element-12-2-phase-2">フェーズ2</a> ）を実行する必要があります。 Element 11.8以降を実行している場合、追加のアップグレード手順（フェーズ2）は必要ありません。 </td>
 </tr></table></div>
 </div></div>
 <div class="sect1">
@@ -1991,7 +1991,7 @@
 </div>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
-<td class="content">NetApp Hybrid Cloud Controlを使用してストレージクラスターをアップグレードする際の潜在的な問題とその回避策については、 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">KBの記事を</a>参照して<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">ください</a>。</td>
+<td class="content"> NetApp Hybrid Cloud Controlを使用してストレージクラスターをアップグレードする際の潜在的な問題とその回避策については、 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">KBの記事を</a>参照して<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">ください</a>。 </td>
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
@@ -2011,7 +2011,7 @@
 <div class="paragraph"><p> [<strong>ストレージ</strong>]タブには、インストールの一部であるストレージクラスターが一覧表示されます。 NetApp Hybrid Cloud Controlがクラスターにアクセスできない場合、そのクラスターは[<strong>アップグレード]</strong>ページに表示されません。</p></div>
 </li>
 <li>
-<p>次のオプションから選択し、クラスターに適用可能な一連の手順を実行します。</p>
+<p>次のオプションから選択し、クラスターに適用可能な一連の手順を実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2023,16 +2023,16 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content">
 <div class="olist arabic"><ol class="arabic">
 <li><p>アップグレードするクラスターの横にあるドロップダウン矢印をクリックし、[<strong>要素</strong>]タブで利用可能なアップグレードバージョンから選択します。</p></li>
-<li><p> [<strong>アップグレードの開始]を</strong>クリックします。</p></li>
+<li><p> [<strong>アップグレードの開始]を</strong>クリックします。 </p></li>
 </ol></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">
-<strong>アップグレードステータス</strong>は、プロセスのステータスを反映するためにアップグレード中に変更されます。また、アップグレードの一時停止やアップグレードがエラーを返した場合など、実行したアクションに応じて変化します。<a href="#upgrade-status-changes">アップグレードステータスの変更を</a>参照してください。</td>
+<strong>アップグレードステータス</strong>は、プロセスのステータスを反映するためにアップグレード中に変更されます。また、アップグレードの一時停止やアップグレードがエラーを返した場合など、実行したアクションに応じて変化します。<a href="#upgrade-status-changes">アップグレードステータスの変更を</a>参照してください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -2042,11 +2042,11 @@
 </div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> 管理ノードは、外部接続のない暗いサイト内にあります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content">
 <div class="olist arabic"><ol class="arabic">
 <li><p> [<strong>参照]</strong>をクリックして、ダウンロードしたアップグレードパッケージをアップロードします。</p></li>
-<li><p>アップロードが完了するのを待ちます。プログレスバーにアップロードのステータスが表示されます。</p></li>
+<li><p>アップロードが完了するのを待ちます。プログレスバーにアップロードのステータスが表示されます。 </p></li>
 </ol></div>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
@@ -2056,14 +2056,14 @@
 </div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> 11.8より前のElementバージョンを実行しているH610Sクラスターをアップグレードしています。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> 11.8より前のElementバージョンを実行しているH610Sクラスターをアップグレードしています。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content">
 <div class="olist arabic"><ol class="arabic">
 <li><p>アップグレードするクラスターの横にあるドロップダウン矢印をクリックし、使用可能なアップグレードバージョンから選択します。</p></li>
 <li><p> [<strong>アップグレードの開始]を</strong>クリックします。<br>アップグレードが完了すると、UIにより、プロセスのフェーズ2を実行するように求められます。</p></li>
 <li><p> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB記事</a>で必要な追加の手順（フェーズ2）を完了し、UIでフェーズ2を完了したことを確認します。</p></li>
 </ol></div>
-<div class="paragraph"><p>アップグレードの完了後にログをダウンロードできます。さまざまなアップグレードのステータスの変更に関する情報は、以下を参照してください<a href="#upgrade-status-changes">アップグレードのステータスの変更を</a>。</p></div>
+<div class="paragraph"><p>アップグレードの完了後にログをダウンロードできます。さまざまなアップグレードのステータスの変更に関する情報は、以下を参照してください<a href="#upgrade-status-changes">アップグレードのステータスの変更を</a>。 </p></div>
 </div></td>
 </tr>
 </tbody>
@@ -2073,7 +2073,7 @@
 </div>
 <div class="sect2">
 <h3 id="upgrade-status-changes">アップグレードステータスの変更</h3>
-<div class="paragraph"><p>UIの[<strong>アップグレードステータス</strong>]列に、アップグレードプロセスの前、最中、および後に表示されるさまざまな状態を次に示します。</p></div>
+<div class="paragraph"><p>UIの[<strong>アップグレードステータス</strong>]列に、アップグレードプロセスの前、最中、および後に表示されるさまざまな状態を次に示します。 </p></div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2114,7 +2114,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">フォローアップを完了する</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">11.8より前のElementバージョンからアップグレードするH610Sノードの場合のみ。アップグレードプロセスのフェーズ1が完了すると、この状態により、アップグレードのフェーズ2を実行するように求められます（ <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB記事を参照</a>）。あなたの完全なフェーズ2の後、あなたはそれを完了したことを認め、ステータスが<strong>最新のもの</strong>に変更されます。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11.8より前のElementバージョンからアップグレードするH610Sノードの場合のみ。アップグレードプロセスのフェーズ1が完了すると、この状態により、アップグレードのフェーズ2を実行するように求められます（ <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB記事を参照</a>）。あなたの完全なフェーズ2の後、あなたはそれを完了したことを認め、ステータスが<strong>最新のもの</strong>に変更されます。 </p></td>
 </tr>
 </tbody>
 </table>
@@ -2129,7 +2129,7 @@
 <div class="title">ステップ</div>
 <ol class="arabic">
 <li>
-<p>接続に応じて、次のいずれかを実行します。</p>
+<p>接続に応じて、次のいずれかを実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2141,7 +2141,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
 <p>リポジトリ接続を確認します。</p>
@@ -2171,13 +2171,13 @@
 <li><p> REST API UIから、[ <strong>GET / packages</strong> ]をクリックし<strong>ます</strong>。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
-<li><p>応答から、後のステップで使用するためにパッケージIDをコピーして保存します。</p></li>
+<li><p>応答から、後のステップで使用するためにパッケージIDをコピーして保存します。 </p></li>
 </ol></div>
 </li>
 </ol></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
 <p>管理ノードからアクセス可能なデバイスにストレージアップグレードパッケージをダウンロードします。</p>
@@ -2334,7 +2334,7 @@
 <li><p>前の手順のアップグレードIDを<strong>upgradeIdに</strong>入力します。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
 <li>
-<p>アップグレード中に問題または特別な要件がある場合は、次のいずれかを実行します。</p>
+<p>アップグレード中に問題または特別な要件がある場合は、次のいずれかを実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2346,7 +2346,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">応答本文の<code>failedHealthChecks</code>メッセージによるクラスターヘルスの問題を修正する必要があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">応答本文の<code>failedHealthChecks</code>メッセージによるクラスターヘルスの問題を修正する必要があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li><p>各問題にリストされている特定のKB記事に移動するか、指定された対処法を実行してください。</p></li>
 <li><p> KBが指定されている場合は、関連するKBの記事に記載されているプロセスを完了してください。</p></li>
@@ -2359,11 +2359,11 @@
   「アクション」：「再開」
 }</pre></div></div>
 </li>
-<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。 </p></li>
 </ol></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">メンテナンスウィンドウが閉じているなどの理由で、アップグレードを一時停止する必要があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">メンテナンスウィンドウが閉じているなどの理由で、アップグレードを一時停止する必要があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li><p>必要に応じて再認証し、 <strong>PUT / upgrades / {upgradeId}</strong>をクリックします。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
@@ -2374,11 +2374,11 @@
   「アクション」：「一時停止」
 }</pre></div></div>
 </li>
-<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。 </p></li>
 </ol></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> 11.8より前のElementバージョンを実行しているH610Sクラスターをアップグレードする場合は、応答本文に状態<code>finishedNeedsAck</code>れます。 H610Sストレージノードごとに追加のアップグレード手順（フェーズ2）を実行する必要があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> 11.8より前のElementバージョンを実行しているH610Sクラスターをアップグレードする場合は、応答本文に状態<code>finishedNeedsAck</code>れます。 H610Sストレージノードごとに追加のアップグレード手順（フェーズ2）を実行する必要があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li><p> <a href="#Upgrading%20H610S%20storage%20nodes%20to%20Element%2012.2%20or%20later%20(phase%202)">[H610Sストレージノードのエレメント12.2以降へのアップグレード（フェーズ2）]</a>を参照して、各ノードのプロセスを完了してください。</p></li>
 <li><p>必要に応じて再認証し、 <strong>PUT / upgrades / {upgradeId}</strong>をクリックします。</p></li>
@@ -2399,7 +2399,7 @@
 <li>
 <p>プロセスが完了するまで、必要に応じて<strong>GET / upgrades / {upgradeId}</strong> APIを複数回実行します。</p>
 <div class="paragraph"><p>アップグレード中、エラーが発生しなかった場合、 <code>status</code>は<code>running</code>中<code>status</code>示します。各ノードがアップグレードされると、 <code>step</code>値は<code>NodeFinished</code>ます。</p></div>
-<div class="paragraph"><p> <code>percent</code>値が<code>100</code>で、 <code>state</code>が<code>finished</code>示している場合、アップグレードは正常に<code>finished</code>ます。</p></div>
+<div class="paragraph"><p> <code>percent</code>値が<code>100</code>で、 <code>state</code>が<code>finished</code>示している場合、アップグレードは正常に<code>finished</code>ます。 </p></div>
 </li>
 </ol></div>
 </li>
@@ -2415,11 +2415,11 @@
 <div class="ulist"><ul>
 <li><p>クラスタ障害は3時間以内に解決され、アップグレードが再開されます。このシナリオでは、アクションを実行する必要はありません。</p></li>
 <li><p>問題は3時間後も続き、アップグレードステータスは赤いバナーで<strong>エラー</strong>を示します。問題が解決し<strong>たら</strong>、[<strong>再開</strong>]をクリックしてアップグレードを再開できます。</p></li>
-<li><p> NetAppサポートは、3時間以内に修正措置を講じるために、アップグレードを一時的に中止する必要があると判断しました。サポートはAPIを使用してアップグレードを中止します。</p></li>
+<li><p> NetAppサポートは、3時間以内に修正措置を講じるために、アップグレードを一時的に中止する必要があると判断しました。サポートはAPIを使用してアップグレードを中止します。 </p></li>
 </ul></div>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
-<td class="content">ノードの更新中にクラスターのアップグレードを中止すると、ドライブがノードから正常に削除されない場合があります。ドライブが正常に取り外されていない場合、アップグレード中にドライブを追加し直すには、ネットアップサポートによる手動の介入が必要になります。ノードは、ファームウェアの更新または更新後の同期アクティビティの実行に時間がかかる場合があります。アップグレードの進行が停滞していると思われる場合は、ネットアップサポートにお問い合わせください。</td>
+<td class="content">ノードの更新中にクラスターのアップグレードを中止すると、ドライブがノードから正常に削除されない場合があります。ドライブが正常に取り外されていない場合、アップグレード中にドライブを追加し直すには、ネットアップサポートによる手動の介入が必要になります。ノードは、ファームウェアの更新または更新後の同期アクティビティの実行に時間がかかる場合があります。アップグレードの進行が停滞していると思われる場合は、ネットアップサポートにお問い合わせください。 </td>
 </tr></table></div>
 </div>
 </div>
@@ -2430,7 +2430,7 @@
 <div class="title">ステップ</div>
 <ol class="arabic">
 <li>
-<p>ストレージアップグレードパッケージをダウンロードします。</p>
+<p>ストレージアップグレードパッケージをダウンロードします。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> Elementストレージソフトウェアをアップグレードするには、HealthToolsの最新バージョンが必要です。</td>
@@ -2447,7 +2447,7 @@
 <li>
 <p><strong>オプション</strong>：アップグレードの前に、管理ノードからクラスターノードにISOをダウンロードします。</p>
 <div class="paragraph"><p>この手順では、ストレージノードでISOを事前ステージングし、追加の内部チェックを実行して、クラスターがアップグレードに適した状態にあることを確認することにより、アップグレード時間を短縮します。この操作を実行しても、クラスターは「アップグレード」モードにならず、クラスター操作も制限されません。</p></div>
-<div class="listingblock"><div class="content"><pre> sfinstall &lt;MVIP&gt; -u &lt;cluster_username&gt; &lt;path-toinstall-file-ISO&gt; --stage</pre></div></div>
+<div class="listingblock"><div class="content"><pre> sfinstall &lt;MVIP&gt; -u &lt;cluster_username&gt; &lt;path-toinstall-file-ISO&gt; --stage </pre></div></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">コマンドラインからパスワードを省略して、 <code>sfinstall</code>が情報の入力を求められるようにします。特殊文字を含むパスワードの場合、各特殊文字の前に円記号（ <code>\</code> ）を追加します。たとえば、 <code>mypass!@1</code>は<code>mypass\!\@</code>として入力する必要があります。</td>
@@ -2462,7 +2462,7 @@
 HealthToolsの最新バージョンは、次の場所からダウンロードできます。
 https://mysupport.netapp.com/NOW/cgi-bin/software/
 または--skip-version-checkで再実行します</pre></div></div>
-<div class="paragraph"><p>成功した前段階操作からの次のサンプル抜粋を参照してください。</p></div>
+<div class="paragraph"><p>成功した前段階操作からの次のサンプル抜粋を参照してください。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">ステージングが完了すると、アップグレードイベント後に<code>Storage Node Upgrade Staging Successful</code>したというメッセージが表示されます。</td>
@@ -2528,7 +2528,7 @@ solidfire-rtfi-sodium-11.0.0.761.iso
 新しいネットワーク障害を監視しています。既存の障害IDが設定されます（[]）。
 名前の変更が必要なレガシーネットワークインターフェイス名の確認
 10.3.0.161から11.0.0.761へのアップグレードupgrademethod = rtfi
-クラスタ障害がクリアされるまで300秒待機します
+クラスター障害がクリアされるまで300秒待機
 キャッシュがしきい値を下回るのを待っています
 ..。
 mip = [10.117.0.23] nodeID = [1]のインストール（4ノードのうちの1つ）
@@ -2553,7 +2553,7 @@ nodeID = [2]にステージングされたビルドは存在しません
 </div>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
-<td class="content">H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合は、ストレージノードごとに追加のアップグレード手順（<a href="#upgrading-h610s-storage-nodes-to-element-12-2-phase-2">フェーズ2</a> ）を実行する必要があります。 Element 11.8以降を実行している場合、追加のアップグレード手順（フェーズ2）は必要ありません。</td>
+<td class="content"> H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合は、ストレージノードごとに追加のアップグレード手順（<a href="#upgrading-h610s-storage-nodes-to-element-12-2-phase-2">フェーズ2</a> ）を実行する必要があります。 Element 11.8以降を実行している場合、追加のアップグレード手順（フェーズ2）は必要ありません。 </td>
 </tr></table></div>
 </div>
 </div>
@@ -2566,7 +2566,7 @@ nodeID = [2]にステージングされたビルドは存在しません
 <ol class="arabic">
 <li><p>NetApp HCIシステムの場合は、NetAppHCIソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">ダウンロードページ</a>にアクセスし<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">ます</a>。 SolidFireストレージシステムの場合は、Elementソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">ダウンロードページに</a>アクセスして<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">ください</a>。</p></li>
 <li>
-<p>正しいソフトウェアリリースを選択し、最新のストレージノードイメージを管理ノードではないコンピューターにダウンロードします。</p>
+<p>正しいソフトウェアリリースを選択し、最新のストレージノードイメージを管理ノードではないコンピューターにダウンロードします。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> Elementストレージソフトウェアをアップグレードするには、HealthToolsの最新バージョンが必要です。</td>
@@ -2574,7 +2574,7 @@ nodeID = [2]にステージングされたビルドは存在しません
 </li>
 <li><p>この<a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740">JSONファイル</a>（ <a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740" class="bare">https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740</a> ）を管理ノードではないコンピューターのNetAppサポートサイトからダウンロードし、名前を<code>metadata.json</code>変更します。</p></li>
 <li>
-<p> ISOファイルを<code>/tmp</code>などのアクセス可能な場所の管理ノードにコピーします。</p>
+<p> ISOファイルを<code>/tmp</code>などのアクセス可能な場所の管理ノードにコピーします。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">これは、たとえばSCPを使用して行うことができます。 ISOファイルをアップロードするときは、ファイルの名前が変更されていないことを確認してください。変更されていない場合、後の手順は失敗します。</td>
@@ -2606,20 +2606,20 @@ nodeID = [2]にステージングされたビルドは存在しません
 <div class="listingblock"><div class="content"><pre> sfinstall -u &lt;cluster_username&gt; &lt;MVIP&gt; &lt;path-toinstall-file-ISO&gt; --metadata = &lt;path-to-metadata-json-file&gt;</pre></div></div>
 <div class="paragraph"><p>次のサンプル入力コマンドを参照してください。</p></div>
 <div class="listingblock"><div class="content"><pre> sfinstall -u admin 10.117.78.244 /tmp/solidfire-rtfi-11.3.0.345.iso --metadata = / tmp / metadata.json</pre></div></div>
-<div class="paragraph"><p><strong>オプション</strong><code>--stage</code>フラグを<code>sfinstall</code>コマンドに追加して、アップグレードを事前にステージングすることができます。</p></div>
+<div class="paragraph"><p><strong>オプション</strong><code>--stage</code>フラグを<code>sfinstall</code>コマンドに追加して、アップグレードを事前にステージングすることができます。 </p></div>
 </li>
 </ol>
 </div>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
-<td class="content"> H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合は、ストレージノードごとに追加のアップグレード手順（<a href="#upgrading-h610s-storage-nodes-to-element-12-2-phase-2">フェーズ2</a> ）を実行する必要があります。 Element 11.8以降を実行している場合、追加のアップグレード手順（フェーズ2）は必要ありません。</td>
+<td class="content"> H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合は、ストレージノードごとに追加のアップグレード手順（<a href="#upgrading-h610s-storage-nodes-to-element-12-2-phase-2">フェーズ2</a> ）を実行する必要があります。 Element 11.8以降を実行している場合、追加のアップグレード手順（フェーズ2）は必要ありません。 </td>
 </tr></table></div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="what-happens-if-an-upgrade-fails-using-healthtools"> HealthToolsを使用してアップグレードが失敗した場合はどうなりますか</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>ソフトウェアのアップグレードが失敗した場合は、アップグレードを一時停止できます。</p></div>
+<div class="paragraph"><p>ソフトウェアのアップグレードが失敗した場合は、アップグレードを一時停止できます。 </p></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content"> Ctrl-Cでのみアップグレードを一時停止する必要があります。これにより、システムはそれ自体をクリーンアップできます。</td>
@@ -2637,10 +2637,10 @@ nodeID = [2]にステージングされたビルドは存在しません
 <li><p><strong>待機</strong>：クラスター定数をリセットする前に、現在アップグレード中のノードが終了するのを<strong>待ち</strong>ます。</p></li>
 <li><p><strong>続行</strong>：アップグレードを続行すると、一時停止がキャンセルされます。</p></li>
 <li>
-<p><strong>中止</strong>：クラスター定数をリセットし、アップグレードをただちに中止します。</p>
+<p><strong>中止</strong>：クラスター定数をリセットし、アップグレードをただちに中止します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">ノードの更新中にクラスターのアップグレードを中止すると、ドライブがノードから正常に削除されない場合があります。ドライブが正常に取り外されていない場合、アップグレード中にドライブを追加し直すには、ネットアップサポートによる手動の介入が必要になります。ノードは、ファームウェアの更新または更新後の同期アクティビティの実行に時間がかかる場合があります。アップグレードの進行が停滞していると思われる場合は、ネットアップサポートにお問い合わせください。</td>
+<td class="content">ノードの更新中にクラスターのアップグレードを中止すると、ドライブがノードから正常に削除されない場合があります。ドライブが正常に取り外されていない場合、アップグレード中にドライブを追加し直すには、ネットアップサポートによる手動の介入が必要になります。ノードは、ファームウェアの更新または更新後の同期アクティビティの実行に時間がかかる場合があります。アップグレードの進行が停滞していると思われる場合は、ネットアップサポートにお問い合わせください。 </td>
 </tr></table></div>
 </li>
 </ul></div>
@@ -2650,18 +2650,18 @@ nodeID = [2]にステージングされたビルドは存在しません
 </div>
 </div>
 <div class="sect1">
-<h2 id="upgrading-h610s-storage-nodes-to-element-12-2-phase-2"> H610Sストレージノードのエレメント12.2へのアップグレード（フェーズ2）</h2>
+<h2 id="upgrading-h610s-storage-nodes-to-element-12-2-phase-2">H610Sストレージノードのエレメント12.2へのアップグレード（フェーズ2）</h2>
 <div class="sectionbody">
 <div class="paragraph"><p> H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合、アップグレードプロセスには2つのフェーズが含まれます。</p></div>
 <div class="paragraph"><p>最初に実行されるフェーズ1は、Element12.2プロセスへの標準アップグレードと同じ手順に従います。 Element Softwareと5つのファームウェアアップデートすべてを、一度に1ノードずつクラスター全体にローリング方式でインストールします。ファームウェアのペイロードにより、このプロセスには、H610Sノードごとに約1.5〜2時間かかると推定されます。これには、各ノードのアップグレード終了時の1回のコールドブートサイクルが含まれます。</p></div>
-<div class="paragraph"><p>フェーズ2には、必要な<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KBに</a>記載されている各H610Sノードの完全なノードシャットダウンと電源切断を実行する手順を完了することが含まれます。このフェーズには、H610Sノードごとに約1時間かかると推定されます。</p></div>
+<div class="paragraph"><p>フェーズ2には、必要な<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KBに</a>記載されている各H610Sノードの完全なノードシャットダウンと電源切断を実行する手順を完了することが含まれます。このフェーズには、H610Sノードごとに約1時間かかると推定されます。 </p></div>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
 <td class="content">フェーズ1を完了すると、5つのファームウェアアップデートのうち4つが、各H610Sノードのコールドブート中にアクティブ化されます。ただし、Complex Programmable Logic Device（CPLD）ファームウェアを完全にインストールするには、完全な電源切断と再接続が必要です。 CPLDファームウェアアップデートは、将来の再起動または電源の再投入時に、NVDIMMの障害とメタデータドライブの削除から保護します。この電源リセットには、H610Sノードごとに約1時間かかると推定されます。これには、ノードのシャットダウン、電源ケーブルの取り外し、またはスマートPDUを介した電源の切断、約3分間の待機、および電源の再接続が必要です。</td>
 </tr></table></div>
 <div class="ulist">
 <div class="title">あなたが始める前に</div>
-<ul><li><p>H610Sアップグレードプロセスのフェーズ1を完了し、標準のElementストレージアップグレード手順の1つを使用してストレージノードをアップグレードしました。</p></li></ul>
+<ul><li><p>H610Sアップグレードプロセスのフェーズ1を完了し、標準のElementストレージアップグレード手順の1つを使用してストレージノードをアップグレードしました。 </p></li></ul>
 </div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -2669,7 +2669,7 @@ nodeID = [2]にステージングされたビルドは存在しません
 </tr></table></div>
 <div class="olist arabic">
 <div class="title">ステップ</div>
-<ol class="arabic"><li><p>（フェーズ2）クラスター内の各H610Sノードに必要な電源リセットプロセスを完了します。</p></li></ol>
+<ol class="arabic"><li><p>（フェーズ2）クラスター内の各H610Sノードに必要な電源リセットプロセスを完了します。 </p></li></ol>
 </div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>

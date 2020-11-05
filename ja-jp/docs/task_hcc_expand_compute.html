@@ -1937,8 +1937,8 @@
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
-    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">NetAppHCIコンピューティングリソースを展開する</h1></div>
-<p class="page-details"><time datetime="2020-06-01 22:27:48 +0000">2020年6月1日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_expand_compute.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> NetAppHCIコンピューティングリソースを展開する</h1></div>
+<p class="page-details"><time datetime="2020-06-01 22:27:48 +0000">2020年6月1日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_expand_compute.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>NetApp HCIの導入が完了したら、NetApp Hybrid Cloud Controlを使用して、NetAppHCIコンピューティングリソースを拡張および構成できます。</p></div>
 <div class="ulist">
 <div class="title">あなたが始める前に</div>
@@ -1978,14 +1978,14 @@
 <li><p> NetAppHCIインストールに関連付けられているvCenterインスタンスのFQDNまたはIPアドレスと管理者の資格情報を入力します。</p></li>
 <li><p> [<strong>続行]を</strong>クリックします。</p></li>
 <li>
-<p>計算ノードを追加するvSphereデータセンターを選択するか、[<strong>新しいデータセンターの作成</strong>]をクリックして計算ノードを新しいデータ<strong>センター</strong>に追加します。</p>
+<p>計算ノードを追加するvSphereデータセンターを選択するか、[<strong>新しいデータセンターの作成</strong>]をクリックして計算ノードを新しいデータ<strong>センター</strong>に追加します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> [Create New Datacenter]をクリックすると、[クラスター]フィールドに自動的に入力されます。</td>
 </tr></table></div>
 </li>
 <li>
-<p>既存のデータセンターを選択した場合は、新しい計算ノードを関連付ける必要があるvSphereクラスターを選択します。</p>
+<p>既存のデータセンターを選択した場合は、新しい計算ノードを関連付ける必要があるvSphereクラスターを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> NetApp HCIが、拡張用に選択したクラスターのネットワーク設定を認識できない場合は、管理、ストレージ、およびvMotionネットワークのvmkernelおよびvmnicマッピングがデプロイメントのデフォルトに設定されていることを確認してください。詳細については、 <a href="https://docs.netapp.com/hci/index.jsp" target="_blank" rel="noopener">NetAppHCIドキュメントセンター</a>でサポートされているネットワークの変更を参照してください。</td>
@@ -2000,14 +2000,14 @@
 </li>
 <li><p> [<strong>続行]を</strong>クリックします。</p></li>
 <li>
-<p>新しいvSphereデータセンタークラスターを作成した場合は、[<strong>ネットワークトポロジ]</strong>ページで、追加する新しい計算ノードに一致するネットワークトポロジを選択します。</p>
+<p>新しいvSphereデータセンタークラスターを作成した場合は、[<strong>ネットワークトポロジ]</strong>ページで、追加する新しい計算ノードに一致するネットワークトポロジを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">計算ノードが2ケーブルトポロジを使用していて、既存のNetAppHCI展開がVLANIDで構成されている場合にのみ、2ケーブルオプションを選択します。</td>
 </tr></table></div>
 </li>
 <li>
-<p> [<strong>利用可能なインベントリ]</strong>ページで、既存のNetAppHCIインストールに追加するノードを選択します。</p>
+<p> [<strong>利用可能なインベントリ]</strong>ページで、既存のNetAppHCIインストールに追加するノードを選択します。 </p>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
 <td class="content">一部の計算ノードでは、インストールに追加する前に、vCenterバージョンがサポートする最高レベルでEVを有効にする必要がある場合があります。これらの計算ノードでEVCを有効にするには、vSphereクライアントを使用する必要があります。有効にした後、[インベントリ]ページを更新し、計算ノードの追加を再試行してください。</td>
@@ -2030,7 +2030,7 @@
 </ol></div>
 </li>
 <li>
-<p> [ネットワーク設定]セクションの[<strong>レビュー]</strong>ページで、新しいノードが太字で表示されます。セクションを変更するには、次の手順を実行します。</p>
+<p> [ネットワーク設定]セクションの[<strong>レビュー]</strong>ページで、新しいノードが太字で表示されます。セクションに変更を加えるには、次の手順を実行します。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li><p>そのセクションの[<strong>編集]</strong>をクリックします。</p></li>
 <li><p>終了したら、後続のページで[<strong>続行</strong>]をクリックして、[<strong>レビュー</strong>]ページに戻ります。</p></li>

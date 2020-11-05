@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">計算ファームウェアをアップグレードする前に、計算ノードのヘルスチェックを実行します</h1></div>
-<p class="page-details"><time datetime="2020-08-25 22:58:56 +0000">2020年8月25日</time><span>寄稿者<a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_upgrade_compute_prechecks.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-08-25 22:58:56 +0000">2020年8月25日</time><span>寄稿者<a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_upgrade_compute_prechecks.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>コンピューティングファームウェアをアップグレードする前にヘルスチェックを実行して、クラスター内のすべてのコンピューティングノードをアップグレードする準備ができていることを確認する必要があります。計算ノードのヘルスチェックは、1つ以上のマネージドNetAppHCI計算ノードの計算クラスターに対してのみ実行できます。</p></div>
 <div class="ulist">
@@ -1961,7 +1961,7 @@
 <div class="ulist"><ul><li><p><a href="#compute-node-health-checks-made-by-the-service">サービスによって行われたノードヘルスチェックを計算します</a></p></li></ul></div>
 </div></div>
 <div class="sect1">
-<h2 id="use-netapp-hybrid-cloud-control-to-run-compute-node-health-checks-prior-to-upgrading-firmware">NetApp Hybrid Cloud Controlを使用して、ファームウェアをアップグレードする前に計算ノードのヘルスチェックを実行します</h2>
+<h2 id="use-netapp-hybrid-cloud-control-to-run-compute-node-health-checks-prior-to-upgrading-firmware">ファームウェアをアップグレードする前に、NetApp Hybrid CloudControlを使用して計算ノードのヘルスチェックを実行します</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp Hybrid Cloud Control（HCC）を使用すると、コンピューティングノードがファームウェアアップグレードの準備ができていることを確認できます。</p></div>
 <div class="olist arabic">
@@ -1986,7 +1986,7 @@
 </li>
 </ol>
 </div>
-<div class="paragraph"><p>ヘルスチェックがエラーなしで完了すると、クラスター内の計算ノードをアップグレードする準備が整います。続行<a href="task_hcc_upgrade_compute_node_firmware.html">するには、計算ノードのファームウェアの更新を</a>参照してください。</p></div>
+<div class="paragraph"><p>ヘルスチェックがエラーなしで完了すると、クラスター内の計算ノードをアップグレードする準備が整います。続行<a href="task_hcc_upgrade_compute_node_firmware.html">するには、計算ノードのファームウェアの更新を</a>参照してください。 </p></div>
 </div>
 </div>
 <div class="sect1">
@@ -2119,7 +2119,7 @@
 <div class="sect1">
 <h2 id="compute-node-health-checks-made-by-the-service">サービスによって行われたノードヘルスチェックを計算します</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>計算ヘルスチェックは、HCCメソッドまたはAPIメソッドのどちらで実行されたかに関係なく、ノードごとに次のチェックを行います。環境によっては、これらのチェックの一部がスキップされる場合があります。検出された問題を解決した後、ヘルスチェックを再実行する必要があります。</p></div>
+<div class="paragraph"><p>計算ヘルスチェックは、HCCメソッドまたはAPIメソッドのどちらで実行されたかに関係なく、ノードごとに次のチェックを行います。環境によっては、これらのチェックの一部がスキップされる場合があります。検出された問題を解決した後、ヘルスチェックを再実行する必要があります。 </p></div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -2138,25 +2138,25 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">DRSは有効で、完全に自動化されていますか？</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">集まる</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DRSをオンにして、完全に自動化されていることを確認します。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/How_to_enable_DRS_in_vSphere">このKBを参照してください</a>。注：標準ライセンスを使用している場合は、ESXiホストをメンテナンスモードにして、このヘルスチェックの失敗の警告を無視してください。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Virtual_Storage_Console_for_VMware_vSphere/How_to_enable_DRS_in_vSphere">このKBを参照してください</a>。注：標準ライセンスを使用している場合は、ESXiホストをメンテナンスモードにして、このヘルスチェックの失敗の警告を無視してください。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> vSphereでDPMが無効になっていますか？</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">集まる</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">分散電源管理をオフにします。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Plug-in_for_vCenter_server/How_to_disable_DPM_in_VMware_vCenter">このKBを参照してください</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Plug-in_for_vCenter_server/How_to_disable_DPM_in_VMware_vCenter">このKBを参照してください</a>。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> vSphereでHAアドミッションコントロールが無効になっていますか？</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">集まる</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HAアドミッションコントロールをオフにします。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_control_enable_HA_admission_in_vSphere">このKBを参照してください</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_control_enable_HA_admission_in_vSphere">このKBを参照してください</a>。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">クラスター内のホスト上のVMに対してFTが有効になっていますか？</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ノード</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">影響を受ける仮想マシンでフォールトトレランスを一時停止します。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_suspend_fault_tolerance_on_virtual_machines_in_a_vSphere_cluster">このKBを参照してください</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_suspend_fault_tolerance_on_virtual_machines_in_a_vSphere_cluster">このKBを参照してください</a>。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">クラスタのvCenterに重大なアラームはありますか？</p></td>
@@ -2234,25 +2234,25 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ内の監視ノードのステータスはどうなっていますか？識別された監視ノードはどれも稼働していません。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ノード</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ウィットネスノードが代替ESXiホストで実行されていません。代替ESXiホストのWitnessNodeの電源を入れ、ヘルスチェックを再実行します。 <strong>1つのWitnessノードがHCIインストールで常に実行されている必要があります</strong>。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_resolve_witness_node_issues_prior_to_upgrading_compute_nodes">このKBを参照してください</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_resolve_witness_node_issues_prior_to_upgrading_compute_nodes">このKBを参照してください</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ内の監視ノードのステータスはどうなっていますか？監視ノードはこのESXiホストで稼働しており、代替監視ノードは稼働していません。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ノード</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ウィットネスノードが代替ESXiホストで実行されていません。代替ESXiホストのWitnessノードの電源を入れます。このESXiホストをアップグレードする準備ができたら、このESXiホストで実行されている監視ノードをシャットダウンし、ヘルスチェックを再実行します。 <strong>1つのWitnessノードがHCIインストールで常に実行されている必要があります</strong>。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_resolve_witness_node_issues_prior_to_upgrading_compute_nodes">このKBを参照してください</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_resolve_witness_node_issues_prior_to_upgrading_compute_nodes">このKBを参照してください</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ内の監視ノードのステータスはどうなっていますか？監視ノードはこのESXiホストで稼働しており、代替ノードは稼働していますが、同じESXiホストで実行されています。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ノード</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">両方の監視ノードがこのESXiホストで実行されています。 1つのWitnessノードを代替ESXiホストに再配置します。このESXiホストをアップグレードする準備ができたら、このESXiホストに残っているウィットネスノードをシャットダウンし、ヘルスチェックを再実行します。 <strong>1つのWitnessノードがHCIインストールで常に実行されている必要があります</strong>。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_resolve_witness_node_issues_prior_to_upgrading_compute_nodes">このKBを参照してください</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_resolve_witness_node_issues_prior_to_upgrading_compute_nodes">このKBを参照してください</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ内の監視ノードのステータスはどうなっていますか？監視ノードはこのESXiホストで稼働しており、代替監視ノードは別のESXiホストで稼働しています。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ノード</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">監視ノードは、このESXiホストでローカルに実行されています。このESXiホストをアップグレードする準備ができたら、このESXiホストでのみウィットネスノードをシャットダウンし、ヘルスチェックを再実行します。 <strong>1つのWitnessノードがHCIインストールで常に実行されている必要があります</strong>。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_resolve_witness_node_issues_prior_to_upgrading_compute_nodes">このKBを参照してください</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_resolve_witness_node_issues_prior_to_upgrading_compute_nodes">このKBを参照してください</a></p></td>
 </tr>
 </tbody>
 </table>

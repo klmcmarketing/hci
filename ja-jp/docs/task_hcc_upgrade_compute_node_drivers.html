@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">計算ノードドライバーを更新する</h1></div>
-<p class="page-details"><time datetime="2020-09-29 17:37:52 +0000">2020年9月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_compute_node_drivers.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-09-29 17:37:52 +0000">2020年9月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_compute_node_drivers.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>Hシリーズの計算ノードでは、VMware UpdateManagerを使用してノードで使用されているドライバーを更新できます。</p></div>
 <div class="paragraph">
 <div class="title">必要なもの</div>
@@ -1956,7 +1956,7 @@
 <li><p>エンドユーザー使用許諾契約に同意します。</p></li>
 <li><p> [ <strong>VMWare ESXiのドライバーパッケージ]</strong>見出しの下で、ノードタイプとESXiバージョンのドライバーパッケージをダウンロードします。</p></li>
 <li>
-<p>ダウンロードしたドライバーバンドルをローカルコンピューターに解凍します。</p>
+<p>ダウンロードしたドライバーバンドルをローカルコンピューターに解凍します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> NetAppドライバーバンドルには、1つ以上のVMwareオフラインバンドルZIPファイルが含まれています。これらのZIPファイルを解凍しないでください。</td>
@@ -1969,7 +1969,7 @@
 <li><p> vCenterの[<strong>ホストとクラスター</strong>]メニューで、更新する計算ノードのあるクラスターを選択し、[<strong>更新マネージャー</strong>]タブに移動します。</p></li>
 <li><p> [<strong>修正]</strong>をクリックして、新しく作成したホストベースラインを選択します。ベースラインに含まれるドライバーが選択されていることを確認します。</p></li>
 <li>
-<p>ウィザードから[<strong>ホスト修復オプション]に</strong>進み、[ <strong>VMの電源状態を変更しない</strong>]オプションが選択されていることを確認して、ドライバーの更新中に仮想マシンをオンラインに保ちます。</p>
+<p>ウィザードから[<strong>ホスト修復オプション]に</strong>進み、[ <strong>VMの電源状態を変更しない</strong>]オプションが選択されていることを確認して、ドライバーの更新中に仮想マシンをオンラインに保ちます。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">クラスターでVMware分散リソーススケジューラ（DRS）が有効になっている場合（これはNetApp HCIインストールのデフォルトです）、仮想マシンはクラスター内の他のノードに自動的に移行されます。</td>

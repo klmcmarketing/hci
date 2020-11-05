@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">クラスター</h1></div>
-<p class="page-details"><time datetime="2020-10-05 21:11:21 +0000">2020年10月5日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_hci_clusters.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-05 21:11:21 +0000">2020年10月5日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_hci_clusters.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>クラスターは、ストレージまたはコンピューティングリソースを提供する、集合的な全体として機能するノードのグループです。 NetApp HCI 1.8以降、2つのノードを持つストレージクラスターを作成できます。ストレージクラスターは、ネットワーク上に単一の論理グループとして表示され、ブロックストレージとしてアクセスできます。</p></div>
 <div class="paragraph"><p> NetApp HCIのストレージレイヤーはNetAppElementソフトウェアによって提供され、管理レイヤーはvCenterServer用のNetAppElementプラグインによって提供されます。ストレージノードは、Bond10Gネットワークインターフェイスを介して相互に通信するドライブのコレクションを含むサーバーです。各ストレージノードは、ストレージと管理の2つのネットワークに接続されており、それぞれに冗長性とパフォーマンスのための2つの独立したリンクがあります。各ノードには、各ネットワークにIPアドレスが必要です。新しいストレージノードでクラスターを作成するか、既存のクラスターにストレージノードを追加して、ストレージ容量とパフォーマンスを向上させることができます。</p></div>
@@ -1954,7 +1954,7 @@
 </div>
 <div class="sect1">
 <h2 id="stranded-capacity">座礁容量</h2>
-<div class="sectionbody"><div class="paragraph"><p>新しく追加されたノードがクラスターの総容量の50％以上を占める場合、このノードの容量の一部は使用できなくなり（「取り残され」）、容量ルールに準拠します。これは、ストレージ容量が追加されるまで当てはまります。容量ルールにも従わない非常に大きなノードが追加された場合、以前に取り残されたノードは取り残されなくなり、新しく追加されたノードは取り残されます。これが発生しないように、容量は常にペアで追加する必要があります。ノードが取り残されると、適切なクラスター障害がスローされます。</p></div></div>
+<div class="sectionbody"><div class="paragraph"><p>新しく追加されたノードがクラスターの総容量の50％以上を占める場合、このノードの容量の一部は使用できなくなり（「取り残された」）、容量ルールに準拠します。これは、ストレージ容量が追加されるまで当てはまります。容量ルールにも従わない非常に大きなノードが追加された場合、以前に取り残されたノードは取り残されなくなり、新しく追加されたノードは取り残されます。これが発生しないように、容量は常にペアで追加する必要があります。ノードが取り残されると、適切なクラスター障害がスローされます。</p></div></div>
 </div>
 <div class="sect1">
 <h2 id="two-node-storage-clusters"> 2ノードストレージクラスター</h2>
@@ -1962,7 +1962,7 @@
 <div class="paragraph"><p>NetApp HCI 1.8以降、2つのストレージノードでストレージクラスターをセットアップできます。</p></div>
 <div class="ulist"><ul>
 <li>
-<p>特定のタイプのノードを使用して、2ノードのストレージクラスターを形成できます。 <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2865021">NetApp HCI1.8リリースノートを</a>参照してください。</p>
+<p>特定のタイプのノードを使用して、2ノードのストレージクラスターを形成できます。 <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2865021">NetApp HCI1.8リリースノートを</a>参照してください。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> 2ノードクラスター内のストレージノードは、同じモデルタイプである必要があります。</td>
@@ -1970,7 +1970,7 @@
 </li>
 <li><p> 2ノードストレージクラスターは、大容量と高性能の要件に依存しないワークロードを使用する小規模な展開に最適です。</p></li>
 <li>
-<p> 2つのストレージノードに加えて、2ノードのストレージクラスターには2つの<strong>NetAppHCIウィットネスノード</strong>も含まれます。</p>
+<p> 2つのストレージノードに加えて、2ノードのストレージクラスターには2つの<strong>NetAppHCIウィットネスノード</strong>も含まれます。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">
@@ -1984,12 +1984,12 @@
 </ul></div>
 <div class="sect2">
 <h3 id="storage-cluster-quorum">ストレージクラスタークォーラム</h3>
-<div class="paragraph"><p>Elementソフトウェアは、選択したノードからストレージクラスターを作成し、クラスター構成の複製データベースを維持します。クラスターの復元力のクォーラムを維持するには、クラスターアンサンブルに参加するために少なくとも3つのノードが必要です。 2ノードクラスター内の監視ノードは、有効なアンサンブルクォーラムを形成するのに十分なストレージノードがあることを確認するために使用されます。アンサンブルの作成では、ストレージノードがウィットネスノードよりも優先されます。 2ノードのストレージクラスターを含む最小の3ノードのアンサンブルでは、2つのストレージノードと1つのウィットネスノードが使用されます。</p></div>
+<div class="paragraph"><p>Elementソフトウェアは、選択したノードからストレージクラスターを作成し、クラスター構成の複製データベースを維持します。クラスターの復元力のクォーラムを維持するには、クラスターアンサンブルに参加するために少なくとも3つのノードが必要です。 2ノードクラスター内の監視ノードは、有効なアンサンブルクォーラムを形成するのに十分なストレージノードがあることを確認するために使用されます。アンサンブルの作成では、ストレージノードがウィットネスノードよりも優先されます。 2ノードのストレージクラスターを含む最小の3ノードのアンサンブルでは、2つのストレージノードと1つのウィットネスノードが使用されます。 </p></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content"> 2つのストレージノードと1つのウィットネスノードを持つ3ノードアンサンブルでは、1つのストレージノードがオフラインになると、クラスターは劣化状態になります。 2つのウィットネスノードのうち、アンサンブルでアクティブにできるのは1つだけです。 2番目のWitnessNodeはバックアップの役割を実行するため、アンサンブルに追加できません。クラスターは、オフラインストレージノードがオンライン状態に戻るか、代替ノードがクラスターに参加するまで、劣化状態のままになります。</td>
+<td class="content"> 2つのストレージノードと1つの監視ノードを持つ3ノードのアンサンブルでは、1つのストレージノードがオフラインになると、クラスターは劣化状態になります。 2つのウィットネスノードのうち、アンサンブルでアクティブにできるのは1つだけです。 2番目のWitnessNodeはバックアップの役割を実行するため、アンサンブルに追加できません。クラスターは、オフラインストレージノードがオンライン状態に戻るか、代替ノードがクラスターに参加するまで、劣化状態のままになります。</td>
 </tr></table></div>
-<div class="paragraph"><p>ウィットネスノードに障害が発生した場合、残りのウィットネスノードがアンサンブルに参加して3ノードのアンサンブルを形成します。新しいウィットネスノードを展開して、障害が発生したウィットネスノードを置き換えることができます。</p></div>
+<div class="paragraph"><p>ウィットネスノードに障害が発生した場合、残りのウィットネスノードがアンサンブルに参加して3ノードのアンサンブルを形成します。新しいウィットネスノードを展開して、障害が発生したウィットネスノードを置き換えることができます。 </p></div>
 </div>
 <div class="sect2">
 <h3 id="auto-healing-and-failure-handling-in-two-node-storage-clusters"> 2ノードストレージクラスターでの自動修復と障害処理</h3>

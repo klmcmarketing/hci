@@ -1938,21 +1938,21 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ストレージをアップグレードする前に、Elementストレージのヘルスチェックを実行します</h1></div>
-<p class="page-details"><time datetime="2020-09-29 17:37:52 +0000">2020年9月29日</time><span>寄稿者<a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_element_prechecks.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-09-29 17:37:52 +0000">2020年9月29日</time><span>寄稿者<a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_element_prechecks.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>Elementストレージをアップグレードする前にヘルスチェックを実行して、クラスター内のすべてのストレージノードが次のElementストレージアップグレードの準備ができていることを確認する必要があります。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
 <li>
-<p>最新の管理サービスバンドル（2.10.27以降）に更新しました。</p>
+<p>最新の管理サービスバンドル（2.10.27以降）に更新しました。 </p>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
 <td class="content"> Elementソフトウェアをアップグレードする前に、最新の管理サービスバンドルにアップグレードする必要があります。</td>
 </tr></table></div>
 </li>
 <li><p>管理ノード11.3以降を実行しています。</p></li>
-<li><p>クラスタバージョンは、NetAppElementソフトウェア11.3以降を実行しています。</p></li>
+<li><p>ご使用のクラスターバージョンは、NetAppElementソフトウェア11.3以降を実行しています。</p></li>
 </ul>
 </div>
 <div class="paragraph">
@@ -1993,7 +1993,7 @@
 </li>
 </ol>
 </div>
-<div class="paragraph"><p>ヘルスチェックがエラーなしで完了すると、ストレージクラスターをアップグレードする準備が整います。続行するには、ストレージノードのアップグレード<a href="task_hcc_upgrade_element_software.html">手順</a>を参照してください。</p></div>
+<div class="paragraph"><p>ヘルスチェックがエラーなしで完了すると、ストレージクラスターをアップグレードする準備が整います。続行するには、ストレージノードのアップグレード<a href="task_hcc_upgrade_element_software.html">手順</a>を参照してください。 </p></div>
 </div>
 </div>
 <div class="sect1">
@@ -2093,7 +2093,7 @@
 <div class="paragraph"><p>すべてのヘルスチェックが成功した場合、戻り値は次の例のようになります。</p></div>
 <div class="listingblock"><div class="content"><pre> "メッセージ"： "すべてのチェックが正常に完了しました。"、
 「パーセント」：100、
-「タイムスタンプ」：「2020-03-06T00：03：16.321621Z」</pre></div></div>
+「タイムスタンプ」：「2020-03-06T00：03：16.321621Z」 </pre></div></div>
 </div>
 </div>
 <div class="sect1">
@@ -2116,7 +2116,7 @@
 <ol class="arabic">
 <li>
 <p><code>sfupgradecheck</code>コマンドを実行します。</p>
-<div class="listingblock"><div class="content"><pre> sfupgradecheck -u &lt;cluster-user-name&gt; MVIP</pre></div></div>
+<div class="listingblock"><div class="content"><pre> sfupgradecheck -u &lt;cluster-user-name&gt; MVIP </pre></div></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">特殊文字を含むパスワードの場合、各特殊文字の前に円記号（ <code>\</code> ）を追加します。たとえば、 <code>mypass!@1</code>は<code>mypass\!\@</code>として入力する必要があります。</td>
@@ -2227,7 +2227,7 @@ HealthToolsの最新バージョンは、https：//mysupport.netapp.com/NOW/cgi-
 <li><p>詳細については、ダークサイトの追加の<a href="task_upgrade_element_latest_healthtools.html">HealthToolsアップグレード</a>情報を参照してください。</p></li>
 <li>
 <p>次のコマンドを実行して、HealthToolsスイートが最新であることを確認します。</p>
-<div class="listingblock"><div class="content"><pre> sfupgradecheck -u &lt;クラスターユーザー名&gt; -p &lt;クラスターパスワード&gt; MVIP</pre></div></div>
+<div class="listingblock"><div class="content"><pre> sfupgradecheck -u &lt;クラスターユーザー名&gt; -p &lt;クラスターパスワード&gt; MVIP </pre></div></div>
 </li>
 </ol></div>
 </div>
@@ -2236,7 +2236,7 @@ HealthToolsの最新バージョンは、https：//mysupport.netapp.com/NOW/cgi-
 <div class="sect1">
 <h2 id="storage-health-checks-made-by-the-service">サービスによって行われるストレージヘルスチェック</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>ストレージヘルスチェックは、クラスターごとに次のチェックを行います。</p></div>
+<div class="paragraph"><p>ストレージヘルスチェックは、クラスターごとに次のチェックを行います。 </p></div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">

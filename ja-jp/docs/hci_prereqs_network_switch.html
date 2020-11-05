@@ -1938,9 +1938,9 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ネットワークとスイッチの要件</h1></div>
-<p class="page-details"><time datetime="2020-05-19 22:16:35 +0000">2020年5月19日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/hci_prereqs_network_switch.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-05-19 22:16:35 +0000">2020年5月19日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/hci_prereqs_network_switch.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>NetApp HCIに使用するスイッチは、展開を成功させるために特定の構成が必要です。ご使用の環境に以下の各要件を実装するための具体的な手順については、スイッチのドキュメントを参照してください。</p></div>
-<div class="paragraph"><p> NetApp HCIの導入には、次のタイプのトラフィックごとに1つずつ、少なくとも3つのネットワークセグメントが必要です。</p></div>
+<div class="paragraph"><p> NetApp HCIの展開には、次のタイプのトラフィックごとに1つずつ、少なくとも3つのネットワークセグメントが必要です。</p></div>
 <div class="ulist"><ul>
 <li><p>管理</p></li>
 <li><p>VMware vMotion</p></li>
@@ -1971,7 +1971,7 @@
 <li><p>ストレージおよびvMotionトラフィックを処理するスイッチポートにジャンボフレームを設定する必要があります。インストールを成功させるには、ホストが9000バイトのパケットをエンドツーエンドで送信できる必要があります。</p></li>
 <li><p>すべてのストレージノードと計算ノード間の往復ネットワーク遅延は、2ミリ秒を超えてはなりません。</p></li>
 </ul></div>
-<div class="paragraph"><p>すべてのNetAppHCIノードは、専用の管理ポートを介して追加の帯域外管理機能を提供します。 NetApp H300S、H300E、H500S、H500E、H700S、H700E、およびH410Cノードでは、ポートAを介したIPMIアクセスも可能です。ベストプラクティスとして、NetApp HCIのリモート管理を容易にするために、環境。</p></div>
+<div class="paragraph"><p>すべてのNetAppHCIノードは、専用の管理ポートを介して追加の帯域外管理機能を提供します。 NetApp H300S、H300E、H500S、H500E、H700S、H700E、およびH410Cノードでは、ポートAを介したIPMIアクセスも可能です。ベストプラクティスとして、NetApp HCIのリモート管理を容易にするために、環境。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">管理ノードの管理ネットワークには、NetAppクラウドサービスと通信できるようにするためのゲートウェイアドレスを含む構成が必要です。有効なゲートウェイアドレスが設定されていない場合、NetAppクラウドサービスの有効化は失敗します。</td>

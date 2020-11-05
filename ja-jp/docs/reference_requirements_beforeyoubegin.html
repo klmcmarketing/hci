@@ -1923,7 +1923,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">クラウドサービスを開始する前の要件</h1></div>
-<p class="page-details"><time datetime="2020-04-13 14:30:46 +0000">2020年4月13日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/reference_requirements_beforeyoubegin.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-04-13 17:20:48 +0000">2020年4月13日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/reference_requirements_beforeyoubegin.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody"><div class="paragraph lead"><p>NetApp HCIでクラウドサービスを使用する前に、ネットワーキングおよびその他の要件を完了している必要があります。</p></div></div></div>
 <div class="sect1">
 <h2 id="system-requirements">システム要求</h2>
@@ -1936,7 +1936,7 @@
 <li><p> NetAppHCI導入エンジンでサポートされているVMwarevCenterのバージョン</p></li>
 <li><p>すべてのノードには、動的DHCPによって割り当てられたIPアドレスが必要です。 DHCPサーバーは、すべてのNKSネットワークで実行できる必要があります。</p></li>
 <li><p> 「NetApp-HCI-Datastore-02」データストアはvSphereに存在する必要があります。これは、NKSを有効にするための要件です。データストアが存在しない場合、クラウドサービスのインストールは成功しません。クラウドサービスを有効にする前に、vSphereをチェックして、データストアが存在することを確認してください。データストアを作成する場合は、次の条件を満たす必要があります。サイズが2 TiB、VMware仮想マシンファイルシステム（VMFS）としてフォーマットされ、すべてのコンピューティングホストと共有され、デフォルトのQoS（またはそれ以上）。</p></li>
-<li><p> NKS情報で指定されているように、ファイアウォールでポートを開く必要があります。 <a href="https://docs.netapp.com/us-en/kubernetes-service/whitelist-ports-and-ip-addresses.html" class="bare">https://docs.netapp.com/us-en/kubernetes-service/whitelist-ports-and-ip-addresses.html</a></p></li>
+<li><p> NKS情報で指定されているように、ファイアウォールでポートを開く必要があります。 <a href="https://docs.netapp.com/us-en/kubernetes-service/whitelist-ports-and-ip-addresses.html" class="bare">https://docs.netapp.com/us-en/kubernetes-service/whitelist-ports-and-ip-addresses.html</a> </p></li>
 </ul></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -1965,7 +1965,7 @@
 <div class="sectionbody"><div class="ulist"><ul>
 <li><p>2x4システムは、実稼働での使用はサポートされていません。ただし、これらは非本番作業に使用できます。</p></li>
 <li><p> 3x4システムは、サポートする本番システムの最小サイズです。</p></li>
-<li><p> 4x4システムが推奨される最小サイズです。</p></li>
+<li><p> 4x4システムが推奨される最小サイズです。 </p></li>
 </ul></div></div>
 </div>
 <div class="sect1">
@@ -1993,7 +1993,7 @@
 <div class="ulist"><ul>
 <li><p>マスターノードごとに1つのIP（デフォルトは1つのマスターノード）</p></li>
 <li><p>ワーカーノードごとに1つのIP（デフォルトは2つのワーカーノード）</p></li>
-<li><p>デフォルトの/ 16 IPを使用するか、独自の範囲を作成して、最低111個のIPアドレスを割り当てる必要があります（ストレージノード用に100個、ストレージ仮想IP用に1個、ユーザークラスター用に10個）。</p></li>
+<li><p>デフォルトの/ 16 IPを使用するか、独自の範囲を作成して、最低111個のIPアドレスを割り当てる必要があります（ストレージノード用に100個、ストレージ仮想IP用に1個、ユーザークラスター用に10個）。 </p></li>
 </ul></div>
 </li>
 </ul></div>

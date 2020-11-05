@@ -1937,14 +1937,14 @@
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
-    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">NetAppHCIでアラート監視を構成する</h1></div>
-<p class="page-details"><time datetime="2020-07-07 21:27:54 +0000">2020年7月7日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_enable_alerts.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> NetAppHCIでアラート監視を構成する</h1></div>
+<p class="page-details"><time datetime="2020-07-07 21:27:54 +0000">2020年7月7日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_enable_alerts.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>NetAppHCIシステムでアラートを監視するように設定を構成できます。</p></div>
-<div class="paragraph"><p> NetApp HCIアラートモニタリングは、NetAppHCIストレージクラスターシステムアラートをvCenterServerに転送し、vSphere WebClientインターフェイスからNetAppHCIのすべてのアラートを表示できるようにします。</p></div>
+<div class="paragraph"><p> NetApp HCIアラートモニタリングは、NetAppHCIストレージクラスターシステムアラートをvCenterServerに転送し、vSphere WebClientインターフェイスからNetAppHCIのすべてのアラートを表示できるようにします。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">これらのツールは、SolidFireオールフラッシュストレージなどのストレージのみのクラスター用に構成または使用されていません。これらのクラスターのツールを実行すると、次の405エラーが発生します。これは、構成を指定すると予想されます<code>webUIParseError : Invalid response from server. 405</code>
+<td class="content">これらのツールは、SolidFireオールフラッシュストレージなどのストレージのみのクラスター用に構成または使用されていません。これらのクラスターのツールを実行すると、次の405エラーが発生します。これは、構成が与えられた場合に予想されます<code>webUIParseError : Invalid response from server. 405</code>
 </td>
 </tr></table></div>
 <div class="olist arabic"><ol class="arabic">
@@ -1992,11 +1992,11 @@
 <div class="paragraph"><p>オプションは次のとおりです。</p></div>
 <div class="ulist"><ul>
 <li><p>有効：すべてのvCenterアラーム、NetApp HCIストレージアラーム、およびサポートデータがNetApp SolidFire ActiveIQに送信されます。これにより、NetAppはNetApp HCIのインストールをプロアクティブにサポートおよび監視できるため、システムに影響を与える前に、発生する可能性のある問題を検出して解決できます。</p></li>
-<li><p>無効：vCenterアラーム、NetApp HCIストレージアラーム、またはサポートデータはNetApp SolidFire ActiveIQに送信されません。</p></li>
+<li><p>無効：vCenterアラーム、NetApp HCIストレージアラーム、またはサポートデータはNetApp SolidFire ActiveIQに送信されません。 </p></li>
 </ul></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> NetApp Deployment Engineを使用して[<strong>データをAIQに送信</strong>]オプションをオフにした場合は、管理ノードのREST APIを使用して<a href="task_mnode_enable_activeIQ.html">テレメトリを</a>再度<a href="task_mnode_enable_activeIQ.html">有効</a>にし、このページからサービスを構成する必要があります。</td>
+<td class="content"> NetApp Deployment Engineを使用して[<strong>データをAIQに送信</strong>]オプションをオフにした場合は、管理ノードのREST APIを使用して<a href="task_mnode_enable_activeIQ.html">テレメトリを</a>再度<a href="task_mnode_enable_activeIQ.html">有効</a>にし、このページからサービスを構成する必要があります。 </td>
 </tr></table></div>
 </div></td>
 </tr>
@@ -2007,11 +2007,11 @@
 <div class="paragraph"><p>オプションは次のとおりです。</p></div>
 <div class="ulist"><ul>
 <li><p>有効：計算ノードに関するサポートおよび監視データがNetApp SolidFire Active IQに送信され、計算ノードハードウェアのプロアクティブなサポートが有効になります。</p></li>
-<li><p>無効：計算ノードに関するサポートおよび監視データは、NetApp SolidFire ActiveIQに送信されません。</p></li>
+<li><p>無効：計算ノードに関するサポートおよび監視データは、NetApp SolidFire ActiveIQに送信されません。 </p></li>
 </ul></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> NetApp Deployment Engineを使用して[<strong>データをAIQに送信</strong>]オプションをオフにした場合は、管理ノードのREST APIを使用して<a href="task_mnode_enable_activeIQ.html">テレメトリを</a>再度<a href="task_mnode_enable_activeIQ.html">有効</a>にし、このページからサービスを構成する必要があります。</td>
+<td class="content"> NetApp Deployment Engineを使用して[<strong>データをAIQに送信</strong>]オプションをオフにした場合は、管理ノードのREST APIを使用して<a href="task_mnode_enable_activeIQ.html">テレメトリを</a>再度<a href="task_mnode_enable_activeIQ.html">有効</a>にし、このページからサービスを構成する必要があります。 </td>
 </tr></table></div>
 </div></td>
 </tr>

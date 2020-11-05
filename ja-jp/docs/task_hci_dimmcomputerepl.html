@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">計算ノードのDIMMを交換してください</h1></div>
-<p class="page-details"><time datetime="2020-10-05 16:52:57 +0000">2020年10月5日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hci_dimmcomputerepl.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-05 16:52:57 +0000">2020年10月5日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hci_dimmcomputerepl.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>ノード全体を交換する代わりに、NetApp HCI計算ノードの障害のあるデュアルインラインメモリモジュール（DIMM）を交換できます。</p></div>
 <div class="ulist">
@@ -1956,10 +1956,10 @@
 <li><p> H410Cノード。 H410Cノードが2UNetAppHCIシャーシに挿入されます。</p></li>
 <li><p> H610Cノード。 H610Cノードがシャーシに組み込まれています。</p></li>
 <li>
-<p> H615Cノード。 H615Cノードがシャーシに組み込まれています。</p>
+<p> H615Cノード。 H615Cノードがシャーシに組み込まれています。 </p>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
-<td class="content"> H410CおよびH615Cノードには、さまざまなベンダーのDIMMが含まれています。 1つのシャーシに異なるベンダーのDIMMを混在させないでください。</td>
+<td class="content"> H410CおよびH615Cノードには、さまざまなベンダーのDIMMが含まれています。 1つのシャーシに異なるベンダーのDIMMを混在させないでください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -1983,14 +1983,14 @@
 <li><p>vCenter Serverにログインして、ノードにアクセスします。</p></li>
 <li><p>エラーを報告しているノードを右クリックし、ノードをメンテナンスモードにするオプションを選択します。</p></li>
 <li>
-<p>仮想マシン（VM）を別の使用可能なホストに移行します。</p>
+<p>仮想マシン（VM）を別の使用可能なホストに移行します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">移行手順については、VMwareのドキュメントを参照してください。</td>
 </tr></table></div>
 </li>
 <li>
-<p>計算ノードの電源を切ります。</p>
+<p>計算ノードの電源を切ります。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">交換が必要なDIMMに関する情報があり、TUIにアクセスする必要がない場合は、このセクションの次の手順をスキップできます。</td>
@@ -1999,19 +1999,19 @@
 <li><p>エラーを報告したノードの背面にキーボード、ビデオ、およびマウス（KVM）を接続します。</p></li>
 <li><p>ノードの前面にある電源ボタンを押します。<br>ノードの起動には約6分かかります。画面にブートメニューが表示されます。</p></li>
 <li>
-<p>キーボードを使用して、 <strong>NetAppセーフモード</strong>を選択し<strong>ます</strong>。</p>
+<p>キーボードを使用して、 <strong>NetAppセーフモード</strong>を選択し<strong>ます</strong>。 </p>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
 <td class="content">これは3秒で実行する必要があります。ウィンドウを見逃した場合は、もう一度起動プロセスを実行する必要があります。</td>
 </tr></table></div>
 </li>
 <li>
-<p>開いたTUIウィンドウで、 <strong>[メンテナンスタスク]&gt; [ハードウェアの確認]</strong>に移動し、[ <strong>OK</strong> <strong>]</strong>を選択します。<br>ハードウェアチェックの結果を示すウィンドウが開きます。チェックでDIMMの問題が検出された場合、結果にはタイムスタンプとスロット識別子が含まれます。ハードウェアチェックからの出力例は次のとおりです。</p>
+<p>開いたTUIウィンドウで、 <strong>[メンテナンスタスク]&gt; [ハードウェアの確認]</strong>に移動し、[ <strong>OK</strong> <strong>]</strong>を選択します。<br>ハードウェアチェックの結果を示すウィンドウが開きます。チェックでDIMMの問題が検出された場合、結果にはタイムスタンプとスロット識別子が含まれます。ハードウェアチェックからの出力例は次のとおりです。 </p>
 <div class="imageblock"><div class="content"><img src="../media/dimm_hw_check.png" alt="ハードウェアチェックからの出力例を示します。"></div></div>
 </li>
 <li><p> CPU番号とDIMMスロット番号/ IDを記録します。<br>これは、シャーシ内の故障したDIMMを特定するのに役立ちます。</p></li>
 <li>
-<p> H410CおよびH615Cノードの場合は、手順を実行してDIMMの製造元を識別します。</p>
+<p> H410CおよびH615Cノードの場合は、手順を実行してDIMMの製造元を識別します。 </p>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
 <td class="content"> H410CおよびH615Cノードには、さまざまなメーカーのDIMMが含まれています。同じシャーシに異なるDIMMタイプを混在させないでください。障害のあるDIMMの製造元を特定し、同じタイプの交換品を注文する必要があります。</td>
@@ -2020,21 +2020,21 @@
 <li><p> BMCにログインして、ノードでコンソールを起動します。</p></li>
 <li><p>キーボードの<strong>F2</strong>を押して、 <strong>[システム</strong>の<strong>カスタマイズ</strong>] <strong>/ [ログの</strong>表示]メニューを<strong>表示し</strong>ます。</p></li>
 <li>
-<p>プロンプトが表示されたら、パスワードを入力します。</p>
+<p>プロンプトが表示されたら、パスワードを入力します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">パスワードは、NetAppHCIを設定するときにNetAppDeploymentEngineで設定したものと一致する必要があります。</td>
+<td class="content">パスワードは、NetAppHCIを設定するときにNetAppDeploymentEngineで設定したものと一致する必要があります。 </td>
 </tr></table></div>
 <div class="imageblock"><div class="content"><img src="../media/node_console_step1.png" alt="ノードのコンソールにログインするためのパスワードを入力するためのウィンドウを表示します。"></div></div>
 </li>
 <li>
-<p> [システムのカスタマイズ]メニューから、下矢印を押して[トラブルシューティングオプション]に移動し、 <strong>Enterキー</strong>を押します。</p>
+<p> [システムのカスタマイズ]メニューから、下矢印を押して[トラブルシューティングオプション]に移動し、 <strong>Enterキー</strong>を押します。 </p>
 <div class="imageblock"><div class="content"><img src="../media/node_console_step2.png" alt="システムカスタマイズメニューを表示します。"></div></div>
 </li>
 <li><p> [トラブルシューティングモードオプション]メニューから、上矢印または下矢印を使用して、ESXiシェルとSSHを有効にします。これらはデフォルトで無効になっています。</p></li>
 <li><p> &lt;Esc&gt;キーを2回押して、トラブルシューティングオプションを終了します。</p></li>
 <li>
-<p>次のいずれかのオプションを使用して、 <code>smbiosDump</code>コマンドを実行します。</p>
+<p>次のいずれかのオプションを使用して、 <code>smbiosDump</code>コマンドを実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2046,7 +2046,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オプションA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">オプションA </p></td>
 <td class="tableblock halign-left valign-top"><div class="content">
 <div class="olist arabic"><ol class="arabic">
 <li><p>ホストのIPアドレスと定義したルート資格情報を使用して、ESXiホスト（計算ノード）に接続します。</p></li>
@@ -2064,12 +2064,12 @@
 タイプ：0x1a（DDR4）
 タイプの詳細：0x0080（同期）
 データ幅：64ビット（+8 ECCビット）
-サイズ：32GB`</pre></div></div>
+サイズ：32GB` </pre></div></div>
 </div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オプションB</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic"><li><p> <strong>Alt + F1</strong>を押してシェルに入り、ノードにログインしてコマンドを実行します。</p></li></ol></div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">オプションB </p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic"><li><p> <strong>Alt + F1</strong>を押してシェルに入り、ノードにログインしてコマンドを実行します。 </p></li></ol></div></div></td>
 </tr>
 </tbody>
 </table>
@@ -2088,14 +2088,14 @@
 <div class="title">ステップ</div>
 <ol class="arabic">
 <li>
-<p>シャーシまたはノードの電源を切ります。</p>
+<p>シャーシまたはノードの電源を切ります。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> H610CまたはH615Cシャーシの場合は、シャーシの電源を切ります。 2U、4ノードシャーシのH410Cノードの場合、障害のあるDIMMがあるノードのみの電源を切ります。</td>
 </tr></table></div>
 </li>
 <li>
-<p>電源ケーブルとネットワークケーブルを取り外し、ノードまたはシャーシをラックから慎重にスライドさせて、平らな帯電防止面に置きます。</p>
+<p>電源ケーブルとネットワークケーブルを取り外し、ノードまたはシャーシをラックから慎重にスライドさせて、平らな帯電防止面に置きます。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">ケーブルにはツイストタイの使用を検討してください。</td>
@@ -2103,7 +2103,7 @@
 </li>
 <li><p> DIMMを交換するためにシャーシカバーを開く前に、帯電防止保護を施してください。</p></li>
 <li>
-<p>ノードモデルに関連する手順を実行します。</p>
+<p>ノードモデルに関連する手順を実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2115,47 +2115,47 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">H410C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H410C </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
-<p>前にメモしたスロット番号/ IDをマザーボードの番号と照合して、故障したDIMMを見つけます。マザーボードのDIMMスロット番号を示すサンプル画像は次のとおりです。</p>
+<p>前にメモしたスロット番号/ IDをマザーボードの番号と照合して、故障したDIMMを見つけます。マザーボードのDIMMスロット番号を示すサンプル画像は次のとおりです。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h410c_dimmslot.png" alt="H410Cノードのマザーボード上のDIMMスロット番号を表示します。"></div></div>
 <div class="imageblock"><div class="content"><img src="../media/h410c_dimmslot_2.png" alt="H410CノードマザーボードのDIMMスロット番号の拡大図を示します。"></div></div>
 </li>
 <li>
-<p> 2つの保持クリップを外側に押し、DIMMを慎重に引き上げます。これは、保持クリップを示すサンプル画像です。</p>
+<p> 2つの保持クリップを外側に押し、DIMMを慎重に引き上げます。これは、保持クリップを示すサンプル画像です。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h410c_dimm_clips.png" alt="H410CノードのDIMMの保持クリップを示しています。"></div></div>
 </li>
 <li>
-<p>交換用のDIMMを正しく取り付けてください。 DIMMをスロットに正しく挿入すると、2つのクリップが所定の位置にロックされます。</p>
+<p>交換用のDIMMを正しく取り付けてください。 DIMMをスロットに正しく挿入すると、2つのクリップが所定の位置にロックされます。 </p>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
 <td class="content"> DIMMの後端のみに触れていることを確認してください。 DIMMの他の部分を押すと、ハードウェアが損傷する可能性があります。</td>
 </tr></table></div>
 </li>
-<li><p> NetApp HCIシャーシにノードをインストールし、ノードを所定の位置にスライドさせたときにノードがカチッと音を立てるようにします。</p></li>
+<li><p> NetApp HCIシャーシにノードをインストールし、ノードを所定の位置にスライドさせたときにノードがカチッと音を立てるようにします。 </p></li>
 </ol></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> H610C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> H610C </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
-<p>次の画像に示すように、カバーを持ち上げます。</p>
+<p>次の画像に示すように、カバーを持ち上げます。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h610c_airflowcover.png" alt="H610Cノードで持ち上げられたカバーを示しています。"></div></div>
 </li>
 <li>
-<p>ノードの背面にある4本の青いロックネジを緩めます。これは、2つのロックネジの位置を示すサンプル画像です。ノードの反対側に他の2つがあります。</p>
+<p>ノードの背面にある4本の青いロックネジを緩めます。これは、2つのロックネジの位置を示すサンプル画像です。ノードの反対側に他の2つがあります。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h610c_lockscrews.png" alt="H610Cノードの背面にあるロックネジを示しています。"></div></div>
 </li>
 <li><p>両方のPCIカードブランクを取り外します。</p></li>
 <li><p> GPUとエアフローカバーを取り外します。</p></li>
 <li>
-<p>前にメモしたスロット番号/ IDをマザーボードの番号と照合して、故障したDIMMを見つけます。マザーボード上のDIMMスロット番号の位置を示すサンプル画像を次に示します。</p>
+<p>前にメモしたスロット番号/ IDをマザーボードの番号と照合して、故障したDIMMを見つけます。マザーボード上のDIMMスロット番号の位置を示すサンプル画像を次に示します。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h610c_dimmslot.png" alt="H610CマザーボードのDIMMスロット番号を表示します。"></div></div>
 </li>
 <li><p> 2つの保持クリップを外側に押し、DIMMを慎重に引き上げます。</p></li>
 <li>
-<p>交換用のDIMMを正しく取り付けてください。 DIMMをスロットに正しく挿入すると、2つのクリップが所定の位置にロックされます。</p>
+<p>交換用のDIMMを正しく取り付けてください。 DIMMをスロットに正しく挿入すると、2つのクリップが所定の位置にロックされます。 </p>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
 <td class="content"> DIMMの後端のみに触れていることを確認してください。 DIMMの他の部分を押すと、ハードウェアが損傷する可能性があります。</td>
@@ -2164,27 +2164,27 @@
 <li><p>取り外したすべてのコンポーネント（GPU、エアフローカバー、PCIブランク）を交換します。</p></li>
 <li><p>ロックネジを締めます。</p></li>
 <li><p>カバーをノードに戻します。</p></li>
-<li><p> H610Cシャーシをラックに取り付け、シャーシを所定の位置にスライドさせたときにカチッと音がするようにします。</p></li>
+<li><p> H610Cシャーシをラックに取り付け、シャーシを所定の位置にスライドさせたときにカチッと音がするようにします。 </p></li>
 </ol></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> H615C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> H615C </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
-<p>次の画像に示すように、カバーを持ち上げます。</p>
+<p>次の画像に示すように、カバーを持ち上げます。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h615c_airflowcover.png" alt="H615Cノードで持ち上げられたカバーを示しています。"></div></div>
 </li>
 <li>
-<p> GPU（H615CノードにGPUがインストールされている場合）とエアフローカバーを取り外します。</p>
+<p> GPU（H615CノードにGPUがインストールされている場合）とエアフローカバーを取り外します。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h615c_gpu.png" alt="H615Cノードで取り外されたエアフローカバーを示しています。"></div></div>
 </li>
 <li>
-<p>前にメモしたスロット番号/ IDをマザーボードの番号と照合して、故障したDIMMを見つけます。マザーボード上のDIMMスロット番号の位置を示すサンプル画像を次に示します。</p>
+<p>前にメモしたスロット番号/ IDをマザーボードの番号と照合して、故障したDIMMを見つけます。マザーボード上のDIMMスロット番号の位置を示すサンプル画像を次に示します。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h615c_dimmslot.png" alt="H615CマザーボードのDIMMスロット番号を表示します。"></div></div>
 </li>
 <li><p> 2つの保持クリップを外側に押し、DIMMを慎重に引き上げます。</p></li>
 <li>
-<p>交換用のDIMMを正しく取り付けてください。 DIMMをスロットに正しく挿入すると、2つのクリップが所定の位置にロックされます。</p>
+<p>交換用のDIMMを正しく取り付けてください。 DIMMをスロットに正しく挿入すると、2つのクリップが所定の位置にロックされます。 </p>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
 <td class="content"> DIMMの後端のみに触れていることを確認してください。 DIMMの他の部分を押すと、ハードウェアが損傷する可能性があります。</td>
@@ -2212,11 +2212,11 @@
 </div>
 <div class="paragraph">
 <div class="title">次は何ですか</div>
-<p>ノードが通常の操作に戻ったら、vCenterで[概要]タブをチェックして、メモリ容量が期待どおりであることを確認します。</p>
+<p>ノードが通常の操作に戻ったら、vCenterで[概要]タブをチェックして、メモリ容量が期待どおりであることを確認します。 </p>
 </div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> DIMMが正しく取り付けられていない場合、ノードは正常に動作しますが、予想よりも少ないメモリ容量で動作します。</td>
+<td class="content"> DIMMが正しく取り付けられていない場合、ノードは正常に動作しますが、予想よりも少ないメモリ容量で動作します。 </td>
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>

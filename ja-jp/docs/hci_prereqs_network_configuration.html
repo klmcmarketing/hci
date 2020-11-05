@@ -1938,13 +1938,13 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ネットワーク設定</h1></div>
-<p class="page-details"><time datetime="2020-09-23 22:29:48 +0000">2020年9月23日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/hci_prereqs_network_configuration.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-09-23 22:29:48 +0000">2020年9月23日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/hci_prereqs_network_configuration.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody"><div class="paragraph lead"><p>NetApp HCIは、複数の異なるネットワークケーブルとVLAN構成を利用できます。展開を成功させるには、ネットワーク構成を計画することが重要です。</p></div></div></div>
 <div class="sect1">
 <h2 id="required-network-segments">必要なネットワークセグメント</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp HCIには、管理、ストレージ、仮想化トラフィック（仮想マシンとVMware vMotionトラフィックを含む）の少なくとも3つのネットワークセグメントが必要です。仮想マシンとvMotionのトラフィックを分離することもできます。これらのネットワークセグメントは通常、NetAppHCIネットワークインフラストラクチャに論理的に分離されたVLANとして存在します。</p></div>
-<div class="paragraph"><p>コンピューティングノードとストレージノードがこれらのネットワークに接続する方法は、ネットワークの設計方法とノードのケーブル接続方法によって異なります。このガイドのサンプルネットワーク図は、次のネットワークを想定しています。</p></div>
+<div class="paragraph"><p>コンピューティングノードとストレージノードがこれらのネットワークに接続する方法は、ネットワークの設計方法とノードのケーブル接続方法によって異なります。このガイドのサンプルネットワーク図は、次のネットワークを想定しています。 </p></div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1974,10 +1974,10 @@
 </tbody>
 </table>
 <div class="paragraph"><p> NetApp DeploymentEngineでNetAppHCIノードを自動検出および構成するには、ノードのSFP + / SFP28インターフェイスに使用されるすべてのスイッチポートでタグなしVLANまたはネイティブVLANとして使用できるネットワークセグメントが必要です。これにより、検出と展開のためにすべてのノード間でレイヤー2通信が提供されます。ネイティブVLANがない場合は、VLANとIPv4アドレスを使用して、すべてのノードのSFP + / SFP28インターフェイスを手動で構成して検出可能にする必要があります。このドキュメントのネットワーク構成例では、この目的のために管理ネットワーク（VLAN ID 100）が使用されています。</p></div>
-<div class="paragraph"><p> NetApp Deployment Engineを使用すると、初期展開時にコンピューティングノードとストレージノードのネットワークをすばやく構成できます。 vCenterや管理ノードなどの特定の組み込み管理コンポーネントを独自のネットワークセグメントに配置できます。これらのネットワークセグメントには、vCenterと管理ノードがストレージおよびコンピューティング管理ネットワークと通信できるようにするためのルーティングが必要です。ほとんどの展開では、これらのコンポーネントは同じ管理ネットワーク（この例ではVLAN ID 100）を使用します。</p></div>
+<div class="paragraph"><p> NetApp Deployment Engineを使用すると、初期展開時にコンピューティングノードとストレージノードのネットワークをすばやく構成できます。 vCenterや管理ノードなどの特定の組み込み管理コンポーネントを独自のネットワークセグメントに配置できます。これらのネットワークセグメントには、vCenterと管理ノードがストレージおよびコンピューティング管理ネットワークと通信できるようにするためのルーティングが必要です。ほとんどの展開では、これらのコンポーネントは同じ管理ネットワーク（この例ではVLAN ID 100）を使用します。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> vCenterを使用して仮想マシンネットワークを構成します。 NetApp HCI展開のデフォルトの仮想マシンネットワーク（ポートグループ「VM_Network」）は、VLANIDなしで構成されます。複数のタグ付き仮想マシンネットワーク（前の例ではVLAN ID 200および201）を使用する場合は、それらを最初のネットワーク計画に含めるようにしてください。</td>
+<td class="content"> vCenterを使用して仮想マシンネットワークを構成します。 NetApp HCI展開のデフォルトの仮想マシンネットワーク（ポートグループ「VM_Network」）は、VLANIDなしで構成されます。複数のタグ付き仮想マシンネットワーク（前の例ではVLAN ID 200および201）を使用する場合は、それらを最初のネットワーク計画に含めるようにしてください。 </td>
 </tr></table></div>
 </div>
 </div>
@@ -1986,7 +1986,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>H410C計算ノードに2本のケーブルネットワーク構成を使用して、ケーブル配線を簡素化できます。この構成では、2つのSFP + / SFP28インターフェイスと、IPMI通信用のオプションの（ただし推奨される）RJ45インターフェイスを使用します。これらのノードは、2つのRJ45および4つのSFP28 / SFP +インターフェイスを備えた6ケーブル構成を使用することもできます。</p></div>
 <div class="paragraph"><p> H410SおよびH610Sストレージノードは、4つのネットワークポート（ポートAからD）を使用するネットワークトポロジをサポートします。</p></div>
-<div class="paragraph"><p>計算ノードは、ハードウェアプラットフォームに応じて、次の3つのネットワークトポロジをサポートします。</p></div>
+<div class="paragraph"><p>計算ノードは、ハードウェアプラットフォームに応じて、次の3つのネットワークトポロジをサポートします。 </p></div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -2019,7 +2019,7 @@
 </tr>
 </tbody>
 </table>
-<div class="paragraph"><p>正しい数のケーブルが接続されていないノードは、展開に参加できません。たとえば、ポートDとEのみが接続されている場合、6ケーブル構成で計算ノードを展開することはできません。</p></div>
+<div class="paragraph"><p>正しい数のケーブルが接続されていないノードは、展開に参加できません。たとえば、ポートDとEのみが接続されている場合、6ケーブル構成で計算ノードを展開することはできません。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">導入後にNetAppHCIネットワーク構成を調整して、インフラストラクチャのニーズを満たすことができます。ただし、NetApp HCIリソースを拡張するときは、新しいノードは既存のコンピューティングノードおよびストレージノードと同じケーブル構成である必要があることに注意してください。</td>

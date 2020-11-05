@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">管理ノードを回復します</h1></div>
-<p class="page-details"><time datetime="2020-10-29 17:43:02 +0000">2020年10月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_recover.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-29 17:43:02 +0000">2020年10月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_recover.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>以前の管理ノードが永続ボリュームを使用していた場合は、NetAppElementソフトウェアを実行しているクラスターの管理ノードを手動で回復して再デプロイできます。</p></div>
 <div class="paragraph"><p>新しいOVAをデプロイし、再デプロイスクリプトを実行して、バージョン11.3以降を実行している以前にインストールされた管理ノードから構成データをプルできます。</p></div>
@@ -1947,11 +1947,11 @@
 <ul>
 <li><p>以前の管理ノードは、<a href="concept_hci_volumes.html#persistent-volumes">永続ボリューム</a>機能を使用してNetAppElementソフトウェアバージョン11.3以降を実行していました。</p></li>
 <li><p>永続ボリュームを含むクラスターのMVIPとSVIPを知っています。</p></li>
-<li><p>クラスタバージョンは、NetAppElementソフトウェア11.3以降を実行しています。</p></li>
+<li><p>ご使用のクラスターバージョンは、NetAppElementソフトウェア11.3以降を実行しています。</p></li>
 <li><p>インストールでIPv4を使用します。管理ノード11.3はIPv6をサポートしていません。</p></li>
 <li><p>ネットアップサポートサイトからソフトウェアをダウンロードする権限があります。</p></li>
 <li>
-<p>プラットフォームに適した管理ノードのイメージタイプを特定しました。</p>
+<p>プラットフォームに適した管理ノードのイメージタイプを特定しました。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1997,7 +1997,7 @@
 </div>
 </div></div>
 <div class="sect1">
-<h2 id="download-iso-or-ova-and-deploy-the-vm">ISOまたはOVAをダウンロードし、VMをデプロイします</h2>
+<h2 id="download-iso-or-ova-and-deploy-the-vm"> ISOまたはOVAをダウンロードし、VMをデプロイします</h2>
 <div class="sectionbody"><div class="olist arabic"><ol class="arabic">
 <li>
 <p>ネットアップサポートサイトから、インストール用のOVAまたはISOをダウンロードします。</p>
@@ -2025,7 +2025,7 @@
 <li><p> 400GB仮想ディスク、シンプロビジョニング</p></li>
 <li><p>インターネットアクセスとストレージMVIPへのアクセスを備えた1つの仮想ネットワークインターフェイス。</p></li>
 <li>
-<p> （SolidFireオールフラッシュストレージのオプション）ストレージクラスターへの管理ネットワークアクセスを備えた1つの仮想ネットワークインターフェイス。ストレージクラスターが管理ノード（eth0）とは別のサブネット上にあり、永続ボリュームを使用する場合は、2番目のネットワークインターフェイスコントローラー（NIC）をストレージサブネット（eth1）のVMに追加するか、管理ネットワークがストレージネットワークにルーティングします。</p>
+<p> （SolidFireオールフラッシュストレージのオプション）ストレージクラスターへの管理ネットワークアクセスを備えた1つの仮想ネットワークインターフェイス。ストレージクラスターが管理ノード（eth0）とは別のサブネット上にあり、永続ボリュームを使用する場合は、2番目のネットワークインターフェイスコントローラー（NIC）をストレージサブネット（eth1）のVMに追加するか、管理ネットワークがストレージネットワークにルーティングします。 </p>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
 <td class="content">この手順の後半で電源を入れるように指示する手順の前に、仮想マシンの電源を入れないでください。</td>
@@ -2034,7 +2034,7 @@
 </ul></div>
 </li>
 <li>
-<p> ISOを仮想マシンに接続し、.isoインストールイメージで起動します。</p>
+<p> ISOを仮想マシンに接続し、.isoインストールイメージで起動します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">イメージを使用して管理ノードをインストールすると、スプラッシュ画面が表示されるまでに30秒の遅延が発生する場合があります。</td>
@@ -2049,17 +2049,17 @@
 <h2 id="configure-the-network">ネットワークを構成する</h2>
 <div class="sectionbody"><div class="olist arabic"><ol class="arabic">
 <li>
-<p>ターミナルユーザーインターフェイス（TUI）を使用して、管理ノードadminユーザーを作成します。</p>
+<p>ターミナルユーザーインターフェイス（TUI）を使用して、管理ノードadminユーザーを作成します。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">メニューオプション間を移動するには、上矢印キーまたは下矢印キーを押します。ボタン間を移動するには、Tabキーを押します。ボタンからフィールドに移動するには、Tabキーを押します。フィールド間を移動するには、上矢印キーまたは下矢印キーを押します。</td>
 </tr></table></div>
 </li>
 <li>
-<p>管理ノードネットワーク（eth0）を構成します。</p>
+<p>管理ノードネットワーク（eth0）を構成します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">ストレージトラフィックを分離するために追加のNICが必要な場合は、別のNICを構成する手順を参照してください：<a href="task_mnode_install_add_storage_NIC.html">ストレージネットワークインターフェイスコントローラー（NIC）を構成し</a>ます。</td>
+<td class="content">ストレージトラフィックを分離するために追加のNICが必要な場合は、別のNICを構成する手順を参照してください：<a href="task_mnode_install_add_storage_NIC.html">ストレージネットワークインターフェイスコントローラー（NIC）を構成し</a>ます。 </td>
 </tr></table></div>
 </li>
 </ol></div></div>
@@ -2079,7 +2079,7 @@
 <li><p> <code>/etc/ntp.conf</code>ファイルを編集します。</p></li>
 <li><p>デフォルトのタイムサーバーを、ストレージクラスターで使用されているのと同じNTPサーバーに変更します。</p></li>
 <li>
-<p> vSphereで、VMオプションの[<strong>ゲスト時刻をホストと同期</strong>する]チェックボックスがオフになっていることを確認します。</p>
+<p> vSphereで、VMオプションの[<strong>ゲスト時刻をホストと同期</strong>する]チェックボックスがオフになっていることを確認します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> VMに将来変更を加える場合は、このオプションを有効にしないでください。</td>
@@ -2112,7 +2112,7 @@
 </li></ol></div>
 </li>
 <li>
-<p>管理ノードのredeployコマンドを構成して実行し、クラスターでホストされている永続ボリュームに接続し、以前の管理ノードの構成データでサービスを開始します。</p>
+<p>管理ノードのredeployコマンドを構成して実行し、クラスターでホストされている永続ボリュームに接続し、以前の管理ノードの構成データでサービスを開始します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">安全なプロンプトでパスワードを入力するように求められます。クラスタがプロキシサーバーの背後にある場合は、パブリックネットワークにアクセスできるようにプロキシ設定を構成する必要があります。</td>
@@ -2120,7 +2120,7 @@
 <div class="listingblock"><div class="content"><pre> / sf / packages / mnode / redeploy-mnode --mnode_admin_user [ユーザー名]</pre></div></div>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li>
-<p> []括弧内の値（括弧を含む）を、管理ノード管理者アカウントのユーザー名に置き換えます。これは、管理ノードへのログインに使用したユーザーアカウントのユーザー名である可能性があります。</p>
+<p> []括弧内の値（括弧を含む）を、管理ノード管理者アカウントのユーザー名に置き換えます。これは、管理ノードへのログインに使用したユーザーアカウントのユーザー名である可能性があります。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">ユーザー名を追加するか、スクリプトで情報の入力を求めることができます。</td>

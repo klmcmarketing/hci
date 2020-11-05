@@ -1938,9 +1938,9 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">パフォーマンスとサービス品質</h1></div>
-<p class="page-details"><time datetime="2020-04-13 14:30:46 +0000">2020年4月13日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_hci_performance.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-04-13 17:20:48 +0000">2020年4月13日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_hci_performance.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
-<div class="paragraph lead"><p>SolidFireストレージクラスターには、ボリュームごとにサービス品質（QoS）パラメーターを提供する機能があります。 QoSを定義する3つの構成可能なパラメーター（最小IOPS、最大IOPS、およびバーストIOPS）を使用して、1秒あたりの入出力（IOPS）で測定されるクラスターパフォーマンスを保証できます。</p></div>
+<div class="paragraph lead"><p>SolidFireストレージクラスターには、ボリュームごとにサービス品質（QoS）パラメーターを提供する機能があります。 QoSを定義する3つの構成可能なパラメーター（最小IOPS、最大IOPS、およびバーストIOPS）を使用して、1秒あたりの入出力（IOPS）で測定されるクラスターパフォーマンスを保証できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> SolidFire Active IQには、QoS設定の最適な構成とセットアップに関するアドバイスを提供するQoS推奨ページがあります。</td>
@@ -1978,7 +1978,7 @@
 <div class="sect1">
 <h2 id="qos-value-limits"> QoS値の制限</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>QoSの可能な最小値と最大値は次のとおりです。</p></div>
+<div class="paragraph"><p>QoSの可能な最小値と最大値は次のとおりです。 </p></div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 14.2857%;">
@@ -2036,7 +2036,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>QoSパフォーマンス曲線は、ブロックサイズとIOPSのパーセンテージの関係を示しています。</p></div>
 <div class="paragraph"><p>ブロックサイズと帯域幅は、アプリケーションが取得できるIOPSの数に直接影響します。 Elementソフトウェアは、ブロックサイズを4kに正規化することにより、受け取るブロックサイズを考慮に入れます。ワークロードに基づいて、システムはブロックサイズを増やす可能性があります。ブロックサイズが大きくなると、システムはより大きなブロックサイズを処理するために必要なレベルまで帯域幅を増やします。帯域幅が増加すると、システムが達成できるIOPSの数は減少します。</p></div>
-<div class="paragraph"><p> QoSパフォーマンス曲線は、ブロックサイズの増加とIOPSの割合の減少の関係を示しています。</p></div>
+<div class="paragraph"><p> QoSパフォーマンス曲線は、ブロックサイズの増加とIOPSの割合の減少の関係を示しています。 </p></div>
 <div class="imageblock"><div class="content"><img src="../media/hci_performance_curve.png" alt="QoSパフォーマンス曲線"></div></div>
 <div class="paragraph"><p>たとえば、ブロックサイズが4k、帯域幅が4000 KBpsの場合、IOPSは1000です。ブロックサイズが8kに増加すると、帯域幅は5000 KBpsに増加し、IOPSは625に減少します。ブロックサイズを考慮することにより、システムはバックアップやハイパーバイザーアクティビティなど、より高いブロックサイズを使用する優先度の低いワークロードは、より小さなブロックサイズを使用する優先度の高いトラフィックに必要なパフォーマンスをあまり消費しません。</p></div>
 </div>
@@ -2046,7 +2046,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>QoSポリシーを使用すると、多くのボリュームに適用できる標準化されたサービス品質設定を作成して保存できます。 QoSポリシーを作成、編集、および削除できます。</p></div>
 <div class="paragraph"><p> QoSポリシーは、サービス環境に最適です。たとえば、データベース、アプリケーション、またはインフラストラクチャサーバーが再起動することはめったになく、ストレージへの常時同等のアクセスが必要です。 QoSSIOC自動化は、仮想デスクトップや特殊なキオスクタイプのVMなど、毎日または1日に数回再起動、電源オン、または電源オフできる軽度のVMに最適です。 QoSSIOC自動化とQoSポリシーを一緒に使用しないでください。 QoSポリシーを使用している場合は、QoSSIOCを有効にしないでください。 QoSSIOCは、ボリュームQoS設定のQoS値を上書きおよび調整します。</p></div>
-<div class="paragraph"><p> [<strong>管理]</strong> &gt; [ <strong>QoSポリシー]</strong>ページで、NetApp ElementManagement拡張ポイントから<strong>QoSポリシーを</strong>表示できます。</p></div>
+<div class="paragraph"><p> [<strong>管理]</strong> &gt; [ <strong>QoSポリシー]</strong>ページで、NetApp ElementManagement拡張ポイントから<strong>QoSポリシーを</strong>表示できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> QoSポリシーを使用するには、選択したクラスターがElement10.0以降である必要があります。それ以外の場合、QoSポリシー機能は使用できません。</td>

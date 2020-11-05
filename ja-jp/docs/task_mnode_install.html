@@ -1938,16 +1938,16 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">管理ノードをインストールします</h1></div>
-<p class="page-details"><time datetime="2020-10-26 23:46:10 +0000">2020年10月26日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_install.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-26 23:46:10 +0000">2020年10月26日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_install.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>構成に適したイメージを使用して、NetAppElementソフトウェアを実行しているクラスターの管理ノードを手動でインストールできます。</p></div>
 <div class="paragraph"><p>この手動プロセスは、管理ノードのインストールにNetApp DeploymentEngineを使用していないSolidFireオールフラッシュストレージ管理者およびNetAppHCI管理者を対象としています。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
-<li><p>クラスタバージョンは、NetAppElementソフトウェア11.3以降を実行しています。</p></li>
+<li><p>ご使用のクラスターバージョンは、NetAppElementソフトウェア11.3以降を実行しています。</p></li>
 <li>
-<p>インストールでIPv4を使用します。管理ノード11.3はIPv6をサポートしていません。</p>
+<p>インストールでIPv4を使用します。管理ノード11.3はIPv6をサポートしていません。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> IPv6をサポートする必要がある場合は、管理ノード11.1を使用できます。</td>
@@ -1955,7 +1955,7 @@
 </li>
 <li><p>ネットアップサポートサイトからソフトウェアをダウンロードする権限があります。</p></li>
 <li>
-<p>プラットフォームに適した管理ノードのイメージタイプを特定しました。</p>
+<p>プラットフォームに適した管理ノードのイメージタイプを特定しました。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2008,7 +2008,7 @@
 </div>
 </div></div>
 <div class="sect1">
-<h2 id="download-iso-or-ova-and-deploy-the-vm">ISOまたはOVAをダウンロードし、VMをデプロイします</h2>
+<h2 id="download-iso-or-ova-and-deploy-the-vm"> ISOまたはOVAをダウンロードし、VMをデプロイします</h2>
 <div class="sectionbody"><div class="olist arabic"><ol class="arabic">
 <li>
 <p>ネットアップサポートサイトから、インストール用のOVAまたはISOをダウンロードします。</p>
@@ -2033,7 +2033,7 @@
 <div class="ulist"><ul>
 <li><p> 6つの仮想CPU</p></li>
 <li>
-<p>ほとんどの構成では12GBRAM、Element12.2構成では24GBRAM。</p>
+<p>ほとんどの構成では12GBRAM、Element12.2構成では24GBRAM。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> Element 12.2構成の場合、プロビジョニングされたメモリ容量の増加は、管理サービスのアップグレードに対応し、通常の操作では使用されません。</td>
@@ -2042,7 +2042,7 @@
 <li><p> 400GB仮想ディスク、シンプロビジョニング</p></li>
 <li><p>インターネットアクセスとストレージMVIPへのアクセスを備えた1つの仮想ネットワークインターフェイス。</p></li>
 <li>
-<p> （SolidFireオールフラッシュストレージのオプション）ストレージクラスターへの管理ネットワークアクセスを備えた1つの仮想ネットワークインターフェイス。ストレージクラスターが管理ノード（eth0）とは別のサブネット上にあり、永続ボリュームを使用する場合は、2番目のネットワークインターフェイスコントローラー（NIC）をストレージサブネット（eth1）のVMに追加するか、管理ネットワークがストレージネットワークにルーティングします。</p>
+<p> （SolidFireオールフラッシュストレージのオプション）ストレージクラスターへの管理ネットワークアクセスを備えた1つの仮想ネットワークインターフェイス。ストレージクラスターが管理ノード（eth0）とは別のサブネット上にあり、永続ボリュームを使用する場合は、2番目のネットワークインターフェイスコントローラー（NIC）をストレージサブネット（eth1）のVMに追加するか、管理ネットワークがストレージネットワークにルーティングします。 </p>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
 <td class="content">この手順の後半で電源を入れるように指示する手順の前に、仮想マシンの電源を入れないでください。</td>
@@ -2051,7 +2051,7 @@
 </ul></div>
 </li>
 <li>
-<p> ISOを仮想マシンに接続し、.isoインストールイメージで起動します。</p>
+<p> ISOを仮想マシンに接続し、.isoインストールイメージで起動します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">イメージを使用して管理ノードをインストールすると、スプラッシュ画面が表示されるまでに30秒の遅延が発生する場合があります。</td>
@@ -2059,24 +2059,24 @@
 </li>
 </ol></div>
 </li>
-<li><p>インストールが完了したら、管理ノードの仮想マシンの電源を入れます。</p></li>
+<li><p>インストールが完了したら、管理ノードの仮想マシンの電源を入れます。 </p></li>
 </ol></div></div>
 </div>
 <div class="sect1">
 <h2 id="create-the-management-node-admin-and-configure-the-network">管理ノードadminを作成し、ネットワークを構成します</h2>
 <div class="sectionbody"><div class="olist arabic"><ol class="arabic">
 <li>
-<p>ターミナルユーザーインターフェイス（TUI）を使用して、管理ノードadminユーザーを作成します。</p>
+<p>ターミナルユーザーインターフェイス（TUI）を使用して、管理ノードadminユーザーを作成します。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">メニューオプション間を移動するには、上矢印キーまたは下矢印キーを押します。ボタン間を移動するには、Tabキーを押します。ボタンからフィールドに移動するには、Tabキーを押します。フィールド間を移動するには、上矢印キーまたは下矢印キーを押します。</td>
 </tr></table></div>
 </li>
 <li>
-<p>管理ノードネットワーク（eth0）を構成します。</p>
+<p>管理ノードネットワーク（eth0）を構成します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">ストレージトラフィックを分離するために追加のNICが必要な場合は、別のNICを構成する手順を参照してください：<a href="task_mnode_install_add_storage_NIC.html">ストレージネットワークインターフェイスコントローラー（NIC）を構成し</a>ます。</td>
+<td class="content">ストレージトラフィックを分離するために追加のNICが必要な場合は、別のNICを構成する手順を参照してください：<a href="task_mnode_install_add_storage_NIC.html">ストレージネットワークインターフェイスコントローラー（NIC）を構成し</a>ます。 </td>
 </tr></table></div>
 </li>
 </ol></div></div>
@@ -2095,7 +2095,7 @@
 <li><p> <code>/etc/ntp.conf</code>ファイルを編集します。</p></li>
 <li><p>デフォルトのタイムサーバーを、ストレージクラスターで使用されているのと同じNTPサーバーに変更します。</p></li>
 <li>
-<p> vSphereで、VMオプションの[<strong>ゲスト時刻をホストと同期</strong>する]チェックボックスがオフになっていることを確認します。</p>
+<p> vSphereで、VMオプションの[<strong>ゲスト時刻をホストと同期</strong>する]チェックボックスがオフになっていることを確認します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> VMに将来変更を加える場合は、このオプションを有効にしないでください。</td>
@@ -2104,7 +2104,7 @@
 </ol></div>
 </li>
 <li>
-<p>管理ノードのセットアップコマンドを構成して実行します。</p>
+<p>管理ノードのセットアップコマンドを構成して実行します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">安全なプロンプトでパスワードを入力するように求められます。クラスタがプロキシサーバーの背後にある場合は、パブリックネットワークにアクセスできるようにプロキシ設定を構成する必要があります。</td>
@@ -2112,7 +2112,7 @@
 <div class="listingblock"><div class="content"><pre> / sf / packages / mnode / setup-mnode --mnode_admin_user [username] --storage_mvip [mvip] --storage_username [username] --telemetry_active [true]</pre></div></div>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li>
-<p>次の必須パラメーターのそれぞれについて、[]括弧（括弧を含む）の値を置き換えます。</p>
+<p>次の必須パラメーターのそれぞれについて、[]括弧（括弧を含む）の値を置き換えます。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">コマンド名の省略形は括弧（）内にあり、フルネームの代わりに使用できます。</td>
@@ -2133,7 +2133,7 @@
 <div class="ulist"><ul>
 <li><p> <strong>--use_persistent_volumes（-pv）[true / false、デフォルト：false]</strong> ：永続ボリュームを有効または無効にします。永続ボリューム機能を有効にするには、値trueを入力します。</p></li>
 <li>
-<p> <strong>--persistent_volumes_account（-pva）[account_name]</strong> ：- <code>--use_persistent_volumes</code>がtrueに設定されている場合は、このパラメーターを使用して、永続ボリュームに使用されるストレージアカウント名を入力します。</p>
+<p> <strong>--persistent_volumes_account（-pva）[account_name]</strong> ：- <code>--use_persistent_volumes</code>がtrueに設定されている場合は、このパラメーターを使用して、永続ボリュームに使用されるストレージアカウント名を入力します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">永続ボリュームには、クラスター上の既存のアカウント名とは異なる一意のアカウント名を使用してください。永続ボリュームのアカウントを他の環境から分離しておくことが非常に重要です。</td>
@@ -2157,7 +2157,7 @@
 <p> （オプション）各パラメーターに関する追加情報が必要な場合は、パラメーターヘルプを使用します。</p>
 <div class="ulist"><ul><li><p> <strong>--help（-h）</strong> ：各パラメーターに関する情報を返します。パラメータは、初期展開に基づいて必須またはオプションとして定義されます。アップグレードと再デプロイのパラメータ要件は異なる場合があります。</p></li></ul></div>
 </li>
-<li><p> <code>setup-mnode</code>コマンドを実行し<code>setup-mnode</code> 。</p></li>
+<li><p> <code>setup-mnode</code>コマンドを実行し<code>setup-mnode</code> 。 </p></li>
 </ol></div>
 </li>
 </ol></div></div>
@@ -2219,7 +2219,7 @@
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p>クリップボードにコピーした親ベースアセットIDを<strong>asset_id</strong>フィールドに<strong>入力し</strong>ます。</p></li>
 <li><p>タイプ<code>vCenter</code>およびvCenter資格情報を使用して必要なペイロード値を入力します。</p></li>
-<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。 </p></li>
 </ol></div>
 </li>
 </ol></div></div>

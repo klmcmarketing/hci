@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ストレージクラスター資産を管理する</h1></div>
-<p class="page-details"><time datetime="2020-10-26 16:31:35 +0000">2020年10月26日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_manage_storage_cluster_assets.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-26 16:31:35 +0000">2020年10月26日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_manage_storage_cluster_assets.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>REST APIを使用して、新しいストレージクラスターアセットを管理ノードに追加したり、既知のストレージクラスターアセットの保存された資格情報を編集したり、ストレージクラスターアセットを管理ノードから削除したりできます。</p></div>
 <div class="ulist">
@@ -2026,7 +2026,7 @@
 <div class="sect1">
 <h2 id="add-a-new-storage-cluster-asset">新しいストレージクラスターアセットを追加する</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>REST APIを使用して、新しいストレージクラスターアセットを管理ノードインベントリに追加できます。新しいストレージクラスターアセットを追加すると、管理ノードに自動的に登録されます。</p></div>
+<div class="paragraph"><p>REST APIを使用して、新しいストレージクラスターアセットを管理ノードインベントリに追加できます。新しいストレージクラスターアセットを追加すると、管理ノードに自動的に登録されます。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">続行する前<a href="#retrieve-the-installation-id-and-cluster-id-of-a-storage-cluster-asset">に、ストレージクラスターアセットのインストールIDとクラスターIDを取得する</a>の手順に従っていることを確認してください。</td>
@@ -2050,7 +2050,7 @@
 <li><p> <strong>POST / clustersを</strong>クリックします。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li>
-<p> [<strong>リクエスト本文]</strong>フィールドの次のパラメーターに、新しいストレージクラスターの情報を入力します。</p>
+<p> [<strong>リクエスト本文]</strong>フィールドの次のパラメーターに、新しいストレージクラスターの情報を入力します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -2088,7 +2088,7 @@
 </li>
 <li>
 <p> [<strong>実行]を</strong>クリックします。</p>
-<div class="paragraph"><p> APIは、名前、バージョン、IPアドレス情報など、新しく追加されたストレージクラスターアセットに関する情報を含むオブジェクトを返します。</p></div>
+<div class="paragraph"><p> APIは、名前、バージョン、IPアドレス情報など、新しく追加されたストレージクラスターアセットに関する情報を含むオブジェクトを返します。 </p></div>
 </li>
 </ol>
 </div>
@@ -2097,7 +2097,7 @@
 <div class="sect1">
 <h2 id="edit-the-stored-credentials-for-a-storage-cluster-asset">ストレージクラスターアセットの保存された資格情報を編集する</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>管理ノードがストレージクラスターへのログインに使用する、保存されている資格情報を編集できます。選択するユーザーには、クラスター管理者アクセス権が必要です。</p></div>
+<div class="paragraph"><p>管理ノードがストレージクラスターへのログインに使用する、保存されている資格情報を編集できます。選択するユーザーには、クラスター管理者アクセス権が必要です。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">続行する前<a href="#retrieve-the-installation-id-and-cluster-id-of-a-storage-cluster-asset">に、ストレージクラスターアセットのインストールIDとクラスターIDを取得する</a>の手順に従っていることを確認してください。</td>
@@ -2122,7 +2122,7 @@
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p>以前にコピーしたストレージクラスターIDを<code>storageId</code>パラメーターに貼り付けます。</p></li>
 <li>
-<p> [<strong>リクエスト本文]</strong>フィールドで次のパラメータの一方または両方を変更します。</p>
+<p> [<strong>リクエスト本文]</strong>フィールドで次のパラメータの一方または両方を変更します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -2156,7 +2156,7 @@
 <div class="sect1">
 <h2 id="delete-a-storage-cluster-asset">ストレージクラスターアセットを削除する</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>ストレージクラスターが使用できなくなった場合は、ストレージクラスターアセットを削除できます。ストレージクラスターアセットを削除すると、管理ノードから自動的に登録解除されます。</p></div>
+<div class="paragraph"><p>ストレージクラスターが使用できなくなった場合は、ストレージクラスターアセットを削除できます。ストレージクラスターアセットを削除すると、管理ノードから自動的に登録解除されます。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">続行する前<a href="#retrieve-the-installation-id-and-cluster-id-of-a-storage-cluster-asset">に、ストレージクラスターアセットのインストールIDとクラスターIDを取得する</a>の手順に従っていることを確認してください。</td>

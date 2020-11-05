@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">計算ノードのファームウェアをアップグレードする</h1></div>
-<p class="page-details"><time datetime="2020-10-29 17:43:02 +0000">2020年10月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_compute_node_firmware.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-29 17:43:02 +0000">2020年10月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_compute_node_firmware.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>Hシリーズの計算ノードの場合、BMC、BIOS、NICなどのハードウェアコンポーネントのファームウェアをアップグレードできます。計算ノードのファームウェアをアップグレードするには、NetAppハイブリッドクラウドコントロールUI、REST API、最新のファームウェアイメージを備えたUSBドライブ、またはBMCUIを使用できます。</p></div>
 <div class="paragraph"><p>アップグレード後、計算ノードはESXiで起動し、構成を保持したまま以前と同じように機能します。</p></div>
@@ -1949,7 +1949,7 @@
 <li><p><strong>管理者権限</strong>：アップグレードを実行するためのクラスター管理者およびBMC管理者の権限があります。</p></li>
 <li><p><strong>システムポート</strong>：アップグレードにNetApp Hybrid Cloud Controlを使用している場合は、必要なポートが開いていることを確認しました。詳細については、<a href="hci_prereqs_required_network_ports.html">ネットワークポート</a>を参照してください。</p></li>
 <li>
-<p> <strong>BMCおよびBIOSの最小バージョン</strong>：NetApp Hybrid Cloud Controlを使用してアップグレードする予定のノードは、次の最小要件を満たしています。</p>
+<p> <strong>BMCおよびBIOSの最小バージョン</strong>：NetApp Hybrid Cloud Controlを使用してアップグレードする予定のノードは、次の最小要件を満たしています。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -1980,28 +1980,28 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> H615C</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> 4.68.07</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> 3B08.CO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> 3B08.CO </p></td>
 </tr>
 </tbody>
 </table>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> H615C計算ノードは、<a href="https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.27.html">計算ファームウェアバンドル2.27</a>を使用してBMCファームウェアをバージョン4.68に更新し、NetApp Hybrid CloudControlが将来のファームウェアアップグレードを実行できるようにする必要があります。</td>
+<td class="content"> H615C計算ノードは、<a href="https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.27.html">計算ファームウェアバンドル2.27</a>を使用してBMCファームウェアをバージョン4.68に更新し、NetApp Hybrid CloudControlが将来のファームウェアアップグレードを実行できるようにする必要があります。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> NetApp Hybrid Cloud Controlが将来のファームウェアアップグレードを実行できるようにするには、H300E、H500E、およびH700EコンピューティングノードにRedfishライセンスが必要です。ネットアップサポートに連絡して、新しいコンピューティングファームウェアバンドルが後続のリリースでこのプロセスを自動化するまで、ライセンスを手動でインストールしてください。</td>
+<td class="content"> NetApp Hybrid Cloud Controlが将来のファームウェアアップグレードを実行できるようにするには、H300E、H500E、およびH700EコンピューティングノードにRedfishライセンスが必要です。ネットアップサポートに連絡して、新しいコンピューティングファームウェアバンドルが後続のリリースでこのプロセスを自動化するまで、ライセンスを手動でインストールしてください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">ハードウェアのファームウェアとドライバーファームウェアの完全なマトリックスについては、<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software">このKB記事を</a>参照し<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software">てください</a>（ログインが必要です）。</td>
+<td class="content">ハードウェアのファームウェアとドライバーファームウェアの完全なマトリックスについては、 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software">このKB記事を</a>参照し<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software">てください</a>（ログインが必要です）。</td>
 </tr></table></div>
 </li>
 <li><p> <strong>BIOSの起動順序</strong>：各ノードのBIOSセットアップで起動順序を手動で変更して、 <code>USB CD/DVD</code>が起動リストに表示されるようにします。詳細については、この<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Known_issues_and_workarounds_for_Compute_Node_upgrades#BootOrder">記事</a>を<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Known_issues_and_workarounds_for_Compute_Node_upgrades#BootOrder">参照</a>してください。</p></li>
 <li><p> <strong>BMC認証情報</strong>：NetApp Hybrid Cloud Control <a href="task_hcc_edit_bmc_info.html#use-netapp-hybrid-cloud-control-to-edit-bmc-information">UI</a>または<a href="task_hcc_edit_bmc_info.html#use-the-rest-api-to-edit-bmc-information">API</a>メソッドのいずれかを使用して、ノードのBMC認証情報を更新します。アップグレード前にBMC情報を更新すると、インベントリが更新され、管理ノードサービスがアップグレードを完了するために必要なすべてのハードウェアパラメータを認識できるようになります。</p></li>
 <li><p><strong>接続されたメディア</strong>：計算ノードのアップグレードを開始する前に、物理USBまたはISOをすべて切断します。</p></li>
 <li><p> <strong>KVM ESXiコンソール</strong>：計算ノードのアップグレードを開始する前に、BMC UIで開いているすべてのSerial-Over-LAN（SOL）セッションとアクティブなKVMセッションを閉じます。</p></li>
-<li><p><strong>監視ノードの要件</strong>：2ノードおよび3ノードのストレージクラスターでは、NetAppHCIインストールで常に1つの<a href="concept_hci_nodes.html">監視ノード</a>が実行されている必要があります。</p></li>
+<li><p><strong>ウィットネスノードの要件</strong>：2ノードおよび3ノードのストレージクラスターでは、NetAppHCIインストールで常に1つの<a href="concept_hci_nodes.html">ウィットネスノード</a>が実行されている必要があります。</p></li>
 <li><p><strong>計算ノードのヘルスチェック</strong>：ノードをアップグレードする準備ができていることを確認しました。<a href="task_upgrade_compute_prechecks.html">コンピューティングファームウェアをアップグレードする前に、コンピュートノードのヘルスチェック</a>を<a href="task_upgrade_compute_prechecks.html">実行するを</a>参照してください。</p></li>
 </ul>
 </div>
@@ -2015,23 +2015,23 @@
 <p>アップグレードシナリオに関連するオプションを選択します。</p>
 </div>
 <div class="ulist"><ul>
-<li><p> <a href="#use-netapp-hybrid-cloud-control-ui-to-upgrade-a-compute-node">NetApp Hybrid Cloud Control UIを使用してコンピューティングノードをアップグレードする</a>（推奨）</p></li>
+<li><p> <a href="#use-netapp-hybrid-cloud-control-ui-to-upgrade-a-compute-node">NetApp Hybrid Cloud Control UIを使用して計算ノードをアップグレードします</a>（推奨）</p></li>
 <li><p> <a href="#use-netapp-hybrid-cloud-control-api-to-upgrade-a-compute-node">NetApp Hybrid Cloud ControlAPIを使用してコンピューティングノードをアップグレードする</a></p></li>
 <li><p>計算ノードイメージ12.0の場合：<a href="#use-a-usb-drive-with-the-latest-firmware-image-downloaded">最新のファームウェアイメージがダウンロードされたUSBドライブを使用します</a></p></li>
 <li><p>コンピューティングファームウェア12.2.109の場合：Baseboard <a href="#use-the-baseboard-management-controller-bmc-user-interface-ui">Management Controller（BMC）ユーザーインターフェイス（UI）を使用します</a></p></li>
 </ul></div>
 </div></div>
 <div class="sect1">
-<h2 id="use-netapp-hybrid-cloud-control-ui-to-upgrade-a-compute-node">NetApp Hybrid Cloud ControlUIを使用してコンピューティングノードをアップグレードする</h2>
+<h2 id="use-netapp-hybrid-cloud-control-ui-to-upgrade-a-compute-node"> NetApp Hybrid Cloud ControlUIを使用してコンピューティングノードをアップグレードする</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>管理サービス2.14以降、NetAppハイブリッドクラウドコントロールUIを使用してコンピューティングノードをアップグレードできます。ノードのリストから、アップグレードするノードを選択する必要があります。 [<strong>現在のバージョン</strong>]タブには現在のファームウェアバージョンが表示され、[<strong>提案されたバージョン</strong>]タブには利用可能なアップグレードバージョンが表示<strong>され</strong>ます（存在する場合）。</p></div>
+<div class="paragraph"><p>管理サービス2.14以降、NetAppハイブリッドクラウドコントロールUIを使用してコンピューティングノードをアップグレードできます。ノードのリストから、アップグレードするノードを選択する必要があります。 [<strong>現在のバージョン</strong>]タブには現在のファームウェアバージョンが表示され、[<strong>提案されたバージョン</strong>]タブには利用可能なアップグレードバージョンが表示<strong>され</strong>ます（存在する場合）。 </p></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content">アップグレードを成功させるには、vSphereクラスターのヘルスチェックが成功していることを確認してください。</td>
+<td class="content">アップグレードを成功させるには、vSphereクラスターのヘルスチェックが成功していることを確認してください。 </td>
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content">ダークサイトのアップグレードの場合、アップグレードパッケージと管理ノードの両方がローカルであると、アップロード時間を短縮できます。</td>
+<td class="content">ダークサイトのアップグレードでは、アップグレードパッケージと管理ノードの両方がローカルである場合、アップロード時間を短縮できます。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -2039,7 +2039,7 @@
 </tr></table></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
-<ul><li><p>管理ノードがインターネットに接続されていない場合は、<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle" target="_blank" rel="noopener">ネットアップサポートサイト</a>からパッケージをダウンロードしています。</p></li></ul>
+<ul><li><p>管理ノードがインターネットに接続されていない場合は、 <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle" target="_blank" rel="noopener">ネットアップサポートサイト</a>からパッケージをダウンロードしています。</p></li></ul>
 </div>
 <div class="olist arabic">
 <div class="title">ステップ</div>
@@ -2052,7 +2052,7 @@
 <li><p>インターフェイスの右上にある[<strong>アップグレード]を</strong>クリックします。</p></li>
 <li><p> [<strong>アップグレード]</strong>ページで、[<strong>ファームウェアの計算]を</strong>選択し<strong>ます</strong>。</p></li>
 <li>
-<p>次のオプションから選択し、クラスターに適用可能な一連の手順を実行します。</p>
+<p>次のオプションから選択し、クラスターに適用可能な一連の手順を実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2064,7 +2064,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content">
 <div class="olist arabic"><ol class="arabic">
 <li>
@@ -2074,17 +2074,17 @@
 <li><p>アップグレードパッケージを選択します。</p></li>
 <li>
 <p> [<strong>アップグレードの開始]を</strong>クリックします。</p>
-<div class="paragraph"><p> [<strong>アップグレードの開始</strong>]をクリックすると、ウィンドウにヘルスチェックの失敗が表示されます（存在する場合）。</p></div>
+<div class="paragraph"><p> [<strong>アップグレードの開始</strong>]をクリックすると、ウィンドウにヘルスチェックの失敗が表示されます（存在する場合）。 </p></div>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
 <td class="content">開始後にアップグレードを一時停止することはできません。ファームウェアは、NIC、BIOS、BMCの順に更新されます。アップグレード中はBMCUIにログインしないでください。 BMCにログインすると、アップグレードプロセスを監視するHybrid Cloud Control Serial-Over-LAN（SOL）セッションが終了します。</td>
 </tr></table></div>
 </li>
-<li><p>クラスターまたはノードレベルでのヘルスチェックが警告付きで合格したが、重大な障害が発生しなかった場合は、<strong>アップグレードの準備ができている</strong>と表示さ<strong>れます</strong>。 [<strong>ノードのアップグレード]を</strong>クリックします。</p></li>
+<li><p>クラスターまたはノードレベルでのヘルスチェックが警告付きで合格したが、重大な障害が発生しなかった場合は、<strong>アップグレードの準備ができている</strong>と表示さ<strong>れます</strong>。 [<strong>ノードのアップグレード]を</strong>クリックします。 </p></li>
 </ol></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">アップグレードの進行中は、ページを離れて後でページに戻り、進行状況の監視を続けることができます。アップグレード中、UIにはアップグレードのステータスに関するさまざまなメッセージが表示されます。</td>
+<td class="content">アップグレードの進行中は、ページを離れて後でページに戻り、進行状況の監視を続けることができます。アップグレード中、UIにはアップグレードのステータスに関するさまざまなメッセージが表示されます。 </td>
 </tr></table></div>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
@@ -2094,18 +2094,18 @@
 </div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> 管理ノードは、外部接続のない暗いサイト内にあります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content">
 <div class="olist arabic"><ol class="arabic">
 <li><p>アップグレードするクラスターを選択します。</p></li>
 <li><p> [<strong>参照]</strong>をクリックして、からダウンロードしたアップグレードパッケージをアップロードします。<br> <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab" target="_blank" rel="noopener">NetAppサポートサイト</a>。</p></li>
-<li><p>アップロードが完了するのを待ちます。プログレスバーにアップロードのステータスが表示されます。</p></li>
+<li><p>アップロードが完了するのを待ちます。プログレスバーにアップロードのステータスが表示されます。 </p></li>
 </ol></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">ブラウザウィンドウから移動すると、ファイルのアップロードはバックグラウンドで行われます。</td>
 </tr></table></div>
-<div class="paragraph"><p>ファイルが正常にアップロードおよび検証されると、画面上のメッセージが表示されます。検証には数分かかる場合があります。<br>アップグレードの完了後にログをダウンロードできます。さまざまなアップグレードのステータスの変更に関する情報は、以下を参照してください<a href="#upgrade-status-changes">アップグレードのステータスの変更を</a>。</p></div>
+<div class="paragraph"><p>ファイルが正常にアップロードおよび検証されると、画面上のメッセージが表示されます。検証には数分かかる場合があります。<br>アップグレードの完了後にログをダウンロードできます。さまざまなアップグレードのステータスの変更に関する情報は、以下を参照してください<a href="#upgrade-status-changes">アップグレードのステータスの変更を</a>。 </p></div>
 </div></td>
 </tr>
 </tbody>
@@ -2119,7 +2119,7 @@
 </tr></table></div>
 <div class="sect2">
 <h3 id="upgrade-status-changes">アップグレードステータスの変更</h3>
-<div class="paragraph"><p>アップグレードプロセスの前、最中、後にUIに表示されるさまざまな状態は次のとおりです。</p></div>
+<div class="paragraph"><p>アップグレードプロセスの前、最中、後にUIに表示されるさまざまな状態は次のとおりです。 </p></div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2152,7 +2152,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ノードのアップグレードが進行中です。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">アップグレードが進行中です。プログレスバーにアップグレードステータスが表示されます。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アップグレードが進行中です。プログレスバーにアップグレードステータスが表示されます。 </p></td>
 </tr>
 </tbody>
 </table>
@@ -2171,7 +2171,7 @@
 <div class="title">ステップ</div>
 <ol class="arabic">
 <li>
-<p>接続に応じて、次のいずれかを実行します。</p>
+<p>接続に応じて、次のいずれかを実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2183,7 +2183,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
 <p>リポジトリ接続を確認します。</p>
@@ -2213,19 +2213,19 @@
 <li><p> REST API UIから、[ <strong>GET / packages</strong> ]をクリックし<strong>ます</strong>。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
-<li><p>応答から、後のステップで使用するために、アップグレードパッケージ名（ <code>"packageName"</code> ）とパッケージバージョン（ <code>"packageVersion"</code> ）をコピーして保存します。</p></li>
+<li><p>応答から、後のステップで使用するために、アップグレードパッケージ名（ <code>"packageName"</code> ）とパッケージバージョン（ <code>"packageVersion"</code> ）をコピーして保存します。 </p></li>
 </ol></div>
 </li>
 </ol></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
-<p> NetApp HCIソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle">ダウンロードページに</a>移動し、管理ノードがアクセスできるデバイスに最新の計算ノードファームウェアイメージをダウンロードします。</p>
+<p> NetApp HCIソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle">ダウンロードページに</a>移動し、管理ノードがアクセスできるデバイスに最新の計算ノードファームウェアイメージをダウンロードします。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content">ダークサイトのアップグレードの場合、アップグレードパッケージと管理ノードの両方がローカルであると、アップロード時間を短縮できます。</td>
+<td class="content">ダークサイトのアップグレードでは、アップグレードパッケージと管理ノードの両方がローカルである場合、アップロード時間を短縮できます。</td>
 </tr></table></div>
 </li>
 <li>
@@ -2357,7 +2357,7 @@
 </ol></div>
 </li>
 <li>
-<p> [<strong>実行]</strong>をクリックしてアップグレードを開始します。</p>
+<p> [<strong>実行]</strong>をクリックしてアップグレードを開始します。 </p>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
 <td class="content">開始後にアップグレードを一時停止することはできません。ファームウェアは、NIC、BIOS、BMCの順に更新されます。アップグレード中はBMCUIにログインしないでください。 BMCにログインすると、アップグレードプロセスを監視するHybrid Cloud Control Serial-Over-LAN（SOL）セッションが終了します。</td>
@@ -2374,7 +2374,7 @@
 <li><p>前のステップのタスクIDを<strong>task_Idに</strong>入力します。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
 <li>
-<p>アップグレード中に問題または特別な要件がある場合は、次のいずれかを実行します。</p>
+<p>アップグレード中に問題または特別な要件がある場合は、次のいずれかを実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2386,16 +2386,16 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">応答本文の<code>failedHealthChecks</code>メッセージによるクラスターヘルスの問題を修正する必要があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">応答本文の<code>failedHealthChecks</code>メッセージによるクラスターヘルスの問題を修正する必要があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li><p>各問題にリストされている特定のKB記事に移動するか、指定された対処法を実行してください。</p></li>
 <li><p> KBが指定されている場合は、関連するKBの記事に記載されているプロセスを完了してください。</p></li>
 <li><p>クラスタの問題を解決したら、必要に応じて再認証し、 <strong>POST / nodes / {hardware_id} / upgrades</strong>をクリックし<strong>ます</strong>。</p></li>
-<li><p>アップグレード手順で前述した手順を繰り返します。</p></li>
+<li><p>アップグレード手順で前述した手順を繰り返します。 </p></li>
 </ol></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">アップグレードは失敗し、緩和手順はアップグレードログにリストされません。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アップグレードは失敗し、緩和手順はアップグレードログにリストされません。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic"><li><p>この<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Known_issues_and_workarounds_for_Compute_Node_upgrades">KB記事を</a>参照して<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Known_issues_and_workarounds_for_Compute_Node_upgrades">ください（ログインが必要です</a>）。</p></li></ol></div></div></td>
 </tr>
 </tbody>
@@ -2429,7 +2429,7 @@
 <li><p>パラメータフィールドにハードウェアホストアセットID（前の手順で保存した<code>"hardwareId"</code> ）を入力します。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
-<li><p>応答で、すべてのコンポーネントのファームウェアが以前のバージョンから最新のファームウェアに正常にアップグレードされたことを確認します。</p></li>
+<li><p>応答で、すべてのコンポーネントのファームウェアが以前のバージョンから最新のファームウェアに正常にアップグレードされたことを確認します。 </p></li>
 </ol></div>
 </li>
 </ol>
@@ -2448,7 +2448,7 @@
 <li><p> [<strong>コンピューティングノード]</strong>セクションで、[コンピューティングノード]イメージをダウンロードします。</p></li>
 <li><p>計算ノードのRTFIイメージの生の内容を少なくとも32GBの容量のUSBサムドライブに書き込みます（ddまたはEtcherを使用）。</p></li>
 <li>
-<p> VMware vCenterを使用して計算ノードをメンテナンスモードにし、すべての仮想マシンをホストから退避させます。</p>
+<p> VMware vCenterを使用して計算ノードをメンテナンスモードにし、すべての仮想マシンをホストから退避させます。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">クラスターでVMware分散リソーススケジューラ（DRS）が有効になっている場合（これはNetApp HCIインストールのデフォルトです）、仮想マシンはクラスター内の他のノードに自動的に移行されます。</td>
@@ -2463,7 +2463,7 @@
 </li>
 <li><p>再起動が完了したら、vCenterを使用してアップグレードされた計算ノードのメンテナンスモードを終了します。</p></li>
 <li><p>アップグレードされた計算ノードからUSBフラッシュドライブを取り外します。</p></li>
-<li><p>すべての計算ノードがアップグレードされるまで、ESXiクラスター内の他の計算ノードに対してこのタスクを繰り返します。</p></li>
+<li><p>すべての計算ノードがアップグレードされるまで、ESXiクラスター内の他の計算ノードに対してこのタスクを繰り返します。 </p></li>
 </ol>
 </div>
 </div>
@@ -2471,10 +2471,10 @@
 <div class="sect1">
 <h2 id="use-the-baseboard-management-controller-bmc-user-interface-ui"> Baseboard Management Controller（BMC）ユーザーインターフェイス（UI）を使用する</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>アップグレードが成功することを確認するには、一連の手順を実行して計算ファームウェアISOをロードし、ノードをISOで再起動する必要があります。 ISOは、Webブラウザをホストしているシステムまたは仮想マシン（VM）に配置する必要があります。プロセスを開始する前に、ISOをダウンロードしたことを確認してください。</p></div>
+<div class="paragraph"><p>アップグレードが成功することを確認するには、一連の手順を実行して計算ファームウェアISOをロードし、ノードをISOで再起動する必要があります。 ISOは、Webブラウザをホストしているシステムまたは仮想マシン（VM）に配置する必要があります。プロセスを開始する前に、ISOをダウンロードしたことを確認してください。 </p></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content">システムまたはVMとノードを同じネットワーク上に配置することをお勧めします。</td>
+<td class="content">システムまたはVMとノードを同じネットワーク上に配置することをお勧めします。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -2486,7 +2486,7 @@
 </ul></div>
 <div class="sect2">
 <h3 id="upgrade-firmware-on-h410c-and-h300eh500eh700e-nodes">H410CおよびH300E / H500E / H700Eノードのファームウェアをアップグレードします</h3>
-<div class="paragraph"><p>ノードがクラスターの一部である場合は、アップグレード前にノードをメンテナンスモードにし、アップグレード後にメンテナンスモードを解除する必要があります。</p></div>
+<div class="paragraph"><p>ノードがクラスターの一部である場合は、アップグレード前にノードをメンテナンスモードにし、アップグレード後にメンテナンスモードを解除する必要があります。 </p></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">プロセス中に表示される次の情報メッセージは無視してください。 <code>Untrusty Debug Firmware Key is used, SecureFlash is currently in Debug Mode</code>
@@ -2501,7 +2501,7 @@
 <li><p> VMware vCenterWebクライアントにログインします。</p></li>
 <li><p>ホスト（計算ノード）名を右クリックし、[<strong>メンテナンスモード]&gt;</strong> [<strong>メンテナンスモードに入る]</strong>を選択し<strong>ます</strong>。</p></li>
 <li>
-<p> [ <strong>OK]を</strong>クリックします。<br>ホスト上のVMは、使用可能な別のホストに移行されます。移行する必要のあるVMの数によっては、VMの移行に時間がかかる場合があります。</p>
+<p> [ <strong>OK]を</strong>クリックします。<br>ホスト上のVMは、使用可能な別のホストに移行されます。移行する必要のあるVMの数によっては、VMの移行に時間がかかる場合があります。 </p>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
 <td class="content">続行する前に、ホスト上のすべてのVMが移行されていることを確認してください。</td>
@@ -2513,7 +2513,7 @@
 <li><p>資格情報を使用してログインします。</p></li>
 <li><p> [<strong>リモートコントロール]&gt; [コンソールリダイレクト]を</strong>選択し<strong>ます</strong>。</p></li>
 <li>
-<p> [<strong>コンソールの起動]を</strong>クリックします。</p>
+<p> [<strong>コンソールの起動]を</strong>クリックします。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> Javaをインストールするか、更新する必要がある場合があります。</td>
@@ -2522,7 +2522,7 @@
 <li><p>コンソールが開いたら、[<strong>仮想メディア</strong>] <strong>&gt; [仮想ストレージ</strong>]をクリックします。</p></li>
 <li>
 <p> [<strong>仮想ストレージ</strong>]画面で、[<strong>論理ドライブの種類</strong>]をクリックし、[ <strong>ISOファイル</strong>]を選択し<strong>ます</strong>。</p>
-<div class="paragraph"><p><span class="image"><img src="../media/BIOS_H410C_iso.png" alt="ISOファイルを選択するためのナビゲーションパスを表示します。"></span></p></div>
+<div class="paragraph"><p> <span class="image"><img src="../media/BIOS_H410C_iso.png" alt="ISOファイルを選択するためのナビゲーションパスを表示します。"></span></p></div>
 </li>
 <li><p> [<strong>イメージ</strong>を<strong>開く]を</strong>クリックして、ISOファイルをダウンロードしたフォルダーを参照し、ISOファイルを選択します。</p></li>
 <li><p> [<strong>プラグイン]を</strong>クリックします。</p></li>
@@ -2531,17 +2531,17 @@
 <li>
 <p>再起動中に<strong>F11</strong>を押して起動オプションを選択し、ISOをロードします。ブートメニューが表示される前に、F11を数回押す必要がある場合があります。</p>
 <div class="paragraph"><p>次の画面が表示されます。</p></div>
-<div class="paragraph"><p><span class="image"><img src="../media/boot_option_iso_h410c.png" alt="仮想ISOが起動する画面を表示します。"></span></p></div>
+<div class="paragraph"><p> <span class="image"><img src="../media/boot_option_iso_h410c.png" alt="仮想ISOが起動する画面を表示します。"></span></p></div>
 </li>
 <li>
-<p>上記の画面で、 <strong>Enterキーを</strong>押します。ネットワークによっては、 <strong>Enterキー</strong>を押してからアップグレードを開始するまでに数分かかる場合があります。</p>
+<p>上記の画面で、 <strong>Enterキーを</strong>押します。ネットワークによっては、 <strong>Enterキー</strong>を押してからアップグレードを開始するまでに数分かかる場合があります。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">注：ファームウェアのアップグレードによっては、コンソールが切断されたり、BMCのセッションが切断されたりする場合があります。 BMCに再度ログインすることはできますが、ファームウェアのアップグレードにより、コンソールなどの一部のサービスが利用できない場合があります。アップグレードが完了すると、ノードはコールドリブートを実行します。これには約5分かかる場合があります。</td>
 </tr></table></div>
 </li>
 <li>
-<p> BMC UIに再度ログインし、[<strong>システム</strong>]をクリックして、OSの起動後にBIOSバージョンとビルド時間を確認します。アップグレードが正しく完了すると、新しいBIOSとBMCのバージョンが表示されます。</p>
+<p> BMC UIに再度ログインし、[<strong>システム</strong>]をクリックして、OSの起動後にBIOSバージョンとビルド時間を確認します。アップグレードが正しく完了すると、新しいBIOSとBMCのバージョンが表示されます。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> BIOSバージョンは、ノードが完全に起動するまで、アップグレードされたバージョンを表示しません。</td>
@@ -2552,7 +2552,7 @@
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li><p> VMware vCenterWebクライアントにログインします。</p></li>
 <li><p>ホストをメンテナンスモードから解除します。これにより、切断された赤いフラグが表示される場合があります。すべてのステータスがクリアされるまで待ちます。</p></li>
-<li><p>電源がオフになっていた残りのVMのいずれかをオンにします。</p></li>
+<li><p>電源がオフになっていた残りのVMのいずれかをオンにします。 </p></li>
 </ol></div>
 </li>
 </ol>
@@ -2560,7 +2560,7 @@
 </div>
 <div class="sect2">
 <h3 id="upgrade-firmware-on-h610ch615c-nodes"> H610C / H615Cノードのファームウェアをアップグレードします</h3>
-<div class="paragraph"><p>手順は、ノードがスタンドアロンであるかクラスターの一部であるかによって異なります。手順には約25分かかる場合があり、ノードの電源オフ、ISOのアップロード、デバイスのフラッシュ、アップグレード後のノードの電源オンの再投入が含まれます。</p></div>
+<div class="paragraph"><p>手順は、ノードがスタンドアロンであるかクラスターの一部であるかによって異なります。手順には約25分かかる場合があり、ノードの電源をオフにし、ISOをアップロードし、デバイスをフラッシュし、アップグレード後にノードの電源を再びオンにします。</p></div>
 <div class="olist arabic">
 <div class="title">ステップ</div>
 <ol class="arabic">
@@ -2570,7 +2570,7 @@
 <li><p> VMware vCenterWebクライアントにログインします。</p></li>
 <li><p>ホスト（計算ノード）名を右クリックし、[<strong>メンテナンスモード]&gt;</strong> [<strong>メンテナンスモードに入る]</strong>を選択し<strong>ます</strong>。</p></li>
 <li>
-<p> [ <strong>OK]を</strong>クリックします。<br>ホスト上のVMは、使用可能な別のホストに移行されます。移行する必要のあるVMの数によっては、VMの移行に時間がかかる場合があります。</p>
+<p> [ <strong>OK]を</strong>クリックします。<br>ホスト上のVMは、使用可能な別のホストに移行されます。移行する必要のあるVMの数によっては、VMの移行に時間がかかる場合があります。 </p>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
 <td class="content">続行する前に、ホスト上のすべてのVMが移行されていることを確認してください。</td>
@@ -2582,29 +2582,29 @@
 <li><p>資格情報を使用してログインします。</p></li>
 <li><p> [<strong>リモートコントロール]&gt;</strong> [ <strong>KVM（Java）の起動]を</strong>クリックします。</p></li>
 <li>
-<p>コンソールウィンドウで、[<strong>メディア</strong>] <strong>&gt; [仮想メディアウィザード</strong>]をクリックします。</p>
+<p>コンソールウィンドウで、[<strong>メディア</strong>] <strong>&gt; [仮想メディアウィザード</strong>]をクリックします。 </p>
 <div class="imageblock"><div class="content"><img src="../media/bmc_wizard.gif" alt="BMCUIから仮想メディアウィザードを起動します。"></div></div>
 </li>
 <li><p> [<strong>参照]</strong>をクリックして、コンピューティングファームウェアの<code>.iso</code>ファイルを選択します。</p></li>
 <li>
-<p> [<strong>接続]を</strong>クリックし<strong>ます</strong>。<br>成功を示すポップアップが表示され、パスとデバイスが下部に表示されます。 [<strong>仮想メディア]</strong>ウィンドウを閉じることができます。</p>
+<p> [<strong>接続]を</strong>クリックし<strong>ます</strong>。<br>成功を示すポップアップが表示され、パスとデバイスが下部に表示されます。 [<strong>仮想メディア]</strong>ウィンドウを閉じることができます。 </p>
 <div class="imageblock"><div class="content"><img src="../media/virtual_med_popup.gif" alt="ISOアップロードの成功を示すポップアップウィンドウ。"></div></div>
 </li>
 <li><p> <strong>F12</strong>を押して[<strong>再起動</strong>]をクリックするか、[<strong>電源制御]&gt; [電源リセットの設定</strong>]をクリックして、ノードを再起動します。</p></li>
 <li><p>再起動中に<strong>F11</strong>を押して起動オプションを選択し、ISOをロードします。</p></li>
 <li>
-<p>表示されたリストから<strong>AMIVirtual CDROM</strong>を選択し、 <strong>Enter</strong>をクリック<strong>し</strong>ます。リストにAMI仮想CDROMが表示されない場合は、BIOSに移動し、ブートリストで有効にします。保存後、ノードは再起動します。再起動中に<strong>F11を</strong>押します。</p>
+<p>表示されたリストから<strong>AMIVirtual CDROM</strong>を選択し、 <strong>Enter</strong>をクリック<strong>し</strong>ます。リストにAMI仮想CDROMが表示されない場合は、BIOSに移動し、ブートリストで有効にします。保存後、ノードは再起動します。再起動中に<strong>F11を</strong>押します。 </p>
 <div class="imageblock"><div class="content"><img src="../media/boot_device.gif" alt="起動デバイスを選択できるウィンドウを表示します。"></div></div>
 </li>
 <li>
-<p>表示された画面で、 <strong>Enterを</strong>クリック<strong>し</strong>ます。</p>
+<p>表示された画面で、 <strong>Enterを</strong>クリック<strong>し</strong>ます。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">一部のファームウェアアップグレードにより、コンソールが切断されたり、BMCのセッションが切断されたりする場合があります。 BMCに再度ログインすることはできますが、ファームウェアのアップグレードにより、コンソールなどの一部のサービスが利用できない場合があります。アップグレードが完了すると、ノードはコールドリブートを実行します。これには約5分かかる場合があります。</td>
 </tr></table></div>
 </li>
 <li>
-<p>コンソールから切断された場合は、[<strong>リモートコントロール</strong>]を選択し、[ <strong>KVMの</strong><strong>起動</strong>]または[ <strong>KVMの</strong><strong>起動（Java）</strong> ]をクリックして再接続し、ノードの起動が完了したことを確認します。ノードが正常に起動したことを確認するために、複数の再接続が必要になる場合があります。</p>
+<p>コンソールから切断された場合は、[<strong>リモートコントロール</strong>]を選択し、[ <strong>KVMの</strong><strong>起動</strong>]または[ <strong>KVMの</strong><strong>起動（Java）</strong> ]をクリックして再接続し、ノードの起動が完了したことを確認します。ノードが正常に起動したことを確認するために、複数の再接続が必要になる場合があります。 </p>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
 <td class="content">電源投入プロセス中、約5分間、KVMコンソールに<strong>信号が</strong>表示され<strong>ません</strong>。</td>

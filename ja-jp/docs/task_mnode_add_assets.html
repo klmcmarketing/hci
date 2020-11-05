@@ -1938,13 +1938,13 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">管理ノードに資産を追加します</h1></div>
-<p class="page-details"><time datetime="2020-08-17 18:13:14 +0000">2020年8月17日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_add_assets.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-08-17 18:13:14 +0000">2020年8月17日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_add_assets.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>REST API UIを使用して、コンピューティングアセットとコントローラーアセットを管理ノード構成に追加できます。</p></div>
 <div class="paragraph"><p>最近インストールをスケーリングし、新しいアセットが構成に自動的に追加されなかった場合は、アセットを追加する必要がある場合があります。これらのAPIを使用して、インストールに最近追加されたアセットを追加します。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
-<li><p>クラスタバージョンは、NetAppElementソフトウェア11.3以降を実行しています。</p></li>
+<li><p>ご使用のクラスターバージョンは、NetAppElementソフトウェア11.3以降を実行しています。</p></li>
 <li><p>バージョン11.3以降を実行している管理ノードをデプロイしました。</p></li>
 </ul>
 </div>
@@ -1983,7 +1983,7 @@
         "コレクション"： "https://10.111.211.111/inventory/1/installations"、
         「自己」：「https://10.111.217.111/inventory/1/installations/abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x」
       }、
-      "id"： "abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x"、</pre></div></div>
+      "id"： "abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x"、 </pre></div></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">インストールには、インストールまたはアップグレード中に作成された基本資産構成があります。</td>
@@ -2005,7 +2005,7 @@
 </ol></div>
 </li>
 <li>
-<p>計算ノードまたはコントローラーのサブアセットを既存のベースアセットに追加するには、次のいずれかをクリックします。</p>
+<p>計算ノードまたはコントローラーのサブアセットを既存のベースアセットに追加するには、次のいずれかをクリックします。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 40%;">
@@ -2017,7 +2017,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">POST / assets / {asset_id} / controllers</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">POST / assets / {asset_id} / controllers </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
 <p>管理ノードでmNodeサービスのRESTAPIUIを開きます。</p>
@@ -2036,11 +2036,11 @@
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p> <strong>Asset_id</strong>フィールドに親ベースの資産IDを入力します。</p></li>
 <li><p>ペイロードに必要な値を追加します。</p></li>
-<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。 </p></li>
 </ol></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> POST / assets / {asset_id} / compute-nodes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> POST / assets / {asset_id} / compute-nodes </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
 <p>管理ノードでmNodeサービスのRESTAPIUIを開きます。</p>
@@ -2066,7 +2066,7 @@
 <li><p>必要に応じて、他の値を入力します。</p></li>
 </ol></div>
 </li>
-<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。 </p></li>
 </ol></div></div></td>
 </tr>
 </tbody>

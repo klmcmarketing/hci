@@ -1937,8 +1937,8 @@
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
-    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ActiveIQおよびNetAppHCIモニタリングを有効にする</h1></div>
-<p class="page-details"><time datetime="2020-08-13 18:47:09 +0000">2020年8月13日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_enable_activeIQ.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> ActiveIQおよびNetAppHCIモニタリングを有効にする</h1></div>
+<p class="page-details"><time datetime="2020-08-13 18:47:09 +0000">2020年8月13日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_enable_activeIQ.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>インストールまたはアップグレード中にまだ有効にしていない場合は、Active IQストレージ監視（SolidFireオールフラッシュストレージおよびNetApp HCIの場合）およびNetApp HCIコンピューティング監視（NetApp HCIの場合のみ）を有効にできます。 NetApp HCI Deployment Engineを使用してテレメトリを無効にした場合、またはSolidFireオールフラッシュストレージシステムのインストール中にSolidFire Active IQをセットアップしなかった場合は、この手順を使用する必要があります。</p></div>
 <div class="paragraph"><p> Active IQコレクターサービスは、構成データとElementソフトウェアベースのクラスターパフォーマンスメトリックをNetApp Active IQに転送して、履歴レポートとほぼリアルタイムのパフォーマンス監視を行います。 NetApp HCIモニタリングサービスを使用すると、ストレージクラスタの障害をvCenterに転送してアラートを通知できます。</p></div>
 <div class="ulist">
@@ -1980,7 +1980,7 @@
         "コレクション"： "https://10.111.211.111/inventory/1/installations"、
         「自己」：「https://10.111.217.111/inventory/1/installations/abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x」
       }、
-      "id"： "abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x"、</pre></div></div>
+      "id"： "abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x"、 </pre></div></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">インストールには、インストールまたはアップグレード中に作成された基本資産構成があります。</td>
@@ -2026,7 +2026,7 @@
 </ol></div>
 </li>
 <li>
-<p>まだ行っていない場合は、NetApp HCIモニタリング（NetApp HCIインストールのみ）およびハイブリッドクラウドコントロール（すべてのインストール用）用のvCenterコントローラーアセットを管理ノードの既知のアセットに追加します。</p>
+<p>まだ行っていない場合は、NetApp HCIモニタリング（NetApp HCIインストールのみ）およびハイブリッドクラウドコントロール（すべてのインストール用）用のvCenterコントローラーアセットを管理ノードの既知のアセットに追加します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> NetApp HCI監視サービスには、コントローラーアセットが必要です。</td>
@@ -2044,7 +2044,7 @@
 "タイプ"： "vCenter"、
 "host_name"： "string"、
 "config"：{}
-}</pre></div></div>
+} </pre></div></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> <code>ip</code>はvCenterのIPアドレスです。</td>

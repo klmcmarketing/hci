@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">データ保護</h1></div>
-<p class="page-details"><time datetime="2020-10-02 21:04:04 +0000">2020年10月2日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_hci_dataprotection.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-02 21:04:04 +0000">2020年10月2日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_hci_dataprotection.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>NetApp HCIデータ保護の用語には、さまざまなタイプのリモートレプリケーション、ボリュームスナップショット、ボリュームクローニング、保護ドメイン、および二重らせんテクノロジーによる高可用性が含まれます。</p></div>
 <div class="paragraph"><p> NetApp HCIデータ保護には、次の概念が含まれています。</p></div>
@@ -1990,7 +1990,7 @@
 <h3 id="snapshot-only-replication">スナップショットのみのレプリケーション</h3>
 <div class="paragraph"><p>スナップショットのみのデータ保護は、特定の時点で変更されたデータをリモートクラスターに複製します。ソースクラスターで作成されたスナップショットのみが複製されます。ソースボリュームからのアクティブな書き込みはそうではありません。</p></div>
 <div class="paragraph"><p>スナップショット複製の頻度を設定できます。</p></div>
-<div class="paragraph"><p>スナップショットレプリケーションは、非同期レプリケーションまたは同期レプリケーションには影響しません。</p></div>
+<div class="paragraph"><p>スナップショットレプリケーションは、非同期レプリケーションまたは同期レプリケーションには影響しません。 </p></div>
 </div>
 <div class="sect2">
 <h3 id="replication-between-element-and-ontap-clusters-using-snapmirror"> SnapMirrorを使用したElementクラスターとONTAPクラスター間のレプリケーション</h3>
@@ -2019,7 +2019,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>単一ボリュームまたは複数ボリュームのクローンは、データのポイントインタイムコピーです。ボリュームのクローンを作成すると、システムはボリュームのスナップショットを作成してから、スナップショットによって参照されるデータのコピーを作成します。</p></div>
 <div class="paragraph"><p>これは非同期プロセスであり、プロセスに必要な時間は、クローンを作成するボリュームのサイズと現在のクラスターの負荷によって異なります。</p></div>
-<div class="paragraph"><p>クラスターは、ボリュームごとに一度に最大2つの実行中のクローン要求と、一度に最大8つのアクティブなボリュームクローン操作をサポートします。これらの制限を超えるリクエストは、後の処理のためにキューに入れられます。</p></div>
+<div class="paragraph"><p>クラスターは、ボリュームごとに一度に最大2つの実行中のクローン要求と、一度に最大8つのアクティブなボリュームクローン操作をサポートします。これらの制限を超えるリクエストは、後の処理のためにキューに入れられます。 </p></div>
 </div>
 </div>
 <div class="sect1">
@@ -2053,7 +2053,7 @@
 </ul></div>
 <div class="paragraph"><p> NetApp Element Plug-in for vCenterServerのNetAppElement Configuration拡張ポイントを使用して、保護ドメインの監視を手動で有効にできます。ノードまたはシャーシドメインに基づいて保護ドメインのしきい値を選択できます。</p></div>
 <div class="paragraph"><p>新しいクラスターを作成するときに、共有シャーシに存在するストレージノードを使用している場合は、保護ドメイン機能を使用してシャーシレベルの障害保護を設計することを検討してください。</p></div>
-<div class="paragraph"><p>カスタム保護ドメインレイアウトを定義できます。各ノードは、1つだけのカスタム保護ドメインに関連付けられます。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられています。詳細については、を参照してください。<br> <a href="https://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-7D31AC22-8815-4BDA-984A-9AED750B96B1.html" target="_blank" rel="noopener">SolidFireおよびElement12.0ドキュメントセンター</a>。</p></div>
+<div class="paragraph"><p>カスタム保護ドメインレイアウトを定義できます。各ノードは、1つだけのカスタム保護ドメインに関連付けられています。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられています。詳細については、を参照してください。<br> <a href="https://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-7D31AC22-8815-4BDA-984A-9AED750B96B1.html" target="_blank" rel="noopener">SolidFireおよびElement12.0ドキュメントセンター</a>。</p></div>
 </div>
 </div>
 <div class="sect1">

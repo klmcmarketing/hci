@@ -1937,10 +1937,10 @@
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
-    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">H610CおよびH615Cノードを交換してください</h1></div>
-<p class="page-details"><time datetime="2020-10-20 00:12:57 +0000">2020年10月20日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hci_h610ch615crepl.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> H610CおよびH615Cノードを交換してください</h1></div>
+<p class="page-details"><time datetime="2020-10-20 00:12:57 +0000">2020年10月20日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hci_h610ch615crepl.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
-<div class="paragraph lead"><p>CPU、マザーボードに関連する計算ノードの障害を修復するため、または電源が入らない場合は、シャーシを交換する必要があります。 NetApp HCIブートストラップOSバージョン1.6以降を実行するH610C計算ノードに障害のあるDIMMがある場合は、DIMMを交換でき、シャーシを交換する必要はありません。 H615Cノードの場合、DIMMに障害が発生した場合にシャーシを交換する必要はありません。故障したDIMMのみを交換できます。</p></div>
+<div class="paragraph lead"><p>CPU、マザーボードに関連する計算ノードの障害を修復するため、または電源が入らない場合は、シャーシを交換する必要があります。 NetApp HCI Bootstrap OSバージョン1.6以降を実行するH610C計算ノードに障害のあるDIMMがある場合は、DIMMを交換でき、シャーシを交換する必要はありません。 H615Cノードの場合、DIMMに障害が発生した場合にシャーシを交換する必要はありません。故障したDIMMのみを交換できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> H610CとH615Cの場合、ノードとシャーシは別個のコンポーネントではないため、「ノード」と「シャーシ」という用語は同じ意味で使用されます。</td>
@@ -1966,7 +1966,7 @@
 <div class="sect1">
 <h2 id="prepare-to-replace-the-node">ノードを交換する準備をする</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>ノードを交換する前に、ノードでホストされている仮想マシン（VM）を使用可能なホストに移行し、クラスターからノードを削除する必要があります。シリアル番号やネットワーク情報など、ノードに関する詳細を取得する必要があります。</p></div>
+<div class="paragraph"><p>ノードを交換する前に、ノードでホストされている仮想マシン（VM）を使用可能なホストに移行し、クラスターからノードを削除する必要があります。シリアル番号やネットワーク情報など、ノードに関する詳細を取得する必要があります。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">デュアルインラインメモリモジュール（DIMM）の障害など、ノードがまだオンラインで機能しているコンポーネント障害の場合は、障害が発生したノードを削除する前に、クラスターからドライブを削除する必要があります。</td>
@@ -1975,7 +1975,7 @@
 <div class="title">ステップ</div>
 <ol class="arabic">
 <li>
-<p>VMware vSphere Web Clientで、VMを別の使用可能なホストに移行する手順を実行します。</p>
+<p>VMware vSphere Web Clientで、VMを別の使用可能なホストに移行する手順を実行します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">移行手順については、VMwareのドキュメントを参照してください。</td>
@@ -1983,7 +1983,7 @@
 </li>
 <li><p>障害が発生したノードを選択し、[<strong>モニター]&gt; [ハードウェアステータス]&gt; [センサー]</strong>を選択します。</p></li>
 <li>
-<p>障害が発生したノードのシリアル番号をメモします。次のスクリーンショットは単なる例です。</p>
+<p>障害が発生したノードのシリアル番号をメモします。次のスクリーンショットは単なる例です。 </p>
 <div class="imageblock"><div class="content"><img src="../media/h610c%20serial%20number.gif" alt="VMware vSphere WebClientで障害が発生したノードのシリアル番号を表示します。"></div></div>
 <div class="paragraph"><p>記載した番号をノードの背面にあるステッカーのシリアル番号と照合してシャーシを識別するには、シリアル番号が必要です。</p></div>
 </li>
@@ -1998,7 +1998,7 @@
 <div class="sect1">
 <h2 id="replace-the-node">ノードを交換してください</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>障害が発生したノードをクラスターから削除した後、障害が発生したシャーシを削除して、交換用のシャーシを取り付けることができます。</p></div>
+<div class="paragraph"><p>障害が発生したノードをクラスターから削除した後、障害が発生したシャーシを削除して、交換用のシャーシを取り付けることができます。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">ここでの手順を実行する前に、帯電防止保護が施されていることを確認してください。</td>
@@ -2014,7 +2014,7 @@
 <li><p>シャーシの両側にある2つの電源ユニットを取り外します。<br>これらの電源ユニットは、新しいシャーシで使用できます。</p></li>
 <li><p>オプション：レールを取り外し、交換用シャーシに付属の新しいレールを取り付けます。<br>既存のレールを再利用する場合は、この手順をスキップできます。</p></li>
 <li>
-<p>交換用シャーシをレールにスライドさせます。</p>
+<p>交換用シャーシをレールにスライドさせます。 </p>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
 <td class="content">シャーシをレールにスライドさせるときは、過度の力を加えないようにしてください。</td>
@@ -2024,7 +2024,7 @@
 <li><p>電源ユニットを交換してください。</p></li>
 <li><p> H615Cのみ。故障したシャーシから取り外したDIMMを挿入し、交換用のシャーシに挿入します。</p></li>
 <li>
-<p>最初にケーブルを外したポートにケーブルを再接続します。<br>ケーブルを外したときにケーブルに付けたラベルは、ガイドとして役立ちます。</p>
+<p>最初にケーブルを外したポートにケーブルを再接続します。<br>ケーブルを外したときにケーブルに付けたラベルは、ガイドとして役立ちます。 </p>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
 <td class="content">シャーシの背面にある通気孔がケーブルまたはラベルで塞がれていると、過熱によるコンポーネントの早期故障につながる可能性があります。<br>ケーブルをポートに無理に押し込まないでください。ケーブル、ポート、またはその両方が損傷する可能性があります。</td>
@@ -2044,7 +2044,7 @@
 <ol class="arabic">
 <li><p>ブラウザを開き、次のURLでNVIDIAライセンスポータルを参照します。<br> <code><a href="https://nvid.nvidia.com/dashboard/" class="bare">https://nvid.nvidia.com/dashboard/</a></code></p></li>
 <li>
-<p>環境に応じて、次のいずれかのドライバーパッケージをコンピューターにダウンロードします。</p>
+<p>環境に応じて、次のいずれかのドライバーパッケージをコンピューターにダウンロードします。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2056,15 +2056,15 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vSphere 6.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vSphere 6.0 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph"><p> NVIDIA-GRID-vSphere-6.0-390.94-390.96-392.05.zip</p></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> vSphere 6.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> vSphere 6.5 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph"><p> NVIDIA-GRID-vSphere-6.5-410.92-410.91-412.16.zip</p></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> vSphere 6.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> vSphere 6.7 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph"><p> NVIDIA-GRID-vSphere-6.7-410.92-410.91-412.16.zip</p></div></div></td>
 </tr>
 </tbody>
@@ -2072,7 +2072,7 @@
 </li>
 <li><p>コンピューターでドライバーパッケージを抽出します。<br>結果の.VIBファイルは、圧縮されていないドライバーファイルです。</p></li>
 <li>
-<p> .VIBドライバーファイルをコンピューターから計算ノードで実行されているESXiにコピーします。次の各バージョンのコマンド例は、ドライバーが管理ホストの$ HOME / NVIDIA / ESX6.x /ディレクトリにあることを前提としています。 SCPユーティリティは、ほとんどのLinuxディストリビューションですぐに利用できます。または、Windowsのすべてのバージョンでダウンロード可能なユーティリティとして利用できます。</p>
+<p> .VIBドライバーファイルをコンピューターから計算ノードで実行されているESXiにコピーします。次の各バージョンのコマンド例は、ドライバーが管理ホストの$ HOME / NVIDIA / ESX6.x /ディレクトリにあることを前提としています。 SCPユーティリティは、ほとんどのLinuxディストリビューションですぐに利用できます。または、Windowsのすべてのバージョンでダウンロード可能なユーティリティとして利用できます。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2084,15 +2084,15 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ESXi 6.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ESXi 6.0 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph"><p> scp $ HOME / NVIDIA / ESX6.0 / NVIDIA **。vibroot @ &lt;ESXi_IP_ADDR&gt;：/。</p></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> ESXi 6.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> ESXi 6.5 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph"><p> scp $ HOME / NVIDIA / ESX6.5 / NVIDIA **。vibroot @ &lt;ESXi_IP_ADDR&gt;：/。</p></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> ESXi 6.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> ESXi 6.7 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph"><p> scp $ HOME / NVIDIA / ESX6.7 / NVIDIA **。vibroot @ &lt;ESXi_IP_ADDR&gt;：/。</p></div></div></td>
 </tr>
 </tbody>
@@ -2115,7 +2115,7 @@
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li><p> NVIDIAライセンスサーバーをインストールします。</p></li>
 <li><p> NVIDIAvGPUソフトウェア用に仮想マシンゲストを構成します。</p></li>
-<li><p>仮想デスクトップインフラストラクチャ（VDI）コンテキストでvGPU対応デスクトップを使用している場合は、NVIDIAvGPUソフトウェア用にVMwareHorizonViewを構成します。</p></li>
+<li><p>仮想デスクトップインフラストラクチャ（VDI）コンテキストでvGPU対応デスクトップを使用している場合は、NVIDIAvGPUソフトウェア用にVMwareHorizonViewを構成します。 </p></li>
 </ol></div>
 </li>
 </ol>
@@ -2157,14 +2157,14 @@
 <li><p> NetAppHCIインストールに関連付けられているvCenterインスタンスのFQDNまたはIPアドレスと管理者の資格情報を入力します。</p></li>
 <li><p> [<strong>続行]を</strong>選択します。</p></li>
 <li>
-<p>新しい計算ノードを追加する既存のvSphereデータセンターを選択するか、[新しいデータセンターの作成]を選択して新しい計算ノードを新しいデータセンターに追加します。</p>
+<p>新しい計算ノードを追加する既存のvSphereデータセンターを選択するか、[新しいデータセンターの作成]を選択して新しい計算ノードを新しいデータセンターに追加します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> [Create New Datacenter]を選択すると、[クラスター]フィールドに自動的に入力されます。</td>
 </tr></table></div>
 </li>
 <li>
-<p>既存のデータセンターを選択した場合は、新しい計算ノードを関連付ける必要があるvSphereクラスターを選択します。</p>
+<p>既存のデータセンターを選択した場合は、新しい計算ノードを関連付ける必要があるvSphereクラスターを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> NetApp HCIが、拡張用に選択したクラスターのネットワーク設定を認識できない場合は、管理、ストレージ、およびvMotionネットワークのvmkernelおよびvmnicマッピングがデプロイメントのデフォルトに設定されていることを確認してください。</td>
@@ -2176,14 +2176,14 @@
 <li><p> [ESXi資格情報]ページで、追加する1つまたは複数の計算ノードのESXiルートパスワードを入力します。<br> NetAppHCIの最初の展開時に作成されたものと同じパスワードを使用する必要があります。</p></li>
 <li><p> [<strong>続行]を</strong>選択します。</p></li>
 <li>
-<p>新しいvSphereデータセンタークラスターを作成した場合は、[ネットワークトポロジ]ページで、追加する新しい計算ノードに一致するネットワークトポロジを選択します。</p>
+<p>新しいvSphereデータセンタークラスターを作成した場合は、[ネットワークトポロジ]ページで、追加する新しい計算ノードに一致するネットワークトポロジを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">計算ノードが2ケーブルトポロジを使用していて、既存のNetAppHCI展開がVLANIDで構成されている場合にのみ、2ケーブルオプションを選択できます。</td>
 </tr></table></div>
 </li>
 <li>
-<p> [利用可能なインベントリ]ページで、既存のNetAppHCIインストールに追加するノードを選択します。</p>
+<p> [利用可能なインベントリ]ページで、既存のNetAppHCIインストールに追加するノードを選択します。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">一部の計算ノードでは、vCenterバージョンがサポートする最高レベルでEVCを有効にしてから、インストールに追加する必要がある場合があります。これらの計算ノードでEVCを有効にするには、vSphereクライアントを使用する必要があります。有効にした後、[インベントリ]ページを更新し、計算ノードの追加を再試行してください。</td>

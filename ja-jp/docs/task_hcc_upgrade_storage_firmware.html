@@ -1938,7 +1938,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ストレージファームウェアをアップグレードする</h1></div>
-<p class="page-details"><time datetime="2020-10-29 19:08:41 +0000">2020年10月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a><a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_storage_firmware.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-29 19:08:41 +0000">2020年10月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_storage_firmware.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>Element 12.0および管理サービスバージョン2.14以降では、NetAppハイブリッドクラウドコントロールUIおよびREST APIを使用して、Hシリーズストレージノードでファームウェアのみのアップグレードを実行できます。この手順では、Elementソフトウェアはアップグレードされず、Elementのメジャーリリース以外のストレージファームウェアをアップグレードできます。</p></div>
 <div class="ulist">
@@ -1948,12 +1948,12 @@
 <li><p><strong>システム時刻の同期</strong>：すべてのノードのシステム時刻が同期され、ストレージクラスターとノードに対してNTPが正しく構成されていることを確認しました。各ノードは、ノードごとのWeb UI（ <code>https://[IP address]:442</code> ）でDNSネームサーバーを使用して構成する必要があり、タイムスキューに関連する未解決のクラスター障害はありません。</p></li>
 <li><p><strong>システムポート</strong>：アップグレードにNetApp Hybrid Cloud Controlを使用している場合は、必要なポートが開いていることを確認しました。詳細については、<a href="hci_prereqs_required_network_ports.html">ネットワークポート</a>を参照してください。</p></li>
 <li><p><strong>管理ノード</strong>：NetApp Hybrid Cloud Control UIおよびAPIの場合、環境内の管理ノードはバージョン11.3を実行しています。</p></li>
-<li><p><strong>管理サービス</strong>：管理サービスバンドルを最新バージョンに更新しました。</p></li>
+<li><p><strong>管理サービス</strong>：管理サービスバンドルを最新バージョンに更新しました。 </p></li>
 </ul>
 </div>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
-<td class="content"> Elementソフトウェアバージョン12.0を実行しているH610Sストレージノードの場合、ストレージファームウェアバンドル2.27にアップグレードする前に、DパッチSUST-909を適用する必要があります。アップグレードする前に、ネットアップサポートに連絡してDパッチを入手してください。<a href="http://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.27.html" target="_blank" rel="noopener">ストレージファームウェアバンドル2.27リリースノートを</a>参照してください。</td>
+<td class="content"> Elementソフトウェアバージョン12.0を実行しているH610Sストレージノードの場合、ストレージファームウェアバンドル2.27にアップグレードする前に、DパッチSUST-909を適用する必要があります。アップグレードする前に、ネットアップサポートに連絡してDパッチを入手してください。 <a href="http://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.27.html" target="_blank" rel="noopener">ストレージファームウェアバンドル2.27リリースノートを</a>参照してください。 </td>
 </tr></table></div>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
@@ -1973,7 +1973,7 @@
 </ul></div>
 </div></div>
 <div class="sect1">
-<h2 id="use-netapp-hybrid-cloud-control-ui-to-upgrade-storage-firmware">NetApp Hybrid Cloud ControlUIを使用してストレージファームウェアをアップグレードする</h2>
+<h2 id="use-netapp-hybrid-cloud-control-ui-to-upgrade-storage-firmware"> NetApp Hybrid Cloud ControlUIを使用してストレージファームウェアをアップグレードする</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp Hybrid Cloud Control UIを使用して、クラスター内のストレージノードのファームウェアをアップグレードできます。</p></div>
 <div class="ulist">
@@ -1988,7 +1988,7 @@
 </div>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
-<td class="content">NetApp Hybrid Cloud Controlを使用してストレージクラスターをアップグレードする際の潜在的な問題とその回避策については、 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">KBの記事を</a>参照して<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">ください</a>。</td>
+<td class="content"> NetApp Hybrid Cloud Controlを使用してストレージクラスターをアップグレードする際の潜在的な問題とその回避策については、 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">KBの記事を</a>参照して<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">ください</a>。 </td>
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
@@ -2004,14 +2004,14 @@
 <li><p>ストレージクラスター管理者の資格情報を入力して、NetApp Hybrid CloudControlにログインします。</p></li>
 <li><p>インターフェイスの右上にある[<strong>アップグレード]を</strong>クリックします。</p></li>
 <li>
-<p> [<strong>アップグレード]</strong>ページで、[<strong>ストレージ]を</strong>選択します。</p>
+<p> [<strong>アップグレード]</strong>ページで、[<strong>ストレージ]を</strong>選択します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content"> [<strong>ストレージ</strong>]タブには、インストールの一部であるストレージクラスターが一覧表示されます。 NetApp Hybrid Cloud Controlがクラスターにアクセスできない場合、そのクラスターは[<strong>アップグレード]</strong>ページに表示されません。 Element 12.0以降を実行しているクラスターがある場合は、これらのクラスターの現在のファームウェアバンドルバージョンが一覧表示されます。単一クラスター内のノードに異なるファームウェアバージョンがある場合、またはアップグレードが進行するにつれて、[<strong>現在のファームウェアバンドルバージョン</strong>]列に[<strong>複数]</strong>が表示されます。 [<strong>複数</strong>]をクリックして[<strong>ノード]</strong>ページに移動し、ファームウェアのバージョンを比較できます。すべてのクラスターが12.0より前のElementバージョンを実行している場合、ファームウェアバンドルのバージョン番号に関する情報は表示されません。この情報は、[<strong>ノード]</strong>ページでも入手できます。<a href="task_hcc_nodes.html">インベントリの表示を</a>参照して<a href="task_hcc_nodes.html">ください</a>。<br>クラスタが最新であるか、アップグレードパッケージが利用できない場合、[<strong>要素]</strong>タブと[<strong>ファームウェアのみ]</strong>タブは表示されません。これらのタブは、アップグレードの進行中も表示されません。 [<strong>要素</strong>]タブが表示されているが[<strong>ファームウェアのみ</strong>]タブが表示されていない場合、使用可能なファームウェアパッケージはありません。</td>
 </tr></table></div>
 </li>
 <li>
-<p>次のオプションから選択し、クラスターに適用可能な一連の手順を実行します。</p>
+<p>次のオプションから選択し、クラスターに適用可能な一連の手順を実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2023,17 +2023,17 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content">
 <div class="olist arabic"><ol class="arabic">
 <li><p>アップグレードするクラスターの横にあるドロップダウン矢印をクリックします。</p></li>
 <li><p> [<strong>ファームウェアのみ]を</strong>クリックして、利用可能なアップグレードバージョンから選択します。</p></li>
-<li><p> [<strong>アップグレードの開始]を</strong>クリックします。</p></li>
+<li><p> [<strong>アップグレードの開始]を</strong>クリックします。 </p></li>
 </ol></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">
-<strong>アップグレードステータス</strong>は、プロセスのステータスを反映するためにアップグレード中に変更されます。また、アップグレードの一時停止やアップグレードがエラーを返した場合など、実行したアクションに応じて変化します。<a href="#upgrade-status-changes">アップグレードステータスの変更を</a>参照してください。</td>
+<strong>アップグレードステータス</strong>は、プロセスのステータスを反映するためにアップグレード中に変更されます。また、アップグレードの一時停止やアップグレードがエラーを返した場合など、実行したアクションに応じて変化します。<a href="#upgrade-status-changes">アップグレードステータスの変更を</a>参照してください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -2043,18 +2043,18 @@
 </div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> 管理ノードは、外部接続のない暗いサイト内にあります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content">
 <div class="olist arabic"><ol class="arabic">
 <li><p>アップグレードするクラスターの横にあるドロップダウン矢印をクリックします。</p></li>
 <li><p> [<strong>参照]</strong>をクリックして、ダウンロードしたアップグレードパッケージをアップロードします。</p></li>
-<li><p>アップロードが完了するのを待ちます。プログレスバーにアップロードのステータスが表示されます。</p></li>
+<li><p>アップロードが完了するのを待ちます。プログレスバーにアップロードのステータスが表示されます。 </p></li>
 </ol></div>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
 <td class="content">ブラウザウィンドウから移動すると、ファイルのアップロードは失われます。</td>
 </tr></table></div>
-<div class="paragraph"><p>ファイルが正常にアップロードおよび検証されると、画面上のメッセージが表示されます。検証には数分かかる場合があります。この段階でブラウザウィンドウから移動すると、ファイルのアップロードは保持されます。<br>アップグレードの完了後にログをダウンロードできます。さまざまなアップグレードのステータスの変更に関する情報は、以下を参照してください<a href="#upgrade-status-changes">アップグレードのステータスの変更を</a>。</p></div>
+<div class="paragraph"><p>ファイルが正常にアップロードおよび検証されると、画面上のメッセージが表示されます。検証には数分かかる場合があります。この段階でブラウザウィンドウから移動すると、ファイルのアップロードは保持されます。<br>アップグレードの完了後にログをダウンロードできます。さまざまなアップグレードのステータスの変更に関する情報は、以下を参照してください<a href="#upgrade-status-changes">アップグレードのステータスの変更を</a>。 </p></div>
 </div></td>
 </tr>
 </tbody>
@@ -2064,7 +2064,7 @@
 </div>
 <div class="sect2">
 <h3 id="upgrade-status-changes">アップグレードステータスの変更</h3>
-<div class="paragraph"><p>UIの[<strong>アップグレードステータス</strong>]列に、アップグレードプロセスの前、最中、および後に表示されるさまざまな状態を次に示します。</p></div>
+<div class="paragraph"><p>UIの[<strong>アップグレードステータス</strong>]列に、アップグレードプロセスの前、最中、および後に表示されるさまざまな状態を次に示します。 </p></div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2101,7 +2101,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">エラー</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">アップグレード中にエラーが発生しました。エラーログをダウンロードして、ネットアップサポートに送信できます。エラーを解決したら、ページに戻って[<strong>再開</strong>]をクリックします。アップグレードを再開すると、システムがヘルスチェックを実行してアップグレードの現在の状態をチェックしている間、進行状況バーが数分間逆戻りします。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アップグレード中にエラーが発生しました。エラーログをダウンロードして、ネットアップサポートに送信できます。エラーを解決したら、ページに戻って[<strong>再開</strong>]をクリックします。アップグレードを再開すると、システムがヘルスチェックを実行してアップグレードの現在の状態をチェックしている間、進行状況バーが数分間逆戻りします。 </p></td>
 </tr>
 </tbody>
 </table>
@@ -2116,11 +2116,11 @@
 <div class="ulist"><ul>
 <li><p>クラスタ障害は3時間以内に解決され、アップグレードが再開されます。このシナリオでは、アクションを実行する必要はありません。</p></li>
 <li><p>問題は3時間後も続き、アップグレードステータスは赤いバナーで<strong>エラー</strong>を示します。問題が解決し<strong>たら</strong>、[<strong>再開</strong>]をクリックしてアップグレードを再開できます。</p></li>
-<li><p> NetAppサポートは、3時間以内に修正措置を講じるために、アップグレードを一時的に中止する必要があると判断しました。サポートはAPIを使用してアップグレードを中止します。</p></li>
+<li><p> NetAppサポートは、3時間以内に修正措置を講じるために、アップグレードを一時的に中止する必要があると判断しました。サポートはAPIを使用してアップグレードを中止します。 </p></li>
 </ul></div>
 <div class="admonitionblock caution"><table><tr>
 <td class="icon"><i class="fa icon-caution" title="注意"></i></td>
-<td class="content">ノードの更新中にクラスターのアップグレードを中止すると、ドライブがノードから正常に削除されない場合があります。ドライブが正常に取り外されていない場合、アップグレード中にドライブを追加し直すには、ネットアップサポートによる手動の介入が必要になります。ノードは、ファームウェアの更新または更新後の同期アクティビティの実行に時間がかかる場合があります。アップグレードの進行が停滞していると思われる場合は、ネットアップサポートにお問い合わせください。</td>
+<td class="content">ノードの更新中にクラスターのアップグレードを中止すると、ドライブがノードから正常に削除されない場合があります。ドライブが正常に取り外されていない場合、アップグレード中にドライブを追加し直すには、ネットアップサポートによる手動の介入が必要になります。ノードは、ファームウェアの更新または更新後の同期アクティビティの実行に時間がかかる場合があります。アップグレードの進行が停滞していると思われる場合は、ネットアップサポートにお問い合わせください。 </td>
 </tr></table></div>
 </div>
 </div>
@@ -2132,7 +2132,7 @@
 <div class="title">ステップ</div>
 <ol class="arabic">
 <li>
-<p>接続に応じて、次のいずれかを実行します。</p>
+<p>接続に応じて、次のいずれかを実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2144,7 +2144,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードには外部接続があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
 <p>リポジトリ接続を確認します。</p>
@@ -2174,13 +2174,13 @@
 <li><p> REST API UIから、[ <strong>GET / packages</strong> ]をクリックし<strong>ます</strong>。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
-<li><p>応答から、後のステップで使用するためにファームウェアパッケージIDをコピーして保存します。</p></li>
+<li><p>応答から、後のステップで使用するためにファームウェアパッケージIDをコピーして保存します。 </p></li>
 </ol></div>
 </li>
 </ol></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
 <p>管理ノードがアクセスできるデバイスにストレージファームウェアアップグレードパッケージをダウンロードします。</p>
@@ -2356,7 +2356,7 @@
 <li><p>前の手順のアップグレードIDを<strong>upgradeIdに</strong>入力します。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
 <li>
-<p>アップグレード中に問題または特別な要件がある場合は、次のいずれかを実行します。</p>
+<p>アップグレード中に問題または特別な要件がある場合は、次のいずれかを実行します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2368,7 +2368,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">応答本文の<code>failedHealthChecks</code>メッセージによるクラスターヘルスの問題を修正する必要があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">応答本文の<code>failedHealthChecks</code>メッセージによるクラスターヘルスの問題を修正する必要があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li><p>各問題にリストされている特定のKB記事に移動するか、指定された対処法を実行してください。</p></li>
 <li><p> KBが指定されている場合は、関連するKBの記事に記載されているプロセスを完了してください。</p></li>
@@ -2381,11 +2381,11 @@
   「アクション」：「再開」
 }</pre></div></div>
 </li>
-<li><p> [<strong>実行]を</strong>クリックします。</p></li>
+<li><p> [<strong>実行]を</strong>クリックします。 </p></li>
 </ol></div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">メンテナンスウィンドウが閉じているなどの理由で、アップグレードを一時停止する必要があります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">メンテナンスウィンドウが閉じているなどの理由で、アップグレードを一時停止する必要があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li><p>必要に応じて再認証し、 <strong>PUT / upgrades / {upgradeId}</strong>をクリックします。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
