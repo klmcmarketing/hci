@@ -531,6 +531,9 @@
   
 
 
+  
+
+
 
 
           
@@ -912,9 +915,9 @@
       <span class="subfolders" style="display:none;">
         
         <li>
-          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system.pdf">
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
-            Monitor your NetApp HCI system
+            Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
           </a>
         </li>
         <span>
@@ -925,6 +928,41 @@
   
 
 
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Manage_NetApp_HCI_storage_with_NetApp_Hybrid_Cloud_Control.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Manage NetApp HCI storage with NetApp Hybrid Cloud Control
+          </a>
+        </li>
+        <span>
+          
   
 
 
@@ -1046,6 +1084,9 @@
         </li>
         <span>
           
+  
+
+
   
 
 
@@ -1464,11 +1505,14 @@
         <div class="na-navbar-padding"> Storage</div>
       </a>
       <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
+        Maintenance mode
+      </a></li>
 <li class=" "><a class="na-navbar-padding" href="concept_hci_volumes.html">
         Volumes
       </a></li>
-<li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
-        Maintenance mode
+<li class=" "><a class="na-navbar-padding" href="concept_hci_volume_access_groups.html">
+        Volume access groups
       </a></li>
 </ul>
 </li>
@@ -1663,26 +1707,45 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
-        <div class="na-navbar-padding"> Monitor your NetApp HCI system</div>
+        <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_dashboard.html">
-        View resources on the HCC Dashboard
+        View resources on the Dashboard of NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_nodes.html">
-        View your inventory on the Nodes page
+        View your inventory on the Nodes page of NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_edit_bmc_info.html">
-        Edit BMC connection information
+        Edit BMC connection information with NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_volumes.html">
-        Monitor volumes on your storage cluster
+        Monitor volumes on your storage cluster with NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_activeiq.html">
-        Monitor performance, capacity, and cluster health with Active IQ
+        Monitor performance, capacity, and cluster health with NetApp Hybrid Cloud Control connections to Active IQ
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_collectlogs.html">
         Collect logs for troubleshooting
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Manage NetApp HCI storage with NetApp Hybrid Cloud Control</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_accounts.html">
+        Create and manage user accounts
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_vol_management.html">
+        Create and manage volumes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_vol_access_groups.html">
+        Create and manage volume access groups
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_qos_policies.html">
+        Create and manage volume QoS policies
       </a></li>
 </ul>
 </li>
@@ -1746,6 +1809,9 @@
 <li class=" "><a class="na-navbar-padding" href="task_mnode_enable_activeIQ.html">
         Enable Active IQ and NetApp HCI monitoring
       </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_multi_vcenter_config.html">
+        Configure NetApp Hybrid Cloud Control for multiple vCenters
+      </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_mnode_add_assets.html">
         Add compute and controller assets to the management node
       </a></li>
@@ -1759,7 +1825,7 @@
         Configure a proxy server for the management node
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_mnode_manage_storage_cluster_assets.html">
-        Manage storage cluster assets
+        Create and manage storage cluster assets
       </a></li>
 </ul>
 </li>
@@ -1938,14 +2004,14 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">計算ノードのファームウェアをアップグレードする</h1></div>
-<p class="page-details"><time datetime="2020-10-29 17:43:02 +0000">2020年10月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_compute_node_firmware.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-11-11 23:10:55 +0000">2020年11月11日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_compute_node_firmware.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>Hシリーズの計算ノードの場合、BMC、BIOS、NICなどのハードウェアコンポーネントのファームウェアをアップグレードできます。計算ノードのファームウェアをアップグレードするには、NetAppハイブリッドクラウドコントロールUI、REST API、最新のファームウェアイメージを備えたUSBドライブ、またはBMCUIを使用できます。</p></div>
 <div class="paragraph"><p>アップグレード後、計算ノードはESXiで起動し、構成を保持したまま以前と同じように機能します。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
-<li><p><strong>計算ドライバー</strong>：計算ノードドライバーをアップグレードしました。</p></li>
+<li><p><strong>計算ドライバー</strong>：計算ノードドライバーをアップグレードしました。計算ノードドライバーが新しいファームウェアと互換性がない場合、アップグレードは開始されません。ドライバーとファームウェアの互換性情報については、 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software">このKB記事</a>を参照してください。</p></li>
 <li><p><strong>管理者権限</strong>：アップグレードを実行するためのクラスター管理者およびBMC管理者の権限があります。</p></li>
 <li><p><strong>システムポート</strong>：アップグレードにNetApp Hybrid Cloud Controlを使用している場合は、必要なポートが開いていることを確認しました。詳細については、<a href="hci_prereqs_required_network_ports.html">ネットワークポート</a>を参照してください。</p></li>
 <li>
@@ -1998,10 +2064,10 @@
 </tr></table></div>
 </li>
 <li><p> <strong>BIOSの起動順序</strong>：各ノードのBIOSセットアップで起動順序を手動で変更して、 <code>USB CD/DVD</code>が起動リストに表示されるようにします。詳細については、この<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Known_issues_and_workarounds_for_Compute_Node_upgrades#BootOrder">記事</a>を<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Known_issues_and_workarounds_for_Compute_Node_upgrades#BootOrder">参照</a>してください。</p></li>
-<li><p> <strong>BMC認証情報</strong>：NetApp Hybrid Cloud Control <a href="task_hcc_edit_bmc_info.html#use-netapp-hybrid-cloud-control-to-edit-bmc-information">UI</a>または<a href="task_hcc_edit_bmc_info.html#use-the-rest-api-to-edit-bmc-information">API</a>メソッドのいずれかを使用して、ノードのBMC認証情報を更新します。アップグレード前にBMC情報を更新すると、インベントリが更新され、管理ノードサービスがアップグレードを完了するために必要なすべてのハードウェアパラメータを認識できるようになります。</p></li>
-<li><p><strong>接続されたメディア</strong>：計算ノードのアップグレードを開始する前に、物理USBまたはISOをすべて切断します。</p></li>
+<li><p> <strong>BMC資格情報</strong>：NetApp Hybrid CloudControlが計算ノードBMCへの接続に使用する資格情報を更新します。これは、NetApp Hybrid Cloud <a href="task_hcc_edit_bmc_info.html#use-netapp-hybrid-cloud-control-to-edit-bmc-information">ControlUI</a>または<a href="task_hcc_edit_bmc_info.html#use-the-rest-api-to-edit-bmc-information">APIの</a>いずれかを使用して実行でき<a href="task_hcc_edit_bmc_info.html#use-the-rest-api-to-edit-bmc-information">ます</a>。アップグレード前にBMC情報を更新すると、インベントリが更新され、管理ノードサービスがアップグレードを完了するために必要なすべてのハードウェアパラメータを認識できるようになります。</p></li>
+<li><p><strong>接続されたメディア</strong>：計算ノードのアップグレードを開始する前に、物理USBまたはISOを切断します。</p></li>
 <li><p> <strong>KVM ESXiコンソール</strong>：計算ノードのアップグレードを開始する前に、BMC UIで開いているすべてのSerial-Over-LAN（SOL）セッションとアクティブなKVMセッションを閉じます。</p></li>
-<li><p><strong>ウィットネスノードの要件</strong>：2ノードおよび3ノードのストレージクラスターでは、NetAppHCIインストールで常に1つの<a href="concept_hci_nodes.html">ウィットネスノード</a>が実行されている必要があります。</p></li>
+<li><p><strong>監視ノードの要件</strong>：2ノードおよび3ノードのストレージクラスターでは、NetAppHCIインストールで常に1つの<a href="concept_hci_nodes.html">監視ノード</a>が実行されている必要があります。</p></li>
 <li><p><strong>計算ノードのヘルスチェック</strong>：ノードをアップグレードする準備ができていることを確認しました。<a href="task_upgrade_compute_prechecks.html">コンピューティングファームウェアをアップグレードする前に、コンピュートノードのヘルスチェック</a>を<a href="task_upgrade_compute_prechecks.html">実行するを</a>参照してください。</p></li>
 </ul>
 </div>
@@ -2015,7 +2081,7 @@
 <p>アップグレードシナリオに関連するオプションを選択します。</p>
 </div>
 <div class="ulist"><ul>
-<li><p> <a href="#use-netapp-hybrid-cloud-control-ui-to-upgrade-a-compute-node">NetApp Hybrid Cloud Control UIを使用して計算ノードをアップグレードします</a>（推奨）</p></li>
+<li><p> <a href="#use-netapp-hybrid-cloud-control-ui-to-upgrade-a-compute-node">NetApp Hybrid Cloud Control UIを使用してコンピューティングノードをアップグレードする</a>（推奨）</p></li>
 <li><p> <a href="#use-netapp-hybrid-cloud-control-api-to-upgrade-a-compute-node">NetApp Hybrid Cloud ControlAPIを使用してコンピューティングノードをアップグレードする</a></p></li>
 <li><p>計算ノードイメージ12.0の場合：<a href="#use-a-usb-drive-with-the-latest-firmware-image-downloaded">最新のファームウェアイメージがダウンロードされたUSBドライブを使用します</a></p></li>
 <li><p>コンピューティングファームウェア12.2.109の場合：Baseboard <a href="#use-the-baseboard-management-controller-bmc-user-interface-ui">Management Controller（BMC）ユーザーインターフェイス（UI）を使用します</a></p></li>
@@ -2031,7 +2097,7 @@
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content">ダークサイトのアップグレードでは、アップグレードパッケージと管理ノードの両方がローカルである場合、アップロード時間を短縮できます。 </td>
+<td class="content">ダークサイトのアップグレードの場合、アップグレードパッケージと管理ノードの両方がローカルであると、アップロード時間を短縮できます。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -2225,7 +2291,7 @@
 <p> NetApp HCIソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle">ダウンロードページに</a>移動し、管理ノードがアクセスできるデバイスに最新の計算ノードファームウェアイメージをダウンロードします。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content">ダークサイトのアップグレードでは、アップグレードパッケージと管理ノードの両方がローカルである場合、アップロード時間を短縮できます。</td>
+<td class="content">ダークサイトのアップグレードの場合、アップグレードパッケージと管理ノードの両方がローカルであると、アップロード時間を短縮できます。</td>
 </tr></table></div>
 </li>
 <li>
@@ -2301,7 +2367,7 @@
     「クラスター」：[
       {{
         "clusterId"： "Test-1B"、
-        "controllerId"： "a1b23456-c1d2-11e1-1234-a12bcdef123a"、</pre></div></div>
+        <strong>"controllerId"： "a1b23456-c1d2-11e1-1234-a12bcdef123a"、</strong></pre></div></div>
 <div class="listingblock"><div class="content"><pre> 「ノード」：[
   {{
     "bmcDetails"：{
@@ -2311,7 +2377,7 @@
     }、
     "chassisSerialNumber"： "111930011231"、
     "chassisSlot"： "D"、
-    "hardwareId"： "123a4567-01b1-1243-a12b-11ab11ab0a15"、
+    <strong>"hardwareId"： "123a4567-01b1-1243-a12b-11ab11ab0a15"、</strong>
     "hardwareTag"： "00000000-0000-0000-0000-ab1c2de34f5g"、
     "id"： "e1111d10-1a1a-12d7-1a23-ab1cde23456f"、
     「モデル」：「H410C」、</pre></div></div>
@@ -2560,7 +2626,7 @@
 </div>
 <div class="sect2">
 <h3 id="upgrade-firmware-on-h610ch615c-nodes"> H610C / H615Cノードのファームウェアをアップグレードします</h3>
-<div class="paragraph"><p>手順は、ノードがスタンドアロンであるかクラスターの一部であるかによって異なります。手順には約25分かかる場合があり、ノードの電源をオフにし、ISOをアップロードし、デバイスをフラッシュし、アップグレード後にノードの電源を再びオンにします。</p></div>
+<div class="paragraph"><p>手順は、ノードがスタンドアロンであるかクラスターの一部であるかによって異なります。手順には約25分かかる場合があり、ノードの電源オフ、ISOのアップロード、デバイスのフラッシュ、アップグレード後のノードの電源オンの再投入が含まれます。</p></div>
 <div class="olist arabic">
 <div class="title">ステップ</div>
 <ol class="arabic">

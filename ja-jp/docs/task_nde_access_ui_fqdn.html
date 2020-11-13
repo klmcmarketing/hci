@@ -531,6 +531,9 @@
   
 
 
+  
+
+
 
 
           
@@ -927,9 +930,9 @@
       <span class="subfolders" style="display:none;">
         
         <li>
-          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system.pdf">
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
-            Monitor your NetApp HCI system
+            Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
           </a>
         </li>
         <span>
@@ -940,6 +943,41 @@
   
 
 
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Manage_NetApp_HCI_storage_with_NetApp_Hybrid_Cloud_Control.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Manage NetApp HCI storage with NetApp Hybrid Cloud Control
+          </a>
+        </li>
+        <span>
+          
   
 
 
@@ -1061,6 +1099,9 @@
         </li>
         <span>
           
+  
+
+
   
 
 
@@ -1464,11 +1505,14 @@
         <div class="na-navbar-padding"> Storage</div>
       </a>
       <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
+        Maintenance mode
+      </a></li>
 <li class=" "><a class="na-navbar-padding" href="concept_hci_volumes.html">
         Volumes
       </a></li>
-<li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
-        Maintenance mode
+<li class=" "><a class="na-navbar-padding" href="concept_hci_volume_access_groups.html">
+        Volume access groups
       </a></li>
 </ul>
 </li>
@@ -1663,26 +1707,45 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
-        <div class="na-navbar-padding"> Monitor your NetApp HCI system</div>
+        <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_dashboard.html">
-        View resources on the HCC Dashboard
+        View resources on the Dashboard of NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_nodes.html">
-        View your inventory on the Nodes page
+        View your inventory on the Nodes page of NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_edit_bmc_info.html">
-        Edit BMC connection information
+        Edit BMC connection information with NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_volumes.html">
-        Monitor volumes on your storage cluster
+        Monitor volumes on your storage cluster with NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_activeiq.html">
-        Monitor performance, capacity, and cluster health with Active IQ
+        Monitor performance, capacity, and cluster health with NetApp Hybrid Cloud Control connections to Active IQ
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_collectlogs.html">
         Collect logs for troubleshooting
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Manage NetApp HCI storage with NetApp Hybrid Cloud Control</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_accounts.html">
+        Create and manage user accounts
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_vol_management.html">
+        Create and manage volumes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_vol_access_groups.html">
+        Create and manage volume access groups
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_qos_policies.html">
+        Create and manage volume QoS policies
       </a></li>
 </ul>
 </li>
@@ -1746,6 +1809,9 @@
 <li class=" "><a class="na-navbar-padding" href="task_mnode_enable_activeIQ.html">
         Enable Active IQ and NetApp HCI monitoring
       </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_multi_vcenter_config.html">
+        Configure NetApp Hybrid Cloud Control for multiple vCenters
+      </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_mnode_add_assets.html">
         Add compute and controller assets to the management node
       </a></li>
@@ -1759,7 +1825,7 @@
         Configure a proxy server for the management node
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_mnode_manage_storage_cluster_assets.html">
-        Manage storage cluster assets
+        Create and manage storage cluster assets
       </a></li>
 </ul>
 </li>
@@ -1938,7 +2004,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">完全修飾ドメイン名のWebUIアクセスを構成する</h1></div>
-<p class="page-details"><time datetime="2020-10-26 20:29:48 +0000">2020年10月26日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_nde_access_ui_fqdn.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-11-11 23:10:55 +0000">2020年11月11日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_nde_access_ui_fqdn.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>Element12.2以降を搭載したNetAppHCIを使用すると、完全修飾ドメイン名（FQDN）を使用してストレージクラスタのWebインターフェイスにアクセスできます。 FQDNを使用してElementWeb UI、ノードごとのUI、管理ノードUIなどのWebユーザーインターフェイスにアクセスする場合は、最初にストレージクラスター設定を追加して、クラスターで使用されるFQDNを識別する必要があります。これにより、クラスターはログインセッションを適切にリダイレクトし、多要素認証のためのキーマネージャーやIDプロバイダーなどの外部サービスとの統合を改善できます。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
@@ -1951,7 +2017,10 @@
 <p><code>CreateClusterInterfacePreference</code> APIメソッドを使用して、次のクラスターインターフェイスプリファレンスを作成し、プリファレンス値にクラスター<code>CreateClusterInterfacePreference</code>挿入します。</p>
 <div class="ulist"><ul>
 <li><p>名前： <code>mvip_fqdn</code></p></li>
-<li><p>値：&lt;クラスターMVIPの完全修飾ドメイン名&gt;</p></li>
+<li>
+<p>値：&lt;クラスターMVIPの完全修飾ドメイン名&gt;</p>
+<div class="listingblock"><div class="content"><pre> https：// &lt;mvip&gt; /json-rpc/12.0?method=CreateClusterInterfacePreference&amp;name=mvip_fqdn&amp;value= &lt;fqdn&gt;</pre></div></div>
+</li>
 </ul></div>
 </li>
 <li>
@@ -1973,7 +2042,7 @@
 <li><p>応答本文で報告されたプロキシ設定を記録します。</p></li>
 <li><p> <strong>PUT / settingsを</strong>クリックし<strong>ます</strong>。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
-<li><p>リクエスト本文領域で、 <code>mnode_fqdn</code>パラメータの値として管理ノードFQDNを入力します。</p></li>
+<li><p>要求本文領域で、 <code>mnode_fqdn</code>パラメーターの値として管理ノードFQDNを入力します。</p></li>
 <li><p>以前に記録したプロキシ設定値をリクエスト本文の残りのパラメータに入力します。プロキシパラメータを空のままにするか、リクエスト本文に含めない場合、既存のプロキシ設定は削除されます。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
 </ol></div>

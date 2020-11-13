@@ -546,6 +546,9 @@
   
 
 
+  
+
+
 
 
           
@@ -927,9 +930,9 @@
       <span class="subfolders" style="display:none;">
         
         <li>
-          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system.pdf">
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
-            Monitor your NetApp HCI system
+            Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
           </a>
         </li>
         <span>
@@ -940,6 +943,41 @@
   
 
 
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Manage_NetApp_HCI_storage_with_NetApp_Hybrid_Cloud_Control.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Manage NetApp HCI storage with NetApp Hybrid Cloud Control
+          </a>
+        </li>
+        <span>
+          
   
 
 
@@ -1061,6 +1099,9 @@
         </li>
         <span>
           
+  
+
+
   
 
 
@@ -1464,11 +1505,14 @@
         <div class="na-navbar-padding"> Storage</div>
       </a>
       <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
+        Maintenance mode
+      </a></li>
 <li class=" "><a class="na-navbar-padding" href="concept_hci_volumes.html">
         Volumes
       </a></li>
-<li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
-        Maintenance mode
+<li class=" "><a class="na-navbar-padding" href="concept_hci_volume_access_groups.html">
+        Volume access groups
       </a></li>
 </ul>
 </li>
@@ -1663,26 +1707,45 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
-        <div class="na-navbar-padding"> Monitor your NetApp HCI system</div>
+        <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_dashboard.html">
-        View resources on the HCC Dashboard
+        View resources on the Dashboard of NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_nodes.html">
-        View your inventory on the Nodes page
+        View your inventory on the Nodes page of NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_edit_bmc_info.html">
-        Edit BMC connection information
+        Edit BMC connection information with NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_volumes.html">
-        Monitor volumes on your storage cluster
+        Monitor volumes on your storage cluster with NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_activeiq.html">
-        Monitor performance, capacity, and cluster health with Active IQ
+        Monitor performance, capacity, and cluster health with NetApp Hybrid Cloud Control connections to Active IQ
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_collectlogs.html">
         Collect logs for troubleshooting
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Manage NetApp HCI storage with NetApp Hybrid Cloud Control</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_accounts.html">
+        Create and manage user accounts
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_vol_management.html">
+        Create and manage volumes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_vol_access_groups.html">
+        Create and manage volume access groups
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_qos_policies.html">
+        Create and manage volume QoS policies
       </a></li>
 </ul>
 </li>
@@ -1746,6 +1809,9 @@
 <li class=" "><a class="na-navbar-padding" href="task_mnode_enable_activeIQ.html">
         Enable Active IQ and NetApp HCI monitoring
       </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_multi_vcenter_config.html">
+        Configure NetApp Hybrid Cloud Control for multiple vCenters
+      </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_mnode_add_assets.html">
         Add compute and controller assets to the management node
       </a></li>
@@ -1759,7 +1825,7 @@
         Configure a proxy server for the management node
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_mnode_manage_storage_cluster_assets.html">
-        Manage storage cluster assets
+        Create and manage storage cluster assets
       </a></li>
 </ul>
 </li>
@@ -2009,7 +2075,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>ボリュームスナップショットは、ボリュームのポイントインタイムコピーであり、後でボリュームをその特定の時間に復元するために使用できます。</p></div>
 <div class="paragraph"><p>スナップショットはボリュームクローンに似ていますが、スナップショットはボリュームメタデータの単なるレプリカであるため、マウントしたり、それらに書き込んだりすることはできません。ボリュームスナップショットの作成には、少量のシステムリソースとスペースしか必要ないため、スナップショットの作成はクローン作成よりも高速になります。</p></div>
-<div class="paragraph"><p>スナップショットをリモートクラスターに複製し、ボリュームのバックアップコピーとして使用できます。これにより、複製されたスナップショットを使用して、ボリュームを特定の時点にロールバックできます。複製されたスナップショットからボリュームのクローンを作成することもできます。</p></div>
+<div class="paragraph"><p>スナップショットをリモートクラスターに複製し、ボリュームのバックアップコピーとして使用できます。これにより、レプリケートされたスナップショットを使用して、ボリュームを特定の時点にロールバックできます。複製されたスナップショットからボリュームのクローンを作成することもできます。</p></div>
 <div class="paragraph"><p> SolidFireクラスターから外部オブジェクトストアまたは別のSolidFireクラスターにスナップショットをバックアップできます。スナップショットを外部オブジェクトストアにバックアップするときは、読み取り/書き込み操作を許可するオブジェクトストアへの接続が必要です。</p></div>
 <div class="paragraph"><p>データ保護のために、個々のボリュームまたは複数のボリュームのスナップショットを作成できます。</p></div>
 </div>
@@ -2053,7 +2119,7 @@
 </ul></div>
 <div class="paragraph"><p> NetApp Element Plug-in for vCenterServerのNetAppElement Configuration拡張ポイントを使用して、保護ドメインの監視を手動で有効にできます。ノードまたはシャーシドメインに基づいて保護ドメインのしきい値を選択できます。</p></div>
 <div class="paragraph"><p>新しいクラスターを作成するときに、共有シャーシに存在するストレージノードを使用している場合は、保護ドメイン機能を使用してシャーシレベルの障害保護を設計することを検討してください。</p></div>
-<div class="paragraph"><p>カスタム保護ドメインレイアウトを定義できます。各ノードは、1つだけのカスタム保護ドメインに関連付けられています。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられています。詳細については、を参照してください。<br> <a href="https://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-7D31AC22-8815-4BDA-984A-9AED750B96B1.html" target="_blank" rel="noopener">SolidFireおよびElement12.0ドキュメントセンター</a>。</p></div>
+<div class="paragraph"><p>カスタム保護ドメインレイアウトを定義できます。各ノードは、1つだけのカスタム保護ドメインに関連付けられます。デフォルトでは、各ノードは同じデフォルトのカスタム保護ドメインに割り当てられています。詳細については、を参照してください。<br> <a href="https://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-7D31AC22-8815-4BDA-984A-9AED750B96B1.html" target="_blank" rel="noopener">SolidFireおよびElement12.0ドキュメントセンター</a>。</p></div>
 </div>
 </div>
 <div class="sect1">

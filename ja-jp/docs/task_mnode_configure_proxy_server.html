@@ -531,6 +531,9 @@
   
 
 
+  
+
+
 
 
           
@@ -912,9 +915,9 @@
       <span class="subfolders" style="display:none;">
         
         <li>
-          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system.pdf">
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
-            Monitor your NetApp HCI system
+            Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
           </a>
         </li>
         <span>
@@ -925,6 +928,41 @@
   
 
 
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Manage_NetApp_HCI_storage_with_NetApp_Hybrid_Cloud_Control.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Manage NetApp HCI storage with NetApp Hybrid Cloud Control
+          </a>
+        </li>
+        <span>
+          
   
 
 
@@ -1046,6 +1084,9 @@
         </li>
         <span>
           
+  
+
+
   
 
 
@@ -1464,11 +1505,14 @@
         <div class="na-navbar-padding"> Storage</div>
       </a>
       <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
+        Maintenance mode
+      </a></li>
 <li class=" "><a class="na-navbar-padding" href="concept_hci_volumes.html">
         Volumes
       </a></li>
-<li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
-        Maintenance mode
+<li class=" "><a class="na-navbar-padding" href="concept_hci_volume_access_groups.html">
+        Volume access groups
       </a></li>
 </ul>
 </li>
@@ -1663,26 +1707,45 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
-        <div class="na-navbar-padding"> Monitor your NetApp HCI system</div>
+        <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_dashboard.html">
-        View resources on the HCC Dashboard
+        View resources on the Dashboard of NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_nodes.html">
-        View your inventory on the Nodes page
+        View your inventory on the Nodes page of NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_edit_bmc_info.html">
-        Edit BMC connection information
+        Edit BMC connection information with NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_volumes.html">
-        Monitor volumes on your storage cluster
+        Monitor volumes on your storage cluster with NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_activeiq.html">
-        Monitor performance, capacity, and cluster health with Active IQ
+        Monitor performance, capacity, and cluster health with NetApp Hybrid Cloud Control connections to Active IQ
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_collectlogs.html">
         Collect logs for troubleshooting
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Manage NetApp HCI storage with NetApp Hybrid Cloud Control</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_accounts.html">
+        Create and manage user accounts
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_vol_management.html">
+        Create and manage volumes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_vol_access_groups.html">
+        Create and manage volume access groups
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_qos_policies.html">
+        Create and manage volume QoS policies
       </a></li>
 </ul>
 </li>
@@ -1746,6 +1809,9 @@
 <li class=" "><a class="na-navbar-padding" href="task_mnode_enable_activeIQ.html">
         Enable Active IQ and NetApp HCI monitoring
       </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_multi_vcenter_config.html">
+        Configure NetApp Hybrid Cloud Control for multiple vCenters
+      </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_mnode_add_assets.html">
         Add compute and controller assets to the management node
       </a></li>
@@ -1759,7 +1825,7 @@
         Configure a proxy server for the management node
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_mnode_manage_storage_cluster_assets.html">
-        Manage storage cluster assets
+        Create and manage storage cluster assets
       </a></li>
 </ul>
 </li>
@@ -1938,7 +2004,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">プロキシサーバーを構成する</h1></div>
-<p class="page-details"><time datetime="2020-06-25 22:16:58 +0000">2020年6月25日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_configure_proxy_server.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-22 23:39:06 +0000">2020年10月22日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_configure_proxy_server.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>クラスタがプロキシサーバーの背後にある場合は、パブリックネットワークにアクセスできるようにプロキシ設定を構成する必要があります。</p></div>
 <div class="paragraph"><p>プロキシサーバーは、テレメトリコレクターとリバーストンネル接続に使用されます。インストールまたはアップグレード中にプロキシサーバーをまだ構成していない場合は、REST APIUIを使用してプロキシサーバーを有効にして構成できます。既存のプロキシサーバー設定を変更したり、プロキシサーバーを無効にしたりすることもできます。</p></div>
 <div class="paragraph"><p>プロキシサーバーを構成するコマンドは、管理ノードの現在のプロキシ設定を更新して返します。プロキシ設定は、Active IQ、NetApp DeploymentEngineによって展開されるNetAppHCI監視サービス、およびNetAppサポートのリバースサポートトンネルを含む、管理ノードにインストールされるその他のElementソフトウェアユーティリティによって使用されます。</p></div>
@@ -1948,6 +2014,7 @@
 <li><p>構成しているプロキシサーバーのホストと資格情報を知っている必要があります。</p></li>
 <li><p>クラスタバージョンでNetAppElementソフトウェア11.3以降が実行されていることを確認してください。</p></li>
 <li><p>バージョン11.3以降を実行している管理ノードがデプロイされていることを確認してください。</p></li>
+<li><p> （管理ノード12.0および12.2）プロキシサーバーを構成する前に、NetApp Hybrid CloudControlを管理サービスバージョン2.16に更新しました。</p></li>
 </ul>
 </div>
 <div class="olist arabic">

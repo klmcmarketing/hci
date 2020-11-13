@@ -546,6 +546,9 @@
   
 
 
+  
+
+
 
 
           
@@ -927,9 +930,9 @@
       <span class="subfolders" style="display:none;">
         
         <li>
-          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system.pdf">
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
-            Monitor your NetApp HCI system
+            Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
           </a>
         </li>
         <span>
@@ -940,6 +943,41 @@
   
 
 
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Manage_NetApp_HCI_storage_with_NetApp_Hybrid_Cloud_Control.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Manage NetApp HCI storage with NetApp Hybrid Cloud Control
+          </a>
+        </li>
+        <span>
+          
   
 
 
@@ -1061,6 +1099,9 @@
         </li>
         <span>
           
+  
+
+
   
 
 
@@ -1464,11 +1505,14 @@
         <div class="na-navbar-padding"> Storage</div>
       </a>
       <ul>
+<li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
+        Maintenance mode
+      </a></li>
 <li class=" "><a class="na-navbar-padding" href="concept_hci_volumes.html">
         Volumes
       </a></li>
-<li class=" "><a class="na-navbar-padding" href="concept_hci_storage_maintenance_mode.html">
-        Maintenance mode
+<li class=" "><a class="na-navbar-padding" href="concept_hci_volume_access_groups.html">
+        Volume access groups
       </a></li>
 </ul>
 </li>
@@ -1663,26 +1707,45 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
-        <div class="na-navbar-padding"> Monitor your NetApp HCI system</div>
+        <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_dashboard.html">
-        View resources on the HCC Dashboard
+        View resources on the Dashboard of NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_nodes.html">
-        View your inventory on the Nodes page
+        View your inventory on the Nodes page of NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_edit_bmc_info.html">
-        Edit BMC connection information
+        Edit BMC connection information with NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_volumes.html">
-        Monitor volumes on your storage cluster
+        Monitor volumes on your storage cluster with NetApp Hybrid Cloud Control
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_activeiq.html">
-        Monitor performance, capacity, and cluster health with Active IQ
+        Monitor performance, capacity, and cluster health with NetApp Hybrid Cloud Control connections to Active IQ
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_hcc_collectlogs.html">
         Collect logs for troubleshooting
+      </a></li>
+</ul>
+</li>
+<li class="subfolders ">
+<a href="#">
+        <div class="na-navbar-padding"> Manage NetApp HCI storage with NetApp Hybrid Cloud Control</div>
+      </a>
+      <ul>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_accounts.html">
+        Create and manage user accounts
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_vol_management.html">
+        Create and manage volumes
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_manage_vol_access_groups.html">
+        Create and manage volume access groups
+      </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hcc_qos_policies.html">
+        Create and manage volume QoS policies
       </a></li>
 </ul>
 </li>
@@ -1746,6 +1809,9 @@
 <li class=" "><a class="na-navbar-padding" href="task_mnode_enable_activeIQ.html">
         Enable Active IQ and NetApp HCI monitoring
       </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_mnode_multi_vcenter_config.html">
+        Configure NetApp Hybrid Cloud Control for multiple vCenters
+      </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_mnode_add_assets.html">
         Add compute and controller assets to the management node
       </a></li>
@@ -1759,7 +1825,7 @@
         Configure a proxy server for the management node
       </a></li>
 <li class=" "><a class="na-navbar-padding" href="task_mnode_manage_storage_cluster_assets.html">
-        Manage storage cluster assets
+        Create and manage storage cluster assets
       </a></li>
 </ul>
 </li>
@@ -1938,7 +2004,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">クラスター</h1></div>
-<p class="page-details"><time datetime="2020-10-05 21:11:21 +0000">2020年10月5日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_hci_clusters.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-23 16:51:44 +0000">2020年10月23日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_hci_clusters.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>クラスターは、ストレージまたはコンピューティングリソースを提供する、集合的な全体として機能するノードのグループです。 NetApp HCI 1.8以降、2つのノードを持つストレージクラスターを作成できます。ストレージクラスターは、ネットワーク上に単一の論理グループとして表示され、ブロックストレージとしてアクセスできます。</p></div>
 <div class="paragraph"><p> NetApp HCIのストレージレイヤーはNetAppElementソフトウェアによって提供され、管理レイヤーはvCenterServer用のNetAppElementプラグインによって提供されます。ストレージノードは、Bond10Gネットワークインターフェイスを介して相互に通信するドライブのコレクションを含むサーバーです。各ストレージノードは、ストレージと管理の2つのネットワークに接続されており、それぞれに冗長性とパフォーマンスのための2つの独立したリンクがあります。各ノードには、各ネットワークにIPアドレスが必要です。新しいストレージノードでクラスターを作成するか、既存のクラスターにストレージノードを追加して、ストレージ容量とパフォーマンスを向上させることができます。</p></div>
@@ -1948,13 +2014,15 @@
 <div class="sectionbody">
 <div class="paragraph"><p>権限のあるストレージクラスターは、NetApp Hybrid CloudControlがユーザーの認証に使用するストレージクラスターです。</p></div>
 <div class="paragraph"><p>管理ノードにストレージクラスターが1つしかない場合、それは権限のあるクラスターです。管理ノードに2つ以上のストレージクラスターがある場合、それらのクラスターの1つが権限のあるクラスターとして割り当てられ、そのクラスターのユーザーのみがNetApp Hybrid CloudControlにログインできます。どのクラスターが権限のあるクラスターであるかを確認するには、 <code>GET /mnode/about</code>使用できます。応答では、 <code>token_url</code>フィールドのIPアドレスは、権限のあるストレージクラスターの管理仮想IPアドレス（MVIP）です。権限のあるクラスターに属していないユーザーとしてNetAppHybrid Cloud Controlにログインしようとすると、ログインの試行は失敗します。</p></div>
-<div class="paragraph"><p>多くのNetAppハイブリッドクラウドコントロール機能は、複数のストレージクラスターで機能するように設計されていますが、認証と承認には制限があります。認証と承認に関する制限は、権限のあるクラスターのユーザーが、他のストレージクラスターのユーザーでなくても、NetApp Hybrid CloudControlに関連付けられている他のクラスターでアクションを実行できることです。複数のストレージクラスターの管理に進む前に、権限のあるクラスターで定義されたユーザーが、同じアクセス許可を持つ他のすべてのストレージクラスターで定義されていることを確認する必要があります。 Elementソフトウェアのユーザーインターフェイス（Element Web UI）からユーザーを管理できます。</p></div>
-<div class="paragraph"><p>管理ノードのストレージクラスターアセットの操作の詳細については、<a href="task_mnode_manage_storage_cluster_assets.html">ストレージクラスターアセットの管理を</a>参照してください。</p></div>
+<div class="paragraph"><p>多くのNetAppハイブリッドクラウドコントロール機能は、複数のストレージクラスターで機能するように設計されていますが、認証と承認には制限があります。認証と承認に関する制限は、権限のあるクラスターのユーザーが、他のストレージクラスターのユーザーでなくても、NetApp Hybrid CloudControlに関連付けられている他のクラスターでアクションを実行できることです。複数のストレージクラスターの管理に進む前に、権限のあるクラスターで定義されたユーザーが、同じアクセス許可を持つ他のすべてのストレージクラスターで定義されていることを確認する必要があります。</p></div>
+<div class="paragraph"><p> NetApp Hybrid CloudControlを使用してユーザーを管理できます。</p></div>
+<div class="paragraph"><p>複数のストレージクラスターの管理に進む前に、権限のあるクラスターで定義されたユーザーが、同じアクセス許可を持つ他のすべてのストレージクラスターで定義されていることを確認する必要があります。 Elementソフトウェアのユーザーインターフェイス（Element Web UI）から<a href="https://docs.netapp.com/sfe-122/index.jsp?topic=%2Fcom.netapp.doc.sfe-ug%2FGUID-E54EF120-2F00-4F43-B7CA-CCCBAAD1B5B6.html">ユーザー</a>を<a href="https://docs.netapp.com/sfe-122/index.jsp?topic=%2Fcom.netapp.doc.sfe-ug%2FGUID-E54EF120-2F00-4F43-B7CA-CCCBAAD1B5B6.html">管理できます</a>。</p></div>
+<div class="paragraph"><p>管理ノードのストレージクラスターアセットの操作の詳細については、「<a href="task_mnode_manage_storage_cluster_assets.html">ストレージクラスターアセットの作成と管理</a>」を参照してください。</p></div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="stranded-capacity">座礁容量</h2>
-<div class="sectionbody"><div class="paragraph"><p>新しく追加されたノードがクラスターの総容量の50％以上を占める場合、このノードの容量の一部は使用できなくなり（「取り残された」）、容量ルールに準拠します。これは、ストレージ容量が追加されるまで当てはまります。容量ルールにも従わない非常に大きなノードが追加された場合、以前に取り残されたノードは取り残されなくなり、新しく追加されたノードは取り残されます。これが発生しないように、容量は常にペアで追加する必要があります。ノードが取り残されると、適切なクラスター障害がスローされます。</p></div></div>
+<div class="sectionbody"><div class="paragraph"><p>新しく追加されたノードがクラスターの総容量の50％以上を占める場合、このノードの容量の一部は使用できなくなり（「取り残され」）、容量ルールに準拠します。これは、ストレージ容量が追加されるまで当てはまります。容量ルールにも従わない非常に大きなノードが追加された場合、以前に取り残されたノードは取り残されなくなり、新しく追加されたノードは取り残されます。これが発生しないように、容量は常にペアで追加する必要があります。ノードが取り残されると、適切なクラスター障害がスローされます。</p></div></div>
 </div>
 <div class="sect1">
 <h2 id="two-node-storage-clusters"> 2ノードストレージクラスター</h2>
@@ -1987,7 +2055,7 @@
 <div class="paragraph"><p>Elementソフトウェアは、選択したノードからストレージクラスターを作成し、クラスター構成の複製データベースを維持します。クラスターの復元力のクォーラムを維持するには、クラスターアンサンブルに参加するために少なくとも3つのノードが必要です。 2ノードクラスター内の監視ノードは、有効なアンサンブルクォーラムを形成するのに十分なストレージノードがあることを確認するために使用されます。アンサンブルの作成では、ストレージノードがウィットネスノードよりも優先されます。 2ノードのストレージクラスターを含む最小の3ノードのアンサンブルでは、2つのストレージノードと1つのウィットネスノードが使用されます。 </p></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content"> 2つのストレージノードと1つの監視ノードを持つ3ノードのアンサンブルでは、1つのストレージノードがオフラインになると、クラスターは劣化状態になります。 2つのウィットネスノードのうち、アンサンブルでアクティブにできるのは1つだけです。 2番目のWitnessNodeはバックアップの役割を実行するため、アンサンブルに追加できません。クラスターは、オフラインストレージノードがオンライン状態に戻るか、代替ノードがクラスターに参加するまで、劣化状態のままになります。</td>
+<td class="content"> 2つのストレージノードと1つのウィットネスノードを持つ3ノードアンサンブルでは、1つのストレージノードがオフラインになると、クラスターは劣化状態になります。 2つのウィットネスノードのうち、アンサンブルでアクティブにできるのは1つだけです。 2番目のWitnessNodeはバックアップの役割を実行するため、アンサンブルに追加できません。クラスターは、オフラインストレージノードがオンライン状態に戻るか、代替ノードがクラスターに参加するまで、劣化状態のままになります。</td>
 </tr></table></div>
 <div class="paragraph"><p>ウィットネスノードに障害が発生した場合、残りのウィットネスノードがアンサンブルに参加して3ノードのアンサンブルを形成します。新しいウィットネスノードを展開して、障害が発生したウィットネスノードを置き換えることができます。 </p></div>
 </div>
