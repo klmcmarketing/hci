@@ -1779,7 +1779,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-11-11 23:10:55 +0000">11/11/2020</time>
+    <time datetime="2020-11-17 19:56:45 +0000">11/17/2020</time>
     
   
 
@@ -1956,7 +1956,7 @@ For a complete matrix of firmware and driver firmware for your hardware, see <a 
 <p><a href="#use-netapp-hybrid-cloud-control-api-to-upgrade-a-compute-node">Use NetApp Hybrid Cloud Control API to upgrade a compute node</a></p>
 </li>
 <li>
-<p>For compute node image 12.0: <a href="#use-a-usb-drive-with-the-latest-firmware-image-downloaded">Use a USB drive with the latest firmware image downloaded</a></p>
+<p>For compute node image 12.0: <a href="#use-a-usb-drive-with-the-latest-compute-node-firmware-iso-downloaded">Use a USB drive with the latest compute node firmware ISO downloaded</a></p>
 </li>
 <li>
 <p>For compute firmware 12.2.109: <a href="#use-the-baseboard-management-controller-bmc-user-interface-ui">Use the Baseboard Management Controller (BMC) user interface (UI)</a></p>
@@ -2011,7 +2011,19 @@ Upgrading the NIC, BIOS, and BMC can take approximately 60 minutes per node depe
 <div class="title">What you&#8217;ll need</div>
 <ul>
 <li>
-<p>If your management node is not connected to the internet, you have downloaded the package from the <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle" target="_blank" rel="noopener">NetApp Support Site</a>.</p>
+<p>If your management node is not connected to the internet, you have downloaded the compute node firmware package from the <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle" target="_blank" rel="noopener">NetApp Support Site</a>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You should extract the <code>TAR.GZ</code> file to a <code>TAR</code> file, and then extract the <code>TAR</code> file to the ISO.
+</td>
+</tr>
+</table>
+</div>
 </li>
 </ul>
 </div>
@@ -2717,10 +2729,10 @@ The upgrade cannot be paused after you begin. Firmware will be updated sequentia
 </div>
 </div>
 <div class="sect1">
-<h2 id="use-a-usb-drive-with-the-latest-firmware-image-downloaded">Use a USB drive with the latest firmware image downloaded</h2>
+<h2 id="use-a-usb-drive-with-the-latest-compute-node-firmware-iso-downloaded">Use a USB drive with the latest compute node firmware ISO downloaded</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can insert a USB drive with the latest firmware image downloaded into a USB port on the compute node. As an alternative to using the USB thumb drive method described in this procedure, you can mount the compute node RTFI image on the compute node using the <strong>Virtual CD/DVD</strong> option in the Virtual Console in the Baseboard Management Controller (BMC) interface. The BMC method takes considerably longer than the USB thumb drive method. Ensure that your workstation or server has the necessary network bandwidth and that your browser session with the BMC does not time out.</p>
+<p>You can insert a USB drive with the latest compute node firmware ISO downloaded to a USB port on the compute node. As an alternative to using the USB thumb drive method described in this procedure, you can mount the ISO on the compute node using the <strong>Virtual CD/DVD</strong> option in the Virtual Console in the Baseboard Management Controller (BMC) interface. The BMC method takes considerably longer than the USB thumb drive method. Ensure that your workstation or server has the necessary network bandwidth and that your browser session with the BMC does not time out.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
@@ -2735,7 +2747,7 @@ The upgrade cannot be paused after you begin. Firmware will be updated sequentia
 <p>Under the <strong>Compute and Storage Nodes</strong> section, download the compute node image.</p>
 </li>
 <li>
-<p>Write the raw contents of the compute node RTFI image to a USB thumb drive with at least 32GB capacity (using dd or Etcher).</p>
+<p>Use the Etcher utility to flash the compute node firmware ISO to a USB drive.</p>
 </li>
 <li>
 <p>Place the compute node in maintenance mode using VMware vCenter, and evacuate all virtual machines from the host.</p>
@@ -2784,7 +2796,7 @@ If VMware Distributed Resource Scheduler (DRS) is enabled on the cluster (this i
 <h2 id="use-the-baseboard-management-controller-bmc-user-interface-ui">Use the Baseboard Management Controller (BMC) user interface (UI)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You must perform the sequential steps to load the compute firmware ISO and reboot the node to the ISO to ensure that the upgrade is successful. The ISO should be located on the system or virtual machine (VM) hosting the web browser. Ensure that you have downloaded the ISO before you start the process.</p>
+<p>You must perform the sequential steps to load the compute node firmware ISO and reboot the node to the ISO to ensure that the upgrade is successful. The ISO should be located on the system or virtual machine (VM) hosting the web browser. Ensure that you have downloaded the ISO before you start the process.</p>
 </div>
 <div class="admonitionblock tip">
 <table>

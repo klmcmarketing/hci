@@ -2004,7 +2004,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">計算ノードのファームウェアをアップグレードする</h1></div>
-<p class="page-details"><time datetime="2020-11-11 23:10:55 +0000">2020年11月11日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_compute_node_firmware.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-11-17 19:56:45 +0000">2020年11月17日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_compute_node_firmware.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>Hシリーズの計算ノードの場合、BMC、BIOS、NICなどのハードウェアコンポーネントのファームウェアをアップグレードできます。計算ノードのファームウェアをアップグレードするには、NetAppハイブリッドクラウドコントロールUI、REST API、最新のファームウェアイメージを備えたUSBドライブ、またはBMCUIを使用できます。</p></div>
 <div class="paragraph"><p>アップグレード後、計算ノードはESXiで起動し、構成を保持したまま以前と同じように機能します。</p></div>
@@ -2083,7 +2083,7 @@
 <div class="ulist"><ul>
 <li><p> <a href="#use-netapp-hybrid-cloud-control-ui-to-upgrade-a-compute-node">NetApp Hybrid Cloud Control UIを使用してコンピューティングノードをアップグレードする</a>（推奨）</p></li>
 <li><p> <a href="#use-netapp-hybrid-cloud-control-api-to-upgrade-a-compute-node">NetApp Hybrid Cloud ControlAPIを使用してコンピューティングノードをアップグレードする</a></p></li>
-<li><p>計算ノードイメージ12.0の場合：<a href="#use-a-usb-drive-with-the-latest-firmware-image-downloaded">最新のファームウェアイメージがダウンロードされたUSBドライブを使用します</a></p></li>
+<li><p>計算ノードイメージ12.0の場合：<a href="#use-a-usb-drive-with-the-latest-compute-node-firmware-iso-downloaded">最新の計算ノードファームウェアISOがダウンロードされたUSBドライブを使用します</a></p></li>
 <li><p>コンピューティングファームウェア12.2.109の場合：Baseboard <a href="#use-the-baseboard-management-controller-bmc-user-interface-ui">Management Controller（BMC）ユーザーインターフェイス（UI）を使用します</a></p></li>
 </ul></div>
 </div></div>
@@ -2105,7 +2105,13 @@
 </tr></table></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
-<ul><li><p>管理ノードがインターネットに接続されていない場合は、 <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle" target="_blank" rel="noopener">ネットアップサポートサイト</a>からパッケージをダウンロードしています。</p></li></ul>
+<ul><li>
+<p>管理ノードがインターネットに接続されていない場合は、 <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle" target="_blank" rel="noopener">ネットアップサポートサイト</a>からコンピュートノードファームウェアパッケージをダウンロードしています。 </p>
+<div class="admonitionblock note"><table><tr>
+<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="content"> <code>TAR.GZ</code>ファイルを<code>TAR</code>ファイルに抽出してから、 <code>TAR</code>ファイルをISOに抽出する必要があります。</td>
+</tr></table></div>
+</li></ul>
 </div>
 <div class="olist arabic">
 <div class="title">ステップ</div>
@@ -2503,16 +2509,16 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="use-a-usb-drive-with-the-latest-firmware-image-downloaded">最新のファームウェアイメージがダウンロードされたUSBドライブを使用する</h2>
+<h2 id="use-a-usb-drive-with-the-latest-compute-node-firmware-iso-downloaded">最新の計算ノードファームウェアISOがダウンロードされたUSBドライブを使用する</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>最新のファームウェアイメージがダウンロードされたUSBドライブを計算ノードのUSBポートに挿入できます。この手順で説明するUSB​​サムドライブ方式を使用する代わりに、ベースボード管理コントローラー（BMC）インターフェイスの仮想コンソールの[<strong>仮想CD / DVD</strong> ]オプションを使用して、計算ノードのRTFIイメージを計算ノードにマウントできます。 BMC方式は、USBサムドライブ方式よりもかなり時間がかかります。ワークステーションまたはサーバーに必要なネットワーク帯域幅があり、BMCとのブラウザセッションがタイムアウトしないことを確認してください。</p></div>
+<div class="paragraph"><p>コンピュートノードのUSBポートにダウンロードされた最新のコンピュートノードファームウェアISOを備えたUSBドライブを挿入できます。この手順で説明するUSB​​サムドライブ方式を使用する代わりに、ベースボード管理コントローラー（BMC）インターフェイスの仮想コンソールで[<strong>仮想CD / DVD</strong> ]オプションを使用してISOを計算ノードにマウントできます。 BMC方式は、USBサムドライブ方式よりもかなり時間がかかります。ワークステーションまたはサーバーに必要なネットワーク帯域幅があり、BMCとのブラウザセッションがタイムアウトしないことを確認してください。</p></div>
 <div class="olist arabic">
 <div class="title">ステップ</div>
 <ol class="arabic">
 <li><p><a href="https://mysupport.netapp.com/site/downloads">NetAppソフトウェアのダウンロード</a>ページを参照し、[ <strong>NetApp HCI</strong> ]をクリックして、ダウンロードリンクをクリックしてNetAppHCIの正しいバージョンを確認します。</p></li>
 <li><p>エンドユーザー使用許諾契約に同意します。</p></li>
 <li><p> [<strong>コンピューティングノード]</strong>セクションで、[コンピューティングノード]イメージをダウンロードします。</p></li>
-<li><p>計算ノードのRTFIイメージの生の内容を少なくとも32GBの容量のUSBサムドライブに書き込みます（ddまたはEtcherを使用）。</p></li>
+<li><p> Etcherユーティリティを使用して、計算ノードファームウェアISOをUSBドライブにフラッシュします。</p></li>
 <li>
 <p> VMware vCenterを使用して計算ノードをメンテナンスモードにし、すべての仮想マシンをホストから退避させます。 </p>
 <div class="admonitionblock note"><table><tr>
@@ -2537,7 +2543,7 @@
 <div class="sect1">
 <h2 id="use-the-baseboard-management-controller-bmc-user-interface-ui"> Baseboard Management Controller（BMC）ユーザーインターフェイス（UI）を使用する</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>アップグレードが成功することを確認するには、一連の手順を実行して計算ファームウェアISOをロードし、ノードをISOで再起動する必要があります。 ISOは、Webブラウザをホストしているシステムまたは仮想マシン（VM）に配置する必要があります。プロセスを開始する前に、ISOをダウンロードしたことを確認してください。 </p></div>
+<div class="paragraph"><p>アップグレードが成功することを確認するには、一連の手順を実行して計算ノードファームウェアISOをロードし、ノードをISOで再起動する必要があります。 ISOは、Webブラウザをホストしているシステムまたは仮想マシン（VM）に配置する必要があります。プロセスを開始する前に、ISOをダウンロードしたことを確認してください。 </p></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">システムまたはVMとノードを同じネットワーク上に配置することをお勧めします。 </td>
