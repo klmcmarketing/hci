@@ -1779,7 +1779,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-11-11 23:10:55 +0000">11/11/2020</time>
+    <time datetime="2020-11-11 18:15:42 +0000">11/11/2020</time>
     
   
 
@@ -1790,14 +1790,6 @@
           alt="netapp-mwallis"
           width="20" height="20"
           src="https://avatars3.githubusercontent.com/u/53353653?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
-  <a target="_blank" href="https://github.com/netapp-dbagwell">
-    <img  class="avatar avatar-small"
-          alt="netapp-dbagwell"
-          width="20" height="20"
-          src="https://avatars0.githubusercontent.com/u/53352450?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -1822,13 +1814,29 @@
 <li>
 <p>This feature requires Element 12.2 or later and management services version 2.15 or later.</p>
 </li>
+<li>
+<p>To use REST APIs, you must have deployed a management node running version 11.5 or later.</p>
+</li>
 </ul>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>Create the following cluster interface preference using the <code>CreateClusterInterfacePreference</code> API method, inserting the cluster MVIP FQDN for the preference value:</p>
+<p>Ensure that the Element storage nodes and the management node have DNS configured correctly for the network environment so that FQDNs in the environment can be resolved. To set DNS, go to the per-node UI for storage nodes and to the management node, then select <strong>Network Settings</strong> &gt; <strong>Management Network</strong>.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Per-node UI for storage nodes: <code><a href="https://&lt;storage_node_management_IP&gt;:442" class="bare">https://&lt;storage_node_management_IP&gt;:442</a></code></p>
+</li>
+<li>
+<p>Per-node UI for the management node: <code><a href="https://&lt;management_node_IP&gt;:442" class="bare">https://&lt;management_node_IP&gt;:442</a></code></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Access the Element API and create the following cluster interface preference using the <code>CreateClusterInterfacePreference</code> API method, inserting the cluster MVIP FQDN for the preference value:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1836,9 +1844,12 @@
 </li>
 <li>
 <p>Value: &lt;Fully Qualified Domain Name for the Cluster MVIP&gt;</p>
+<div class="paragraph">
+<p>For example, where the FQDN is <code>storagecluster.my.org</code>:</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre>https://&lt;mvip&gt;/json-rpc/12.0?method=CreateClusterInterfacePreference&amp;name=mvip_fqdn&amp;value=&lt;fqdn&gt;</pre>
+<pre>https://&lt;Cluster_MVIP&gt;/json-rpc/12.2?method=CreateClusterInterfacePreference&amp;name=mvip_fqdn&amp;value=storagecluster.my.org</pre>
 </div>
 </div>
 </li>
@@ -1846,30 +1857,28 @@
 </div>
 </li>
 <li>
-<p>Change the management node settings using the management node REST API:</p>
+<p>Change the management node settings using the REST API on the management node:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Access the REST API UI for the management node by entering the management node IP address followed by <code>/mnode/2/</code>. For example: <code>https://[management node IP]/mnode/2/</code></p>
+<p>Access the REST API UI for the management node by entering the management node IP address followed by <code>/mnode/2/</code>. For example:</p>
+<div class="listingblock">
+<div class="content">
+<pre>https://[management node IP]/mnode/2/</pre>
+</div>
+</div>
 </li>
 <li>
-<p>Click <strong>Authorize</strong> or any lock icon and complete the following:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Enter the cluster user name and password.</p>
+<p>Click <strong>Authorize</strong> or any lock icon and enter the cluster user name and password.</p>
 </li>
 <li>
 <p>Enter the client ID as <code>mnode-client</code>.</p>
 </li>
 <li>
-<p>Click <strong>Authorize</strong> to begin a session.</p>
+<p>Click <strong>Authorize</strong> to begin a session and then close the window.</p>
 </li>
 <li>
-<p>Close the window.</p>
-</li>
-</ol>
-</div>
+<p>From the server list, select <code>mnode2</code>.</p>
 </li>
 <li>
 <p>Click <strong>GET /settings</strong>.</p>
@@ -1902,6 +1911,14 @@
 </div>
 </li>
 </ol>
+</div>
+<h2 id="find-more-information" class="discrete">Find more information</h2>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/GUID-93942724-1C4C-4F3D-B352-89498F7722ED.html" target="_blank" rel="noopener">CreateClusterInterfacePreference API information in the SolidFire and Element Documentation Center</a></p>
+</li>
+</ul>
 </div>
 
     </article>

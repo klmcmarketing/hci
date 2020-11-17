@@ -15,7 +15,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/concept_architecture_cloudinsights.html</loc>
       
-      <lastmod>2019-12-06T17:53:20+00:00</lastmod>
+      <lastmod>2019-12-09T14:52:38+00:00</lastmod>
       
     </url>
   
@@ -36,7 +36,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/concept_cg_hci_security.html</loc>
       
-      <lastmod>2020-10-02T21:04:04+00:00</lastmod>
+      <lastmod>2020-11-12T22:32:23+00:00</lastmod>
       
     </url>
   
@@ -85,7 +85,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/concept_hci_storage.html</loc>
       
-      <lastmod>2020-04-14T17:33:02+00:00</lastmod>
+      <lastmod>2020-04-15T16:07:18+00:00</lastmod>
       
     </url>
   
@@ -127,7 +127,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/concept_nde_config_vsphere_overview.html</loc>
       
-      <lastmod>2020-10-08T18:48:11+00:00</lastmod>
+      <lastmod>2020-10-08T19:43:04+00:00</lastmod>
       
     </url>
   
@@ -141,7 +141,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/concept_nde_node_compatibility.html</loc>
       
-      <lastmod>2020-10-08T18:48:11+00:00</lastmod>
+      <lastmod>2020-10-08T19:43:04+00:00</lastmod>
       
     </url>
   
@@ -218,7 +218,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/hci_prereqs_network_switch.html</loc>
       
-      <lastmod>2020-05-19T22:16:35+00:00</lastmod>
+      <lastmod>2020-11-13T19:04:47+00:00</lastmod>
       
     </url>
   
@@ -295,7 +295,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/reference_requirements_beforeyoubegin.html</loc>
       
-      <lastmod>2020-04-14T17:33:02+00:00</lastmod>
+      <lastmod>2020-04-15T16:07:18+00:00</lastmod>
       
     </url>
   
@@ -323,7 +323,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/rn_relatedrn.html</loc>
       
-      <lastmod>2020-10-05T18:40:13+00:00</lastmod>
+      <lastmod>2020-11-16T18:56:14+00:00</lastmod>
       
     </url>
   
@@ -344,21 +344,21 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/search.html</loc>
       
-      <lastmod>2020-11-13T22:33:54+00:00</lastmod>
+      <lastmod>2020-11-17T19:27:21+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/hci/solutions/search.html</loc>
       
-      <lastmod>2020-11-13T22:33:54+00:00</lastmod>
+      <lastmod>2020-11-17T19:27:21+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/hci//search.html</loc>
       
-      <lastmod>2020-11-13T22:33:46+00:00</lastmod>
+      <lastmod>2020-11-17T19:27:14+00:00</lastmod>
       
     </url>
   
@@ -372,14 +372,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/task_deploying_overview.html</loc>
       
-      <lastmod>2020-04-14T17:33:02+00:00</lastmod>
+      <lastmod>2020-04-15T16:07:18+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/task_hcc_access.html</loc>
       
-      <lastmod>2020-04-14T17:33:02+00:00</lastmod>
+      <lastmod>2020-04-15T16:07:18+00:00</lastmod>
       
     </url>
   
@@ -449,7 +449,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/task_hcc_license_convert.html</loc>
       
-      <lastmod>2019-12-06T17:53:20+00:00</lastmod>
+      <lastmod>2019-12-09T14:52:38+00:00</lastmod>
       
     </url>
   
@@ -820,14 +820,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/task_nde_access_ui_fqdn.html</loc>
       
-      <lastmod>2020-11-11T23:10:55+00:00</lastmod>
+      <lastmod>2020-11-11T18:15:42+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/task_nde_configure_credentials.html</loc>
       
-      <lastmod>2020-10-08T18:48:11+00:00</lastmod>
+      <lastmod>2020-10-08T19:43:04+00:00</lastmod>
       
     </url>
   
@@ -918,7 +918,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/hci/docs/task_nde_start_deployment.html</loc>
       
-      <lastmod>2020-10-08T18:48:11+00:00</lastmod>
+      <lastmod>2020-10-08T19:43:04+00:00</lastmod>
       
     </url>
   
