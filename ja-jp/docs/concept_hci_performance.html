@@ -930,6 +930,32 @@
       <span class="subfolders" style="display:none;">
         
         <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Update_your_credentials.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Update your credentials
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
           <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
             Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
@@ -1707,6 +1733,14 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
+        <div class="na-navbar-padding"> Update your credentials</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_credentials_vcenter_esxi.html">
+        Update vCenter and ESXi credentials
+      </a></li></ul>
+</li>
+<li class="subfolders ">
+<a href="#">
         <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
@@ -2033,8 +2067,8 @@
 <p><strong>実効最大帯域幅</strong>-最大帯域幅は、IOPSの数（QoS曲線に基づく）にIOサイズを掛けることによって計算されます。</p>
 <div class="paragraph"><p>例：100最小IOPS、1000最大IOPS、および1500バーストIOPのQoSパラメーター設定は、パフォーマンスの品質に次の影響を及ぼします。</p></div>
 <div class="ulist"><ul>
-<li><p>ワークロードは、IOPSのワークロード競合の状態がクラスターで明らかになるまで、最大1000IOPSに到達して維持することができます。次に、すべてのボリュームのIOPSが指定されたQoS範囲内に収まり、パフォーマンスの競合が緩和されるまで、IOPSが段階的に削減されます。</p></li>
-<li><p>すべてのボリュームのパフォーマンスは、最小IOPSの100に向かって押し上げられます。レベルは最小IOPS設定を下回りませんが、ワークロードの競合が緩和されたときに100IOPSを超えたままになる可能性があります。</p></li>
+<li><p>ワークロードは、IOPSのワークロード競合の状態がクラスター上で明らかになるまで、最大1000IOPSに到達して維持することができます。次に、すべてのボリュームのIOPSが指定されたQoS範囲内に収まり、パフォーマンスの競合が緩和されるまで、IOPSが段階的に削減されます。</p></li>
+<li><p>すべてのボリュームのパフォーマンスは、最小IOPSの100に向かって押し上げられます。レベルは最小IOPS設定を下回りませんが、ワークロードの競合が緩和されると、100IOPSを超えたままになる可能性があります。</p></li>
 <li><p>パフォーマンスは、持続期間で1000 IOPSを超えたり、100IOPSを下回ったりすることはありません。 1500 IOPS（バーストIOPS）のパフォーマンスが許可されますが、最大IOPSを下回って実行することによりバーストクレジットが発生し、短時間しか許可されていないボリュームに対してのみ許可されます。バーストレベルが維持されることはありません。</p></li>
 </ul></div>
 </li>

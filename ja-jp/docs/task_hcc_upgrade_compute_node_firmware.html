@@ -915,6 +915,32 @@
       <span class="subfolders" style="display:none;">
         
         <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Update_your_credentials.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Update your credentials
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
           <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
             Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
@@ -1707,6 +1733,14 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
+        <div class="na-navbar-padding"> Update your credentials</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_credentials_vcenter_esxi.html">
+        Update vCenter and ESXi credentials
+      </a></li></ul>
+</li>
+<li class="subfolders ">
+<a href="#">
         <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
@@ -2004,14 +2038,14 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">計算ノードのファームウェアをアップグレードする</h1></div>
-<p class="page-details"><time datetime="2020-11-17 19:56:45 +0000">2020年11月17日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_compute_node_firmware.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-11-21 00:00:33 +0000">2020年11月21日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_compute_node_firmware.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>Hシリーズの計算ノードの場合、BMC、BIOS、NICなどのハードウェアコンポーネントのファームウェアをアップグレードできます。計算ノードのファームウェアをアップグレードするには、NetAppハイブリッドクラウドコントロールUI、REST API、最新のファームウェアイメージを備えたUSBドライブ、またはBMCUIを使用できます。</p></div>
 <div class="paragraph"><p>アップグレード後、計算ノードはESXiで起動し、構成を保持したまま以前と同じように機能します。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
-<li><p><strong>計算ドライバー</strong>：計算ノードドライバーをアップグレードしました。計算ノードドライバーが新しいファームウェアと互換性がない場合、アップグレードは開始されません。ドライバーとファームウェアの互換性情報については、 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software">このKB記事</a>を参照してください。</p></li>
+<li><p><strong>計算ドライバー</strong>：計算ノードドライバーをアップグレードしました。計算ノードドライバーが新しいファームウェアと互換性がない場合、アップグレードは開始されません。ドライバーとファームウェアの互換性情報については、<a href="https://mysupport.netapp.com/matrix">相互運用性マトリックスツール（IMT）</a>を参照してください。また、最新の最新のファームウェアとドライバーの詳細については、最新の<a href="rn_relatedrn.html">計算ノードファームウェアリリースノート</a>を確認してください。</p></li>
 <li><p><strong>管理者権限</strong>：アップグレードを実行するためのクラスター管理者およびBMC管理者の権限があります。</p></li>
 <li><p><strong>システムポート</strong>：アップグレードにNetApp Hybrid Cloud Controlを使用している場合は、必要なポートが開いていることを確認しました。詳細については、<a href="hci_prereqs_required_network_ports.html">ネットワークポート</a>を参照してください。</p></li>
 <li>
@@ -2097,7 +2131,7 @@
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content">ダークサイトのアップグレードの場合、アップグレードパッケージと管理ノードの両方がローカルであると、アップロード時間を短縮できます。 </td>
+<td class="content">ダークサイトのアップグレードでは、アップグレードパッケージと管理ノードの両方がローカルである場合、アップロード時間を短縮できます。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -2297,7 +2331,7 @@
 <p> NetApp HCIソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle">ダウンロードページに</a>移動し、管理ノードがアクセスできるデバイスに最新の計算ノードファームウェアイメージをダウンロードします。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content">ダークサイトのアップグレードの場合、アップグレードパッケージと管理ノードの両方がローカルであると、アップロード時間を短縮できます。</td>
+<td class="content">ダークサイトのアップグレードでは、アップグレードパッケージと管理ノードの両方がローカルである場合、アップロード時間を短縮できます。</td>
 </tr></table></div>
 </li>
 <li>
@@ -2523,7 +2557,7 @@
 <p> VMware vCenterを使用して計算ノードをメンテナンスモードにし、すべての仮想マシンをホストから退避させます。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">クラスターでVMware分散リソーススケジューラ（DRS）が有効になっている場合（これはNetApp HCIインストールのデフォルトです）、仮想マシンはクラスター内の他のノードに自動的に移行されます。</td>
+<td class="content">クラスターでVMwareDistributed Resource Scheduler（DRS）が有効になっている場合（これはNetApp HCIインストールのデフォルトです）、仮想マシンはクラスター内の他のノードに自動的に移行されます。</td>
 </tr></table></div>
 </li>
 <li><p> USBサムドライブを計算ノードのUSBポートに挿入し、VMwarevCenterを使用して計算ノードを再起動します。</p></li>

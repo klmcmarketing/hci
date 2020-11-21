@@ -930,6 +930,32 @@
       <span class="subfolders" style="display:none;">
         
         <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Update_your_credentials.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Update your credentials
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
           <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
             Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
@@ -1707,6 +1733,14 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
+        <div class="na-navbar-padding"> Update your credentials</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_credentials_vcenter_esxi.html">
+        Update vCenter and ESXi credentials
+      </a></li></ul>
+</li>
+<li class="subfolders ">
+<a href="#">
         <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
@@ -2036,7 +2070,7 @@
 <div class="paragraph"><p>これらのリソースをお読みください。</p></div>
 <div class="ulist"><ul>
 <li><p> <em>NetApp HCIインストール検出ワークブック</em>を使用して、インストール前にネットワークを構成します。</p></li>
-<li><p>詳細およびサポートされているその他の構成については、「 <a href="https://www.netapp.com/us/media/tr-4820.pdf"><em>TR-4820：NetAppHCIネットワーククイックプランニングガイド」</em></a>および「 <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2856176"><em>NetAppHCIのインストールとセットアップの手順</em></a><a href="https://www.netapp.com/us/media/tr-4820.pdf"><em>」</em></a>を参照してください。</p></li>
+<li><p>詳細およびその他のサポートされている構成については、 <a href="https://www.netapp.com/us/media/tr-4820.pdf"><em>TR-4820：NetAppHCIネットワーククイックプランニングガイド</em></a>および<a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2856176"><em>NetAppHCIのインストールとセットアップの手順を参照してください</em></a>。</p></li>
 <li><p> 4つのストレージノードよりも小さいNetAppHCI構成については、 <a href="https://www.netapp.com/us/media/tr-4823.pdf" target="_blank" rel="noopener"><em>TR-4823：NetApp HCI2ノードストレージクラスターを</em></a>参照してください。</p></li>
 <li><p>各ストレージノードに使用されるスイッチポートでのリンクアグリゲーション制御プロトコル（LACP）の構成の詳細については、「<a href="hci_prereqs_LACP_configuration.html">最適なストレージパフォーマンスのためのLCAPの構成</a>」を参照してください。</p></li>
 </ul></div>
@@ -2063,7 +2097,7 @@
 <h2 id="validate-network-readiness-with-netapp-active-iq-config-advisor"> NetApp Active IQ ConfigAdvisorを使用してネットワークの準備状況を検証する</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp HCIのネットワーク対応を確保するには、NetApp Active IQ Config Advisor5.8.1以降をインストールします。このネットワーク検証ツールは、他の<a href="https://mysupport.netapp.com/site/tools/tool-eula/5ddb829ebd393e00015179b2" target="_blank" rel="noopener">NetAppサポートツール</a>と一緒に配置されてい<a href="https://mysupport.netapp.com/site/tools/tool-eula/5ddb829ebd393e00015179b2" target="_blank" rel="noopener">ます</a>。このツールを使用して、接続、VLAN ID、IPアドレス要件、スイッチ接続などを検証します。</p></div>
-<div class="paragraph"><p>詳細については、「 <a href="hci_prereqs_task_validate_config_advisor.html">Active IQ ConfigAdvisorを使用して環境を検証する</a>」を参照してください。</p></div>
+<div class="paragraph"><p>詳細については、「 <a href="hci_prereqs_task_validate_config_advisor.html">Active IQ ConfigAdvisorを使用した環境の検証</a>」を参照してください。</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -2144,7 +2178,7 @@
 <div class="sect2">
 <h3 id="deploy-netapp-hci-with-the-nde-ui"> NDEUIを使用してNetAppHCIを導入する</h3>
 <div class="olist arabic"><ol class="arabic">
-<li><p>NDEで、前提条件に同意し、Active IQを使用することを確認し、使用許諾契約に同意します。</p></li>
+<li><p>NDEで、前提条件に同意し、Active IQを使用することを確認し、ライセンス契約に同意します。</p></li>
 <li><p>必要に応じて、ONTAPSelectでDataFabric File Servicesを有効にし、ONTAPSelectライセンスに同意します。</p></li>
 <li>
 <p>新しいvCenterデプロイメントを構成します。 [<strong>完全修飾ドメイン名を使用</strong>して<strong>構成する]を</strong>クリック<strong>し、vCenterServer</strong>ドメイン名とDNSサーバーIPアドレスの両方を入力します。 </p>

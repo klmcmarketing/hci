@@ -915,6 +915,32 @@
       <span class="subfolders" style="display:none;">
         
         <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Update_your_credentials.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Update your credentials
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
           <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
             Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
@@ -1707,6 +1733,14 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
+        <div class="na-navbar-padding"> Update your credentials</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_credentials_vcenter_esxi.html">
+        Update vCenter and ESXi credentials
+      </a></li></ul>
+</li>
+<li class="subfolders ">
+<a href="#">
         <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
@@ -2210,7 +2244,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / volume /</pre></div></
 <div class="sect1">
 <h2 id="upgrade-a-management-node-to-version-12-2-from-11-1-or-11-0">管理ノードを11.1または11.0からバージョン12.2にアップグレードします。</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>新しい管理ノード仮想マシンをプロビジョニングしなくても、管理ノードを11.0または11.1からバージョン12.2にインプレースでアップグレードできます。</p></div>
+<div class="paragraph"><p>新しい管理ノード仮想マシンをプロビジョニングしなくても、管理ノードを11.0または11.1からバージョン12.2にインプレースアップグレードできます。</p></div>
 <div class="ulist">
 <div class="title">あなたが始める前に</div>
 <ul>
@@ -2349,7 +2383,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / volume /</pre></div></
 </ol></div>
 </li>
 <li>
-<p> NetApp HCIをインストールしている場合は、vSphereでコンピュートノードのハードウェアタグを見つけます。</p>
+<p> NetApp HCIをインストールしている場合は、vSphereで計算ノードのハードウェアタグを見つけます。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li><p> vSphere WebClientナビゲーターでホストを選択します。</p></li>
 <li><p> [<strong>監視</strong>]タブをクリックし、[<strong>ハードウェアの状態</strong>]をクリックします。</p></li>
@@ -2406,7 +2440,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / volume /</pre></div></
 </li>
 <li><p> vSphereからログアウトします。</p></li>
 <li>
-<p> Webブラウザーで、管理ノード登録ユーティリティーを開き、「 <strong>QoSSIOCサービス管理」</strong>を選択します。</p>
+<p> Webブラウザーで、管理ノード登録ユーティリティを開き、 <strong>QoSSIOCサービス管理</strong>を選択します。</p>
 <div class="listingblock"><div class="content"><pre> https：// &lt;mNode 11.1 IPアドレス&gt;：9443</pre></div></div>
 </li>
 <li>
@@ -2422,7 +2456,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / volume /</pre></div></
 <li><p> vSphereにログインし、[ <strong>NetApp Element Configuration</strong> <strong>]</strong> &gt; [ <strong>mNodeSettings]</strong>を選択します。</p></li>
 <li><p> [<strong>アクション]</strong> &gt; [<strong>構成]を</strong>クリックします。</p></li>
 <li>
-<p>管理ノードのIPアドレス、管理ノードのユーザーID（ユーザー名は<code>admin</code> ）、登録ユーティリティの<strong>QoSSIOCサービス管理</strong>タブで設定したパスワード、vCenterユーザーIDとパスワードを入力します。</p>
+<p>管理ノードのIPアドレス、管理ノードのユーザーID（ユーザー名は<code>admin</code> ）、登録ユーティリティの<strong>QoSSIOCサービス管理</strong>タブで設定したパスワード、およびvCenterユーザーIDとパスワードを入力します。</p>
 <div class="paragraph"><p> vSphereでは、 <strong>[mNode設定</strong>]タブにmNodeステータスが<strong>UP</strong>として表示されます。これは、管理ノード11.1がvCenterに登録されていることを示します。</p></div>
 </li>
 <li><p>管理ノード登録ユーティリティ（ <code><a href="https://&lt;mNode" class="bare">https://&lt;mNode</a> 11.1 IP address&gt;:9443</code> ）から、 <strong>QoSSIOCサービス管理</strong>からSIOCサービスを再起動します。</p></li>

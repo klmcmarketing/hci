@@ -930,6 +930,32 @@
       <span class="subfolders" style="display:none;">
         
         <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Update_your_credentials.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Update your credentials
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
           <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
             Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
@@ -1707,6 +1733,14 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
+        <div class="na-navbar-padding"> Update your credentials</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_credentials_vcenter_esxi.html">
+        Update vCenter and ESXi credentials
+      </a></li></ul>
+</li>
+<li class="subfolders ">
+<a href="#">
         <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
@@ -2008,7 +2042,7 @@
 <div class="paragraph lead"><p>展開する前に、NetApp HCIシステムのドメインネームシステム（DNS）レコードを準備し、NTPサーバー情報を収集する必要があります。 NetApp HCIには、展開を成功させるために、正しいDNSエントリを備えたDNSサーバーとNTPサーバーが必要です。</p></div>
 <div class="paragraph"><p> NetApp HCIを導入する前に、次のDNSとタイムサーバーの準備を行ってください。</p></div>
 <div class="ulist"><ul>
-<li><p>ホスト（個々の計算ノードやストレージノードなど）に必要なDNSエントリを作成し、ホストエントリがそれぞれのIPアドレスにどのようにマップされるかを文書化します。展開中に、各ホストに適用されるプレフィックスをストレージクラスターに割り当てる必要があります。混乱を避けるために、プレフィックスを選択するときはDNS命名計画を念頭に置いてください。</p></li>
+<li><p>ホスト（個々のコンピューティングノードやストレージノードなど）に必要なDNSエントリを作成し、ホストエントリがそれぞれのIPアドレスにどのようにマップされるかを文書化します。展開中に、各ホストに適用されるプレフィックスをストレージクラスターに割り当てる必要があります。混乱を避けるために、プレフィックスを選択するときはDNS命名計画を念頭に置いてください。</p></li>
 <li><p>完全修飾ドメイン名を使用して新しいVMwarevSphereインストールでNetAppHCIを展開する場合は、展開前に、使用中のDNSサーバーにvCenter Server用に1つのポインター（PTR）レコードと1つのアドレス（A）レコードを作成する必要があります。</p></li>
 <li><p> IPアドレスのみを使用して新しいvSphereインストールでNetAppHCIを展開する場合、vCenter用に新しいDNSレコードを作成する必要はありません。</p></li>
 <li><p> NetApp HCIには、計時のために有効なNTPサーバーが必要です。ご使用の環境にタイムサーバーがない場合は、公開されているタイムサーバーを使用できます。</p></li>

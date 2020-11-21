@@ -930,6 +930,32 @@
       <span class="subfolders" style="display:none;">
         
         <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Update_your_credentials.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Update your credentials
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
           <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
             Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
@@ -1707,6 +1733,14 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
+        <div class="na-navbar-padding"> Update your credentials</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_credentials_vcenter_esxi.html">
+        Update vCenter and ESXi credentials
+      </a></li></ul>
+</li>
+<li class="subfolders ">
+<a href="#">
         <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
@@ -2013,7 +2047,7 @@
 <h2 id="management-node">管理ノード</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>管理ノード（mNodeと略されることもあります）は、ストレージクラスターと対話して管理アクションを実行しますが、ストレージクラスターのメンバーではありません。管理ノードは、API呼び出しを介してクラスターに関する情報を定期的に収集し、この情報をActive IQに報告してリモート監視を行います（有効な場合）。管理ノードは、クラスターノードのソフトウェアアップグレードの調整も担当します。</p></div>
-<div class="paragraph"><p>管理ノードは、1つ以上のElementソフトウェアベースのストレージクラスターと並行して実行される仮想マシンです。アップグレードに加えて、監視とテレメトリを含むシステムサービスの提供、クラスターアセットと設定の管理、システムテストとユーティリティの実行、トラブルシューティングのためのNetAppサポートアクセスの有効化に使用されます。 Element 11.3リリース以降、管理ノードはマイクロサービスホストとして機能し、メジャーリリース以外の選択されたソフトウェアサービスの迅速な更新を可能にします。 Active IQコレクター、vCenterプラグインのQoSSIOC、管理ノードサービスなどのこれらのマイクロサービスまたは管理サービスは、サービスバンドルとして頻繁に更新されます。</p></div>
+<div class="paragraph"><p>管理ノードは、1つ以上のElementソフトウェアベースのストレージクラスターと並行して実行される仮想マシンです。アップグレードに加えて、監視とテレメトリを含むシステムサービスの提供、クラスターアセットと設定の管理、システムテストとユーティリティの実行、トラブルシューティングのためのNetAppサポートアクセスの有効化に使用されます。 Element 11.3リリース以降、管理ノードはマイクロサービスホストとして機能し、メジャーリリース以外の選択されたソフトウェアサービスの迅速な更新を可能にします。 Active IQコレクター、vCenterプラグインのQoSSIOC、管理ノードサービスなど、これらのマイクロサービスまたは管理サービスは、サービスバンドルとして頻繁に更新されます。</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -2027,7 +2061,7 @@
 <div class="sect1">
 <h2 id="witness-nodes">証人ノード</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>NetApp HCI Witness Nodesは、Elementソフトウェアベースのストレージクラスターと並行して計算ノード上で実行される仮想マシンです。監視ノードは、スライスまたはブロックサービスをホストしません。監視ノードは、ストレージノードに障害が発生した場合にストレージクラスターの可用性を有効にします。ウィットネスノードは、他のストレージノードと同じ方法で管理およびアップグレードできます。ストレージクラスターには、最大4つのウィットネスノードを含めることができます。それらの主な目的は、有効なアンサンブルクォーラムを形成するのに十分なクラスターノードが存在することを確認することです。 </p></div>
+<div class="paragraph"><p>NetApp HCI Witness Nodesは、Elementソフトウェアベースのストレージクラスターと並行して計算ノード上で実行される仮想マシンです。監視ノードは、スライスまたはブロックサービスをホストしません。監視ノードは、ストレージノードに障害が発生した場合にストレージクラスターの可用性を有効にします。ウィットネスノードは、他のストレージノードと同じ方法で管理およびアップグレードできます。ストレージクラスターには、最大4つの監視ノードを含めることができます。それらの主な目的は、有効なアンサンブルクォーラムを形成するのに十分なクラスターノードが存在することを確認することです。 </p></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">

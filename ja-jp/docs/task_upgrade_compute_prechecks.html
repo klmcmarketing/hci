@@ -915,6 +915,32 @@
       <span class="subfolders" style="display:none;">
         
         <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Update_your_credentials.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Update your credentials
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
           <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
             Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
@@ -1707,6 +1733,14 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
+        <div class="na-navbar-padding"> Update your credentials</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_credentials_vcenter_esxi.html">
+        Update vCenter and ESXi credentials
+      </a></li></ul>
+</li>
+<li class="subfolders ">
+<a href="#">
         <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
@@ -2003,10 +2037,10 @@
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
-    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">計算ファームウェアをアップグレードする前に、計算ノードのヘルスチェックを実行します</h1></div>
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">コンピューティングファームウェアをアップグレードする前に、コンピュートノードのヘルスチェックを実行します</h1></div>
 <p class="page-details"><time datetime="2020-08-25 22:58:56 +0000">2020年8月25日</time><span>寄稿者<a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_upgrade_compute_prechecks.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
-<div class="paragraph lead"><p>コンピューティングファームウェアをアップグレードする前にヘルスチェックを実行して、クラスター内のすべてのコンピューティングノードをアップグレードする準備ができていることを確認する必要があります。計算ノードのヘルスチェックは、1つ以上のマネージドNetAppHCI計算ノードの計算クラスターに対してのみ実行できます。</p></div>
+<div class="paragraph lead"><p>計算ファームウェアをアップグレードする前にヘルスチェックを実行して、クラスター内のすべての計算ノードをアップグレードする準備ができていることを確認する必要があります。計算ノードのヘルスチェックは、1つ以上のマネージドNetAppHCI計算ノードの計算クラスターに対してのみ実行できます。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
@@ -2027,7 +2061,7 @@
 <div class="ulist"><ul><li><p><a href="#compute-node-health-checks-made-by-the-service">サービスによって行われたノードヘルスチェックを計算します</a></p></li></ul></div>
 </div></div>
 <div class="sect1">
-<h2 id="use-netapp-hybrid-cloud-control-to-run-compute-node-health-checks-prior-to-upgrading-firmware"> NetApp Hybrid Cloud Controlを使用して、ファームウェアをアップグレードする前に計算ノードのヘルスチェックを実行します</h2>
+<h2 id="use-netapp-hybrid-cloud-control-to-run-compute-node-health-checks-prior-to-upgrading-firmware">ファームウェアをアップグレードする前に、NetApp Hybrid CloudControlを使用して計算ノードのヘルスチェックを実行します</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp Hybrid Cloud Control（HCC）を使用すると、コンピューティングノードがファームウェアアップグレードの準備ができていることを確認できます。</p></div>
 <div class="olist arabic">
@@ -2168,7 +2202,7 @@
 <li><p> <strong>POST / compute / {CONTROLLER_ID} / health-checks</strong> <code>task_id</code>応答からの<code>"resourceLink"</code> URLのタスクID部分を<code>task_id</code>パラメータフィールドに<code>task_id</code>ます。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
 <li>
-<p>返された<code>status</code>が、計算ノードの状態に問題があったことを示している場合は、次の手順を実行します。</p>
+<p>返された<code>status</code>が、計算ノードの正常性に関する問題があったことを示している場合は、次の手順を実行します。</p>
 <div class="olist lowerroman"><ol class="lowerroman" type="i">
 <li><p>各問題にリストされている特定のKB記事（ <code>KbLink</code> ）に移動するか、指定された対処法を実行してください。</p></li>
 <li><p> KBが指定されている場合は、関連するKBの記事に記載されているプロセスを完了してください。</p></li>
@@ -2185,7 +2219,7 @@
 <div class="sect1">
 <h2 id="compute-node-health-checks-made-by-the-service">サービスによって行われたノードヘルスチェックを計算します</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>計算ヘルスチェックは、HCCメソッドまたはAPIメソッドのどちらで実行された場合でも、ノードごとに次のチェックを行います。環境によっては、これらのチェックの一部がスキップされる場合があります。検出された問題を解決した後、ヘルスチェックを再実行する必要があります。 </p></div>
+<div class="paragraph"><p>計算ヘルスチェックは、HCCメソッドまたはAPIメソッドのどちらで実行されたかに関係なく、ノードごとに次のチェックを行います。環境によっては、これらのチェックの一部がスキップされる場合があります。検出された問題を解決した後、ヘルスチェックを再実行する必要があります。 </p></div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -2197,7 +2231,7 @@
 <th class="tableblock halign-left valign-top">説明を確認してください</th>
 <th class="tableblock halign-left valign-top">ノード/クラスター</th>
 <th class="tableblock halign-left valign-top">解決するために必要なアクション</th>
-<th class="tableblock halign-left valign-top">手順付きのナレッジベース記事</th>
+<th class="tableblock halign-left valign-top">手順を含むナレッジベースの記事</th>
 </tr></thead>
 <tbody>
 <tr>
@@ -2255,7 +2289,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">問題を解決するためにKBは必要ありません。</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> BMCバージョンはRedFishをサポートするために最低限必要なバージョンですか？</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> BMCバージョンは、RedFishをサポートするために最低限必要なバージョンですか？</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ノード</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">BMCファームウェアを手動で更新します。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">問題を解決するためにKBは必要ありません。</p></td>
@@ -2311,13 +2345,13 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ内の監視ノードのステータスはどうなっていますか？監視ノードはこのESXiホストで稼働しており、代替ノードは稼働していますが、同じESXiホストで実行されています。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ノード</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">両方の監視ノードがこのESXiホストで実行されています。 1つのWitnessノードを代替ESXiホストに再配置します。このESXiホストをアップグレードする準備ができたら、このESXiホストに残っているウィットネスノードをシャットダウンし、ヘルスチェックを再実行します。 <strong>1つのWitnessノードがHCIインストールで常に実行されている必要があります</strong>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">両方のウィットネスノードがこのESXiホストで実行されています。 1つのWitnessノードを代替ESXiホストに再配置します。このESXiホストをアップグレードする準備ができたら、このESXiホストに残っているウィットネスノードをシャットダウンし、ヘルスチェックを再実行します。 <strong>1つのWitnessノードがHCIインストールで常に実行されている必要があります</strong>。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_resolve_witness_node_issues_prior_to_upgrading_compute_nodes">このKBを参照してください</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ内の監視ノードのステータスはどうなっていますか？監視ノードはこのESXiホストで稼働しており、代替監視ノードは別のESXiホストで稼働しています。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ノード</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">監視ノードは、このESXiホストでローカルに実行されています。このESXiホストをアップグレードする準備ができたら、このESXiホストでのみ監視ノードをシャットダウンし、ヘルスチェックを再実行します。 <strong>1つのWitnessノードがHCIインストールで常に実行されている必要があります</strong>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">監視ノードは、このESXiホストでローカルに実行されています。このESXiホストをアップグレードする準備ができたら、このESXiホストでのみウィットネスノードをシャットダウンし、ヘルスチェックを再実行します。 <strong>1つのWitnessノードがHCIインストールで常に実行されている必要があります</strong>。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_resolve_witness_node_issues_prior_to_upgrading_compute_nodes">このKBを参照してください</a></p></td>
 </tr>
 </tbody>

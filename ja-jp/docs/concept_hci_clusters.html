@@ -930,6 +930,32 @@
       <span class="subfolders" style="display:none;">
         
         <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Update_your_credentials.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Update your credentials
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
           <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
             Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
@@ -1707,6 +1733,14 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
+        <div class="na-navbar-padding"> Update your credentials</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_credentials_vcenter_esxi.html">
+        Update vCenter and ESXi credentials
+      </a></li></ul>
+</li>
+<li class="subfolders ">
+<a href="#">
         <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
@@ -2022,7 +2056,7 @@
 </div>
 <div class="sect1">
 <h2 id="stranded-capacity">座礁容量</h2>
-<div class="sectionbody"><div class="paragraph"><p>新しく追加されたノードがクラスターの総容量の50％以上を占める場合、このノードの容量の一部は使用できなくなり（「取り残され」）、容量ルールに準拠します。これは、ストレージ容量が追加されるまで当てはまります。容量ルールにも従わない非常に大きなノードが追加された場合、以前に取り残されたノードは取り残されなくなり、新しく追加されたノードは取り残されます。これが発生しないように、容量は常にペアで追加する必要があります。ノードが取り残されると、適切なクラスター障害がスローされます。</p></div></div>
+<div class="sectionbody"><div class="paragraph"><p>新しく追加されたノードがクラスターの総容量の50％以上を占める場合、このノードの容量の一部は使用できなくなり（「取り残された」）、容量ルールに準拠します。これは、ストレージ容量が追加されるまで当てはまります。容量ルールにも従わない非常に大きなノードが追加された場合、以前に取り残されたノードは取り残されなくなり、新しく追加されたノードは取り残されます。これが発生しないように、容量は常にペアで追加する必要があります。ノードが取り残されると、適切なクラスター障害がスローされます。</p></div></div>
 </div>
 <div class="sect1">
 <h2 id="two-node-storage-clusters"> 2ノードストレージクラスター</h2>
@@ -2055,13 +2089,13 @@
 <div class="paragraph"><p>Elementソフトウェアは、選択したノードからストレージクラスターを作成し、クラスター構成の複製データベースを維持します。クラスターの復元力のクォーラムを維持するには、クラスターアンサンブルに参加するために少なくとも3つのノードが必要です。 2ノードクラスター内の監視ノードは、有効なアンサンブルクォーラムを形成するのに十分なストレージノードがあることを確認するために使用されます。アンサンブルの作成では、ストレージノードがウィットネスノードよりも優先されます。 2ノードのストレージクラスターを含む最小の3ノードのアンサンブルでは、2つのストレージノードと1つのウィットネスノードが使用されます。 </p></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content"> 2つのストレージノードと1つのウィットネスノードを持つ3ノードアンサンブルでは、1つのストレージノードがオフラインになると、クラスターは劣化状態になります。 2つのウィットネスノードのうち、アンサンブルでアクティブにできるのは1つだけです。 2番目のWitnessNodeはバックアップの役割を実行するため、アンサンブルに追加できません。クラスターは、オフラインストレージノードがオンライン状態に戻るか、代替ノードがクラスターに参加するまで、劣化状態のままになります。</td>
+<td class="content"> 2つのストレージノードと1つの監視ノードを持つ3ノードのアンサンブルでは、1つのストレージノードがオフラインになると、クラスターは劣化状態になります。 2つのウィットネスノードのうち、アンサンブルでアクティブにできるのは1つだけです。 2番目のWitnessNodeはバックアップの役割を実行するため、アンサンブルに追加できません。クラスターは、オフラインストレージノードがオンライン状態に戻るか、代替ノードがクラスターに参加するまで、劣化状態のままになります。</td>
 </tr></table></div>
 <div class="paragraph"><p>ウィットネスノードに障害が発生した場合、残りのウィットネスノードがアンサンブルに参加して3ノードのアンサンブルを形成します。新しいウィットネスノードを展開して、障害が発生したウィットネスノードを置き換えることができます。 </p></div>
 </div>
 <div class="sect2">
 <h3 id="auto-healing-and-failure-handling-in-two-node-storage-clusters"> 2ノードストレージクラスターでの自動修復と障害処理</h3>
-<div class="paragraph"><p>従来のクラスターの一部であるノードでハードウェアコンポーネントに障害が発生した場合、クラスターは、障害が発生したコンポーネントにあったデータを、クラスター内の他の使用可能なノードにリバランスできます。自動的に修復するには、クラスターで少なくとも3つの物理ストレージノードを使用できる必要があるため、この自動修復機能は2ノードストレージクラスターでは使用できません。 2ノードクラスター内の1つのノードに障害が発生した場合、2ノードクラスターではデータの2番目のコピーを再生成する必要はありません。新しい書き込みは、残りのアクティブなストレージノードのブロックデータに対して複製されます。障害が発生したノードが置き換えられてクラスターに参加すると、2つの物理ストレージノード間でデータのバランスが再調整されます。</p></div>
+<div class="paragraph"><p>従来のクラスターの一部であるノードでハードウェアコンポーネントに障害が発生した場合、クラスターは、障害が発生したコンポーネントにあったデータを、クラスター内の他の使用可能なノードにリバランスできます。自動的に修復するには、クラスターで少なくとも3つの物理ストレージノードを使用できる必要があるため、この自動修復機能は2ノードストレージクラスターでは使用できません。 2ノードクラスター内の1つのノードに障害が発生した場合、2ノードクラスターではデータの2番目のコピーを再生成する必要はありません。新しい書き込みは、残りのアクティブなストレージノードのブロックデータに対して複製されます。障害が発生したノードが交換されてクラスターに参加すると、2つの物理ストレージノード間でデータのバランスが再調整されます。</p></div>
 </div>
 </div>
 </div>

@@ -915,6 +915,32 @@
       <span class="subfolders" style="display:none;">
         
         <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Update_your_credentials.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Update your credentials
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
           <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
             Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
@@ -1707,6 +1733,14 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
+        <div class="na-navbar-padding"> Update your credentials</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_credentials_vcenter_esxi.html">
+        Update vCenter and ESXi credentials
+      </a></li></ul>
+</li>
+<li class="subfolders ">
+<a href="#">
         <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
@@ -2015,7 +2049,7 @@
 <li><p> iSCSIセッションカウントがゼロであることを確認します。</p></li>
 <li><p> <strong>[クラスター]&gt; [ノード]&gt; [アクティブ]</strong>に移動し、クラスター内のすべてのアクティブノードのノードIDを記録します。</p></li>
 <li>
-<p> NetApp HCIストレージクラスタの電源をオフにするには、Webブラウザを開き、次のURLを使用して電源オフと停止の手順を呼び出します。ここで、 <code>{MVIP}</code>はNetApp HCIストレージシステムの管理IPアドレスであり、 <code>nodes=[]</code>配列には次のものが含まれます。手順2で記録したノードID。例：</p>
+<p> NetApp HCIストレージクラスターの電源をオフにするには、Webブラウザーを開き、次のURLを使用して電源オフと停止の手順を呼び出します。ここで、 <code>{MVIP}</code>はNetApp HCIストレージシステムの管理IPアドレスであり、 <code>nodes=[]</code>アレイには次のものが含まれます。手順2で記録したノードID。例：</p>
 <div class="listingblock"><div class="content"><pre> https：// {MVIP} /json-rpc/1.0?method=Shutdown&amp;nodes=[1,2,3,4]&amp;option=halt</pre></div></div>
 </li>
 <li><p>クラスタ管理者のユーザー名とパスワードを入力します。</p></li>

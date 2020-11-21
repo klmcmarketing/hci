@@ -915,6 +915,32 @@
       <span class="subfolders" style="display:none;">
         
         <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Update_your_credentials.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Update your credentials
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
           <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
             Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
@@ -1707,6 +1733,14 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
+        <div class="na-navbar-padding"> Update your credentials</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_credentials_vcenter_esxi.html">
+        Update vCenter and ESXi credentials
+      </a></li></ul>
+</li>
+<li class="subfolders ">
+<a href="#">
         <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
@@ -2006,10 +2040,10 @@
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> H410Cノードを交換してください</h1></div>
 <p class="page-details"><time datetime="2020-11-04 20:10:27 +0000">2020年11月4日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hci_h410crepl.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
-<div class="paragraph lead"><p>CPU障害、その他のマザーボードの問題が発生した場合、または電源が入らない場合は、計算ノードを交換する必要があります。手順はH410Cノードに適用されます。 NetApp HCIブートストラップOSバージョン1.6P1以降を実行するH410C計算ノードがある場合、メモリDIMMに障害が発生してもノードを交換する必要はありません。故障したDIMMのみを交換する必要があります。ノードのDIMMに障害が発生していない場合は、交換用ノードでそれらを使用できます。 </p></div>
+<div class="paragraph lead"><p>CPU障害、その他のマザーボードの問題が発生した場合、または電源が入らない場合は、計算ノードを交換する必要があります。手順はH410Cノードに適用されます。 NetApp HCIブートストラップOSバージョン1.6P1以降を実行するH410C計算ノードがある場合、メモリDIMMに障害が発生してもノードを交換する必要はありません。故障したDIMMのみを交換する必要があります。ノード内のDIMMに障害が発生していない場合は、交換用ノードでそれらを使用できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">置換ノードには、NetAppHCIインストールの残りの計算ノードと同じバージョンのNetAppHCIブートストラップOSが必要です。</td>
+<td class="content">交換ノードには、NetAppHCIインストールの残りの計算ノードと同じバージョンのNetAppHCIブートストラップOSが必要です。</td>
 </tr></table></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
@@ -2037,7 +2071,7 @@
 </ul></div>
 <div class="paragraph">
 <div class="title">手順の概要</div>
-<p>この手順の手順の概要は次のとおりです。<br><a href="#prepare-to-replace-the-compute-node">計算ノードを交換する準備をする</a><br><a href="#replace-the-compute-node-in-the-chassis">シャーシ内の計算ノードを交換してください</a><br><a href="#remove-the-compute-node-asset-in-netapp-hci-1-7-and-later">NetApp HCI1.7以降で計算ノードアセットを削除します</a><br><a href="#add-the-compute-node-to-the-cluster">計算ノードをクラスターに追加します</a><br><a href="#redeploy-witness-nodes-for-two-and-three-node-storage-clusters">2ノードおよび3ノードのストレージクラスターのウィットネスノードを再デプロイします</a></p>
+<p>この手順の手順の概要は次のとおりです。<br><a href="#prepare-to-replace-the-compute-node">計算ノードを交換する準備をする</a><br><a href="#replace-the-compute-node-in-the-chassis">シャーシ内の計算ノードを交換してください</a><br><a href="#remove-the-compute-node-asset-in-netapp-hci-1-7-and-later">NetApp HCI1.7以降で計算ノードアセットを削除します</a><br><a href="#add-the-compute-node-to-the-cluster">計算ノードをクラスターに追加します</a><br><a href="#redeploy-witness-nodes-for-two-and-three-node-storage-clusters">2ノードおよび3ノードのストレージクラスターのWitnessノードを再デプロイします</a></p>
 </div>
 <div class="paragraph"><p>システムに適用可能な特定の条件がある場合に実行する必要がある可能性のある追加のタスクを次に示します。<br> <a href="https://docs.netapp.com/us-en/hci/docs/task_hci_removewn.html" target="_blank" rel="noopener">監視ノードを削除して、コンピューティングリソースを解放します</a><br> <a href="#change-the-password-if-you-received-a-replacement-node-with-a-non-standard-bmc-password">非標準のBMCパスワードで交換用ノードを受け取った場合は、パスワードを変更してください</a><br><a href="#upgrade-the-bmc-firmware-on-your-node">ノードのBMCファームウェアをアップグレードします</a></p></div>
 </div></div>
@@ -2248,7 +2282,7 @@
 <p> [利用可能なインベントリ]ページで、既存のNetAppHCIインストールに追加するノードを選択します。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content">一部の計算ノードでは、インストールに追加する前に、vCenterバージョンがサポートする最高レベルでEVCを有効にする必要がある場合があります。これらの計算ノードでEVCを有効にするには、vSphereクライアントを使用する必要があります。有効にした後、[<strong>インベントリ]</strong>ページを更新し、計算ノードの追加を再試行してください。</td>
+<td class="content">一部の計算ノードでは、vCenterバージョンがサポートする最高レベルでEVCを有効にしてから、インストールに追加する必要がある場合があります。これらの計算ノードでEVCを有効にするには、vSphereクライアントを使用する必要があります。有効にした後、[<strong>インベントリ]</strong>ページを更新し、計算ノードの追加を再試行してください。</td>
 </tr></table></div>
 </li>
 <li><p> [<strong>続行]を</strong>選択します。</p></li>
@@ -2327,7 +2361,7 @@
 <p> [利用可能なインベントリ]ページで、既存のNetAppHCIインストールに追加するノードを選択します。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content">一部の計算ノードでは、インストールに追加する前に、vCenterバージョンがサポートする最高レベルでEVCを有効にする必要がある場合があります。これらの計算ノードでEVCを有効にするには、vSphereクライアントを使用する必要があります。有効にした後、[インベントリ]ページを更新し、計算ノードの追加を再試行してください。</td>
+<td class="content">一部の計算ノードでは、vCenterバージョンがサポートする最高レベルでEVCを有効にしてから、インストールに追加する必要がある場合があります。これらの計算ノードでEVCを有効にするには、vSphereクライアントを使用する必要があります。有効にした後、[インベントリ]ページを更新し、計算ノードの追加を再試行してください。</td>
 </tr></table></div>
 </li>
 <li><p> [<strong>続行]を</strong>選択します。</p></li>
@@ -2394,7 +2428,7 @@
 <p>インストールが完了したら、 <strong>Enterキー</strong>を押してノードを再起動します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">デフォルトでは、ノードはNetAppHCIブートストラップOSで再起動します。ノードでVMwareESXiを使用するには、ノードで1回限りの構成を実行する必要があります。</td>
+<td class="content">デフォルトでは、ノードはNetAppHCIブートストラップOSで再起動します。 VMware ESXiを使用するには、ノードで1回限りの構成を実行する必要があります。</td>
 </tr></table></div>
 </li>
 </ol></div>
@@ -2423,7 +2457,7 @@
 </ol></div>
 </li>
 <li>
-<p>次のように管理ネットワークを構成します。</p>
+<p>管理ネットワークを次のように構成します。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li>
 <p>次の資格情報を入力して、VMwareESXiにログインします。</p>
@@ -2485,7 +2519,7 @@
 <li><p>接続タイプとして、[<strong>標準スイッチの仮想マシンポートグループ]を</strong>選択し、[<strong>次へ]</strong>を選択します。</p></li>
 <li><p>ターゲットデバイスの場合、新しい標準スイッチを追加するオプションを選択し、[<strong>次へ]</strong>を選択します。</p></li>
 <li><p> <strong>+を</strong>選択します。</p></li>
-<li><p> [物理アダプターをスイッチに追加]ウィンドウで、[vmnic0]と[vmnic4]を選択し、[ <strong>OK]</strong>を選択します。<br> vmnic0とvmnic4がアクティブアダプタの下に表示されるようになりました。</p></li>
+<li><p> [物理アダプターをスイッチに追加]ウィンドウで、[vmnic0]と[vmnic4]を選択し、[ <strong>OK]</strong>を選択します。<br> vmnic0およびvmnic4がアクティブアダプターの下に表示されるようになりました。</p></li>
 <li><p> [<strong>次へ]を</strong>選択します。</p></li>
 <li><p> [接続設定]で、VMネットワークがネットワークラベルであることを確認し、[<strong>次へ]</strong>を選択します。</p></li>
 <li><p>続行する準備ができたら、[<strong>完了]を</strong>選択します。<br> vSwitch1が仮想スイッチのリストに表示されます。</p></li>
@@ -2493,7 +2527,7 @@
 </li>
 <li>
 <p> <strong>vSwitch1</strong>を選択し、鉛筆アイコンを選択して、次のように設定を編集します。</p>
-<div class="olist lowerroman"><ol class="lowerroman" type="i"><li><p> [プロパティ]で、[MTU]を9000に設定し、[ <strong>OK]</strong>を選択します。<br>表示されたグラフィックで、[ <strong>VMネットワーク</strong>]を選択し、鉛筆アイコンをクリックして次のように設定を編集します。</p></li></ol></div>
+<div class="olist lowerroman"><ol class="lowerroman" type="i"><li><p> [プロパティ]で、[MTU]を9000に設定し、[ <strong>OK]</strong>を選択します。<br>表示されるグラフィックで、[ <strong>VMネットワーク</strong>]を選択し、鉛筆アイコンをクリックして次のように設定を編集します。</p></li></ol></div>
 </li>
 <li>
 <p> [<strong>セキュリティ]を</strong>選択し、次の選択を行います。 </p>
@@ -2566,7 +2600,7 @@
 </ol></div>
 </li>
 <li>
-<p>表示されるグラフィックで、 <strong>iSCSI-A</strong>を選択し、鉛筆アイコンを選択して、次のように設定を編集します。</p>
+<p>表示されたグラフィックで、 <strong>iSCSI-A</strong>を選択し、鉛筆アイコンを選択して、次のように設定を編集します。</p>
 <div class="olist lowerroman"><ol class="lowerroman" type="i">
 <li>
 <p> [<strong>セキュリティ]を</strong>選択し、次の選択を行います。 </p>
@@ -2632,7 +2666,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="redeploy-witness-nodes-for-two-and-three-node-storage-clusters"> 2ノードおよび3ノードのストレージクラスターのウィットネスノードを再デプロイします</h2>
+<h2 id="redeploy-witness-nodes-for-two-and-three-node-storage-clusters"> 2ノードおよび3ノードのストレージクラスターのWitnessノードを再デプロイします</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>障害が発生した計算ノードを物理的に交換した後、障害が発生した計算ノードがWitness Nodeをホストしていた場合は、NetApp HCI Witness NodeVMを再デプロイする必要があります。これらの手順は、2ノードまたは3ノードのストレージクラスターを備えたNetAppHCIインストールの一部である計算ノードにのみ適用されます。</p></div>
 <div class="ulist">
@@ -2664,11 +2698,11 @@
 </div>
 <div class="paragraph">
 <div class="title"> ウィットネスノードをいつ再デプロイする必要がありますか？</div>
-<p>次のシナリオでは、ウィットネスノードを再デプロイする必要があります。</p>
+<p>次のシナリオでは、監視ノードを再デプロイする必要があります。</p>
 </div>
 <div class="ulist"><ul>
 <li><p> NetApp HCIインストールの一部である障害のある計算ノードを交換しました。このノードには2ノードまたは3ノードのストレージクラスターがあり、障害のある計算ノードはWitness NodeVMをホストしていました。</p></li>
-<li><p>計算ノードで工場出荷時のイメージに戻る（RTFI）手順を実行しました。</p></li>
+<li><p>計算ノードで工場出荷時イメージに戻る（RTFI）手順を実行しました。</p></li>
 <li><p>ウィットネスノードVMが破損しています。</p></li>
 <li>
 <p>ウィットネスノードVMが誤ってESXiから削除されました。<br> VMは、NetApp DeploymentEngineを使用した初期デプロイメントの一部として作成されたテンプレートを使用して構成されます。ウィットネスノードVMがどのように見えるかの例を次に示します。 </p>
@@ -2708,7 +2742,7 @@
 <li><p>ウィットネスノードが青色の背景のメニューで起動するのを待ちます。</p></li>
 <li><p>メニューにアクセスするには、コンソール内の任意の場所を選択します。</p></li>
 <li>
-<p>次のように管理ネットワークを構成します。</p>
+<p>管理ネットワークを次のように構成します。</p>
 <div class="olist lowerroman"><ol class="lowerroman" type="i">
 <li><p>下矢印キーを押して[ネットワーク]に移動し、 <strong>Enterキー</strong>を押して[OK]をクリックします。</p></li>
 <li><p> [<strong>ネットワーク構成]に移動し</strong>、 <strong>Enterキー</strong>を押して[OK]をクリックします。</p></li>
@@ -2814,7 +2848,7 @@
 <div class="imageblock"><div class="content"><img src="../media/h410c-bmc3.png" alt="BMCUIにファームウェアアップデート画面を表示します。"></div></div>
 </li>
 <li><p>確認ダイアログボックスで[<strong>はい</strong>]を選択します。</p></li>
-<li><p><strong>アップロードファームウェアを</strong>アップロードするファームウェアイメージを選択し、選択するには<strong>、[参照</strong>]<strong>を</strong>選択します。<br>ノードのすぐ近く以外の場所からファームウェアをロードすると、ロード時間が長くなり、タイムアウトが発生する可能性があります。</p></li>
+<li><p><strong>アップロードファームウェアを</strong>アップロードするファームウェアイメージを選択し、選択するには<strong>、[参照</strong>]<strong>を</strong>選択します。<br>ノードのすぐ近くの外の場所からファームウェアをロードすると、ロード時間が長くなり、タイムアウトが発生する可能性があります。</p></li>
 <li><p>構成の保持チェックを許可し、 <strong>[アップグレードの開始]</strong>を選択します。<br>アップグレードには約5分かかります。アップロード時間が60分を超える場合は、アップロードをキャンセルして、ノードの近くにあるローカルマシンにファイルを転送します。<br>セッションがタイムアウトした場合、BMC UIのファームウェア更新領域に再度ログインしようとすると、いくつかのアラートが表示される場合があります。アップグレードをキャンセルすると、ログインページにリダイレクトされます。</p></li>
 <li><p>更新が完了したら、[ <strong>OK]を</strong>選択し、ノードが再起動するのを待ちます。<br>アップグレード後にログインし、[<strong>システム]</strong>を選択して、<strong>ファームウェアリビジョン</strong>のバージョンがアップロードしたバージョンと一致することを確認します。</p></li>
 </ol>

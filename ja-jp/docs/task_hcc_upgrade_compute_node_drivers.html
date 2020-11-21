@@ -915,6 +915,32 @@
       <span class="subfolders" style="display:none;">
         
         <li>
+          <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Update_your_credentials.pdf">
+            <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
+            Update your credentials
+          </a>
+        </li>
+        <span>
+          
+  
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+  
+
+    
+      <span class="subfolders" style="display:none;">
+        
+        <li>
           <a target="_blank" href="/hci/ja-jp/pdfs/docs_sidebar/Monitor_your_NetApp_HCI_system_with_NetApp_Hybrid_Cloud_Control.pdf">
             <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
             Monitor your NetApp HCI system with NetApp Hybrid Cloud Control
@@ -1707,6 +1733,14 @@
       <ul>
 <li class="subfolders ">
 <a href="#">
+        <div class="na-navbar-padding"> Update your credentials</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="task_hci_credentials_vcenter_esxi.html">
+        Update vCenter and ESXi credentials
+      </a></li></ul>
+</li>
+<li class="subfolders ">
+<a href="#">
         <div class="na-navbar-padding"> Monitor your NetApp HCI system with NetApp Hybrid Cloud Control</div>
       </a>
       <ul>
@@ -2025,20 +2059,20 @@
 <p>ダウンロードしたドライバーバンドルをローカルコンピューターに解凍します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> NetAppドライバーバンドルには、1つ以上のVMwareオフラインバンドルZIPファイルが含まれています。これらのZIPファイルは解凍しないでください。</td>
+<td class="content"> NetAppドライバーバンドルには、1つ以上のVMwareオフラインバンドルZIPファイルが含まれています。これらのZIPファイルを抽出しないでください。</td>
 </tr></table></div>
 </li>
 <li><p>計算ノード上のファームウェアをアップグレードした後は、VMwareのvCenterで<strong>のVMware Update Managerの</strong>に進みます。</p></li>
 <li><p>計算ノードのドライバーオフラインバンドルファイルを<strong>パッチリポジトリにインポートします</strong>。</p></li>
 <li><p>計算ノードの新しいホストベースラインを作成します。</p></li>
-<li><p> [名前とタイプ]で[<strong>ホスト拡張</strong>]を選択し、インポートされたすべてのドライバーパッケージを選択して新しいベースラインに含めます。</p></li>
+<li><p> [名前とタイプ]で[<strong>ホスト拡張機能</strong>]を選択し、インポートされたすべてのドライバーパッケージを選択して新しいベースラインに含めます。</p></li>
 <li><p> vCenterの[<strong>ホストとクラスター</strong>]メニューで、更新する計算ノードのあるクラスターを選択し、[<strong>更新マネージャー</strong>]タブに移動します。</p></li>
 <li><p> [<strong>修正]</strong>をクリックして、新しく作成したホストベースラインを選択します。ベースラインに含まれるドライバーが選択されていることを確認します。</p></li>
 <li>
 <p>ウィザードから[<strong>ホスト修復オプション]に</strong>進み、[ <strong>VMの電源状態を変更しない</strong>]オプションが選択されていることを確認して、ドライバーの更新中に仮想マシンをオンラインに保ちます。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">クラスターでVMware分散リソーススケジューラ（DRS）が有効になっている場合（これはNetApp HCIインストールのデフォルトです）、仮想マシンはクラスター内の他のノードに自動的に移行されます。</td>
+<td class="content">クラスターでVMwareDistributed Resource Scheduler（DRS）が有効になっている場合（これはNetApp HCIインストールのデフォルトです）、仮想マシンはクラスター内の他のノードに自動的に移行されます。</td>
 </tr></table></div>
 </li>
 <li>
