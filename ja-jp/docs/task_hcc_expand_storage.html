@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2045,7 +2049,7 @@
 <ul>
 <li><p>既存のノードと同じネットワークセグメントに空きおよび未使用のIPv4アドレスがあることを確認します（新しいノードはそれぞれ、そのタイプの既存のノードと同じネットワークにインストールする必要があります）。</p></li>
 <li>
-<p>次のタイプのSolidFireストレージクラスタアカウントのいずれかを持っていることを確認してください。</p>
+<p>次のいずれかのタイプのSolidFireストレージクラスタアカウントがあることを確認してください。</p>
 <div class="ulist"><ul>
 <li><p>初期展開時に作成されたネイティブ管理者アカウント</p></li>
 <li><p>クラスター管理者、ドライブ、ボリューム、およびノードのアクセス許可を持つカスタムユーザーアカウント</p></li>
@@ -2097,15 +2101,15 @@
 </ol></div>
 </li>
 <li>
-<p> [ネットワーク設定]セクションの[<strong>レビュー]</strong>ページで、新しいノードが太字で表示されます。セクションに変更を加えるには、次の手順を実行します。</p>
+<p> [ネットワーク設定]セクションの[<strong>レビュー]</strong>ページで、新しいノードが太字で表示されます。セクションを変更するには、次の手順を実行します。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li><p>そのセクションの[<strong>編集]</strong>をクリックします。</p></li>
 <li><p>終了したら、後続のページで[<strong>続行</strong>]をクリックして、[レビュー]ページに戻ります。</p></li>
 </ol></div>
 </li>
 <li>
-<p><strong>オプション</strong>：ネットアップがホストするアクティブIQサーバーにクラスター統計とサポート情報を送信しない場合は、最後のチェックボックスをオフにします。</p>
-<div class="paragraph"><p>これにより、NetAppHCIのヘルスと診断のリアルタイム監視が無効になります。この機能を無効にすると、NetAppがNetApp HCIをプロアクティブにサポートおよび監視して、本番環境に影響が及ぶ前に問題を検出および解決する機能が削除されます。</p></div>
+<p><strong>オプション</strong>：クラスター統計とサポート情報をNetAppがホストするActive IQサーバーに送信しない場合は、最後のチェックボックスをオフにします。</p>
+<div class="paragraph"><p>これにより、NetAppHCIのリアルタイムのヘルスおよび診断モニタリングが無効になります。この機能を無効にすると、NetAppがNetApp HCIをプロアクティブにサポートおよび監視して、本番環境に影響が及ぶ前に問題を検出および解決する機能が削除されます。</p></div>
 </li>
 <li>
 <p> [<strong>ノードの追加]を</strong>クリックします。</p>

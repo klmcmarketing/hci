@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2221,7 +2225,7 @@
 <div class="title">このタスクについて</div>
 <p>クラスターは、ボリュームごとに一度に最大2つの実行中のクローン要求と、一度に最大8つのアクティブなボリュームクローン操作をサポートします。これらの制限を超えるリクエストは、後の処理のためにキューに入れられます。</p>
 </div>
-<div class="paragraph"><p>ボリュームのクローン作成は非同期プロセスであり、プロセスに必要な時間は、クローンを作成するボリュームのサイズと現在のクラスターの負荷によって異なります。 </p></div>
+<div class="paragraph"><p>ボリュームのクローン作成は非同期プロセスであり、プロセスに必要な時間は、クローン作成するボリュームのサイズと現在のクラスターの負荷によって異なります。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">クローンボリュームは、ソースボリュームからボリュームアクセスグループメンバーシップを継承しません。</td>

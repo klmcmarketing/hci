@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2050,7 +2054,7 @@
 <li>
 <p>新しいノードごとに次のアクションを実行したことを確認してください。</p>
 <div class="ulist"><ul>
-<li><p> <a href="https://docs.netapp.com/hci/index.jsp" target="_blank" rel="noopener">NetApp HCIドキュメントセンターで</a>入手可能なインストール手順に従って、NetAppHCIシャーシに新しいノードをインストールしました。</p></li>
+<li><p> <a href="https://docs.netapp.com/hci/index.jsp" target="_blank" rel="noopener">NetApp HCIドキュメンテーションセンターで</a>入手可能なインストール手順に従って、NetAppHCIシャーシに新しいノードをインストールしました。</p></li>
 <li><p>新しいノードにケーブル接続され、電源がオンになっている</p></li>
 </ul></div>
 </li>
@@ -2138,7 +2142,7 @@
 </li>
 <li>
 <p><strong>オプション</strong>：ネットアップがホストするSolidFire Active IQサーバーにクラスター統計とサポート情報を送信しない場合は、最後のチェックボックスをオフにします。</p>
-<div class="paragraph"><p>これにより、NetAppHCIのヘルスと診断のリアルタイム監視が無効になります。この機能を無効にすると、NetAppがNetApp HCIをプロアクティブにサポートおよび監視して、本番環境に影響が及ぶ前に問題を検出および解決する機能が削除されます。</p></div>
+<div class="paragraph"><p>これにより、NetAppHCIのリアルタイムのヘルスおよび診断モニタリングが無効になります。この機能を無効にすると、NetAppがNetApp HCIをプロアクティブにサポートおよび監視して、本番環境に影響が及ぶ前に問題を検出および解決する機能が削除されます。</p></div>
 </li>
 <li>
 <p> [<strong>ノードの追加]を</strong>クリックします。</p>

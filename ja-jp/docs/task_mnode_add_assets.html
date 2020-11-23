@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2050,7 +2054,7 @@
 </div>
 <div class="paragraph">
 <div class="title">このタスクについて</div>
-<p>（NetApp HCIのみ）NetApp HCIシステムをスケーリングした後、ハイブリッドクラウドコントロール（HCC）に計算ノードが表示されない場合は、この手順で説明<code>POST /assets/{asset_id}/compute-nodes</code>を使用して計算ノードを追加できます。</p>
+<p>（NetApp HCIのみ）NetApp HCIシステムをスケーリングした後にハイブリッドクラウドコントロール（HCC）に計算ノードが表示されない場合は、この手順で説明されている<code>POST /assets/{asset_id}/compute-nodes</code>を使用して計算ノードを追加できます。</p>
 </div>
 <div class="olist arabic">
 <div class="title">ステップ</div>
@@ -2157,7 +2161,7 @@
 </li>
 <li><p> <strong>POST / assets / {asset_id} / compute-nodesを</strong>クリックします。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
-<li><p>前の手順でコピーした親ベースアセットIDを<strong>asset_id</strong>フィールドに<strong>入力し</strong>ます。</p></li>
+<li><p>前の手順でコピーした親ベースのアセットIDを<strong>asset_id</strong>フィールドに<strong>入力し</strong>ます。</p></li>
 <li>
 <p>ペイロードで、次の手順を実行します。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">

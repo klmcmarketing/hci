@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2077,7 +2081,7 @@
 <p>管理ネットワークのIP要件（合計：10 IP）</p>
 <div class="ulist"><ul>
 <li><p>ブートストラップVM用の1つのIP（登録が成功した後にリリースされます）</p></li>
-<li><p> 6台のサービスクラスターマシン（3つのマスターノードと3つのワーカーノード）</p></li>
+<li><p> 6台のサービスクラスターマシン（3台のマスターノードと3台のワーカーノード）</p></li>
 <li><p>ロードバランサーマシン間で共有される1つの仮想IP。 2つのロードバランサーがあり、それぞれに独自のIPが割り当てられています。</p></li>
 </ul></div>
 </li>

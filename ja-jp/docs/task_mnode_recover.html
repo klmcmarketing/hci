@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2038,14 +2042,14 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">管理ノードを回復します</h1></div>
-<p class="page-details"><time datetime="2020-10-29 17:43:02 +0000">2020年10月29日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_recover.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-10-29 17:43:02 +0000">2020年10月29日</time><span>寄稿者</span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_recover.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>以前の管理ノードが永続ボリュームを使用していた場合は、NetAppElementソフトウェアを実行しているクラスターの管理ノードを手動で回復して再デプロイできます。</p></div>
 <div class="paragraph"><p>新しいOVAをデプロイし、再デプロイスクリプトを実行して、バージョン11.3以降を実行している以前にインストールされた管理ノードから構成データをプルできます。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
-<li><p>以前の管理ノードは、<a href="concept_hci_volumes.html#persistent-volumes">永続ボリューム</a>機能を使用してNetAppElementソフトウェアバージョン11.3以降を実行していました。</p></li>
+<li><p>以前の管理ノードは、<a href="concept_hci_volumes.html#persistent-volumes">永続ボリューム</a>機能が使用されたNetAppElementソフトウェアバージョン11.3以降を実行していました。</p></li>
 <li><p>永続ボリュームを含むクラスターのMVIPとSVIPを知っています。</p></li>
 <li><p>クラスタバージョンは、NetAppElementソフトウェア11.3以降を実行しています。</p></li>
 <li><p>インストールでIPv4を使用します。管理ノード11.3はIPv6をサポートしていません。</p></li>
@@ -2090,14 +2094,14 @@
 <div class="olist arabic">
 <div class="title">ステップ</div>
 <ol class="arabic">
-<li><p><a href="#download-iso-or-ova-and-deploy-the-vm">ISOまたはOVAをダウンロードし、VMをデプロイします</a></p></li>
+<li><p><a href="#download-iso-or-ova-and-deploy-the-vm">ISOまたはOVAをダウンロードし、VMを展開します</a></p></li>
 <li><p><a href="#configure-the-network">ネットワークを構成する</a></p></li>
 <li><p><a href="#configure-the-management-node">管理ノードを構成します</a></p></li>
 </ol>
 </div>
 </div></div>
 <div class="sect1">
-<h2 id="download-iso-or-ova-and-deploy-the-vm"> ISOまたはOVAをダウンロードし、VMをデプロイします</h2>
+<h2 id="download-iso-or-ova-and-deploy-the-vm"> ISOまたはOVAをダウンロードし、VMを展開します</h2>
 <div class="sectionbody"><div class="olist arabic"><ol class="arabic">
 <li>
 <p>ネットアップサポートサイトから、インストール用のOVAまたはISOをダウンロードします。</p>

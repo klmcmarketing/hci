@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2034,7 +2038,7 @@
 <div class="title">ステップ</div>
 <ol class="arabic">
 <li>
-<p>Webブラウザーを開き、管理ノードのIPアドレスを参照してNetAppハイブリッドクラウドコントロール（HCC）にアクセスし<a href="https://&lt;_ManagementNodeIP_&amp;gt" class="bare">ます。https：// &lt;_ ManagementNodeIP_＆gt</a> ; </p>
+<p>Webブラウザーを開き、管理ノードのIPアドレスを参照してNetApp Hybrid Cloud Control（HCC）にアクセスし<a href="https://&lt;_ManagementNodeIP_&amp;gt" class="bare">ます。https：// &lt;_ ManagementNodeIP_＆gt</a> ; </p>
 <div class="imageblock"><div class="content"><img src="../media/hcc_enable_cloud_services_banner_license_link.png" alt="ライセンスリンクイメージを表示するNetAppハイブリッドクラウドコントロール"></div></div>
 </li>
 <li><p> NetApp Hybrid Cloud Controlバナーで、[<strong>ライセンスのアップロード</strong>]をクリックします。</p></li>

@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2038,9 +2042,9 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> vCenterServerのElementプラグインをアップグレードします</h1></div>
-<p class="page-details"><time datetime="2020-11-13 17:01:49 +0000">2020年11月13日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_vcp_upgrade_plugin.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-11-13 17:01:49 +0000">2020年11月13日</time><span>寄稿者</span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_vcp_upgrade_plugin.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>NetApp Element Plug-in for vCenter Server（VCP）が登録されている既存のvSphere環境の場合、プラグインサービスを含む管理サービスパッケージを最初に更新した後で、プラグイン登録を更新できます。</p></div>
-<div class="paragraph"><p>登録ユーティリティを使用して、vCenter Server Virtual Appliance（vCSA）またはWindowsでプラグイン登録を更新できます。プラグインを使用する必要があるすべてのvCenterServerで、vCenterプラグインの登録を変更する必要があります。</p></div>
+<div class="paragraph"><p>登録ユーティリティを使用して、vCenter Server仮想アプライアンス（vCSA）またはWindowsでプラグイン登録を更新できます。プラグインを使用する必要があるすべてのvCenterServerで、vCenterプラグインの登録を変更する必要があります。</p></div>
 <div class="paragraph"><p>このアップグレード手順では、次のアップグレードシナリオについて説明します。</p></div>
 <div class="ulist"><ul>
 <li><p> VCP 4.6、4.5、または4.4にアップグレードしています。</p></li>
@@ -2091,7 +2095,7 @@
 <p> （社内サーバー/ダークサイトの場合）プラグインZIPのカスタムURL。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> HTTPまたはHTTPSサーバー（ダークサイト）を使用している場合、またはZIPファイル名またはネットワーク設定を変更した場合は、[<strong>カスタムURL</strong> ]をクリックして<strong>URL</strong>をカスタマイズできます。 URLをカスタマイズする場合の追加の構成手順については、社内（ダークサイト）HTTPサーバーのvCenterプロパティの変更に関するvCenterServerの要素プラグインのドキュメントを参照してください。</td>
+<td class="content"> HTTPまたはHTTPSサーバー（ダークサイト）を使用している場合、またはZIPファイル名またはネットワーク設定を変更した場合は、[<strong>カスタムURL</strong> ]をクリックして<strong>URL</strong>をカスタマイズできます。 URLをカスタマイズする場合の追加の構成手順については、社内（ダークサイト）HTTPサーバーのvsetプロパティの変更に関するvCenterServerの要素プラグインのドキュメントを参照してください。</td>
 </tr></table></div>
 </li>
 </ol></div>
@@ -2109,7 +2113,7 @@
 </li>
 <li><p> vSphere Web Clientで、タスクモニターで次の完了したタスクを探して、インストールが完了したことを確認します。 <code>Deploy plug-in</code> <code>Download plug-in</code> <code>Deploy plug-in</code> 。</p></li>
 <li>
-<p> NetApp Element Configuration andManagement拡張ポイントが<strong>vSphereWebClientの</strong>[ <strong>Shortcuts</strong> ]タブとサイドパネルに表示されていることを確認します。 </p>
+<p> NetApp Element Configuration andManagement拡張ポイントが<strong>vSphereWebClientの</strong>[<strong>ショートカット</strong>]タブとサイドパネルに表示されていることを確認します。 </p>
 <div class="imageblock"><div class="content"><img src="../media/vcp_shortcuts_page_accessing_plugin.png" alt="アップグレードまたはインストールが成功した後のプラグイン拡張ポイントを示しています"></div></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>

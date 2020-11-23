@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2041,7 +2045,7 @@
 <p class="page-details"><time datetime="2020-09-21 19:09:19 +0000">2020年9月21日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/hci_prereqs_task_validate_config_advisor.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody"><div class="paragraph lead"><p>NetApp HCIハードウェアをラックに収納し、NetApp HCIのインストールを実行する前に、環境がNetAppHCIネットワーク要件を満たしていることを確認する必要があります。 Active IQ Config Advisorは、ネットワーク、スイッチ、およびVMware vSphereの構成を検証することにより、環境のチェックを実行します。このツールは、問題の解決に役立つレポートを生成し、そのレポートをプロフェッショナルサービスエンジニアに転送して、インストールの準備とスケジュールを立てることができます。</p></div></div></div>
 <div class="sect1">
-<h2 id="install-active-iq-config-advisor"> Active IQ ConfigAdvisorをインストールします</h2>
+<h2 id="install-active-iq-config-advisor"> Active IQ ConfigAdvisorをインストールする</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetAppHCIネットワークにアクセスできるPCにActiveIQ ConfigAdvisorをダウンロードしてインストールします。</p></div>
 <div class="olist arabic">
@@ -2089,7 +2093,7 @@
 <div class="paragraph"><p> Config Advisorは、Webブラウザの<strong>[基本設定]</strong>ウィンドウとともに表示されます。ここでは、グローバルコレクション設定を定義し、コレクション結果を暗号化できます。</p></div>
 </li>
 <li>
-<p>コレクションプロジェクトを暗号化するには、 <strong>[暗号化設定]</strong>セクションにパスフレーズを入力します。</p>
+<p> <strong>[暗号化設定]</strong>セクションにパスフレーズを入力して、コレクションプロジェクトを暗号化します。</p>
 <div class="paragraph"><p>これにより、作成後にこのコレクションプロジェクトをロードできるのはあなただけになります。</p></div>
 </li>
 <li><p> <strong>[ユーザーの確認]</strong>セクションに名前とメールアドレスを入力して、この収集レポートを自分のものとして識別します。</p></li>
@@ -2118,7 +2122,7 @@
 <li><p> [<strong>コンピュートノードネットワーク]</strong>セクションに、個々のスイッチポートと、スイッチの管理、vMotion、およびストレージネットワークに使用する予定のVLANタグを入力します。</p></li>
 <li><p> [<strong>ストレージノードネットワーク]</strong>セクションに、スイッチの管理ネットワークとストレージネットワークに使用する予定の個々のスイッチポートとVLANタグを入力します。</p></li>
 <li>
-<p> <strong>[ネットワーク設定の確認]</strong>セクションで、管理ネットワークのIPアドレスとゲートウェイIPアドレスを入力し、続いてDNS、NTP、vCenter Serverのサーバーのリストを入力します（NetApp HCIを使用して新しいvCenterServerを展開する場合）。</p>
+<p> <strong>[ネットワーク設定の確認]</strong>セクションで、管理ネットワークのIPアドレスとゲートウェイIPアドレスを入力し、続いてDNS、NTP、vCenter Serverのサーバーのリストを入力します（NetApp HCIを使用して新しいvsetサーバーを展開する場合）。</p>
 <div class="paragraph"><p>このセクションでは、Active IQ Config Advisorを使用して、管理ネットワークを使用できるようにし、DNSやNTPなどのサービスが正しく機能していることを確認します。</p></div>
 </li>
 <li><p> [<strong>検証]</strong>をクリックして、入力したすべてのIPアドレス情報と資格情報が有効であることを確認します。</p></li>

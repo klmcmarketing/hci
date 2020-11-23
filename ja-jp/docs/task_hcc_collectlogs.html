@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2044,7 +2048,7 @@
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
-<li><p>ストレージクラスタのバージョンがNetAppElementソフトウェア11.3以降を実行していることを確認します。</p></li>
+<li><p>ストレージクラスタのバージョンでNetAppElementソフトウェア11.3以降が実行されていることを確認してください。</p></li>
 <li><p>バージョン11.3以降を実行している管理ノードがデプロイされていることを確認してください。</p></li>
 </ul>
 </div>
@@ -2087,7 +2091,7 @@
 <div class="paragraph"><p>ログ収集はバックグラウンドで実行され、ページに進行状況が表示されます。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">収集するログによっては、進行状況バーが数分間特定の割合のままになる場合や、ある時点で非常にゆっくり進行する場合があります。</td>
+<td class="content">収集するログによっては、進行状況バーが数分間特定の割合のままになる場合や、ある時点で非常にゆっくりと進行する場合があります。</td>
 </tr></table></div>
 </li>
 <li>
@@ -2128,7 +2132,7 @@
 <li><p> <strong>POST / bundleを</strong>クリックします。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li>
-<p>収集する必要のあるログのタイプと時間範囲に応じて、 <strong>[リクエスト本文]</strong>フィールドの次のパラメーターの値を変更します。 </p>
+<p>収集する必要のあるログのタイプと時間範囲に応じて、 <strong>[リクエストの本文]</strong>フィールドの次のパラメーターの値を変更します。 </p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">

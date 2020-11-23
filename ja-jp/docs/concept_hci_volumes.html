@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2046,10 +2050,10 @@
 <div class="sect1">
 <h2 id="persistent-volumes">永続ボリューム</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>永続ボリュームを使用すると、管理ノードの構成データをVMを使用してローカルに保存するのではなく、指定したストレージクラスターに保存できるため、管理ノードが失われたり削除されたりした場合でもデータを保持できます。永続ボリュームは、オプションですが推奨される管理ノード構成です。</p></div>
+<div class="paragraph"><p>永続ボリュームを使用すると、管理ノードの構成データをVMでローカルに保存するのではなく、指定したストレージクラスターに保存できるため、管理ノードの損失や削除が発生した場合でもデータを保持できます。永続ボリュームは、オプションですが推奨される管理ノード構成です。</p></div>
 <div class="paragraph"><p> NetApp DeploymentEngineを使用してNetAppHCIの管理ノードをデプロイする場合、永続ボリュームが有効になり、自動的に構成されます。</p></div>
 <div class="paragraph"><p>新しい管理ノードを展開するときに、永続ボリュームを有効にするオプションがインストールおよびアップグレードスクリプトに含まれています。永続ボリュームは、VMの存続期間を超えて永続するホスト管理ノードVMの管理ノード構成情報を含むElementソフトウェアベースのストレージクラスター上のボリュームです。管理ノードが失われた場合、交換用の管理ノードVMは、失われたVMの構成データに再接続して回復できます。</p></div>
-<div class="paragraph"><p>永続ボリューム機能は、インストールまたはアップグレード中に有効にすると、割り当てられたクラスターの名前の前にNetApp-HCI-が付加された複数のボリュームを自動的に作成します。これらのボリュームは、他のElementソフトウェアベースのボリュームと同様に、好みやインストールに応じて、ElementソフトウェアのWeb UI、vCenterServer用のNetAppElement Plug-in、またはAPIを使用して表示できます。永続ボリュームは、リカバリに使用できる現在の構成データを維持するために、管理ノードへのiSCSI接続で稼働している必要があります。 </p></div>
+<div class="paragraph"><p>永続ボリューム機能は、インストールまたはアップグレード中に有効にすると、割り当てられたクラスターの名前の前にNetApp-HCI-が付加された複数のボリュームを自動的に作成します。これらのボリュームは、他のElementソフトウェアベースのボリュームと同様に、好みやインストールに応じて、ElementソフトウェアのWeb UI、vCenterServer用のNetAppElementプラグイン、またはAPIを使用して表示できます。永続ボリュームは、リカバリに使用できる現在の構成データを維持するために、管理ノードへのiSCSI接続で稼働している必要があります。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">管理サービスに関連付けられている永続ボリュームが作成され、インストールまたはアップグレード中に新しいアカウントに割り当てられます。永続ボリュームを使用している場合は、ボリュームまたはそれに関連するアカウントを変更または削除しないでください</td>

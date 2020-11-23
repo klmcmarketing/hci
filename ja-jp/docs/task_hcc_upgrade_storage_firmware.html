@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2073,7 +2077,7 @@
 </ul></div>
 </div></div>
 <div class="sect1">
-<h2 id="use-netapp-hybrid-cloud-control-ui-to-upgrade-storage-firmware"> NetApp Hybrid Cloud Control UIを使用して、ストレージファームウェアをアップグレードします</h2>
+<h2 id="use-netapp-hybrid-cloud-control-ui-to-upgrade-storage-firmware"> NetApp Hybrid Cloud ControlUIを使用してストレージファームウェアをアップグレードする</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp Hybrid Cloud Control UIを使用して、クラスター内のストレージノードのファームウェアをアップグレードできます。</p></div>
 <div class="ulist">
@@ -2133,7 +2137,7 @@
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content">
-<strong>アップグレードステータス</strong>は、プロセスのステータスを反映するためにアップグレード中に変更されます。また、アップグレードの一時停止や、アップグレードでエラーが返された場合など、実行したアクションに応じて変化します。<a href="#upgrade-status-changes">アップグレードステータスの変更を</a>参照してください。 </td>
+<strong>アップグレードステータス</strong>は、プロセスのステータスを反映するためにアップグレード中に変更されます。また、アップグレードの一時停止やアップグレードがエラーを返した場合など、実行したアクションに応じて変化します。<a href="#upgrade-status-changes">アップグレードステータスの変更を</a>参照してください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
@@ -2215,7 +2219,7 @@
 <div class="paragraph"><p> NetApp Hybrid Cloud Controlには、事前に設定された3時間の待機期間があり、その間に次のいずれかのシナリオが発生する可能性があります。</p></div>
 <div class="ulist"><ul>
 <li><p>クラスタ障害は3時間以内に解決され、アップグレードが再開されます。このシナリオでは、アクションを実行する必要はありません。</p></li>
-<li><p>問題は3時間後も続き、アップグレードステータスは赤いバナーで<strong>エラー</strong>を示します。問題が解決し<strong>たら</strong>、[<strong>再開</strong>]をクリックしてアップグレードを再開できます。</p></li>
+<li><p>問題は3時間後も持続し、アップグレードステータスは赤いバナーで<strong>エラー</strong>を示します。問題が解決し<strong>たら</strong>、[<strong>再開</strong>]をクリックしてアップグレードを再開できます。</p></li>
 <li><p> NetAppサポートは、3時間以内に修正措置を講じるために、アップグレードを一時的に中止する必要があると判断しました。サポートはAPIを使用してアップグレードを中止します。 </p></li>
 </ul></div>
 <div class="admonitionblock caution"><table><tr>
@@ -2364,7 +2368,7 @@
 <li><p>インストール資産IDを<strong>id</strong>フィールドに貼り付けます。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
 <li>
-<p>応答から、アップグレードするクラスターのストレージクラスターID（ <code>"id"</code> ）をコピーして保存し、後の手順で使用できるようにします。</p>
+<p>応答から、後の手順で使用するためにアップグレードする予定のクラスターのストレージクラスターID（ <code>"id"</code> ）をコピーして保存します。</p>
 <div class="listingblock"><div class="content"><pre> "ストレージ"： {
   「エラー」：[]、
   「在庫」：{
@@ -2413,10 +2417,10 @@
     "利用可能なアクション"： [
       "ストリング"
     ]、
-    「メッセージ」：「文字列」、
+    "メッセージ"： "文字列"、
     "nodeDetails"：[
       {{
-        「メッセージ」：「文字列」、
+        "メッセージ"： "文字列"、
         "ステップ"： "NodePreStart"、
         "nodeID"：0、
         "numAttempt"：0
@@ -2476,7 +2480,7 @@
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p>前の手順のアップグレードIDを<strong>upgradeIdに</strong>入力します。</p></li>
 <li>
-<p>リクエスト本文に<code>"action":"resume"</code>と入力します。</p>
+<p>リクエストの本文に<code>"action":"resume"</code>と入力します。</p>
 <div class="listingblock"><div class="content"><pre> {{
   「アクション」：「再開」
 }</pre></div></div>

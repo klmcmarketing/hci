@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2068,7 +2072,7 @@
 <div class="ulist"><ul><li><p><a href="#storage-health-checks-made-by-the-service">サービスによって行われるストレージヘルスチェック</a></p></li></ul></div>
 </div></div>
 <div class="sect1">
-<h2 id="use-netapp-hybrid-cloud-control-to-run-element-storage-health-checks-prior-to-upgrading-storage"> NetApp Hybrid Cloud Controlを使用して、ストレージをアップグレードする前にElementストレージのヘルスチェックを実行します</h2>
+<h2 id="use-netapp-hybrid-cloud-control-to-run-element-storage-health-checks-prior-to-upgrading-storage">ストレージをアップグレードする前に、NetApp Hybrid CloudControlを使用してElementストレージのヘルスチェックを実行します</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp Hybrid Cloud Control（HCC）を使用すると、ストレージクラスターをアップグレードする準備ができていることを確認できます。</p></div>
 <div class="olist arabic">
@@ -2300,7 +2304,7 @@ check_upload_speed：
 ノードID：1アップロード速度：86518.82KB /秒
 ノードID：3アップロード速度：84112.79KB /秒
 ノードID：2アップロード速度：93498.94KB /秒</pre></div></div>
-<div class="paragraph"><p>この例では、ノード1のディスク容量が不足しています。詳細については、エラーメッセージにリストされている<a href="https://kb.netapp.com" target="_blank" rel="noopener">ナレッジベース</a>（KB）の記事を参照してください。</p></div>
+<div class="paragraph"><p>この例では、ノード1のディスク容量が少なくなっています。詳細については、エラーメッセージにリストされている<a href="https://kb.netapp.com" target="_blank" rel="noopener">ナレッジベース</a>（KB）の記事を参照してください。</p></div>
 </div>
 <div class="sect2">
 <h3 id="healthtools-is-out-of-date"> HealthToolsは古くなっています</h3>
@@ -2374,7 +2378,7 @@ HealthToolsの最新バージョンは、https：//mysupport.netapp.com/NOW/cgi-
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> connection_speed_check</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ノード</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ノードがアップグレードパッケージを提供する管理ノードに接続していることを確認し、接続速度を見積もります。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ノードがアップグレードパッケージを提供する管理ノードに接続していることを確認し、接続速度を推定します。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> check_cores</p></td>

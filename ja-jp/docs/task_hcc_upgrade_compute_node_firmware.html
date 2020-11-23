@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2101,7 +2105,7 @@
 <li><p> <strong>BMC資格情報</strong>：NetApp Hybrid CloudControlが計算ノードBMCへの接続に使用する資格情報を更新します。これは、NetApp Hybrid Cloud <a href="task_hcc_edit_bmc_info.html#use-netapp-hybrid-cloud-control-to-edit-bmc-information">ControlUI</a>または<a href="task_hcc_edit_bmc_info.html#use-the-rest-api-to-edit-bmc-information">APIの</a>いずれかを使用して実行でき<a href="task_hcc_edit_bmc_info.html#use-the-rest-api-to-edit-bmc-information">ます</a>。アップグレード前にBMC情報を更新すると、インベントリが更新され、管理ノードサービスがアップグレードを完了するために必要なすべてのハードウェアパラメータを認識できるようになります。</p></li>
 <li><p><strong>接続されたメディア</strong>：計算ノードのアップグレードを開始する前に、物理USBまたはISOを切断します。</p></li>
 <li><p> <strong>KVM ESXiコンソール</strong>：計算ノードのアップグレードを開始する前に、BMC UIで開いているすべてのSerial-Over-LAN（SOL）セッションとアクティブなKVMセッションを閉じます。</p></li>
-<li><p><strong>監視ノードの要件</strong>：2ノードおよび3ノードのストレージクラスターでは、NetAppHCIインストールで常に1つの<a href="concept_hci_nodes.html">監視ノード</a>が実行されている必要があります。</p></li>
+<li><p><strong>ウィットネスノードの要件</strong>：2ノードおよび3ノードのストレージクラスターでは、NetAppHCIインストールで常に1つの<a href="concept_hci_nodes.html">ウィットネスノード</a>が実行されている必要があります。</p></li>
 <li><p><strong>計算ノードのヘルスチェック</strong>：ノードをアップグレードする準備ができていることを確認しました。<a href="task_upgrade_compute_prechecks.html">コンピューティングファームウェアをアップグレードする前に、コンピュートノードのヘルスチェック</a>を<a href="task_upgrade_compute_prechecks.html">実行するを</a>参照してください。</p></li>
 </ul>
 </div>
@@ -2400,7 +2404,7 @@
 <li><p>インストール資産IDを<strong>id</strong>フィールドに貼り付けます。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
 <li>
-<p>応答から、クラスターコントローラーID（ <code>"controllerId"</code> ）とノードハードウェアID（ <code>"hardwareId"</code> ）をコピーして保存し、後の手順で使用できるようにします。</p>
+<p>応答から、後のステップで使用するために、クラスターコントローラーID（ <code>"controllerId"</code> ）とノードハードウェアID（ <code>"hardwareId"</code> ）をコピーして保存します。</p>
 <div class="listingblock"><div class="content"><pre> 「計算」：{
   「エラー」：[]、
   「在庫」：{
@@ -2552,7 +2556,7 @@
 <li><p><a href="https://mysupport.netapp.com/site/downloads">NetAppソフトウェアのダウンロード</a>ページを参照し、[ <strong>NetApp HCI</strong> ]をクリックして、ダウンロードリンクをクリックしてNetAppHCIの正しいバージョンを確認します。</p></li>
 <li><p>エンドユーザー使用許諾契約に同意します。</p></li>
 <li><p> [<strong>コンピューティングノード]</strong>セクションで、[コンピューティングノード]イメージをダウンロードします。</p></li>
-<li><p> Etcherユーティリティを使用して、計算ノードのファームウェアISOをUSBドライブにフラッシュします。</p></li>
+<li><p> Etcherユーティリティを使用して、計算ノードファームウェアISOをUSBドライブにフラッシュします。</p></li>
 <li>
 <p> VMware vCenterを使用して計算ノードをメンテナンスモードにし、すべての仮想マシンをホストから退避させます。 </p>
 <div class="admonitionblock note"><table><tr>

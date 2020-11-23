@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2040,7 +2044,7 @@
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> NetApp Hybrid CloudControlを使用してユーザーアカウントを作成および管理する</h1></div>
 <p class="page-details"><time datetime="2020-11-12 02:19:33 +0000">2020年11月12日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_manage_accounts.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
-<div class="paragraph lead"><p>SolidFireストレージシステムでは、権限のあるクラスターユーザーを作成して、「管理者」または「読み取り専用」ユーザーに付与する権限に応じて、NetApp Hybrid CloudControlへのログインアクセスを有効にすることができます。クラスタユーザーに加えて、クライアントがストレージノード上のボリュームに接続できるようにするボリュームアカウントもあります。</p></div>
+<div class="paragraph lead"><p>SolidFireストレージシステムでは、権限のあるクラスターユーザーを作成して、「管理者」または「読み取り専用」ユーザーに付与する権限に応じて、ネットアップハイブリッドクラウドコントロールへのログインアクセスを有効にすることができます。クラスタユーザーに加えて、クライアントがストレージノード上のボリュームに接続できるようにするボリュームアカウントもあります。</p></div>
 <div class="paragraph"><p>ボリュームを作成すると、特定のボリュームアカウントに割り当てられます。</p></div>
 <div class="paragraph"><p>アカウントには最大2,000のボリュームを割り当てることができますが、ボリュームは1つのアカウントにのみ属することができます。</p></div>
 <div class="paragraph"><p>次の種類のアカウントを管理します。</p></div>
@@ -2052,7 +2056,7 @@
 <div class="sect1">
 <h2 id="manage-authoritative-cluster-accounts">信頼できるクラスターアカウントを管理する</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>権限のあるユーザーアカウントは、NetApp Hybrid CloudControlの右上のメニュー[ユーザー管理]オプションから管理されます。これらのタイプのアカウントを使用すると、ノードおよびクラスターのNetAppハイブリッドクラウドコントロールインスタンスに関連付けられているストレージアセットに対して認証できます。このアカウントを使用すると、すべてのクラスターでボリューム、アカウント、アクセスグループなどを管理できます。</p></div>
+<div class="paragraph"><p>権限のあるユーザーアカウントは、NetApp Hybrid CloudControlの右上のメニューの[ユーザー管理]オプションから管理されます。これらのタイプのアカウントを使用すると、ノードおよびクラスターのNetAppハイブリッドクラウドコントロールインスタンスに関連付けられているストレージアセットに対して認証できます。このアカウントを使用すると、すべてのクラスターでボリューム、アカウント、アクセスグループなどを管理できます。</p></div>
 <div class="sect2">
 <h3 id="create-an-authoritative-cluster-account">信頼できるクラスターアカウントを作成する</h3>
 <div class="paragraph"><p>NetApp Hybrid CloudControlを使用してアカウントを作成できます。</p></div>

@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2051,7 +2055,7 @@
 <li><p>アカウントには最大2,000のボリュームを割り当てることができますが、ボリュームは1つのアカウントにのみ属することができます。</p></li>
 <li><p>ユーザーアカウントは、NetApp ElementManagement拡張ポイントから管理できます。</p></li>
 </ul></div>
-<div class="paragraph"><p> NetApp Hybrid Cloud Controlを使用すると、次のタイプのアカウントを作成および管理できます。</p></div>
+<div class="paragraph"><p> NetApp Hybrid Cloud Controlを使用すると、次の種類のアカウントを作成および管理できます。</p></div>
 <div class="ulist"><ul>
 <li><p>ストレージクラスターの管理者ユーザーアカウント</p></li>
 <li><p>信頼できるユーザーアカウント</p></li>
@@ -2078,8 +2082,8 @@
 <div class="sect1">
 <h2 id="authoritative-user-accounts">信頼できるユーザーアカウント</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>権限のあるユーザーアカウントは、ノードおよびクラスターのNetAppハイブリッドクラウドコントロールインスタンスに関連付けられているストレージアセットに対して認証できます。このアカウントを使用すると、すべてのクラスターでボリューム、アカウント、アクセスグループなどを管理できます。</p></div>
-<div class="paragraph"><p>権限のあるユーザーアカウントは、NetApp Hybrid CloudControlの右上のメニュー[ユーザー管理]オプションから管理されます。</p></div>
+<div class="paragraph"><p>権限のあるユーザーアカウントは、ノードおよびクラスターのNetApp Hybrid CloudControlインスタンスに関連付けられている任意のストレージ資産に対して認証できます。このアカウントを使用すると、すべてのクラスターでボリューム、アカウント、アクセスグループなどを管理できます。</p></div>
+<div class="paragraph"><p>権限のあるユーザーアカウントは、NetApp Hybrid CloudControlの右上のメニューの[ユーザー管理]オプションから管理されます。</p></div>
 <div class="paragraph"><p>権限のあるストレージクラスターは、NetApp Hybrid CloudControlがユーザーの認証に使用するストレージクラスターです。</p></div>
 <div class="paragraph"><p>権限のあるストレージクラスターで作成されたすべてのユーザーは、NetApp Hybrid CloudControlにログインできます。他のストレージクラスターで作成されたユーザーは、Hybrid CloudControlにログイン<em>できません</em>。</p></div>
 <div class="ulist"><ul>

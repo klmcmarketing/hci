@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2037,8 +2041,8 @@
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
-    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">コンピューティングファームウェアをアップグレードする前に、コンピュートノードのヘルスチェックを実行します</h1></div>
-<p class="page-details"><time datetime="2020-08-25 22:58:56 +0000">2020年8月25日</time><span>寄稿者<a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_upgrade_compute_prechecks.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+    <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">計算ファームウェアをアップグレードする前に、計算ノードのヘルスチェックを実行します</h1></div>
+<p class="page-details"><time datetime="2020-08-25 22:58:56 +0000">2020年8月25日</time><span>寄稿者</span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_upgrade_compute_prechecks.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>計算ファームウェアをアップグレードする前にヘルスチェックを実行して、クラスター内のすべての計算ノードをアップグレードする準備ができていることを確認する必要があります。計算ノードのヘルスチェックは、1つ以上のマネージドNetAppHCI計算ノードの計算クラスターに対してのみ実行できます。</p></div>
 <div class="ulist">
@@ -2061,7 +2065,7 @@
 <div class="ulist"><ul><li><p><a href="#compute-node-health-checks-made-by-the-service">サービスによって行われたノードヘルスチェックを計算します</a></p></li></ul></div>
 </div></div>
 <div class="sect1">
-<h2 id="use-netapp-hybrid-cloud-control-to-run-compute-node-health-checks-prior-to-upgrading-firmware">ファームウェアをアップグレードする前に、NetApp Hybrid CloudControlを使用して計算ノードのヘルスチェックを実行します</h2>
+<h2 id="use-netapp-hybrid-cloud-control-to-run-compute-node-health-checks-prior-to-upgrading-firmware"> NetApp Hybrid Cloud Controlを使用して、ファームウェアをアップグレードする前に計算ノードのヘルスチェックを実行します</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp Hybrid Cloud Control（HCC）を使用すると、コンピューティングノードがファームウェアアップグレードの準備ができていることを確認できます。</p></div>
 <div class="olist arabic">
@@ -2231,7 +2235,7 @@
 <th class="tableblock halign-left valign-top">説明を確認してください</th>
 <th class="tableblock halign-left valign-top">ノード/クラスター</th>
 <th class="tableblock halign-left valign-top">解決するために必要なアクション</th>
-<th class="tableblock halign-left valign-top">手順を含むナレッジベースの記事</th>
+<th class="tableblock halign-left valign-top">手順付きのナレッジベース記事</th>
 </tr></thead>
 <tbody>
 <tr>

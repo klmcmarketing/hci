@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2097,7 +2101,7 @@
 <h2 id="validate-network-readiness-with-netapp-active-iq-config-advisor"> NetApp Active IQ ConfigAdvisorを使用してネットワークの準備状況を検証する</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp HCIのネットワーク対応を確保するには、NetApp Active IQ Config Advisor5.8.1以降をインストールします。このネットワーク検証ツールは、他の<a href="https://mysupport.netapp.com/site/tools/tool-eula/5ddb829ebd393e00015179b2" target="_blank" rel="noopener">NetAppサポートツール</a>と一緒に配置されてい<a href="https://mysupport.netapp.com/site/tools/tool-eula/5ddb829ebd393e00015179b2" target="_blank" rel="noopener">ます</a>。このツールを使用して、接続、VLAN ID、IPアドレス要件、スイッチ接続などを検証します。</p></div>
-<div class="paragraph"><p>詳細については、「 <a href="hci_prereqs_task_validate_config_advisor.html">Active IQ ConfigAdvisorを使用した環境の検証</a>」を参照してください。</p></div>
+<div class="paragraph"><p>詳細については、「 <a href="hci_prereqs_task_validate_config_advisor.html">Active IQ ConfigAdvisorを使用して環境を検証する</a>」を参照してください。</p></div>
 </div>
 </div>
 <div class="sect1">

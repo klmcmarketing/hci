@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2048,7 +2052,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>権限のあるストレージクラスターは、NetApp Hybrid CloudControlがユーザーの認証に使用するストレージクラスターです。</p></div>
 <div class="paragraph"><p>管理ノードにストレージクラスターが1つしかない場合、それは権限のあるクラスターです。管理ノードに2つ以上のストレージクラスターがある場合、それらのクラスターの1つが権限のあるクラスターとして割り当てられ、そのクラスターのユーザーのみがNetApp Hybrid CloudControlにログインできます。どのクラスターが権限のあるクラスターであるかを確認するには、 <code>GET /mnode/about</code>使用できます。応答では、 <code>token_url</code>フィールドのIPアドレスは、権限のあるストレージクラスターの管理仮想IPアドレス（MVIP）です。権限のあるクラスターに属していないユーザーとしてNetAppHybrid Cloud Controlにログインしようとすると、ログインの試行は失敗します。</p></div>
-<div class="paragraph"><p>多くのNetAppハイブリッドクラウドコントロール機能は、複数のストレージクラスターで機能するように設計されていますが、認証と承認には制限があります。認証と承認に関する制限は、権限のあるクラスターのユーザーが、他のストレージクラスターのユーザーでなくても、NetApp Hybrid CloudControlに関連付けられている他のクラスターでアクションを実行できることです。複数のストレージクラスターの管理に進む前に、権限のあるクラスターで定義されたユーザーが、同じアクセス許可を持つ他のすべてのストレージクラスターで定義されていることを確認する必要があります。</p></div>
+<div class="paragraph"><p>多くのNetAppハイブリッドクラウドコントロール機能は、複数のストレージクラスタで動作するように設計されていますが、認証と承認には制限があります。認証と承認に関する制限は、権限のあるクラスターのユーザーが、他のストレージクラスターのユーザーでなくても、NetApp Hybrid CloudControlに関連付けられている他のクラスターでアクションを実行できることです。複数のストレージクラスターの管理に進む前に、権限のあるクラスターで定義されたユーザーが、同じアクセス許可を持つ他のすべてのストレージクラスターで定義されていることを確認する必要があります。</p></div>
 <div class="paragraph"><p> NetApp Hybrid CloudControlを使用してユーザーを管理できます。</p></div>
 <div class="paragraph"><p>複数のストレージクラスターの管理に進む前に、権限のあるクラスターで定義されたユーザーが、同じアクセス許可を持つ他のすべてのストレージクラスターで定義されていることを確認する必要があります。 Elementソフトウェアのユーザーインターフェイス（Element Web UI）から<a href="https://docs.netapp.com/sfe-122/index.jsp?topic=%2Fcom.netapp.doc.sfe-ug%2FGUID-E54EF120-2F00-4F43-B7CA-CCCBAAD1B5B6.html">ユーザー</a>を<a href="https://docs.netapp.com/sfe-122/index.jsp?topic=%2Fcom.netapp.doc.sfe-ug%2FGUID-E54EF120-2F00-4F43-B7CA-CCCBAAD1B5B6.html">管理できます</a>。</p></div>
 <div class="paragraph"><p>管理ノードのストレージクラスターアセットの操作の詳細については、「<a href="task_mnode_manage_storage_cluster_assets.html">ストレージクラスターアセットの作成と管理</a>」を参照してください。</p></div>
@@ -2056,7 +2060,7 @@
 </div>
 <div class="sect1">
 <h2 id="stranded-capacity">座礁容量</h2>
-<div class="sectionbody"><div class="paragraph"><p>新しく追加されたノードがクラスターの総容量の50％以上を占める場合、このノードの容量の一部は使用できなくなり（「取り残された」）、容量ルールに準拠します。これは、ストレージ容量が追加されるまで当てはまります。容量ルールにも従わない非常に大きなノードが追加された場合、以前に取り残されたノードは取り残されなくなり、新しく追加されたノードは取り残されます。これが発生しないように、容量は常にペアで追加する必要があります。ノードが取り残されると、適切なクラスター障害がスローされます。</p></div></div>
+<div class="sectionbody"><div class="paragraph"><p>新しく追加されたノードがクラスターの総容量の50％以上を占める場合、このノードの容量の一部は使用できなくなり（「取り残され」）、容量ルールに準拠します。これは、ストレージ容量が追加されるまで当てはまります。容量ルールにも従わない非常に大きなノードが追加された場合、以前に取り残されたノードは取り残されなくなり、新しく追加されたノードは取り残されます。これが発生しないように、容量は常にペアで追加する必要があります。ノードが取り残されると、適切なクラスター障害がスローされます。</p></div></div>
 </div>
 <div class="sect1">
 <h2 id="two-node-storage-clusters"> 2ノードストレージクラスター</h2>
@@ -2082,14 +2086,14 @@
 </li>
 <li><p> 2ノードのストレージクラスターを3ノードのストレージクラスターに拡張できます。 3ノードクラスターは、ストレージノードの障害から自動修復する機能を提供することにより、復元力を向上させます。</p></li>
 <li><p> 2ノードストレージクラスターは、従来の4ノードストレージクラスターと同じセキュリティ機能を提供します。</p></li>
-<li><p> 2ノードのストレージクラスターは、4ノードのストレージクラスターと同じネットワークを使用します。ネットワークは、NetApp展開エンジンウィザードを使用して、NetAppHCI展開中にセットアップされます。</p></li>
+<li><p> 2ノードストレージクラスターは、4ノードストレージクラスターと同じネットワークを使用します。ネットワークは、NetApp展開エンジンウィザードを使用して、NetAppHCI展開中にセットアップされます。</p></li>
 </ul></div>
 <div class="sect2">
 <h3 id="storage-cluster-quorum">ストレージクラスタークォーラム</h3>
 <div class="paragraph"><p>Elementソフトウェアは、選択したノードからストレージクラスターを作成し、クラスター構成の複製データベースを維持します。クラスターの復元力のクォーラムを維持するには、クラスターアンサンブルに参加するために少なくとも3つのノードが必要です。 2ノードクラスター内の監視ノードは、有効なアンサンブルクォーラムを形成するのに十分なストレージノードがあることを確認するために使用されます。アンサンブルの作成では、ストレージノードがウィットネスノードよりも優先されます。 2ノードのストレージクラスターを含む最小の3ノードのアンサンブルでは、2つのストレージノードと1つのウィットネスノードが使用されます。 </p></div>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
-<td class="content"> 2つのストレージノードと1つの監視ノードを持つ3ノードのアンサンブルでは、1つのストレージノードがオフラインになると、クラスターは劣化状態になります。 2つのウィットネスノードのうち、アンサンブルでアクティブにできるのは1つだけです。 2番目のWitnessNodeはバックアップの役割を実行するため、アンサンブルに追加できません。クラスターは、オフラインストレージノードがオンライン状態に戻るか、代替ノードがクラスターに参加するまで、劣化状態のままになります。</td>
+<td class="content"> 2つのストレージノードと1つのウィットネスノードを持つ3ノードアンサンブルでは、1つのストレージノードがオフラインになると、クラスターは劣化状態になります。 2つのウィットネスノードのうち、アンサンブルでアクティブにできるのは1つだけです。 2番目のWitnessNodeはバックアップの役割を実行するため、アンサンブルに追加できません。クラスターは、オフラインストレージノードがオンライン状態に戻るか、代替ノードがクラスターに参加するまで、劣化状態のままになります。</td>
 </tr></table></div>
 <div class="paragraph"><p>ウィットネスノードに障害が発生した場合、残りのウィットネスノードがアンサンブルに参加して3ノードのアンサンブルを形成します。新しいウィットネスノードを展開して、障害が発生したウィットネスノードを置き換えることができます。 </p></div>
 </div>
@@ -2101,7 +2105,7 @@
 </div>
 <div class="sect1">
 <h2 id="storage-clusters-with-three-or-more-nodes"> 3つ以上のノードを持つストレージクラスター</h2>
-<div class="sectionbody"><div class="paragraph"><p>2つのストレージノードから3つのストレージノードに拡張すると、ノードとドライブに障害が発生した場合に自動修復が可能になるため、クラスターの復元力が高まりますが、追加の容量は提供されません。 <a href="task_hcc_expand_storage.html">NetApp Hybrid Cloud ControlUI</a>を使用して拡張できます。 2ノードクラスターから3ノードクラスターに拡張する場合、容量をストランド化することができます（<a href="#stranded-capacity">ストランド化された容量を</a>参照）。 UIウィザードには、インストール前に取り残された容量に関する警告が表示されます。ストレージノードに障害が発生した場合にアンサンブルクォーラムを維持するために、単一のWitness Nodeを引き続き使用でき、2番目のWitnessNodeがスタンバイ状態になります。<br> 3ノードのストレージクラスターを4ノードのクラスターに拡張すると、容量とパフォーマンスが向上します。 4ノードのクラスターでは、クラスタークォーラムを形成するためにウィットネスノードは不要になりました。<br>最大64の計算ノードと40のストレージノードに拡張できます。</p></div></div>
+<div class="sectionbody"><div class="paragraph"><p>2つのストレージノードから3つのストレージノードに拡張すると、ノードとドライブに障害が発生した場合に自動修復が可能になるため、クラスターの復元力が高まりますが、追加の容量は提供されません。 <a href="task_hcc_expand_storage.html">NetApp Hybrid Cloud ControlUI</a>を使用して拡張できます。 2ノードクラスターから3ノードクラスターに拡張する場合、容量をストランド化することができます（<a href="#stranded-capacity">ストランド化された容量を</a>参照）。 UIウィザードには、インストール前に取り残された容量に関する警告が表示されます。ストレージノードに障害が発生した場合にアンサンブルクォーラムを維持するために、単一のWitness Nodeを引き続き使用でき、2番目のWitnessNodeがスタンバイ状態になります。<br> 3ノードのストレージクラスターを4ノードのクラスターに拡張すると、容量とパフォーマンスが向上します。 4ノードのクラスターでは、クラスタークォーラムを形成するために監視ノードは不要になりました。<br>最大64の計算ノードと40のストレージノードに拡張できます。</p></div></div>
 </div>
 <div class="sect1">
 <h2 id="find-more-information">詳細情報を探す</h2>

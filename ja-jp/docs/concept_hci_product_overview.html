@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2056,7 +2060,7 @@
 <div class="ulist"><ul>
 <li><p> NetApp HCIは、ストレージリソースとコンピューティングリソースの両方を提供します。 <strong>NetApp Deployment Engine</strong>ウィザードを使用して、 <strong>NetAppHCIを導入し</strong>ます。展開が成功すると、計算ノードはESXiホストとして表示され、VMware vSphere WebClientで管理できます。</p></li>
 <li>
-<p><strong>管理サービス</strong>またはマイクロサービスには、Active IQコレクター、vCenterプラグイン用のQoSSIOC、およびmNodeサービスが含まれます。それらはサービスバンドルとして頻繁に更新されます。 Element 11.3リリース以降、<strong>管理サービス</strong>は管理ノードでホストされているため、メジャーリリース以外の選択したソフトウェアサービスをより迅速に更新できます。<strong>管理ノード</strong>（mNode）は、1つ以上のElementソフトウェアベースのストレージクラスターと並行して実行される仮想マシンです。これは、監視とテレメトリを含むシステムサービスのアップグレードと提供、クラスターアセットと設定の管理、システムテストとユーティリティの実行、トラブルシューティングのためのNetAppサポートアクセスの有効化に使用されます。 </p>
+<p><strong>管理サービス</strong>またはマイクロサービスには、Active IQコレクター、vCenterプラグイン用のQoSSIOC、およびmNodeサービスが含まれます。それらはサービスバンドルとして頻繁に更新されます。 Element 11.3リリース以降、<strong>管理サービス</strong>は管理ノードでホストされているため、メジャーリリース以外の一部のソフトウェアサービスをより迅速に更新できます。<strong>管理ノード</strong>（mNode）は、1つ以上のElementソフトウェアベースのストレージクラスターと並行して実行される仮想マシンです。これは、監視とテレメトリを含むシステムサービスのアップグレードと提供、クラスターアセットと設定の管理、システムテストとユーティリティの実行、トラブルシューティングのためのNetAppサポートアクセスの有効化に使用されます。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes">管理サービスのリリースの</a>詳細をご覧ください。</td>
@@ -2064,7 +2068,7 @@
 </li>
 <li><p> <strong>NetApp Hybrid Cloud Controlを</strong>使用すると、NetAppHCIを管理できます。 NetApp SolidFire Active IQを使用して、管理サービスのアップグレード、システムの拡張、ログの収集、およびインストールの監視を行うことができます。管理ノードのIPアドレスを参照して、NetApp Hybrid CloudControlにログインします。</p></li>
 <li>
-<p> <strong>NetApp Element Plug-in for vCenter Server</strong> （VCP）は、vSphereユーザーインターフェイス（UI）と統合されたWebベースのツールです。プラグインは、 <strong>NetApp Elementソフトウェアを</strong>実行しているストレージクラスターを管理および監視できる、VMwarevSphereの拡張機能とスケーラブルでユーザーフレンドリーなインターフェイス<strong>です</strong>。プラグインは、ElementUIの代替手段を提供します。プラグインのユーザーインターフェイスを使用して、クラスターを検出および構成し、クラスター容量からストレージを管理、監視、および割り当てて、データストアおよび仮想データストア（仮想ボリューム用）を構成できます。クラスターは、仮想IPアドレスによってホストと管理者に表される単一のローカルグループとしてネットワーク上に表示されます。また、さまざまな操作の実行中に発生する可能性のあるイベントのエラーおよびアラートメッセージングを含む、リアルタイムレポートを使用してクラスターアクティビティを監視することもできます。 </p>
+<p> <strong>NetApp Element Plug-in for vCenter Server</strong> （VCP）は、vSphereユーザーインターフェイス（UI）と統合されたWebベースのツールです。プラグインは、 <strong>NetAppElementソフトウェアを</strong>実行しているストレージクラスターを管理および監視できるVMwarevSphereの拡張機能とスケーラブルでユーザーフレンドリーなインターフェイス<strong>です</strong>。プラグインは、ElementUIの代替手段を提供します。プラグインのユーザーインターフェイスを使用して、クラスターを検出および構成し、クラスター容量からストレージを管理、監視、および割り当てて、データストアおよび仮想データストア（仮想ボリューム用）を構成できます。クラスターは、仮想IPアドレスによってホストと管理者に表される単一のローカルグループとしてネットワーク上に表示されます。また、さまざまな操作の実行中に発生する可能性のあるイベントのエラーおよびアラートメッセージングを含む、リアルタイムレポートを使用してクラスターアクティビティを監視することもできます。 </p>
 <div class="admonitionblock tip"><table><tr>
 <td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
 <td class="content"> <a href="https://docs.netapp.com/hci/topic/com.netapp.doc.hci-vcp-ug-180/home.html">VCPの</a>詳細をご覧ください。</td>

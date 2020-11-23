@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2038,15 +2042,15 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">サポートされているネットワークの変更</h1></div>
-<p class="page-details"><time datetime="2020-11-23 14:35:19 +0000">2020年11月23日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_nde_supported_net_changes.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-11-23 14:35:19 +0000">2020年11月23日</time><span>寄稿者</span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_nde_supported_net_changes.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>NetApp HCIを導入した後、デフォルトのネットワーク構成に限定的な変更を加えることができます。ただし、スムーズな操作と適切なネットワーク検出には、特定の設定が必要です。これらの設定を変更すると、予期しない動作が発生し、コンピューティングリソースとストレージリソースを拡張できなくなる可能性があります。</p></div>
-<div class="paragraph"><p>システムを展開した後、ネットワーク要件に応じて、VMwarevSphereのデフォルトネットワーク構成に次の変更を加えることができます。</p></div>
+<div class="paragraph"><p>システムを導入した後、ネットワーク要件に応じて、VMwarevSphereのデフォルトのネットワーク構成に次の変更を加えることができます。</p></div>
 <div class="ulist"><ul>
 <li><p> vSwitch名を変更する</p></li>
 <li><p>ポートグループ名を変更する</p></li>
 <li><p>追加のポートグループを追加および削除します</p></li>
-<li><p>追加した追加のポートグループのvmnicインターフェイスのフェイルオーバー順序を変更します</p></li>
+<li><p>追加した追加のポートグループのvmnicインターフェイスフェイルオーバーの順序を変更します</p></li>
 </ul></div>
 </div></div>
 <div class="sect1">

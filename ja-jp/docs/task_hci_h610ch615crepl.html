@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2309,7 +2313,7 @@
 <li><p>変更が完了したら、後続のページで[<strong>続行]</strong>を選択して、[レビュー]ページに戻ります。</p></li>
 </ol></div>
 </li>
-<li><p>オプション：クラスター統計とサポート情報をNetAppがホストするSolidFire Active IQサーバーに送信しない場合は、最後のチェックボックスをオフにします。<br>これにより、NetAppHCIのヘルスと診断のリアルタイム監視が無効になります。この機能を無効にすると、NetAppがNetApp HCIをプロアクティブにサポートおよび監視して、本番環境に影響が及ぶ前に問題を検出および解決する機能が削除されます。</p></li>
+<li><p>オプション：ネットアップがホストするSolidFire Active IQサーバーにクラスター統計とサポート情報を送信しない場合は、最後のチェックボックスをオフにします。<br>これにより、NetAppHCIのリアルタイムのヘルスおよび診断モニタリングが無効になります。この機能を無効にすると、NetAppがNetApp HCIをプロアクティブにサポートおよび監視して、本番環境に影響が及ぶ前に問題を検出および解決する機能が削除されます。</p></li>
 <li><p> [<strong>ノードの追加]を</strong>選択します。<br> NetApp HCIがリソースを追加および構成している間、進行状況を監視できます。</p></li>
 <li><p>オプション：新しい計算ノードがvCenterに表示されていることを確認します。</p></li>
 </ol>

@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2141,7 +2145,7 @@
 <p>[ストレージパフォーマンス]ペインを表示します。詳細については、グラフ内のポイントにカーソルを合わせてください。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li>
-<p> [ <strong>IOPS</strong> ]タブ：1秒あたりの現在の操作を確認します。データまたはスパイクの傾向を探します。たとえば、最大IOPSが160Kで、そのうちの100Kが無料または使用可能なIOPSであることがわかった場合は、このクラスターにワークロードを追加することを検討してください。一方、140Kしか使用できない場合は、ワークロードをオフロードするか、システムを拡張することを検討してください。 </p>
+<p> [ <strong>IOPS</strong> ]タブ：1秒あたりの現在の操作を確認します。データまたはスパイクの傾向を探します。たとえば、最大IOPSが160Kで、そのうちの100Kが無料または利用可能なIOPSであることがわかった場合は、このクラスターにワークロードを追加することを検討してください。一方、140Kしか使用できない場合は、ワークロードをオフロードするか、システムを拡張することを検討してください。 </p>
 <div class="imageblock"><div class="content"><img src="../media/hcc_dashboard_storage_perform_iops.png" alt="ストレージパフォーマンス&gt; IOPSタブ"></div></div>
 </li>
 <li>

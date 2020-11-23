@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2045,8 +2049,8 @@
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp HCIを使用すると、ストレージクラスタに保存されているすべてのデータを暗号化できます。</p></div>
 <div class="paragraph"><p>暗号化が可能なストレージノード内のすべてのドライブは、ドライブレベルでAES256ビット暗号化を使用します。各ドライブには独自の暗号化キーがあり、ドライブが最初に初期化されたときに作成されます。暗号化機能を有効にすると、ストレージクラスター全体のパスワードが作成され、パスワードのチャンクがクラスター内のすべてのノードに配布されます。パスワード全体を格納する単一のノードはありません。このパスワードは、ドライブへのすべてのアクセスをパスワードで保護するために使用されます。ドライブのロックを解除するにはパスワードが必要です。ドライブはすべてのデータを暗号化しているため、データは常に安全です。</p></div>
-<div class="paragraph"><p>保管時の暗号化を有効にしても、ストレージクラスターのパフォーマンスと効率は影響を受けません。さらに、ElementAPIまたはElementUIを使用してストレージクラスターから暗号化が有効なドライブまたはノードを削除すると、ドライブの暗号化停止が無効になり、ドライブが安全に消去され、以前にそれらのドライブに保存されていたデータが保護されます。ドライブを取り外した後、 <code>SecureEraseDrives</code>メソッドを使用してドライブを安全に消去できます。ドライブまたはノードをストレージクラスターから強制的に削除した場合、データはクラスター全体のパスワードとドライブの個々の暗号化キーによって保護されたままになります。</p></div>
-<div class="paragraph"><p>保管時の<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-EE404D52-B621-4DE5-B141-2559768FB1D0.html">暗号化の有効化と無効化について</a>は、SolidFire and Element DocumentationCenterの<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-EE404D52-B621-4DE5-B141-2559768FB1D0.html">クラスターの暗号化の有効化と無効化を</a>参照してください。</p></div>
+<div class="paragraph"><p>保管時の暗号化を有効にしても、ストレージクラスターのパフォーマンスと効率は影響を受けません。さらに、ElementAPIまたはElementUIを使用してストレージクラスターから暗号化対応のドライブまたはノードを削除すると、ドライブの暗号化停止が無効になり、ドライブが安全に消去され、以前にそれらのドライブに保存されていたデータが保護されます。ドライブを取り外した後、 <code>SecureEraseDrives</code>メソッドを使用してドライブを安全に消去できます。ドライブまたはノードをストレージクラスターから強制的に削除した場合、データはクラスター全体のパスワードとドライブの個々の暗号化キーによって保護されたままになります。</p></div>
+<div class="paragraph"><p> Restでの<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-EE404D52-B621-4DE5-B141-2559768FB1D0.html">暗号化の有効化と無効化について</a>は、SolidFire and Element DocumentationCenterの<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-EE404D52-B621-4DE5-B141-2559768FB1D0.html">クラスターの暗号化の有効化と無効化を</a>参照してください。</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -2064,7 +2068,7 @@
 <li><p> Vormetric Data Security Manager</p></li>
 <li><p> IBM Security Key Lifecycle Manager</p></li>
 </ul></div>
-<div class="paragraph"><p>外部キー管理の構成の詳細については、SolidFire and Element DocumentationCenterの「GettingstartingwithExternalKeyManagement <a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-057D852C-9C1C-458A-9161-328EDA349B00.html">」を</a>参照してください。</p></div>
+<div class="paragraph"><p>外部キー管理の構成の詳細については、SolidFire and Element DocumentationCenterの「GettingStartedwithExternalKeyManagement <a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-057D852C-9C1C-458A-9161-328EDA349B00.html">」を</a>参照してください。</p></div>
 </div>
 </div>
 <div class="sect1">
@@ -2078,9 +2082,9 @@
 <div class="sect1">
 <h2 id="fips-140-2-for-https-and-data-at-rest-encryption"> HTTPSおよび保存データ暗号化用のFIPS140-2</h2>
 <div class="sectionbody">
-<div class="paragraph"><p> NetAppSolidFireストレージクラスターとNetAppHCIシステムは、暗号化モジュールの連邦情報処理標準（FIPS）140-2要件に準拠した暗号化をサポートしています。 NetAppHCIまたはSolidFireクラスターでFIPS140-2準拠を有効にして、HTTPS通信とドライブ暗号化の両方を行うことができます。</p></div>
+<div class="paragraph"><p> NetAppSolidFireストレージクラスタとNetAppHCIシステムは、暗号化モジュールの連邦情報処理標準（FIPS）140-2要件に準拠した暗号化をサポートしています。 NetAppHCIまたはSolidFireクラスターでFIPS140-2準拠を有効にして、HTTPS通信とドライブ暗号化の両方を行うことができます。</p></div>
 <div class="paragraph"><p>クラスタでFIPS140-2動作モードを有効にすると、クラスタはNetApp暗号化セキュリティモジュール（NCSM）をアクティブにし、HTTPSを介したNetApp ElementUIおよびAPIへのすべての通信にFIPS140-2レベル1認定暗号化を利用します。 <code>EnableFeature</code> Element APIを<code>fips</code>パラメーターとともに使用して、FIPS <code>fips</code>暗号化を有効にします。 FIPS互換ハードウェアを備えたストレージクラスターでは、 <code>FipsDrives</code>パラメーターを指定した<code>EnableFeature</code> Element APIを使用して、 <code>EnableFeature</code>データのFIPSドライブ暗号化を有効にすることもできます。</p></div>
-<div class="paragraph"><p> FIPS 140-2暗号化用の新しいストレージクラスターの準備の詳細については、「 <a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-4645FF0D-3FCD-4440-91A9-A47F7BCC5C50.html">FIPSドライブをサポートするクラスターの作成」を</a>参照してください。</p></div>
+<div class="paragraph"><p> FIPS 140-2暗号化用の新しいストレージクラスターの準備の詳細については、 <a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-4645FF0D-3FCD-4440-91A9-A47F7BCC5C50.html">FIPSドライブをサポートするクラスターの作成を</a>参照してください。</p></div>
 <div class="paragraph"><p>既存の準備済みクラスターで<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/GUID-F2726BCA-D59C-47EE-B86C-DC465C96563B.html">FIPS140-2を</a>有効にする方法の詳細については<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/GUID-F2726BCA-D59C-47EE-B86C-DC465C96563B.html">、EnableFeature ElementAPIを</a>参照してください。</p></div>
 </div>
 </div></article>

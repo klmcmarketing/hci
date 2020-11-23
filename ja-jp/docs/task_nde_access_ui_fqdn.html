@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2038,8 +2042,8 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">完全修飾ドメイン名のWebUIアクセスを構成する</h1></div>
-<p class="page-details"><time datetime="2020-11-11 18:15:42 +0000">2020年11月11日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_nde_access_ui_fqdn.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
-<div class="paragraph lead"><p>Element12.2以降を搭載したNetAppHCIを使用すると、完全修飾ドメイン名（FQDN）を使用してストレージクラスタのWebインターフェイスにアクセスできます。 FQDNを使用してElementWeb UI、ノードごとのUI、管理ノードUIなどのWebユーザーインターフェイスにアクセスする場合は、最初にストレージクラスター設定を追加して、クラスターで使用されるFQDNを識別する必要があります。これにより、クラスターはログインセッションを適切にリダイレクトし、多要素認証のためのキーマネージャーやIDプロバイダーなどの外部サービスとの統合を改善できます。</p></div>
+<p class="page-details"><time datetime="2020-11-11 18:15:42 +0000">2020年11月11日</time><span>寄稿者</span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_nde_access_ui_fqdn.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<div class="paragraph lead"><p>Element12.2以降を搭載したNetAppHCIを使用すると、完全修飾ドメイン名（FQDN）を使用してストレージクラスタのWebインターフェイスにアクセスできます。 FQDNを使用してElementWeb UI、ノードごとのUI、管理ノードUIなどのWebユーザーインターフェイスにアクセスする場合は、最初にストレージクラスター設定を追加して、クラスターで使用されるFQDNを識別する必要があります。これにより、クラスターはログインセッションを適切にリダイレクトでき、多要素認証のためのキーマネージャーやIDプロバイダーなどの外部サービスとの統合が向上します。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>

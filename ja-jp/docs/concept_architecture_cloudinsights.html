@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2046,7 +2050,7 @@
 <div class="sect1">
 <h2 id="a-unique-netapp-hci-data-collector">独自のNetAppHCIデータコレクター</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>Cloud Insightsが分析を提供する各ベンダーは、スタックメトリックに接続して収集する中央のアクイジションユニットで実行される独自のデータコレクターを持っています。同様に、Cloud Insightsは、NetAppHCIに独自のデータコレクターを採用しています。新しいデータコレクターをデプロイするのは、1分未満のタスクで簡単です。<br>データコレクター固有の情報のみをWebフォームに入力すると、データコレクターが稼働します。</p></div>
+<div class="paragraph"><p>Cloud Insightsが分析を提供する各ベンダーは、スタックメトリックに接続して収集する中央の取得ユニットで実行される独自のデータコレクターを持っています。同様に、Cloud Insightsは、NetAppHCIに独自のデータコレクターを採用しています。新しいデータコレクターをデプロイするのは、1分未満のタスクで簡単です。<br>データコレクター固有の情報のみをWebフォームに入力すると、データコレクターが稼働します。</p></div>
 <div class="paragraph"><p> <span class="image"><img src="../media/cloudinsights_data_collector.png" alt="NetAppHCI用のCloudInsightsデータコレクター"></span></p></div>
 <h2 id="top-links" class="discrete">トップリンク</h2>
 <div class="ulist"><ul><li><p><a href="task_deploying_overview.html">NetAppHCIへのクラウドサービスの導入の概要</a></p></li></ul></div>

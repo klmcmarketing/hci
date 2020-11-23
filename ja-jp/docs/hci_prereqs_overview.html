@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2051,7 +2055,7 @@
 <li><p><a href="hci_prereqs_timekeeping.html" target="_blank" rel="noopener">DNSと時間管理の要件</a></p></li>
 <li><p><a href="hci_prereqs_environmental.html" target="_blank" rel="noopener">環境要件</a></p></li>
 <li><p><a href="hci_prereqs_protection_domains.html" target="_blank" rel="noopener">保護ドメイン</a></p></li>
-<li><p><a href="hci_prereqs_witness_nodes.html" target="_blank" rel="noopener">2ノードストレージクラスターの監視ノードリソース要件</a></p></li>
+<li><p><a href="hci_prereqs_witness_nodes.html" target="_blank" rel="noopener">2ノードストレージクラスタの監視ノードリソース要件</a></p></li>
 </ul></div>
 <h2 id="find-more-information" class="discrete">詳細情報を探す</h2>
 <div class="ulist"><ul>

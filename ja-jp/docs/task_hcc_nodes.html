@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2064,7 +2068,7 @@
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li><p> 2ノードクラスター：「2ノード」ラベルが[ストレージ]タブに表示され、関連する監視ノードが一覧表示されます。</p></li>
 <li><p> 3ノードクラスター：ストレージノードと関連する監視ノードが一覧表示されます。 3ノードクラスターでは、ノードに障害が発生した場合に高可用性を維持するために、スタンバイにWitnessノードがデプロイされています。</p></li>
-<li><p> 4ノード以上のクラスター：4ノード以上のクラスターの情報が表示されます。監視ノードは適用されません。 2つまたは3つのストレージノードから始めてノードを追加した場合でも、ウィットネスノードは表示されます。それ以外の場合、WitnessNodesテーブルは表示されません。</p></li>
+<li><p> 4ノード以上のクラスター：4ノード以上のクラスターの情報が表示されます。監視ノードは適用されません。 2つまたは3つのストレージノードから始めてノードを追加した場合でも、Witnessノードは表示されます。それ以外の場合、WitnessNodesテーブルは表示されません。</p></li>
 <li><p>ファームウェアバンドルバージョン：管理サービスバージョン2.14以降、Element 12.0以降を実行しているクラスターがある場合、これらのクラスターのファームウェアバンドルバージョンを確認できます。クラスター内のノードに異なるファームウェアバージョンがある場合は、[<strong>ファームウェアバンドルバージョン</strong>]列に[<strong>複数]</strong>が表示されます。</p></li>
 </ol></div>
 </li>

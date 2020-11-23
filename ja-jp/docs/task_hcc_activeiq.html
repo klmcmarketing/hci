@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2048,7 +2052,7 @@
 <li><p>ご使用のクラスターバージョンは、NetAppElementソフトウェア12.0以降を実行しています。</p></li>
 <li><p>あなたはインターネットにアクセスできます。 Active IQコレクターサービスは、暗いサイトからは使用できません。</p></li>
 </ul></div>
-<div class="paragraph"><p><strong>このタスクについて</strong><br>クラスター全体の統計の継続的に更新される履歴ビューを取得できます。クラスター上の指定されたイベント、しきい値、またはメトリックについて警告する通知を設定して、それらに迅速に対処できるようにすることができます。</p></div>
+<div class="paragraph"><p><strong>このタスクについて</strong><br>クラスター全体の統計の継続的に更新される履歴ビューを取得できます。クラスター上の指定されたイベント、しきい値、またはメトリックについてアラートを出すように通知を設定して、それらに迅速に対処できるようにすることができます。</p></div>
 <div class="paragraph"><p>通常のサポート契約の一環として、ネットアップサポートはこのデータを監視し、潜在的なシステムの問題を警告します。</p></div>
 <div class="paragraph"><p><strong>ステップ</strong></p></div>
 <div class="olist arabic"><ol class="arabic">
@@ -2062,7 +2066,7 @@
 <p> [<strong>アクティブIQの表示]を</strong>選択し<strong>ます</strong>。</p>
 <div class="paragraph"><p> <a href="https://activeiq.solidfire.com" target="_blank" rel="noopener">SolidFire ActiveIQダッシュボード</a>が表示されます。</p></div>
 </li>
-<li><p> SolidFire Active IQについて学ぶには、ダッシュボードから右上のメニューアイコンをクリックし、[<strong>ドキュメント</strong>]をクリックします。</p></li>
+<li><p> SolidFire Active IQについて学習するには、ダッシュボードから右上のメニューアイコンをクリックし、[<strong>ドキュメント</strong>]をクリックします。</p></li>
 <li>
 <p> SolidFire Active IQインターフェイスから、NetAppHCIコンピューティングノードとストレージノードがテレメトリをActiveIQに正しくレポートしていることを確認します。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">

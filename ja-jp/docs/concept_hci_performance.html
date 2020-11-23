@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2051,11 +2055,11 @@
 <div class="sectionbody">
 <div class="paragraph"><p>IOPSパラメーターは次の方法で定義されます。</p></div>
 <div class="ulist"><ul>
-<li><p><strong>最小IOPS-</strong>ストレージクラスターがボリュームに提供する1秒あたりの持続的な入力および出力（IOPS）の最小数。ボリュームに構成された最小IOPSは、ボリュームのパフォーマンスの保証レベルです。パフォーマンスがこのレベルを下回ることはありません。</p></li>
+<li><p><strong>最小IOPS-</strong>ストレージクラスターがボリュームに提供する1秒あたりの持続的な入力と出力の最小数（IOPS）。ボリュームに構成された最小IOPSは、ボリュームのパフォーマンスの保証レベルです。パフォーマンスがこのレベルを下回ることはありません。</p></li>
 <li><p><strong>最大IOPS-</strong>ストレージクラスターがボリュームに提供する持続IOPSの最大数。クラスターのIOPSレベルが非常に高い場合、このレベルのIOPSパフォーマンスを超えることはありません。</p></li>
 <li>
 <p><strong>バーストIOPS-</strong>ショートバーストシナリオで許可されるIOPSの最大数。ボリュームが最大IOPSを下回っている場合、バーストクレジットが累積されます。パフォーマンスレベルが非常に高くなり、最大レベルにプッシュされると、ボリュームでIOPSの短いバーストが許可されます。</p>
-<div class="paragraph"><p> Elementソフトウェアは、クラスターがクラスターIOPSの使用率が低い状態で実行されている場合、バーストIOPSを使用します。</p></div>
+<div class="paragraph"><p> Elementソフトウェアは、クラスターのIOPS使用率が低い状態でクラスターが実行されている場合、バーストIOPSを使用します。</p></div>
 <div class="paragraph"><p>単一のボリュームでバーストIOPSが発生し、クレジットを使用して、設定された「バースト期間」の間、最大IOPSを超えてバーストIOPSレベルまでバーストできます。クラスタにバーストに対応する容量がある場合、ボリュームは最大60秒間バーストする可能性があります。ボリュームは、ボリュームが最大IOPS制限を下回った場合、1秒ごとに1秒のバーストクレジット（最大60秒）が発生します。</p></div>
 <div class="paragraph"><p>バーストIOPSは、次の2つの方法で制限されます。</p></div>
 <div class="ulist"><ul>
@@ -2068,7 +2072,7 @@
 <div class="paragraph"><p>例：100最小IOPS、1000最大IOPS、および1500バーストIOPのQoSパラメーター設定は、パフォーマンスの品質に次の影響を及ぼします。</p></div>
 <div class="ulist"><ul>
 <li><p>ワークロードは、IOPSのワークロード競合の状態がクラスター上で明らかになるまで、最大1000IOPSに到達して維持することができます。次に、すべてのボリュームのIOPSが指定されたQoS範囲内に収まり、パフォーマンスの競合が緩和されるまで、IOPSが段階的に削減されます。</p></li>
-<li><p>すべてのボリュームのパフォーマンスは、最小IOPSの100に向かって押し上げられます。レベルは最小IOPS設定を下回りませんが、ワークロードの競合が緩和されると、100IOPSを超えたままになる可能性があります。</p></li>
+<li><p>すべてのボリュームのパフォーマンスは、最小IOPSの100に向かって押し上げられます。レベルは最小IOPS設定を下回りませんが、ワークロードの競合が緩和されたときに100IOPSを超えたままになる可能性があります。</p></li>
 <li><p>パフォーマンスは、持続期間で1000 IOPSを超えたり、100IOPSを下回ったりすることはありません。 1500 IOPS（バーストIOPS）のパフォーマンスが許可されますが、最大IOPSを下回って実行することによりバーストクレジットが発生し、短時間しか許可されていないボリュームに対してのみ許可されます。バーストレベルが維持されることはありません。</p></li>
 </ul></div>
 </li>
@@ -2138,7 +2142,7 @@
 <div class="paragraph"><p>ブロックサイズと帯域幅は、アプリケーションが取得できるIOPSの数に直接影響します。 Elementソフトウェアは、ブロックサイズを4kに正規化することにより、受け取るブロックサイズを考慮に入れます。ワークロードに基づいて、システムはブロックサイズを増やす可能性があります。ブロックサイズが大きくなると、システムはより大きなブロックサイズを処理するために必要なレベルまで帯域幅を増やします。帯域幅が増加すると、システムが達成できるIOPSの数は減少します。</p></div>
 <div class="paragraph"><p> QoSパフォーマンス曲線は、ブロックサイズの増加とIOPSの割合の減少の関係を示しています。 </p></div>
 <div class="imageblock"><div class="content"><img src="../media/hci_performance_curve.png" alt="QoSパフォーマンス曲線"></div></div>
-<div class="paragraph"><p>たとえば、ブロックサイズが4k、帯域幅が4000 KBpsの場合、IOPSは1000です。ブロックサイズが8kに増加すると、帯域幅は5000 KBpsに増加し、IOPSは625に減少します。ブロックサイズを考慮することにより、システムはバックアップやハイパーバイザーアクティビティなど、より高いブロックサイズを使用する優先度の低いワークロードは、より小さなブロックサイズを使用する優先度の高いトラフィックに必要なパフォーマンスをあまり消費しません。</p></div>
+<div class="paragraph"><p>たとえば、ブロックサイズが4k、帯域幅が4000 KBpsの場合、IOPSは1000です。ブロックサイズが8kに増加すると、帯域幅は5000 KBpsに増加し、IOPSは625に減少します。ブロックサイズを考慮に入れることで、システムはバックアップやハイパーバイザーアクティビティなど、より高いブロックサイズを使用する優先度の低いワークロードは、より小さなブロックサイズを使用する優先度の高いトラフィックに必要なパフォーマンスをあまり消費しません。</p></div>
 </div>
 </div>
 <div class="sect1">

@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2141,7 +2145,7 @@
 </tr></table></div>
 </li>
 <li><p>更新の実行に使用しているコンピューターで、BMC更新パッケージの内容を抽出します。</p></li>
-<li><p> BMCのWeb UIでは、<strong>ファームウェアのアップデートページ</strong>の<strong>選択ファームウェアイメージの</strong>セクションの下で、<strong>ファイルを選択</strong>]<strong>を</strong>クリックします。</p></li>
+<li><p> BMC Web UIの<strong>[</strong><strong>ファームウェアアップデート</strong>]ページの<strong>[ファームウェアイメージ</strong>の<strong>選択</strong>]セクションで、[<strong>ファイルの選択</strong>]をクリックし<strong>ます</strong>。</p></li>
 <li><p>抽出されたパッケージの内容内の<code>rom.ima_enc</code>ファイルを参照して選択します。</p></li>
 <li><p> [<strong>ファームウェアの更新</strong>を<strong>開始</strong>]をクリックし、続行するかどうかを尋ねるプロンプトが表示されたら[ <strong>OK</strong> ]をクリックします。</p></li>
 <li><p>ファームウェアのリセットが行われていることを示すプロンプトが表示されたら、[ <strong>OK]を</strong>クリックします。</p></li>

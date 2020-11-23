@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2063,7 +2067,7 @@
 <p> [ボリューム]ページで、次のオプションを使用します。 </p>
 <div class="imageblock"><div class="content"><img src="../media/hcc_volumes_icons.png" alt="HCCボリュームページアイコン"></div></div>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
-<li><p> [<strong>フィルター</strong>]アイコンをクリックして、結果を<strong>フィルターし</strong>ます。</p></li>
+<li><p> 「<strong>フィルター」</strong>アイコンをクリックして、結果を<strong>フィルターし</strong>ます。</p></li>
 <li><p> [<strong>非表示/表示</strong>]アイコンをクリックして、列を非表示または<strong>表示し</strong>ます。</p></li>
 <li><p> [<strong>更新</strong>]アイコンをクリックしてデータを<strong>更新し</strong>ます。</p></li>
 <li><p>ダウンロードアイコンをクリックして、CSVファイルを<strong>ダウンロードし</strong>ます。</p></li>

@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2040,7 +2044,7 @@
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">データ保護</h1></div>
 <p class="page-details"><time datetime="2020-10-02 21:04:04 +0000">2020年10月2日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_hci_dataprotection.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
-<div class="paragraph lead"><p>NetApp HCIデータ保護の用語には、さまざまなタイプのリモートレプリケーション、ボリュームスナップショット、ボリュームクローニング、保護ドメイン、および二重らせんテクノロジーによる高可用性が含まれます。</p></div>
+<div class="paragraph lead"><p>NetApp HCIデータ保護用語には、さまざまなタイプのリモートレプリケーション、ボリュームスナップショット、ボリュームクローン作成、保護ドメイン、および二重らせんテクノロジーによる高可用性が含まれます。</p></div>
 <div class="paragraph"><p> NetApp HCIデータ保護には、次の概念が含まれています。</p></div>
 <div class="ulist"><ul>
 <li><p><a href="#remote-replication-types">リモートレプリケーションタイプ</a></p></li>
@@ -2097,7 +2101,7 @@
 <div class="paragraph"><p>NetApp SnapMirrorテクノロジーを使用すると、ディザスタリカバリの目的でNetAppElementソフトウェアを使用して作成されたスナップショットをONTAPに複製できます。 SnapMirror関係では、Elementは一方のエンドポイントであり、ONTAPはもう一方のエンドポイントです。</p></div>
 <div class="paragraph"><p> SnapMirrorは、ディザスタリカバリを容易にするNetAppSnapshot™レプリケーションテクノロジーであり、地理的に離れたサイトでプライマリストレージからセカンダリストレージにフェイルオーバーするように設計されています。 SnapMirrorテクノロジーは、セカンダリストレージに作業データのレプリカまたはミラーを作成します。このレプリカから、プライマリサイトで停止が発生した場合にデータを提供し続けることができます。データはボリュームレベルでミラーリングされます。</p></div>
 <div class="paragraph"><p>プライマリストレージのソースボリュームとセカンダリストレージの宛先ボリュームの関係は、データ保護関係と呼ばれます。クラスターは、ボリュームが存在するエンドポイントと呼ばれ、レプリケートされたデータを含むボリュームをピアリングする必要があります。ピア関係により、クラスターとボリュームはデータを安全に交換できます。</p></div>
-<div class="paragraph"><p> SnapMirrorはNetAppONTAPコントローラでネイティブに実行され、NetAppHCIおよびSolidFireクラスタで実行されるElementに統合されています。 SnapMirrorを制御するロジックはONTAPソフトウェアにあります。したがって、すべてのSnapMirror関係には、調整作業を実行するために少なくとも1つのONTAPシステムが含まれている必要があります。ユーザーは、主にElementUIを介してElementとONTAPクラスター間の関係を管理します。ただし、一部の管理タスクはNetApp ONTAP SystemManagerにあります。ユーザーは、CLIとAPIを介してSnapMirrorを管理することもできます。これらは、ONTAPとElementの両方で使用できます。</p></div>
+<div class="paragraph"><p> SnapMirrorはNetAppONTAPコントローラーでネイティブに実行され、NetAppHCIおよびSolidFireクラスターで実行されるElementに統合されます。 SnapMirrorを制御するロジックはONTAPソフトウェアにあります。したがって、すべてのSnapMirror関係には、調整作業を実行するために少なくとも1つのONTAPシステムが含まれている必要があります。ユーザーは、主にElementUIを介してElementとONTAPクラスター間の関係を管理します。ただし、一部の管理タスクはNetApp ONTAP SystemManagerにあります。ユーザーは、CLIとAPIを介してSnapMirrorを管理することもできます。これらは、ONTAPとElementの両方で使用できます。</p></div>
 <div class="paragraph"><p> <a href="https://fieldportal.netapp.com/content/616239" target="_blank" rel="noopener">TR-4651：NetApp SolidFire SnapMirrorのアーキテクチャと構成</a>（ログインが必要）を参照してください。</p></div>
 <div class="paragraph"><p> Elementソフトウェアを使用して、クラスターレベルでSnapMirror機能を手動で有効にする必要があります。 SnapMirror機能はデフォルトで無効になっており、新規インストールまたはアップグレードの一部として自動的に有効になることはありません。</p></div>
 <div class="paragraph"><p> SnapMirrorを有効にした後、Elementソフトウェアの[データ保護]タブからSnapMirror関係を作成できます。</p></div>
@@ -2108,7 +2112,7 @@
 <h2 id="volume-snapshots-for-data-protection">データ保護のためのボリュームスナップショット</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>ボリュームスナップショットは、ボリュームのポイントインタイムコピーであり、後でボリュームをその特定の時間に復元するために使用できます。</p></div>
-<div class="paragraph"><p>スナップショットはボリュームクローンに似ていますが、スナップショットはボリュームメタデータの単なるレプリカであるため、マウントしたり、それらに書き込んだりすることはできません。ボリュームスナップショットの作成には、少量のシステムリソースとスペースしか必要ないため、スナップショットの作成はクローン作成よりも高速になります。</p></div>
+<div class="paragraph"><p>スナップショットはボリュームクローンに似ていますが、スナップショットはボリュームメタデータの単なるレプリカであるため、マウントしたり、それらに書き込んだりすることはできません。ボリュームスナップショットの作成にも、少量のシステムリソースとスペースしか必要ないため、スナップショットの作成はクローン作成よりも高速になります。</p></div>
 <div class="paragraph"><p>スナップショットをリモートクラスターに複製し、ボリュームのバックアップコピーとして使用できます。これにより、複製されたスナップショットを使用して、ボリュームを特定の時点にロールバックできます。複製されたスナップショットからボリュームのクローンを作成することもできます。</p></div>
 <div class="paragraph"><p> SolidFireクラスターから外部オブジェクトストアまたは別のSolidFireクラスターにスナップショットをバックアップできます。スナップショットを外部オブジェクトストアにバックアップするときは、読み取り/書き込み操作を許可するオブジェクトストアへの接続が必要です。</p></div>
 <div class="paragraph"><p>データ保護のために、個々のボリュームまたは複数のボリュームのスナップショットを作成できます。</p></div>

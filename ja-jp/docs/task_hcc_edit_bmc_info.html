@@ -79,12 +79,17 @@
   <link rel="stylesheet" href="/hci/ja-jp/css/prism-netapp.css" type="text/css">
 
 
-<script src="/hci/ja-jp/js/na-utility.js"></script>
+  <script src="/hci/ja-jp/js/na-utility.js"></script>
   <script src="/hci/ja-jp/js/clouddocs.js"></script>
-  
-  <script src="//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js" async></script>
-  
-
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
   <script src="/hci/ja-jp/js/jquery.navgoco.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="/hci/ja-jp/js/toc.js"></script>
@@ -415,9 +420,8 @@
   <div class="col-md-3">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    Download PDF
+    PDFs
     <span>
-      <img src="/hci/ja-jp/images/pdf.png" width="20" height="20">
     </span>
   </a>
 </div>
@@ -2040,7 +2044,7 @@
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ベースボード管理コントローラーの接続情報を編集する</h1></div>
 <p class="page-details"><time datetime="2020-11-05 23:42:31 +0000">2020年11月5日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span><span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_edit_bmc_info.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
-<div class="paragraph lead"><p>NetApp Hybrid Cloud Controlで、コンピューティングノードごとにBaseboard Management Controller（BMC）管理者の資格情報を変更できます。 BMCファームウェアをアップグレードする前に資格情報を変更するか、 <code>Hardware ID not available</code> <code>Unable to Detect</code> <code>Hardware ID not available</code>を解決するか、NetApp Hybrid CloudControlに示されているエラー<code>Unable to Detect</code> <code>Hardware ID not available</code> 。</p></div>
+<div class="paragraph lead"><p>コンピューティングノードごとに、NetApp Hybrid CloudControlでBaseboardManagement Controller（BMC）管理者の資格情報を変更できます。 BMCファームウェアをアップグレードする前に資格情報を変更するか、 <code>Hardware ID not available</code> <code>Unable to Detect</code> <code>Hardware ID not available</code>を解決するか、NetApp Hybrid CloudControlに示されているエラー<code>Unable to Detect</code> <code>Hardware ID not available</code> 。</p></div>
 <div class="paragraph">
 <div class="title">必要なもの</div>
 <p>BMC資格情報を変更するためのクラスター管理者権限。 </p>
@@ -2181,7 +2185,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> <code>bmcUsername</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> BMCにログインするための更新されたユーザー名。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> BMCにログインするために更新されたユーザー名。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"> <code>serialNumber</code></p></td>
