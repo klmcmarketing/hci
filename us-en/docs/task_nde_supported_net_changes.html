@@ -1810,7 +1810,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-10-09 17:34:20 +0000">10/09/2020</time>
+    <time datetime="2020-11-23 14:35:19 +0000">11/23/2020</time>
     
   
 
@@ -1821,6 +1821,14 @@
           alt="netapp-mwallis"
           width="20" height="20"
           src="https://avatars3.githubusercontent.com/u/53353653?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-amitha">
+    <img  class="avatar avatar-small"
+          alt="netapp-amitha"
+          width="20" height="20"
+          src="https://avatars1.githubusercontent.com/u/42010398?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -1909,6 +1917,45 @@
 </table>
 <div class="paragraph">
 <p>The following is a six-interface configuration with VMware vSphere Standard Switching (VSS). This configuration uses VMware vSphere Standard Switches (VSS).</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Network function</th>
+<th class="tableblock halign-left valign-top">vmkernel</th>
+<th class="tableblock halign-left valign-top">vmnic (physical interface)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Management</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vmk0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vmnic2 (Port A), vmnic3 (Port B)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iSCSI-A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vmk2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vmnic1 (Port E)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iSCSI-B</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vmk3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vmnic5 (Port D)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vMotion</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vmk1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vmnic4 (Port C), vmnic0 (Port F)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following is a two-interface configuration. This configuration is only supported when used with VMware vSphere Distributed Switches (VDS), and requires VMware vSphere Enterprise Plus licensing.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>

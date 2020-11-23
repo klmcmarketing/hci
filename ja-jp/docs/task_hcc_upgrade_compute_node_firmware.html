@@ -2400,7 +2400,7 @@
 <li><p>インストール資産IDを<strong>id</strong>フィールドに貼り付けます。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
 <li>
-<p>応答から、後のステップで使用するために、クラスターコントローラーID（ <code>"controllerId"</code> ）とノードハードウェアID（ <code>"hardwareId"</code> ）をコピーして保存します。</p>
+<p>応答から、クラスターコントローラーID（ <code>"controllerId"</code> ）とノードハードウェアID（ <code>"hardwareId"</code> ）をコピーして保存し、後の手順で使用できるようにします。</p>
 <div class="listingblock"><div class="content"><pre> 「計算」：{
   「エラー」：[]、
   「在庫」：{
@@ -2530,7 +2530,7 @@
 <li><p>承認ウィンドウを閉じます。</p></li>
 </ol></div>
 </li>
-<li><p> REST API UIから、[ <strong>GET / nodes / {hardware_id} / upgrades</strong> ]をクリックし<strong>ます</strong>。</p></li>
+<li><p> REST API UIから、 <strong>GET / nodes / {hardware_id} / upgradesを</strong>クリックし<strong>ます</strong>。</p></li>
 <li><p> （オプション）日付とステータスのパラメータを入力して、結果をフィルタリングします。</p></li>
 <li><p>パラメータフィールドにハードウェアホストアセットID（前の手順で保存した<code>"hardwareId"</code> ）を入力します。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
@@ -2552,7 +2552,7 @@
 <li><p><a href="https://mysupport.netapp.com/site/downloads">NetAppソフトウェアのダウンロード</a>ページを参照し、[ <strong>NetApp HCI</strong> ]をクリックして、ダウンロードリンクをクリックしてNetAppHCIの正しいバージョンを確認します。</p></li>
 <li><p>エンドユーザー使用許諾契約に同意します。</p></li>
 <li><p> [<strong>コンピューティングノード]</strong>セクションで、[コンピューティングノード]イメージをダウンロードします。</p></li>
-<li><p> Etcherユーティリティを使用して、計算ノードファームウェアISOをUSBドライブにフラッシュします。</p></li>
+<li><p> Etcherユーティリティを使用して、計算ノードのファームウェアISOをUSBドライブにフラッシュします。</p></li>
 <li>
 <p> VMware vCenterを使用して計算ノードをメンテナンスモードにし、すべての仮想マシンをホストから退避させます。 </p>
 <div class="admonitionblock note"><table><tr>
@@ -2666,7 +2666,7 @@
 </div>
 <div class="sect2">
 <h3 id="upgrade-firmware-on-h610ch615c-nodes"> H610C / H615Cノードのファームウェアをアップグレードします</h3>
-<div class="paragraph"><p>手順は、ノードがスタンドアロンであるかクラスターの一部であるかによって異なります。手順には約25分かかる場合があり、ノードの電源オフ、ISOのアップロード、デバイスのフラッシュ、アップグレード後のノードの電源オンの再投入が含まれます。</p></div>
+<div class="paragraph"><p>手順は、ノードがスタンドアロンであるかクラスターの一部であるかによって異なります。手順には約25分かかる場合があり、ノードの電源をオフにし、ISOをアップロードし、デバイスをフラッシュし、アップグレード後にノードの電源を再びオンにします。</p></div>
 <div class="olist arabic">
 <div class="title">ステップ</div>
 <ol class="arabic">
