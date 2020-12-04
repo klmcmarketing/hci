@@ -1469,6 +1469,9 @@
   
 
 
+  
+
+
 
 
           
@@ -2026,6 +2029,9 @@
 <li class=" "><a class="na-navbar-padding" href="task_hci_psurepl.html">
         Replace power supply units
       </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_snswitches.html">
+        Replace SN2010, SN2100, and SN2700 switchess
+      </a></li>
 </ul>
 </li>
 <li class=" "><a class="na-navbar-padding" href="reference_notices_hci.html">
@@ -2049,13 +2055,13 @@
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp HCIを使用すると、ストレージクラスタに保存されているすべてのデータを暗号化できます。</p></div>
 <div class="paragraph"><p>暗号化が可能なストレージノード内のすべてのドライブは、ドライブレベルでAES256ビット暗号化を使用します。各ドライブには独自の暗号化キーがあり、ドライブが最初に初期化されたときに作成されます。暗号化機能を有効にすると、ストレージクラスター全体のパスワードが作成され、パスワードのチャンクがクラスター内のすべてのノードに配布されます。パスワード全体を格納する単一のノードはありません。このパスワードは、ドライブへのすべてのアクセスをパスワードで保護するために使用されます。ドライブのロックを解除するにはパスワードが必要です。ドライブはすべてのデータを暗号化しているため、データは常に安全です。</p></div>
-<div class="paragraph"><p>保管時の暗号化を有効にしても、ストレージクラスターのパフォーマンスと効率は影響を受けません。さらに、ElementAPIまたはElementUIを使用してストレージクラスターから暗号化対応のドライブまたはノードを削除すると、ドライブの暗号化停止が無効になり、ドライブが安全に消去され、以前にそれらのドライブに保存されていたデータが保護されます。ドライブを取り外した後、 <code>SecureEraseDrives</code>メソッドを使用してドライブを安全に消去できます。ドライブまたはノードをストレージクラスターから強制的に削除した場合、データはクラスター全体のパスワードとドライブの個々の暗号化キーによって保護されたままになります。</p></div>
-<div class="paragraph"><p> Restでの<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-EE404D52-B621-4DE5-B141-2559768FB1D0.html">暗号化の有効化と無効化について</a>は、SolidFire and Element DocumentationCenterの<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-EE404D52-B621-4DE5-B141-2559768FB1D0.html">クラスターの暗号化の有効化と無効化を</a>参照してください。</p></div>
+<div class="paragraph"><p>保管時の暗号化を有効にしても、ストレージクラスターのパフォーマンスと効率は影響を受けません。さらに、ElementAPIまたはElementUIを使用してストレージクラスターから暗号化が有効なドライブまたはノードを削除すると、ドライブの暗号化停止が無効になり、ドライブが安全に消去され、以前にそれらのドライブに保存されていたデータが保護されます。ドライブを取り外した後、 <code>SecureEraseDrives</code>メソッドを使用してドライブを安全に消去できます。ドライブまたはノードをストレージクラスターから強制的に削除した場合、データはクラスター全体のパスワードとドライブの個々の暗号化キーによって保護されたままになります。</p></div>
+<div class="paragraph"><p>保管時の<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-EE404D52-B621-4DE5-B141-2559768FB1D0.html">暗号化の有効化と無効化について</a>は、SolidFire and Element DocumentationCenterの<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-EE404D52-B621-4DE5-B141-2559768FB1D0.html">クラスターの暗号化の有効化と無効化を</a>参照してください。</p></div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="software-encryption-at-rest">保管時のソフトウェア暗号化</h2>
-<div class="sectionbody"><div class="paragraph"><p>Software Encryption at Restを使用すると、ストレージクラスター内のSSDに書き込まれるすべてのデータを暗号化できます。これにより、自己暗号化ドライブ（SED）を含まないSolidFire EnterpriseSDSノードに暗号化のプライマリレイヤーが提供されます。</p></div></div>
+<div class="sectionbody"><div class="paragraph"><p>保管時のソフトウェア暗号化により、ストレージクラスター内のSSDに書き込まれるすべてのデータを暗号化できます。これにより、自己暗号化ドライブ（SED）を含まないSolidFire EnterpriseSDSノードに暗号化のプライマリレイヤーが提供されます。</p></div></div>
 </div>
 <div class="sect1">
 <h2 id="external-key-management">外部キー管理</h2>
@@ -2068,7 +2074,7 @@
 <li><p> Vormetric Data Security Manager</p></li>
 <li><p> IBM Security Key Lifecycle Manager</p></li>
 </ul></div>
-<div class="paragraph"><p>外部キー管理の構成の詳細については、SolidFire and Element DocumentationCenterの「GettingStartedwithExternalKeyManagement <a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-057D852C-9C1C-458A-9161-328EDA349B00.html">」を</a>参照してください。</p></div>
+<div class="paragraph"><p>外部キー管理の構成の詳細については、SolidFire and Element DocumentationCenterの「GettingstartingwithExternalKeyManagement <a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-057D852C-9C1C-458A-9161-328EDA349B00.html">」を</a>参照してください。</p></div>
 </div>
 </div>
 <div class="sect1">

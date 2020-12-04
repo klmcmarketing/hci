@@ -1469,6 +1469,9 @@
   
 
 
+  
+
+
 
 
           
@@ -2026,6 +2029,9 @@
 <li class=" "><a class="na-navbar-padding" href="task_hci_psurepl.html">
         Replace power supply units
       </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_snswitches.html">
+        Replace SN2010, SN2100, and SN2700 switchess
+      </a></li>
 </ul>
 </li>
 <li class=" "><a class="na-navbar-padding" href="reference_notices_hci.html">
@@ -2044,7 +2050,7 @@
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> H410Cノードを交換してください</h1></div>
 <p class="page-details"><time datetime="2020-11-04 20:10:27 +0000">2020年11月4日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hci_h410crepl.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
-<div class="paragraph lead"><p>CPU障害、その他のマザーボードの問題が発生した場合、または電源が入らない場合は、計算ノードを交換する必要があります。手順はH410Cノードに適用されます。 NetApp HCIブートストラップOSバージョン1.6P1以降を実行するH410C計算ノードがある場合、メモリDIMMに障害が発生してもノードを交換する必要はありません。故障したDIMMのみを交換する必要があります。ノードのDIMMに障害が発生していない場合は、交換ノードでそれらを使用できます。 </p></div>
+<div class="paragraph lead"><p>CPU障害、その他のマザーボードの問題が発生した場合、または電源が入らない場合は、計算ノードを交換する必要があります。手順はH410Cノードに適用されます。 NetApp HCIブートストラップOSバージョン1.6P1以降を実行するH410C計算ノードがある場合、メモリDIMMに障害が発生してもノードを交換する必要はありません。故障したDIMMのみを交換する必要があります。ノード内のDIMMに障害が発生していない場合は、交換用ノードでそれらを使用できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
 <td class="content">交換ノードには、NetAppHCIインストールの残りの計算ノードと同じバージョンのNetAppHCIブートストラップOSが必要です。</td>
@@ -2057,7 +2063,7 @@
 <p>交換用の計算ノードがあります。<br>交換用ノードを注文するには、ネットアップのサポートにお問い合わせください。計算ノードは、ブートストラップOSがインストールされた状態で出荷されます。<br>ノードは、最新バージョンのBootstrapOSとともに工場から出荷されます。次のシナリオでは、ノードで工場出荷時のイメージに戻す（RTFI）プロセスを実行する必要がある場合があります。</p>
 <div class="ulist"><ul>
 <li><p>現在のNetAppHCIインストールでは、最新バージョンより前のバージョンのBootstrapOSが実行されています。この場合、RTFIプロセスは、新しいノードをNetAppHCIインストールが実行されているOSバージョンにダウングレードします。</p></li>
-<li><p>工場出荷時に出荷されたノードが最新バージョンより前のOSバージョンを実行していて、既存のNetAppHCIインストールがすでに最新バージョンを実行している場合。この場合、RTFIプロセスは、新しいノードのOSバージョンを最新バージョンにアップグレードします。<br> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/HCI_-_How_to_RTFI_using_a_USB_key" target="_blank" rel="noopener">USBキーを使用してRTFIを実行する方法（ログインが必要）</a>および<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_RTFI_an_HCI_Compute_Node_via_BMC" target="_blank" rel="noopener">BMCを使用してRTFIを実行する方法</a><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/HCI_-_How_to_RTFI_using_a_USB_key" target="_blank" rel="noopener">（ログインが必要）を</a>参照してください。</p></li>
+<li><p>工場出荷時に出荷されたノードが最新バージョンより前のOSバージョンを実行していて、既存のNetAppHCIインストールがすでに最新バージョンを実行している場合。この場合、RTFIプロセスは、新しいノードのOSバージョンを最新バージョンにアップグレードします。<br> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/HCI_-_How_to_RTFI_using_a_USB_key" target="_blank" rel="noopener">USBキーを使用してRTFIする方法（ログインが必要）</a>および<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_RTFI_an_HCI_Compute_Node_via_BMC" target="_blank" rel="noopener">BMCを使用してRTFIを実行する方法</a><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/HCI_-_How_to_RTFI_using_a_USB_key" target="_blank" rel="noopener">（ログインが必要）を</a>参照してください。</p></li>
 </ul></div>
 </li>
 <li><p>静電放電（ESD）リストバンドを使用しているか、その他の帯電防止対策を講じています。</p></li>
@@ -2260,7 +2266,7 @@
 <p>新しい計算ノードを追加する既存のvSphereデータセンターを選択するか、[<strong>新しいデータセンターの作成]を</strong>選択して新しい計算ノードを新しい<strong>データセンター</strong>に追加します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> [新しいデータセンターの作成]を選択すると、[クラスター]フィールドに自動的に入力されます。</td>
+<td class="content"> [Create New Datacenter]を選択すると、[クラスター]フィールドに自動的に入力されます。</td>
 </tr></table></div>
 </li>
 <li>
@@ -2353,7 +2359,7 @@
 <p>新しい計算ノードを関連付けるvSphereクラスターを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">既存の計算ノードのCPU生成とは異なるCPU生成を持つ計算ノードを追加し、制御するvCenterインスタンスで拡張vMotion互換性（EVC）が無効になっている場合は、続行する前にEVCを有効にする必要があります。これにより、拡張が完了した後のvMotion機能が保証されます。</td>
+<td class="content">既存の計算ノードのCPU世代とは異なるCPU世代の計算ノードを追加し、制御するvCenterインスタンスで拡張vMotion互換性（EVC）が無効になっている場合は、続行する前にEVCを有効にする必要があります。これにより、拡張が完了した後のvMotion機能が保証されます。</td>
 </tr></table></div>
 </li>
 <li><p> [<strong>続行]を</strong>選択します。</p></li>
@@ -2604,11 +2610,11 @@
 </ol></div>
 </li>
 <li>
-<p>表示されるグラフィックで、 <strong>iSCSI-A</strong>を選択し、鉛筆アイコンを選択して、次のように設定を編集します。</p>
+<p>表示されたグラフィックで、 <strong>iSCSI-A</strong>を選択し、鉛筆アイコンを選択して、次のように設定を編集します。</p>
 <div class="olist lowerroman"><ol class="lowerroman" type="i">
 <li>
 <p> [<strong>セキュリティ]を</strong>選択し、次の選択を行います。 </p>
-<div class="imageblock"><div class="content"><img src="../media/iscsi-a.gif" alt="iSCSI-Aネットワークのセキュリティの選択を表示します。"></div></div>
+<div class="imageblock"><div class="content"><img src="../media/iscsi-a.gif" alt="iSCSI-Aネットワークのセキュリティの選択を示します。"></div></div>
 </li>
 <li><p> [<strong>チーミングとフェイルオーバー]</strong>を選択し、[<strong>上書き]</strong>チェックボックスを選択します。</p></li>
 <li><p>矢印アイコンを使用して、vmnic5を未使用のアダプターに移動します。</p></li>
@@ -2649,7 +2655,7 @@
 <p> [iSCSIサーバー]フィールドにSVIPIPアドレスを入力します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> SVIP IPアドレスを取得するには、[ <strong>NetApp Element Management]を</strong>選択し、SVIPIPアドレスをコピーします。<br>デフォルトのポート番号はそのままにしておきます。 3260である必要があります。</td>
+<td class="content"> SVIP IPアドレスを取得するには、 <strong>NetApp Element Managementを</strong>選択し、SVIPIPアドレスをコピーします。<br>デフォルトのポート番号はそのままにしておきます。 3260である必要があります。</td>
 </tr></table></div>
 </li>
 <li><p> [ <strong>OK]を</strong>選択します。<br>ストレージアダプタの再スキャンを推奨するメッセージが表示されます。</p></li>
@@ -2672,7 +2678,7 @@
 <div class="sect1">
 <h2 id="redeploy-witness-nodes-for-two-and-three-node-storage-clusters"> 2ノードおよび3ノードのストレージクラスターのWitnessノードを再デプロイします</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>障害が発生した計算ノードを物理的に交換した後、障害が発生した計算ノードがWitness Nodeをホストしていた場合は、NetApp HCI Witness NodeVMを再デプロイする必要があります。これらの手順は、2ノードまたは3ノードのストレージクラスターを備えたNetAppHCIインストールの一部であるコンピューティングノードにのみ適用されます。</p></div>
+<div class="paragraph"><p>障害が発生した計算ノードを物理的に交換した後、障害が発生した計算ノードがWitness Nodeをホストしていた場合は、NetApp HCI Witness NodeVMを再デプロイする必要があります。これらの手順は、2ノードまたは3ノードのストレージクラスターを備えたNetAppHCIインストールの一部である計算ノードにのみ適用されます。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
@@ -2686,14 +2692,14 @@
 </li>
 <li><p>ウィットネスノードをクラスターに追加できるようにするには、ストレージクラスターにアクセスできることを確認してください。</p></li>
 <li>
-<p>次の条件を考慮して、既存のWitnessノードをVMware vSphere WebClientまたはストレージクラスターから削除するかどうかを決定します。</p>
+<p>次の条件を考慮して、VMware vSphere WebClientまたはストレージクラスターから既存のWitnessノードを削除するかどうかを決定します。</p>
 <div class="ulist"><ul>
 <li><p>新しいウィットネスノードに同じVM名を使用する場合は、vSphereから古いウィットネスノードへのすべての参照を削除する必要があります。</p></li>
 <li>
 <p>新しいウィットネスノードで同じホスト名を使用する場合は、最初に古いウィットネスノードをストレージクラスターから削除する必要があります。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">クラスタが2つの物理ストレージノードのみにダウンしている（そしてウィットネスノードがない）場合、古いウィットネスノードを削除することはできません。このシナリオでは、古い監視ノードを削除する前に、まず新しい監視ノードをクラスターに追加する必要があります。<br> NetApp Element Management拡張ポイントを使用して、クラスタからWitnessNodeを削除できます。</td>
+<td class="content">クラスタが2つの物理ストレージノードのみにダウンしている（およびウィットネスノードがない）場合、古いウィットネスノードを削除することはできません。このシナリオでは、古い監視ノードを削除する前に、まず新しい監視ノードをクラスターに追加する必要があります。<br> NetApp Element Management拡張ポイントを使用して、クラスタからWitnessNodeを削除できます。</td>
 </tr></table></div>
 </li>
 </ul></div>
@@ -2705,7 +2711,7 @@
 <p>次のシナリオでは、監視ノードを再デプロイする必要があります。</p>
 </div>
 <div class="ulist"><ul>
-<li><p> 2ノードまたは3ノードのストレージクラスターがあり、障害が発生した計算ノードがWitness Node VMをホストしていた、NetAppHCIインストールの一部である障害が発生した計算ノードを交換しました。</p></li>
+<li><p> NetApp HCIインストールの一部である障害のある計算ノードを交換しました。このノードには2ノードまたは3ノードのストレージクラスターがあり、障害のある計算ノードはWitness NodeVMをホストしていました。</p></li>
 <li><p>計算ノードで工場出荷時のイメージに戻る（RTFI）手順を実行しました。</p></li>
 <li><p>ウィットネスノードVMが破損しています。</p></li>
 <li>
@@ -2773,7 +2779,7 @@
 <p> MTUを9000に設定します。 </p>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">ウィットネスノードをクラスターに追加する前にMTUが設定されていない場合、MTU設定に一貫性がないことを示すクラスター警告が表示されます。これにより、ガベージコレクションの実行が妨げられ、パフォーマンスの問題が発生する可能性があります。</td>
+<td class="content">ウィットネスノードをクラスターに追加する前にMTUが設定されていない場合、MTU設定の不整合に関するクラスター警告が表示されます。これにより、ガベージコレクションの実行が妨げられ、パフォーマンスの問題が発生する可能性があります。</td>
 </tr></table></div>
 </li>
 <li><p> <strong>Tabキー</strong>を押して[OK]に移動し、 <strong>Enterキー</strong>を押して変更を保存します。<br>ストレージネットワークの構成後、画面はネットワークに戻ります。</p></li>
@@ -2793,7 +2799,7 @@
 </ol></div>
 </li>
 <li>
-<p>次のように、Witnessノードをストレージクラスターに追加します。</p>
+<p>次のように、ウィットネスノードをストレージクラスターに追加します。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li><p> vSphere Web Clientから、[<strong>ショートカット</strong>]タブまたはサイドパネルからNetApp ElementManagement拡張ポイントにアクセスします。</p></li>
 <li><p> <strong>NetApp Element Management&gt; Clusterを</strong>選択します。</p></li>
@@ -2852,7 +2858,7 @@
 <div class="imageblock"><div class="content"><img src="../media/h410c-bmc3.png" alt="BMCUIにファームウェアアップデート画面を表示します。"></div></div>
 </li>
 <li><p>確認ダイアログボックスで[<strong>はい</strong>]を選択します。</p></li>
-<li><p><strong>アップロードファームウェアを</strong>アップロードするファームウェアイメージを選択し、選択するには<strong>、[参照</strong>]<strong>を</strong>選択します。<br>ノードのすぐ近くの外の場所からファームウェアをロードすると、ロード時間が長くなり、タイムアウトが発生する可能性があります。</p></li>
+<li><p><strong>アップロードファームウェアを</strong>アップロードするファームウェアイメージを選択し、選択するには<strong>、[参照</strong>]<strong>を</strong>選択します。<br>ノードのすぐ近く以外の場所からファームウェアをロードすると、ロード時間が長くなり、タイムアウトが発生する可能性があります。</p></li>
 <li><p>構成の保持チェックを許可し、 <strong>[アップグレードの開始]</strong>を選択します。<br>アップグレードには約5分かかります。アップロード時間が60分を超える場合は、アップロードをキャンセルして、ノードの近くにあるローカルマシンにファイルを転送します。<br>セッションがタイムアウトした場合、BMC UIのファームウェア更新領域に再度ログインしようとすると、いくつかのアラートが表示される場合があります。アップグレードをキャンセルすると、ログインページにリダイレクトされます。</p></li>
 <li><p>更新が完了したら、[ <strong>OK]を</strong>選択し、ノードが再起動するのを待ちます。<br>アップグレード後にログインし、[<strong>システム]</strong>を選択して、<strong>ファームウェアリビジョン</strong>のバージョンがアップロードしたバージョンと一致することを確認します。</p></li>
 </ol>

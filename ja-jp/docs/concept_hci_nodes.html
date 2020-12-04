@@ -1469,6 +1469,9 @@
   
 
 
+  
+
+
 
 
           
@@ -2026,6 +2029,9 @@
 <li class=" "><a class="na-navbar-padding" href="task_hci_psurepl.html">
         Replace power supply units
       </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_snswitches.html">
+        Replace SN2010, SN2100, and SN2700 switchess
+      </a></li>
 </ul>
 </li>
 <li class=" "><a class="na-navbar-padding" href="reference_notices_hci.html">
@@ -2042,7 +2048,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ノード</h1></div>
-<p class="page-details"><time datetime="2020-10-13 14:52:07 +0000">2020年10月13日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_hci_nodes.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-12-01 23:33:03 +0000">2020年12月1日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_hci_nodes.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>ノードは、ブロックストレージとコンピューティング機能を提供するためにクラスターにグループ化されたハードウェアまたは仮想リソースです。</p></div>
 <div class="paragraph"><p> NetApp HCIおよびElementソフトウェアは、クラスターのさまざまなノードの役割を定義します。ノードの役割には、<strong>管理ノード</strong>、<strong>ストレージノード</strong>、<strong>計算ノード</strong>、および<strong>NetAppHCI監視</strong>ノードの4種類があります。</p></div>
@@ -2073,7 +2079,7 @@
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content"> 2ノードのストレージクラスターでは、ウィットネスノードに障害が発生した場合の冗長性のために、少なくとも2つのウィットネスノードがデプロイされます。 NetApp HCIインストールプロセスでウィットネスノードをインストールすると、仮想マシンテンプレートがVMware vCenterに保存され、誤って削除、紛失、または破損した場合にウィットネスノードを再デプロイするために使用できます。ウィットネスノードをホストしていた障害のある計算ノードを置き換える必要がある場合は、テンプレートを使用してウィットネスノードを再デプロイすることもできます。手順については、 <a href="https://docs.netapp.com/hci/index.jsp?topic=%2Fcom.netapp.doc.hs-comnode-repl%2FGUID-0947FD01-0BA6-4650-A36F-8BF096B0B81C.html" target="_blank" rel="noopener">2ノードおよび3ノードのストレージクラスターの監視ノードの再デプロイを</a>参照してください。</td>
+<td class="content"> 2ノードのストレージクラスターでは、ウィットネスノードに障害が発生した場合の冗長性のために、少なくとも2つのウィットネスノードがデプロイされます。 NetApp HCIインストールプロセスでウィットネスノードをインストールすると、仮想マシンテンプレートがVMware vCenterに保存され、誤って削除、紛失、または破損した場合にウィットネスノードを再デプロイするために使用できます。ウィットネスノードをホストしていた障害のある計算ノードを置き換える必要がある場合は、テンプレートを使用してウィットネスノードを再デプロイすることもできます。手順については、ここの「 <strong>2ノードおよび3ノードのストレージクラスター</strong>の<strong>監視ノード</strong>の<strong>再デプロイ」</strong>セクションを参照して<a href="task_hci_h410crepl.html" target="_blank" rel="noopener">ください</a>。</td>
 </tr></table></div>
 </div>
 </div>

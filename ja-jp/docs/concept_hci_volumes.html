@@ -1469,6 +1469,9 @@
   
 
 
+  
+
+
 
 
           
@@ -2026,6 +2029,9 @@
 <li class=" "><a class="na-navbar-padding" href="task_hci_psurepl.html">
         Replace power supply units
       </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_snswitches.html">
+        Replace SN2010, SN2100, and SN2700 switchess
+      </a></li>
 </ul>
 </li>
 <li class=" "><a class="na-navbar-padding" href="reference_notices_hci.html">
@@ -2050,7 +2056,7 @@
 <div class="sect1">
 <h2 id="persistent-volumes">永続ボリューム</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>永続ボリュームを使用すると、管理ノードの構成データをVMでローカルに保存するのではなく、指定したストレージクラスターに保存できるため、管理ノードの損失や削除が発生した場合でもデータを保持できます。永続ボリュームは、オプションですが推奨される管理ノード構成です。</p></div>
+<div class="paragraph"><p>永続ボリュームを使用すると、管理ノードの構成データをVMでローカルに保存するのではなく、指定したストレージクラスターに保存できるため、管理ノードが失われたり削除されたりした場合でもデータを保持できます。永続ボリュームは、オプションですが推奨される管理ノード構成です。</p></div>
 <div class="paragraph"><p> NetApp DeploymentEngineを使用してNetAppHCIの管理ノードをデプロイする場合、永続ボリュームが有効になり、自動的に構成されます。</p></div>
 <div class="paragraph"><p>新しい管理ノードを展開するときに、永続ボリュームを有効にするオプションがインストールおよびアップグレードスクリプトに含まれています。永続ボリュームは、VMの存続期間を超えて永続するホスト管理ノードVMの管理ノード構成情報を含むElementソフトウェアベースのストレージクラスター上のボリュームです。管理ノードが失われた場合、交換用の管理ノードVMは、失われたVMの構成データに再接続して回復できます。</p></div>
 <div class="paragraph"><p>永続ボリューム機能は、インストールまたはアップグレード中に有効にすると、割り当てられたクラスターの名前の前にNetApp-HCI-が付加された複数のボリュームを自動的に作成します。これらのボリュームは、他のElementソフトウェアベースのボリュームと同様に、好みやインストールに応じて、ElementソフトウェアのWeb UI、vCenterServer用のNetAppElementプラグイン、またはAPIを使用して表示できます。永続ボリュームは、リカバリに使用できる現在の構成データを維持するために、管理ノードへのiSCSI接続で稼働している必要があります。 </p></div>

@@ -15,7 +15,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/concept_architecture_cloudinsights.html</loc>
       
-      <lastmod>2019-12-10T21:55:57+00:00</lastmod>
+      <lastmod>2019-12-11T20:12:02+00:00</lastmod>
       
     </url>
   
@@ -64,7 +64,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/concept_hci_nodes.html</loc>
       
-      <lastmod>2020-10-13T14:52:07+00:00</lastmod>
+      <lastmod>2020-12-01T23:33:03+00:00</lastmod>
       
     </url>
   
@@ -85,7 +85,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/concept_hci_storage.html</loc>
       
-      <lastmod>2020-04-22T16:22:38+00:00</lastmod>
+      <lastmod>2020-04-22T16:43:06+00:00</lastmod>
       
     </url>
   
@@ -127,7 +127,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/concept_nde_config_vsphere_overview.html</loc>
       
-      <lastmod>2020-10-08T21:32:48+00:00</lastmod>
+      <lastmod>2020-10-09T17:23:20+00:00</lastmod>
       
     </url>
   
@@ -141,7 +141,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/concept_nde_node_compatibility.html</loc>
       
-      <lastmod>2020-10-08T21:32:48+00:00</lastmod>
+      <lastmod>2020-10-09T17:23:20+00:00</lastmod>
       
     </url>
   
@@ -260,7 +260,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/hci_prereqs_witness_nodes.html</loc>
       
-      <lastmod>2020-05-29T21:40:32+00:00</lastmod>
+      <lastmod>2020-12-01T23:33:03+00:00</lastmod>
       
     </url>
   
@@ -295,7 +295,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/reference_requirements_beforeyoubegin.html</loc>
       
-      <lastmod>2020-04-22T16:22:38+00:00</lastmod>
+      <lastmod>2020-04-22T16:43:06+00:00</lastmod>
       
     </url>
   
@@ -344,21 +344,21 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/search.html</loc>
       
-      <lastmod>2020-12-03T19:40:01+00:00</lastmod>
+      <lastmod>2020-12-04T20:30:16+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/solutions/search.html</loc>
       
-      <lastmod>2020-12-03T19:40:01+00:00</lastmod>
+      <lastmod>2020-12-04T20:30:16+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci//search.html</loc>
       
-      <lastmod>2020-12-03T19:39:53+00:00</lastmod>
+      <lastmod>2020-12-04T20:30:08+00:00</lastmod>
       
     </url>
   
@@ -372,14 +372,14 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/task_deploying_overview.html</loc>
       
-      <lastmod>2020-04-22T16:22:38+00:00</lastmod>
+      <lastmod>2020-04-22T16:43:06+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/task_hcc_access.html</loc>
       
-      <lastmod>2020-04-22T16:22:38+00:00</lastmod>
+      <lastmod>2020-04-22T16:43:06+00:00</lastmod>
       
     </url>
   
@@ -449,7 +449,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/task_hcc_license_convert.html</loc>
       
-      <lastmod>2019-12-10T21:55:57+00:00</lastmod>
+      <lastmod>2019-12-11T20:12:02+00:00</lastmod>
       
     </url>
   
@@ -589,7 +589,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/task_hci_getstarted.html</loc>
       
-      <lastmod>2020-09-14T16:44:35+00:00</lastmod>
+      <lastmod>2020-12-01T23:44:34+00:00</lastmod>
       
     </url>
   
@@ -631,7 +631,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/task_hci_hwmainoverview.html</loc>
       
-      <lastmod>2020-10-27T18:13:58+00:00</lastmod>
+      <lastmod>2020-12-01T18:18:17+00:00</lastmod>
       
     </url>
   
@@ -653,6 +653,13 @@
       <loc>https://docs.netapp.com/ja-jp/hci/docs/task_hci_removewn.html</loc>
       
       <lastmod>2020-10-02T21:04:04+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/hci/docs/task_hci_snswitches.html</loc>
+      
+      <lastmod>2020-12-01T19:13:26+00:00</lastmod>
       
     </url>
   
@@ -841,7 +848,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/task_nde_configure_net_settings.html</loc>
       
-      <lastmod>2020-10-08T21:32:48+00:00</lastmod>
+      <lastmod>2020-10-09T17:23:20+00:00</lastmod>
       
     </url>
   
@@ -925,7 +932,7 @@
     <url>
       <loc>https://docs.netapp.com/ja-jp/hci/docs/task_nde_start_deployment.html</loc>
       
-      <lastmod>2020-10-08T21:32:48+00:00</lastmod>
+      <lastmod>2020-10-09T17:23:20+00:00</lastmod>
       
     </url>
   

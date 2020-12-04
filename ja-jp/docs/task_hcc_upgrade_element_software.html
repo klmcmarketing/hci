@@ -1469,6 +1469,9 @@
   
 
 
+  
+
+
 
 
           
@@ -2026,6 +2029,9 @@
 <li class=" "><a class="na-navbar-padding" href="task_hci_psurepl.html">
         Replace power supply units
       </a></li>
+<li class=" "><a class="na-navbar-padding" href="task_hci_snswitches.html">
+        Replace SN2010, SN2100, and SN2700 switchess
+      </a></li>
 </ul>
 </li>
 <li class=" "><a class="na-navbar-padding" href="reference_notices_hci.html">
@@ -2165,7 +2171,7 @@
 <div class="olist arabic"><ol class="arabic">
 <li><p>アップグレードするクラスターの横にあるドロップダウン矢印をクリックし、使用可能なアップグレードバージョンから選択します。</p></li>
 <li><p> [<strong>アップグレードの開始]を</strong>クリックします。<br>アップグレードが完了すると、UIにより、プロセスのフェーズ2を実行するように求められます。</p></li>
-<li><p> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB記事</a>で必要な追加の手順（フェーズ2）を完了し、フェーズ2を完了したことをUIで確認します。</p></li>
+<li><p> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB記事</a>で必要な追加の手順（フェーズ2）を完了し、UIでフェーズ2を完了したことを確認します。</p></li>
 </ol></div>
 <div class="paragraph"><p>アップグレードの完了後にログをダウンロードできます。さまざまなアップグレードのステータスの変更に関する情報は、以下を参照してください<a href="#upgrade-status-changes">アップグレードのステータスの変更を</a>。 </p></div>
 </div></td>
@@ -2354,7 +2360,7 @@
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p>インストール資産IDを<strong>id</strong>フィールドに貼り付けます。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
-<li><p>応答から、後の手順で使用するためにアップグレードする予定のクラスターのストレージクラスターID（ <code>"id"</code> ）をコピーして保存します。</p></li>
+<li><p>応答から、アップグレードするクラスターのストレージクラスターID（ <code>"id"</code> ）をコピーして保存し、後の手順で使用できるようにします。</p></li>
 </ol></div>
 </li>
 <li>
@@ -2403,10 +2409,10 @@
     "利用可能なアクション"： [
       "ストリング"
     ]、
-    "メッセージ"： "文字列"、
+    「メッセージ」：「文字列」、
     "nodeDetails"：[
       {{
-        "メッセージ"： "文字列"、
+        「メッセージ」：「文字列」、
         "ステップ"： "NodePreStart"、
         "nodeID"：0、
         "numAttempt"：0
@@ -2466,7 +2472,7 @@
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
 <li><p>前の手順のアップグレードIDを<strong>upgradeIdに</strong>入力します。</p></li>
 <li>
-<p>リクエストの本文に<code>"action":"resume"</code>と入力します。</p>
+<p>リクエスト本文に<code>"action":"resume"</code>と入力します。</p>
 <div class="listingblock"><div class="content"><pre> {{
   「アクション」：「再開」
 }</pre></div></div>
@@ -2526,7 +2532,7 @@
 <div class="paragraph"><p> NetApp Hybrid Cloud Controlには、事前に設定された3時間の待機期間があり、その間に次のいずれかのシナリオが発生する可能性があります。</p></div>
 <div class="ulist"><ul>
 <li><p>クラスタ障害は3時間以内に解決され、アップグレードが再開されます。このシナリオでは、アクションを実行する必要はありません。</p></li>
-<li><p>問題は3時間後も持続し、アップグレードステータスは赤いバナーで<strong>エラー</strong>を示します。問題が解決し<strong>たら</strong>、[<strong>再開</strong>]をクリックしてアップグレードを再開できます。</p></li>
+<li><p>問題は3時間後も続き、アップグレードステータスは赤いバナーで<strong>エラー</strong>を示します。問題が解決し<strong>たら</strong>、[<strong>再開</strong>]をクリックしてアップグレードを再開できます。</p></li>
 <li><p> NetAppサポートは、3時間以内に修正措置を講じるために、アップグレードを一時的に中止する必要があると判断しました。サポートはAPIを使用してアップグレードを中止します。 </p></li>
 </ul></div>
 <div class="admonitionblock caution"><table><tr>
@@ -2640,7 +2646,7 @@ solidfire-rtfi-sodium-11.0.0.761.iso
 新しいネットワーク障害を監視しています。既存の障害IDが設定されます（[]）。
 名前の変更が必要なレガシーネットワークインターフェイス名の確認
 10.3.0.161から11.0.0.761へのアップグレードupgrademethod = rtfi
-クラスター障害がクリアされるまで300秒待機
+クラスタ障害がクリアされるまで300秒待機します
 キャッシュがしきい値を下回るのを待っています
 ..。
 mip = [10.117.0.23] nodeID = [1]のインストール（4ノードのうちの1つ）
@@ -2684,7 +2690,7 @@ nodeID = [2]にステージングされたビルドは存在しません
 <td class="content"> Elementストレージソフトウェアをアップグレードするには、HealthToolsの最新バージョンが必要です。</td>
 </tr></table></div>
 </li>
-<li><p>この<a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740">JSONファイル</a>（ <a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740" class="bare">https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740</a> ）を、管理ノードではないコンピューターのNetAppサポートサイトからダウンロードし、名前を<code>metadata.json</code>変更します。</p></li>
+<li><p>この<a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740">JSONファイル</a>（ <a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740" class="bare">https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740</a> ）を管理ノードではないコンピューターのNetAppサポートサイトからダウンロードし、名前を<code>metadata.json</code>変更します。</p></li>
 <li>
 <p> ISOファイルを<code>/tmp</code>などのアクセス可能な場所の管理ノードにコピーします。 </p>
 <div class="admonitionblock tip"><table><tr>
@@ -2765,7 +2771,7 @@ nodeID = [2]にステージングされたビルドは存在しません
 <h2 id="upgrading-h610s-storage-nodes-to-element-12-2-phase-2">H610Sストレージノードのエレメント12.2へのアップグレード（フェーズ2）</h2>
 <div class="sectionbody">
 <div class="paragraph"><p> H610SシリーズノードをElement12.2にアップグレードしていて、ノードが11.8より前のバージョンのElementを実行している場合、アップグレードプロセスには2つのフェーズが含まれます。</p></div>
-<div class="paragraph"><p>最初に実行されるフェーズ1は、Element12.2プロセスへの標準アップグレードと同じ手順に従います。 Element Softwareと5つのファームウェアアップデートすべてを、一度に1ノードずつクラスター全体にローリング方式でインストールします。ファームウェアのペイロードが原因で、プロセスはH610Sノードごとに約1.5〜2時間かかると推定されます。これには、各ノードのアップグレード終了時の1回のコールドブートサイクルが含まれます。</p></div>
+<div class="paragraph"><p>最初に実行されるフェーズ1は、Element12.2プロセスへの標準アップグレードと同じ手順に従います。 Element Softwareと5つのファームウェアアップデートすべてを、一度に1ノードずつクラスター全体にローリング方式でインストールします。ファームウェアのペイロードにより、プロセスはH610Sノードごとに約1.5〜2時間かかると推定されます。これには、各ノードのアップグレード終了時の1回のコールドブートサイクルが含まれます。</p></div>
 <div class="paragraph"><p>フェーズ2には、必要な<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KBに</a>記載されている各H610Sノードの完全なノードシャットダウンと電源切断を実行する手順を完了することが含まれます。このフェーズは、H610Sノードごとに約1時間かかると推定されます。 </p></div>
 <div class="admonitionblock important"><table><tr>
 <td class="icon"><i class="fa icon-important" title="重要"></i></td>
