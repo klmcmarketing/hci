@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="No results were found for {query}" data-did-you-mean="Search for {suggestion}." data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -2063,7 +2063,7 @@
 <div class="sect1">
 <h2 id="fips-140-2-for-https-and-data-at-rest-encryption"> HTTPSおよび保存データ暗号化用のFIPS140-2</h2>
 <div class="sectionbody">
-<div class="paragraph"><p> NetAppSolidFireストレージクラスタとNetAppHCIシステムは、暗号化モジュールの連邦情報処理標準（FIPS）140-2要件に準拠した暗号化をサポートしています。 NetAppHCIまたはSolidFireクラスターでFIPS140-2準拠を有効にして、HTTPS通信とドライブ暗号化の両方を行うことができます。</p></div>
+<div class="paragraph"><p> NetAppSolidFireストレージクラスターとNetAppHCIシステムは、暗号化モジュールの連邦情報処理標準（FIPS）140-2要件に準拠した暗号化をサポートしています。 NetAppHCIまたはSolidFireクラスターでFIPS140-2準拠を有効にして、HTTPS通信とドライブ暗号化の両方を行うことができます。</p></div>
 <div class="paragraph"><p>クラスタでFIPS140-2動作モードを有効にすると、クラスタはNetApp暗号化セキュリティモジュール（NCSM）をアクティブにし、HTTPSを介したNetApp ElementUIおよびAPIへのすべての通信にFIPS140-2レベル1認定暗号化を利用します。 <code>EnableFeature</code> Element APIを<code>fips</code>パラメーターとともに使用して、FIPS <code>fips</code>暗号化を有効にします。 FIPS互換ハードウェアを備えたストレージクラスターでは、 <code>FipsDrives</code>パラメーターを指定した<code>EnableFeature</code> Element APIを使用して、 <code>EnableFeature</code>データのFIPSドライブ暗号化を有効にすることもできます。</p></div>
 <div class="paragraph"><p> FIPS 140-2暗号化用の新しいストレージクラスターの準備の詳細については、 <a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-ug/GUID-4645FF0D-3FCD-4440-91A9-A47F7BCC5C50.html">FIPSドライブをサポートするクラスターの作成を</a>参照してください。</p></div>
 <div class="paragraph"><p>既存の準備済みクラスターで<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/GUID-F2726BCA-D59C-47EE-B86C-DC465C96563B.html">FIPS140-2を</a>有効にする方法の詳細については<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/GUID-F2726BCA-D59C-47EE-B86C-DC465C96563B.html">、EnableFeature ElementAPIを</a>参照してください。</p></div>

@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="No results were found for {query}" data-did-you-mean="Search for {suggestion}." data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -2025,7 +2025,7 @@
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> Elementソフトウェアのアップグレード</h1></div>
 <p class="page-details"><time datetime="2020-11-11 23:10:55 +0000">2020年11月11日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_upgrade_element_software.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
-<div class="paragraph lead"><p>NetApp Elementソフトウェアをアップグレードするには、NetAppハイブリッドクラウドコントロールUI、REST API、またはHealthToolsスイートのツールを使用できます。ノードの追加と削除、ドライブの追加と削除、イニシエーター、ボリュームアクセスグループ、仮想ネットワークなどに関連付けられたコマンドなど、特定の操作はElementソフトウェアのアップグレード中に抑制されます。</p></div>
+<div class="paragraph lead"><p>NetApp Elementソフトウェアをアップグレードするには、NetAppハイブリッドクラウドコントロールUI、REST API、またはHealthToolsスイートのツールを使用できます。 Elementソフトウェアのアップグレード中は、ノードの追加と削除、ドライブの追加と削除、イニシエーター、ボリュームアクセスグループ、仮想ネットワークなどに関連付けられたコマンドなど、特定の操作が抑制されます。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
@@ -2146,7 +2146,7 @@
 <div class="olist arabic"><ol class="arabic">
 <li><p>アップグレードするクラスターの横にあるドロップダウン矢印をクリックし、使用可能なアップグレードバージョンから選択します。</p></li>
 <li><p> [<strong>アップグレードの開始]を</strong>クリックします。<br>アップグレードが完了すると、UIにより、プロセスのフェーズ2を実行するように求められます。</p></li>
-<li><p> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB記事</a>で必要な追加の手順（フェーズ2）を完了し、UIでフェーズ2を完了したことを確認します。</p></li>
+<li><p> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure" target="_blank" rel="noopener">KB記事</a>で必要な追加の手順（フェーズ2）を完了し、フェーズ2を完了したことをUIで確認します。</p></li>
 </ol></div>
 <div class="paragraph"><p>アップグレードの完了後にログをダウンロードできます。さまざまなアップグレードのステータスの変更に関する情報は、以下を参照してください<a href="#upgrade-status-changes">アップグレードのステータスの変更を</a>。 </p></div>
 </div></td>
@@ -2441,7 +2441,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">応答本文の<code>failedHealthChecks</code>メッセージによるクラスターヘルスの問題を修正する必要があります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
-<li><p>各問題にリストされている特定のKB記事に移動するか、指定された対処法を実行してください。</p></li>
+<li><p>各問題にリストされている特定のKB記事に移動するか、指定された救済策を実行してください。</p></li>
 <li><p> KBが指定されている場合は、関連するKBの記事に記載されているプロセスを完了してください。</p></li>
 <li><p>クラスタの問題を解決したら、必要に応じて再認証し、[ <strong>PUT / upgrades / {upgradeId}</strong> ]をクリックします。</p></li>
 <li><p> [<strong>試してみる]を</strong>クリック<strong>し</strong>ます。</p></li>
@@ -2539,7 +2539,7 @@
 </li>
 <li>
 <p><strong>オプション</strong>：アップグレードの前に、管理ノードからクラスターノードにISOをダウンロードします。</p>
-<div class="paragraph"><p>この手順では、ストレージノードでISOを事前ステージングし、追加の内部チェックを実行して、クラスターがアップグレードに適した状態にあることを確認することにより、アップグレード時間を短縮します。この操作を実行しても、クラスターが「アップグレード」モードになったり、クラスター操作が制限されたりすることはありません。</p></div>
+<div class="paragraph"><p>この手順では、ストレージノードでISOを事前にステージングし、追加の内部チェックを実行して、クラスターがアップグレードに適した状態にあることを確認することにより、アップグレード時間を短縮します。この操作を実行しても、クラスターが「アップグレード」モードになったり、クラスター操作が制限されたりすることはありません。</p></div>
 <div class="listingblock"><div class="content"><pre> sfinstall &lt;MVIP&gt; -u &lt;cluster_username&gt; &lt;path-toinstall-file-ISO&gt; --stage </pre></div></div>
 <div class="admonitionblock note"><table><tr>
 <td class="icon"><i class="fa icon-note" title="到"></i></td>

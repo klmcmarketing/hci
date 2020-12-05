@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="No results were found for {query}" data-did-you-mean="Search for {suggestion}." data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -2024,7 +2024,7 @@
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">インベントリの選択とノードの互換性</h1></div>
 <p class="page-details"><time datetime="2020-10-09 17:31:21 +0000">2020年10月9日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/concept_nde_node_compatibility.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
-<div id="preamble"><div class="sectionbody"><div class="paragraph lead"><p>デプロイメントのノードを選択する場合、同じデプロイメントで組み合わせることができるノード構成にいくつかの制限が適用されます。</p></div></div></div>
+<div id="preamble"><div class="sectionbody"><div class="paragraph lead"><p>デプロイメント用のノードを選択する場合、同じデプロイメントで組み合わせることができるノード構成にいくつかの制限が適用されます。</p></div></div></div>
 <div class="sect1">
 <h2 id="storage-node-compatibility">ストレージノードの互換性</h2>
 <div class="sectionbody">
@@ -2048,7 +2048,7 @@
 <div class="ulist"><ul>
 <li><p> VMware vMotionが適切に機能するには、すべての計算ノードのCPU世代が一致している必要があります。インベントリから計算ノードを選択した後は、CPU世代が異なる計算ノードを選択することはできません。</p></li>
 <li><p>同じ計算クラスター内で、計算ノードをGPU対応の計算ノードと混在させることはできません。 GPU対応の計算ノードを選択すると、CPUのみの計算ノードが選択できなくなり、その逆も同様です。</p></li>
-<li><p>計算ノードで実行されているソフトウェアバージョンは、デプロイメントをホストしているNetApp DeploymentEngineのメジャーバージョンとマイナーバージョンと一致している必要があります。そうでない場合は、RTFIプロセスを使用して計算ノードのイメージを再作成する必要があります。手順については、RTFIに関するNetAppナレッジベースの記事を参照してください。</p></li>
+<li><p>計算ノードで実行されているソフトウェアのバージョンは、デプロイメントをホストしているNetApp DeploymentEngineのメジャーバージョンとマイナーバージョンと一致している必要があります。そうでない場合は、RTFIプロセスを使用して計算ノードのイメージを再作成する必要があります。手順については、RTFIに関するNetAppナレッジベースの記事を参照してください。</p></li>
 <li><p>計算ノードを[<strong>計算ノード]</strong>リストで選択できるようにするには、[ネットワークトポロジ]ページで選択したケーブル構成が必要です。</p></li>
 <li><p>同じモデルの計算ノードのネットワークケーブル構成は、単一の計算クラスター内で一致する必要があります。</p></li>
 </ul></div>
