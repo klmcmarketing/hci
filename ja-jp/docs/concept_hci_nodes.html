@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -514,9 +506,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -588,9 +578,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -681,9 +669,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -727,9 +713,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -913,9 +897,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2072,12 +2048,12 @@
 <div class="sectionbody">
 <div class="paragraph"><p>NetApp HCI Witness Nodesは、Elementソフトウェアベースのストレージクラスターと並行して計算ノード上で実行される仮想マシンです。監視ノードは、スライスまたはブロックサービスをホストしません。監視ノードは、ストレージノードに障害が発生した場合にストレージクラスターの可用性を有効にします。ウィットネスノードは、他のストレージノードと同じ方法で管理およびアップグレードできます。ストレージクラスターには、最大4つの監視ノードを含めることができます。それらの主な目的は、有効なアンサンブルクォーラムを形成するのに十分なクラスターノードが存在することを確認することです。 </p></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">
 <a href="hci_prereqs_witness_nodes.html" target="_blank" rel="noopener">ウィットネスノードのリソース要件</a>と<a href="hci_prereqs_ip_address.html" target="_blank" rel="noopener">ウィットネスノードのIPアドレス要件の</a>詳細をご覧ください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> 2ノードのストレージクラスターでは、ウィットネスノードに障害が発生した場合の冗長性のために、少なくとも2つのウィットネスノードがデプロイされます。 NetApp HCIインストールプロセスでウィットネスノードをインストールすると、仮想マシンテンプレートがVMware vCenterに保存され、誤って削除、紛失、または破損した場合にウィットネスノードを再デプロイするために使用できます。ウィットネスノードをホストしていた障害のある計算ノードを置き換える必要がある場合は、テンプレートを使用してウィットネスノードを再デプロイすることもできます。手順については、ここの「 <strong>2ノードおよび3ノードのストレージクラスター</strong>の<strong>監視ノード</strong>の<strong>再デプロイ」</strong>セクションを参照して<a href="task_hci_h410crepl.html" target="_blank" rel="noopener">ください</a>。</td>
 </tr></table></div>
 </div>
@@ -2098,8 +2074,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/concept_hci_nodes.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BNodes%5D(https://docs.netapp.com/ja-jp/hci/docs/concept_hci_nodes.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/concept_hci_nodes.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BNodes%5D(https://docs.netapp.com/ja-jp/hci/docs/concept_hci_nodes.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2218,12 +2194,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

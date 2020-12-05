@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1139,9 +1123,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2053,7 +2029,7 @@
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
-<li><p>ストレージクラスタのバージョンでNetAppElementソフトウェア11.3以降が実行されていることを確認してください。</p></li>
+<li><p>ストレージクラスタのバージョンがNetAppElementソフトウェア11.3以降を実行していることを確認します。</p></li>
 <li><p>バージョン11.3以降を実行している管理ノードがデプロイされていることを確認してください。</p></li>
 </ul>
 </div>
@@ -2143,7 +2119,7 @@
 <li>
 <p>複数のストレージノードを追加する場合は、<a href="concept_hci_clusters.html#authoritative-storage-clusters">権限のあるクラスター</a>と複数のストレージクラスターのサポートの制限を読んで理解したことになります。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">権限のあるクラスターで定義されたすべてのユーザーは、Hybrid CloudControlインスタンスに関連付けられた他のすべてのクラスターのユーザーとして定義されます。</td>
 </tr></table></div>
 </li>
@@ -2223,7 +2199,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>管理ノードがストレージクラスターへのログインに使用する、保存されている資格情報を編集できます。選択するユーザーには、クラスター管理者アクセス権が必要です。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">続行する前<a href="#retrieve-the-installation-id-and-cluster-id-of-a-storage-cluster-asset">に、ストレージクラスターアセットのインストールIDとクラスターIDを取得する</a>の手順に従っていることを確認してください。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2286,7 +2262,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>ストレージクラスターが使用できなくなった場合は、ストレージクラスターアセットを削除できます。ストレージクラスターアセットを削除すると、管理ノードから自動的に登録解除されます。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">続行する前<a href="#retrieve-the-installation-id-and-cluster-id-of-a-storage-cluster-asset">に、ストレージクラスターアセットのインストールIDとクラスターIDを取得する</a>の手順に従っていることを確認してください。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2330,8 +2306,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_mnode_manage_storage_cluster_assets.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BCreate%20and%20manage%20storage%20cluster%20assets%5D(https://docs.netapp.com/ja-jp/hci/docs/task_mnode_manage_storage_cluster_assets.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_mnode_manage_storage_cluster_assets.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BCreate%20and%20manage%20storage%20cluster%20assets%5D(https://docs.netapp.com/ja-jp/hci/docs/task_mnode_manage_storage_cluster_assets.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2450,12 +2426,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

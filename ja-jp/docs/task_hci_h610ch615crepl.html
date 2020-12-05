@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1218,9 +1202,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1363,9 +1345,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1409,9 +1389,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1446,9 +1424,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -2051,7 +2027,7 @@
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>CPU、マザーボードに関連する計算ノードの障害を修復するため、または電源が入らない場合は、シャーシを交換する必要があります。 NetApp HCI Bootstrap OSバージョン1.6以降を実行するH610C計算ノードに障害のあるDIMMがある場合は、DIMMを交換でき、シャーシを交換する必要はありません。 H615Cノードの場合、DIMMに障害が発生した場合にシャーシを交換する必要はありません。故障したDIMMのみを交換できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> H610CとH615Cの場合、ノードとシャーシは別個のコンポーネントではないため、「ノード」と「シャーシ」という用語は同じ意味で使用されます。</td>
 </tr></table></div>
 <div class="ulist">
@@ -2077,7 +2053,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>ノードを交換する前に、ノードでホストされている仮想マシン（VM）を使用可能なホストに移行し、クラスターからノードを削除する必要があります。シリアル番号やネットワーク情報など、ノードに関する詳細を取得する必要があります。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">デュアルインラインメモリモジュール（DIMM）の障害など、ノードがまだオンラインで機能しているコンポーネント障害の場合は、障害が発生したノードを削除する前に、クラスターからドライブを削除する必要があります。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2086,7 +2062,7 @@
 <li>
 <p>VMware vSphere Web Clientで、VMを別の使用可能なホストに移行する手順を実行します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">移行手順については、VMwareのドキュメントを参照してください。</td>
 </tr></table></div>
 </li>
@@ -2109,7 +2085,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>障害が発生したノードをクラスターから削除した後、障害が発生したシャーシを削除して、交換用のシャーシを取り付けることができます。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ここでの手順を実行する前に、帯電防止保護が施されていることを確認してください。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2268,14 +2244,14 @@
 <li>
 <p>新しい計算ノードを追加する既存のvSphereデータセンターを選択するか、[新しいデータセンターの作成]を選択して新しい計算ノードを新しいデータセンターに追加します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> [Create New Datacenter]を選択すると、[クラスター]フィールドに自動的に入力されます。</td>
 </tr></table></div>
 </li>
 <li>
 <p>既存のデータセンターを選択した場合は、新しい計算ノードを関連付ける必要があるvSphereクラスターを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> NetApp HCIが、拡張用に選択したクラスターのネットワーク設定を認識できない場合は、管理、ストレージ、およびvMotionネットワークのvmkernelおよびvmnicマッピングがデプロイメントのデフォルトに設定されていることを確認してください。</td>
 </tr></table></div>
 </li>
@@ -2287,14 +2263,14 @@
 <li>
 <p>新しいvSphereデータセンタークラスターを作成した場合は、[ネットワークトポロジ]ページで、追加する新しい計算ノードに一致するネットワークトポロジを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">計算ノードが2ケーブルトポロジを使用していて、既存のNetAppHCI展開がVLANIDで構成されている場合にのみ、2ケーブルオプションを選択できます。</td>
 </tr></table></div>
 </li>
 <li>
-<p> [利用可能なインベントリ]ページで、既存のNetAppHCIインストールに追加するノードを選択します。 </p>
+<p> [利用可能なインベントリ]ページで、既存のNetAppHCIインストールに追加するノードを選択します。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">一部の計算ノードでは、vCenterバージョンがサポートする最高レベルでEVCを有効にしてから、インストールに追加する必要がある場合があります。これらの計算ノードでEVCを有効にするには、vSphereクライアントを使用する必要があります。有効にした後、[インベントリ]ページを更新し、計算ノードの追加を再試行してください。</td>
 </tr></table></div>
 </li>
@@ -2318,7 +2294,7 @@
 <li><p>変更が完了したら、後続のページで[<strong>続行]</strong>を選択して、[レビュー]ページに戻ります。</p></li>
 </ol></div>
 </li>
-<li><p>オプション：ネットアップがホストするSolidFire Active IQサーバーにクラスター統計とサポート情報を送信しない場合は、最後のチェックボックスをオフにします。<br>これにより、NetAppHCIのリアルタイムのヘルスおよび診断モニタリングが無効になります。この機能を無効にすると、NetAppがNetApp HCIをプロアクティブにサポートおよび監視して、本番環境に影響が及ぶ前に問題を検出および解決する機能が削除されます。</p></li>
+<li><p>オプション：クラスター統計とサポート情報をNetAppがホストするSolidFire Active IQサーバーに送信しない場合は、最後のチェックボックスをオフにします。<br>これにより、NetAppHCIのリアルタイムのヘルスおよび診断モニタリングが無効になります。この機能を無効にすると、NetAppがNetApp HCIをプロアクティブにサポートおよび監視して、本番環境に影響が及ぶ前に問題を検出および解決する機能が削除されます。</p></li>
 <li><p> [<strong>ノードの追加]を</strong>選択します。<br> NetApp HCIがリソースを追加および構成している間、進行状況を監視できます。</p></li>
 <li><p>オプション：新しい計算ノードがvCenterに表示されていることを確認します。</p></li>
 </ol>
@@ -2340,8 +2316,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hci_h610ch615crepl.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BReplace%20H610C%20and%20H615C%20nodes%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hci_h610ch615crepl.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hci_h610ch615crepl.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BReplace%20H610C%20and%20H615C%20nodes%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hci_h610ch615crepl.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2460,12 +2436,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

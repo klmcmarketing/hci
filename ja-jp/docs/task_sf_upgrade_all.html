@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1218,9 +1202,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1253,9 +1235,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2054,9 +2030,9 @@
 <div class="title">必要なもの</div>
 <ul>
 <li>
-<p>管理ノード11.3以降を実行しています。管理ノードの新しいバージョンには、個々のサービスを提供するモジュラーアーキテクチャがあります。 </p>
+<p>管理ノード11.3以降を実行しています。管理ノードの新しいバージョンには、個々のサービスを提供するモジュラーアーキテクチャがあります。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">バージョンを確認するには、管理ノードにログインし、ログインバナーに要素のバージョン番号を表示します。 11.3がない場合は<a href="task_hcc_upgrade_management_node.html">、管理ノードのアップグレードを</a>参照してください。</td>
 </tr></table></div>
 </li>
@@ -2080,16 +2056,16 @@
 <li>
 <p> <a href="task_upgrade_element_latest_healthtools.html">（オプション）最新のHealthToolsにアップグレードし</a>ます。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> HealthToolsのアップグレードは、実行している管理ノードとElementソフトウェアが11.1以前の場合にのみ必要です。 NetApp Hybrid Cloud Controlを使用してエレメントのアップグレードを実行する場合、HealthToolsは必要ありません。</td>
 </tr></table></div>
 </li>
-<li><p><a href="task_hcc_upgrade_element_prechecks.html">ストレージをアップグレードする前に、Elementストレージのヘルスチェックを実行します</a>。</p></li>
+<li><p><a href="task_hcc_upgrade_element_prechecks.html">ストレージをアップグレードする前に、要素ストレージのヘルスチェックを実行します</a>。</p></li>
 <li><p> <a href="task_hcc_upgrade_element_software.html">Elementソフトウェアとストレージファームウェアをアップグレードします</a>。</p></li>
 <li>
 <p> <a href="task_hcc_upgrade_storage_firmware.html">（オプション）Elementストレージファームウェアのみをアップグレードします</a>。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">このタスクは、メジャーリリース以外で新しいストレージファームウェアのアップグレードが利用可能になったときに実行できます。</td>
 </tr></table></div>
 </li>
@@ -2110,8 +2086,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_sf_upgrade_all.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20your%20NetApp%20SolidFire%20all-flash%20storage%20system%20for%20Element%2012.2%5D(https://docs.netapp.com/ja-jp/hci/docs/task_sf_upgrade_all.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_sf_upgrade_all.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20your%20NetApp%20SolidFire%20all-flash%20storage%20system%20for%20Element%2012.2%5D(https://docs.netapp.com/ja-jp/hci/docs/task_sf_upgrade_all.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2230,12 +2206,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

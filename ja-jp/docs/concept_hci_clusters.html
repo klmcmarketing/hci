@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -511,9 +503,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -588,9 +578,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -681,9 +669,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -727,9 +713,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -913,9 +897,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2075,7 +2051,7 @@
 <li>
 <p>特定のタイプのノードを使用して、2ノードのストレージクラスターを形成できます。 <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2865021">NetApp HCI1.8リリースノートを</a>参照してください。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> 2ノードクラスター内のストレージノードは、同じモデルタイプである必要があります。</td>
 </tr></table></div>
 </li>
@@ -2083,7 +2059,7 @@
 <li>
 <p> 2つのストレージノードに加えて、2ノードのストレージクラスターには2つの<strong>NetAppHCIウィットネスノード</strong>も含まれます。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">
 <a href="concept_hci_nodes.html">ウィットネスノードの</a>詳細をご覧ください<a href="concept_hci_nodes.html">。</a>
 </td>
@@ -2097,7 +2073,7 @@
 <h3 id="storage-cluster-quorum">ストレージクラスタークォーラム</h3>
 <div class="paragraph"><p>Elementソフトウェアは、選択したノードからストレージクラスターを作成し、クラスター構成の複製データベースを維持します。クラスターの復元力のクォーラムを維持するには、クラスターアンサンブルに参加するために少なくとも3つのノードが必要です。 2ノードクラスター内の監視ノードは、有効なアンサンブルクォーラムを形成するのに十分なストレージノードがあることを確認するために使用されます。アンサンブルの作成では、ストレージノードがウィットネスノードよりも優先されます。 2ノードのストレージクラスターを含む最小の3ノードのアンサンブルでは、2つのストレージノードと1つのウィットネスノードが使用されます。 </p></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content"> 2つのストレージノードと1つのウィットネスノードを持つ3ノードアンサンブルでは、1つのストレージノードがオフラインになると、クラスターは劣化状態になります。 2つのウィットネスノードのうち、アンサンブルでアクティブにできるのは1つだけです。 2番目のWitnessNodeはバックアップの役割を実行するため、アンサンブルに追加できません。クラスターは、オフラインストレージノードがオンライン状態に戻るか、代替ノードがクラスターに参加するまで、劣化状態のままになります。</td>
 </tr></table></div>
 <div class="paragraph"><p>ウィットネスノードに障害が発生した場合、残りのウィットネスノードがアンサンブルに参加して3ノードのアンサンブルを形成します。新しいウィットネスノードを展開して、障害が発生したウィットネスノードを置き換えることができます。 </p></div>
@@ -2128,8 +2104,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/concept_hci_clusters.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BClusters%5D(https://docs.netapp.com/ja-jp/hci/docs/concept_hci_clusters.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/concept_hci_clusters.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BClusters%5D(https://docs.netapp.com/ja-jp/hci/docs/concept_hci_clusters.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2248,12 +2224,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

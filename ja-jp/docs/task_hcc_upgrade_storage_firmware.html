@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1218,9 +1202,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1291,9 +1273,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2100,7 +2076,7 @@
 <td class="content"> NetApp Hybrid Cloud Controlを使用してストレージクラスターをアップグレードする際の潜在的な問題とその回避策については、 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">KBの記事を</a>参照して<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">ください</a>。 </td>
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">アップグレードプロセスには、ノードごとに約30分かかります。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2115,7 +2091,7 @@
 <li>
 <p> [<strong>アップグレード]</strong>ページで、[<strong>ストレージ]を</strong>選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> [<strong>ストレージ</strong>]タブには、インストールの一部であるストレージクラスターが一覧表示されます。 NetApp Hybrid Cloud Controlがクラスターにアクセスできない場合、そのクラスターは[<strong>アップグレード]</strong>ページに表示されません。 Element 12.0以降を実行しているクラスターがある場合は、これらのクラスターの現在のファームウェアバンドルバージョンが一覧表示されます。単一クラスター内のノードに異なるファームウェアバージョンがある場合、またはアップグレードが進行するにつれて、[<strong>現在のファームウェアバンドルバージョン</strong>]列に[<strong>複数]</strong>が表示されます。 [<strong>複数</strong>]をクリックして[<strong>ノード]</strong>ページに移動し、ファームウェアのバージョンを比較できます。すべてのクラスターが12.0より前のElementバージョンを実行している場合、ファームウェアバンドルのバージョン番号に関する情報は表示されません。この情報は、[<strong>ノード]</strong>ページでも入手できます。<a href="task_hcc_nodes.html">インベントリの表示を</a>参照して<a href="task_hcc_nodes.html">ください</a>。<br>クラスタが最新であるか、アップグレードパッケージが利用できない場合、[<strong>要素]</strong>タブと[<strong>ファームウェアのみ]</strong>タブは表示されません。これらのタブは、アップグレードの進行中も表示されません。 [<strong>要素</strong>]タブが表示されているが[<strong>ファームウェアのみ</strong>]タブが表示されていない場合、使用可能なファームウェアパッケージはありません。</td>
 </tr></table></div>
 </li>
@@ -2140,12 +2116,12 @@
 <li><p> [<strong>アップグレードの開始]を</strong>クリックします。 </p></li>
 </ol></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">
 <strong>アップグレードステータス</strong>は、プロセスのステータスを反映するためにアップグレード中に変更されます。また、アップグレードの一時停止やアップグレードがエラーを返した場合など、実行したアクションに応じて変化します。<a href="#upgrade-status-changes">アップグレードステータスの変更を</a>参照してください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">アップグレードの進行中は、ページを離れて後でページに戻り、進行状況の監視を続けることができます。クラスタ行が折りたたまれている場合、ページはステータスと現在のバージョンを動的に更新しません。テーブルを更新するには、クラスター行を展開する必要があります。そうしないと、ページを更新できます。</td>
 </tr></table></div>
 <div class="paragraph"><p>アップグレードの完了後にログをダウンロードできます。</p></div>
@@ -2535,8 +2511,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_upgrade_storage_firmware.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20storage%20firmware%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_upgrade_storage_firmware.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_upgrade_storage_firmware.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20storage%20firmware%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_upgrade_storage_firmware.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2655,12 +2631,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

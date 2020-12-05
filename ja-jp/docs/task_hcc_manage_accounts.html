@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -994,9 +978,7 @@
           
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2072,9 +2048,9 @@
 <li><p> [<strong>ユーザーの作成]を</strong>選択し<strong>ます</strong>。</p></li>
 <li><p>新しいアカウントの名前とパスワードを入力します。</p></li>
 <li>
-<p>管理者または読み取り専用のアクセス許可を選択します。 </p>
+<p>管理者または読み取り専用のアクセス許可を選択します。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content"> NetApp Elementソフトウェアの権限を表示するには、[<strong>従来の権限を表示</strong>]をクリックします。これらのアクセス許可のサブセットを選択すると、アカウントには読み取り専用のアクセス許可が割り当てられます。すべてのレガシー権限を選択すると、アカウントには管理者権限が割り当てられます。</td>
 </tr></table></div>
 </li>
@@ -2102,7 +2078,7 @@
 <li>
 <p> NetApp Hybrid Cloud Control APIを使用して、信頼できるクラスターアセットの<a href="task_mnode_manage_storage_cluster_assets.html#edit-the-stored-credentials-for-a-storage-cluster-asset">認証情報</a>を<a href="task_mnode_manage_storage_cluster_assets.html#edit-the-stored-credentials-for-a-storage-cluster-asset">更新し</a>ます。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ネットアップハイブリッドクラウドコントロールUIがインベントリを更新するのに最大15分かかる場合があります。インベントリを手動で更新するには、REST API UIインベントリサービス<code>https://[management node IP]/inventory/1/</code>にアクセスし、クラスターに対して<code>GET /installations​/{id}</code>を実行します。</td>
 </tr></table></div>
 </li>
@@ -2149,7 +2125,7 @@
 <li>
 <p>CHAPノードセッション認証のターゲットシークレット</p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">いずれかのパスワードを自動生成するには、資格情報フィールドを空白のままにします。</td>
 </tr></table></div>
 </li>
@@ -2187,7 +2163,7 @@
 <td class="content">管理ノードに関連付けられているアカウントを削除またはロックすると、管理ノードにアクセスできなくなります。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">管理サービスに関連付けられている永続ボリュームは、インストールまたはアップグレード中に新しいアカウントに割り当てられます。永続ボリュームを使用している場合は、ボリュームまたはそれに関連するアカウントを変更または削除しないでください。これらのアカウントを削除すると、管理ノードが使用できなくなる可能性があります。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2218,8 +2194,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_manage_accounts.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BCreate%20and%20manage%20user%20accounts%20by%20using%20NetApp%20Hybrid%20Cloud%20Control%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_manage_accounts.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_manage_accounts.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BCreate%20and%20manage%20user%20accounts%20by%20using%20NetApp%20Hybrid%20Cloud%20Control%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_manage_accounts.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2338,12 +2314,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

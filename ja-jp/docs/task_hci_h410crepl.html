@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1218,9 +1202,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1363,9 +1345,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1409,9 +1389,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1440,9 +1418,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -2049,9 +2025,9 @@
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> H410Cノードを交換してください</h1></div>
 <p class="page-details"><time datetime="2020-11-04 20:10:27 +0000">2020年11月4日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hci_h410crepl.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
-<div class="paragraph lead"><p>CPU障害、その他のマザーボードの問題が発生した場合、または電源が入らない場合は、計算ノードを交換する必要があります。手順はH410Cノードに適用されます。 NetApp HCIブートストラップOSバージョン1.6P1以降を実行するH410C計算ノードがある場合、メモリDIMMに障害が発生してもノードを交換する必要はありません。故障したDIMMのみを交換する必要があります。ノード内のDIMMに障害が発生していない場合は、交換用ノードでそれらを使用できます。 </p></div>
+<div class="paragraph lead"><p>CPU障害、その他のマザーボードの問題が発生した場合、または電源が入らない場合は、計算ノードを交換する必要があります。手順はH410Cノードに適用されます。 NetApp HCI Bootstrap OSバージョン1.6P1以降を実行するH410C計算ノードがある場合、メモリーDIMMに障害が発生してもノードを交換する必要はありません。故障したDIMMのみを交換する必要があります。ノード内のDIMMに障害が発生していない場合は、交換用ノードでそれらを使用できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">交換ノードには、NetAppHCIインストールの残りの計算ノードと同じバージョンのNetAppHCIブートストラップOSが必要です。</td>
 </tr></table></div>
 <div class="ulist">
@@ -2059,7 +2035,7 @@
 <ul>
 <li><p>計算ノードを交換する必要があると判断しました。</p></li>
 <li>
-<p>交換用の計算ノードがあります。<br>交換用ノードを注文するには、ネットアップのサポートにお問い合わせください。計算ノードは、ブートストラップOSがインストールされた状態で出荷されます。<br>ノードは、最新バージョンのBootstrapOSとともに工場から出荷されます。次のシナリオでは、ノードで工場出荷時のイメージに戻す（RTFI）プロセスを実行する必要がある場合があります。</p>
+<p>交換用の計算ノードがあります。<br>交換用ノードを注文するには、ネットアップサポートにお問い合わせください。計算ノードは、ブートストラップOSがインストールされた状態で出荷されます。<br>ノードは、最新バージョンのBootstrapOSとともに工場から出荷されます。次のシナリオでは、ノードで工場出荷時のイメージに戻す（RTFI）プロセスを実行する必要がある場合があります。</p>
 <div class="ulist"><ul>
 <li><p>現在のNetAppHCIインストールでは、最新バージョンより前のバージョンのBootstrapOSが実行されています。この場合、RTFIプロセスは、新しいノードをNetAppHCIインストールが実行されているOSバージョンにダウングレードします。</p></li>
 <li><p>工場出荷時に出荷されたノードが最新バージョンより前のOSバージョンを実行していて、既存のNetAppHCIインストールがすでに最新バージョンを実行している場合。この場合、RTFIプロセスは、新しいノードのOSバージョンを最新バージョンにアップグレードします。<br> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/HCI_-_How_to_RTFI_using_a_USB_key" target="_blank" rel="noopener">USBキーを使用してRTFIする方法（ログインが必要）</a>および<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_RTFI_an_HCI_Compute_Node_via_BMC" target="_blank" rel="noopener">BMCを使用してRTFIを実行する方法</a><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/HCI_-_How_to_RTFI_using_a_USB_key" target="_blank" rel="noopener">（ログインが必要）を</a>参照してください。</p></li>
@@ -2075,7 +2051,7 @@
 </div>
 <div class="paragraph"><p> H410C計算ノードを交換するときは、次のことを考慮してください。</p></div>
 <div class="ulist"><ul>
-<li><p> H410C計算ノードを、同じシャーシおよびクラスター内の既存のNetAppHCI計算ノードおよびストレージノードと混在させることができます。</p></li>
+<li><p> H410Cコンピューティングノードを、同じシャーシおよびクラスター内の既存のNetAppHCIコンピューティングノードおよびストレージノードと混在させることができます。</p></li>
 <li><p> H410C計算ノードは、高線間電圧（200〜240 VAC）でのみ動作します。 H410Cノードを既存のNetAppHCIシステムに追加するときは、電力要件が満たされていることを確認する必要があります。</p></li>
 </ul></div>
 <div class="paragraph">
@@ -2094,7 +2070,7 @@
 <li>
 <p>VMware vSphere Web Clientで、VMを別の使用可能なホストに移行する手順を実行します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">移行手順については、VMwareのドキュメントを参照してください。</td>
 </tr></table></div>
 </li>
@@ -2142,7 +2118,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>障害が発生したノードをクラスターから削除した後、ノードをシャーシから削除して、交換用ノードを取り付けることができます。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ここでの手順を実行する前に、帯電防止保護が施されていることを確認してください。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2156,7 +2132,7 @@
 <li>
 <p>ノードの右側にあるカムハンドルを引き下げ、両方のカムハンドルを使用してノードを引き出します。<br>引き下げる必要のあるカムハンドルには、移動方向を示す矢印が付いています。もう一方のカムハンドルは動かず、ノードを引き出すのに役立ちます。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ノードをシャーシから引き出すときは、両手でノードを支えてください。</td>
 </tr></table></div>
 </li>
@@ -2170,7 +2146,7 @@
 <td class="content">ノードをシャーシにスライドさせるときは、過度の力を加えないようにしてください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ノードの電源がオンになっていることを確認します。自動的に電源が入らない場合は、ノード前面の電源ボタンを押してください。</td>
 </tr></table></div>
 </li>
@@ -2181,7 +2157,7 @@
 <td class="content">シャーシの背面にある通気孔がケーブルまたはラベルで塞がれていると、過熱によるコンポーネントの早期故障につながる可能性があります。<br>ケーブルをポートに無理に押し込まないでください。ケーブル、ポート、またはその両方が損傷する可能性があります。 </td>
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">交換用ノードがシャーシ内の他のノードと同じ方法でケーブル接続されていることを確認します。 </td>
 </tr></table></div>
 </li>
@@ -2206,13 +2182,13 @@
 <li>
 <p> [<strong>承認]</strong>を選択してセッションを開始します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">承認しようとした後に<code>Auth Error TypeError: Failed to fetch</code>エラーメッセージが表示された場合は、クラスターのMVIPのSSL証明書を受け入れる必要がある場合があります。トークンURLのIPをコピーし、IPを別のブラウザタブに貼り付けて、再度認証します。トークンの有効期限が切れた後にコマンドを実行しようとすると、 <code>Error: UNAUTHORIZED</code>エラーが発生します。この応答を受け取った場合は、再度承認してください。</td>
 </tr></table></div>
 </li>
 </ol></div>
 </li>
-<li><p> [使用可能な承認]ダイアログボックスを閉じます。</p></li>
+<li><p> [使用可能な認証]ダイアログボックスを閉じます。</p></li>
 <li><p> <strong>GET / assetsを</strong>選択します。</p></li>
 <li><p> [<strong>試してみる]を</strong>選択<strong>し</strong>ます。</p></li>
 <li><p> [<strong>実行]を</strong>選択します。<br>応答本文を下にスクロールして[計算]セクションに移動し、失敗した計算ノードの親とIDの値をコピーします。</p></li>
@@ -2264,14 +2240,14 @@
 <li>
 <p>新しい計算ノードを追加する既存のvSphereデータセンターを選択するか、[<strong>新しいデータセンターの作成]を</strong>選択して新しい計算ノードを新しい<strong>データセンター</strong>に追加します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> [Create New Datacenter]を選択すると、[クラスター]フィールドに自動的に入力されます。</td>
 </tr></table></div>
 </li>
 <li>
 <p>既存のデータセンターを選択した場合は、新しい計算ノードを関連付ける必要があるvSphereクラスターを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> NetApp HCIが選択したクラスターのネットワーク設定を認識できない場合は、管理、ストレージ、およびvMotionネットワークのvmkernelおよびvmnicマッピングがデプロイメントのデフォルトに設定されていることを確認してください。</td>
 </tr></table></div>
 </li>
@@ -2283,14 +2259,14 @@
 <li>
 <p>新しいvSphereデータセンタークラスターを作成した場合は、[ネットワークトポロジ]ページで、追加する新しい計算ノードに一致するネットワークトポロジを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">計算ノードが2ケーブルトポロジを使用していて、既存のNetAppHCI展開がVLANIDで構成されている場合にのみ、2ケーブルオプションを選択できます。</td>
 </tr></table></div>
 </li>
 <li>
-<p> [利用可能なインベントリ]ページで、既存のNetAppHCIインストールに追加するノードを選択します。 </p>
+<p> [利用可能なインベントリ]ページで、既存のNetAppHCIインストールに追加するノードを選択します。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">一部の計算ノードでは、vCenterバージョンがサポートする最高レベルでEVCを有効にしてから、インストールに追加する必要がある場合があります。これらの計算ノードでEVCを有効にするには、vSphereクライアントを使用する必要があります。有効にした後、[<strong>インベントリ]</strong>ページを更新し、計算ノードの追加を再試行してください。</td>
 </tr></table></div>
 </li>
@@ -2314,7 +2290,7 @@
 <li><p>変更が完了したら、後続のページで[続行]をクリックして、[レビュー]ページに戻ります。</p></li>
 </ol></div>
 </li>
-<li><p>オプション：ネットアップがホストするSolidFire Active IQサーバーにクラスター統計とサポート情報を送信しない場合は、最後のチェックボックスをオフにします。<br>これにより、NetAppHCIのリアルタイムのヘルスおよび診断モニタリングが無効になります。この機能を無効にすると、NetAppがNetApp HCIをプロアクティブにサポートおよび監視して、本番環境に影響が及ぶ前に問題を検出および解決する機能が削除されます。</p></li>
+<li><p>オプション：クラスター統計とサポート情報をNetAppがホストするSolidFire Active IQサーバーに送信しない場合は、最後のチェックボックスをオフにします。<br>これにより、NetAppHCIのリアルタイムのヘルスおよび診断モニタリングが無効になります。この機能を無効にすると、NetAppがNetApp HCIをプロアクティブにサポートおよび監視して、本番環境に影響が及ぶ前に問題を検出および解決する機能が削除されます。</p></li>
 <li><p> [<strong>ノードの追加]を</strong>選択します。<br> NetApp HCIがリソースを追加および構成している間、進行状況を監視できます。</p></li>
 <li><p>オプション：新しい計算ノードがvCenterに表示されていることを確認します。</p></li>
 </ol>
@@ -2357,8 +2333,8 @@
 <li>
 <p>新しい計算ノードを関連付けるvSphereクラスターを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">既存の計算ノードのCPU生成とは異なるCPU生成を持つ計算ノードを追加し、制御するvCenterインスタンスで拡張vMotion互換性（EVC）が無効になっている場合は、続行する前にEVCを有効にする必要があります。これにより、拡張が完了した後のvMotion機能が保証されます。</td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
+<td class="content">既存の計算ノードのCPU世代とは異なるCPU世代の計算ノードを追加し、制御するvCenterインスタンスで拡張vMotion互換性（EVC）が無効になっている場合は、続行する前にEVCを有効にする必要があります。これにより、拡張が完了した後のvMotion機能が保証されます。</td>
 </tr></table></div>
 </li>
 <li><p> [<strong>続行]を</strong>選択します。</p></li>
@@ -2367,9 +2343,9 @@
 <li><p> [ESXi資格情報]ページで、追加する計算ノードのESXi管理者資格情報を作成します。<br> NetAppHCIの初期展開時に作成されたものと同じマスター資格情報を使用する必要があります。</p></li>
 <li><p> [<strong>続行]を</strong>選択します。</p></li>
 <li>
-<p> [利用可能なインベントリ]ページで、既存のNetAppHCIインストールに追加するノードを選択します。 </p>
+<p> [利用可能なインベントリ]ページで、既存のNetAppHCIインストールに追加するノードを選択します。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">一部の計算ノードでは、vCenterバージョンがサポートする最高レベルでEVCを有効にしてから、インストールに追加する必要がある場合があります。これらの計算ノードでEVCを有効にするには、vSphereクライアントを使用する必要があります。有効にした後、[インベントリ]ページを更新し、計算ノードの追加を再試行してください。</td>
 </tr></table></div>
 </li>
@@ -2408,7 +2384,7 @@
 <h3 id="netapp-hci-1-2-1-1-and-1-0"> NetApp HCI 1.2、1.1、および1.0</h3>
 <div class="paragraph"><p>ノードを物理的に交換した後、ノードをVMware ESXiクラスターに追加し直し、いくつかのネットワーク構成を実行して、使用可能なすべての機能を使用できるようにする必要があります。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">これらの手順を実行するには、コンソールまたはキーボード、ビデオ、マウス（KVM）が必要です。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2421,7 +2397,7 @@
 <li>
 <p>開いた[ブートメニュー]ウィンドウで、下矢印キーを押して[ <strong>ESXiインストール</strong>]を選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">このウィンドウは5秒間だけ開いたままになります。 5秒以内に選択を行わなかった場合は、ノードを再起動する必要があります。</td>
 </tr></table></div>
 </li>
@@ -2429,14 +2405,14 @@
 <li>
 <p>インストールウィザードの手順を完了します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> ESXiをインストールするディスクを選択するように求められたら、下矢印キーを選択して、リストから2番目のディスクドライブを選択する必要があります。ルートパスワードの入力を求められたら、NetAppHCIのセットアップ時にNetAppDeploymentEngineで設定したものと同じパスワードを入力する必要があります。</td>
 </tr></table></div>
 </li>
 <li>
 <p>インストールが完了したら、 <strong>Enterキー</strong>を押してノードを再起動します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">デフォルトでは、ノードはNetAppHCIブートストラップOSで再起動します。 VMware ESXiを使用するには、ノードで1回限りの構成を実行する必要があります。</td>
 </tr></table></div>
 </li>
@@ -2458,7 +2434,7 @@
 <li>
 <p>表示されるウィンドウで、ポート情報を入力します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">この情報については、ネットアップサポートにお問い合わせください。ネットアップサポートはノードにログインして、ブート構成ファイルを設定し、構成タスクを完了します。</td>
 </tr></table></div>
 </li>
@@ -2475,7 +2451,7 @@
 <li>
 <p>パスワード：VMwareESXiのインストール時に設定したパスワード。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">パスワードは、NetAppHCIを設定するときにNetAppDeploymentEngineで設定したものと一致する必要があります。</td>
 </tr></table></div>
 </li>
@@ -2497,7 +2473,7 @@
 <li>
 <p>ノードを追加するクラスターを右クリックし、[<strong>ホストの追加]</strong>を選択します。<br>ウィザードは、ホストの追加をガイドします。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ユーザー名とパスワードの入力を求められたら、次の資格情報を使用します。<br>ユーザー名：root<br>パスワード：NetAppHCIのセットアップ時にNetAppDeploymentEngineで設定したパスワード</td>
 </tr></table></div>
 <div class="paragraph"><p>ノードがクラスターに追加されるまでに数分かかる場合があります。プロセスが完了すると、新しく追加されたノードがクラスターの下に一覧表示されます。</p></div>
@@ -2629,7 +2605,7 @@
 <p> [ストレージアダプター]で、iSCSIアダプターを選択し、[プロパティ]タブからiSCSI名をコピーします。 </p>
 <div class="imageblock"><div class="content"><img src="../media/iscsi%20adapter%20name.gif" alt="iSCSIアダプターのIQN文字列を表示します。"></div></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">イニシエーターを作成するときにiSCSI名が必要です。</td>
 </tr></table></div>
 </li>
@@ -2653,7 +2629,7 @@
 <li>
 <p> [iSCSIサーバー]フィールドにSVIPIPアドレスを入力します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> SVIP IPアドレスを取得するには、 <strong>NetApp Element Managementを</strong>選択し、SVIPIPアドレスをコピーします。<br>デフォルトのポート番号はそのままにしておきます。 3260である必要があります。</td>
 </tr></table></div>
 </li>
@@ -2677,7 +2653,7 @@
 <div class="sect1">
 <h2 id="redeploy-witness-nodes-for-two-and-three-node-storage-clusters"> 2ノードおよび3ノードのストレージクラスターのWitnessノードを再デプロイします</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>障害が発生した計算ノードを物理的に交換した後、障害が発生した計算ノードがWitness Nodeをホストしていた場合は、NetApp HCI Witness NodeVMを再デプロイする必要があります。これらの手順は、2ノードまたは3ノードのストレージクラスターを備えたNetAppHCIインストールの一部である計算ノードにのみ適用されます。</p></div>
+<div class="paragraph"><p>障害が発生した計算ノードを物理的に交換した後、障害が発生した計算ノードがWitness Nodeをホストしていた場合は、NetApp HCI Witness NodeVMを再デプロイする必要があります。これらの手順は、2ノードまたは3ノードのストレージクラスターを備えたNetAppHCIインストールの一部であるコンピューティングノードにのみ適用されます。</p></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
@@ -2697,7 +2673,7 @@
 <li>
 <p>新しいウィットネスノードで同じホスト名を使用する場合は、最初に古いウィットネスノードをストレージクラスターから削除する必要があります。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">クラスタが2つの物理ストレージノードのみにダウンしている（およびウィットネスノードがない）場合、古いウィットネスノードを削除することはできません。このシナリオでは、古い監視ノードを削除する前に、まず新しい監視ノードをクラスターに追加する必要があります。<br> NetApp Element Management拡張ポイントを使用して、クラスタからWitnessNodeを削除できます。</td>
 </tr></table></div>
 </li>
@@ -2731,7 +2707,7 @@
 <li>
 <p>次の形式でVMの名前を入力します：NetApp-Witness-Node-## </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> ##は数字に置き換える必要があります。</td>
 </tr></table></div>
 </li>
@@ -2759,7 +2735,7 @@
 <li>
 <p> [IPv4]フィールドが表示されるまで<strong>Tabキーを</strong>押し、該当する場合は、フィールドの既存のIPを削除して、監視ノードの管理IP情報を入力します。サブネットマスクとゲートウェイも確認してください。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> VLANタギングはVMホストレベルでは適用されません。タグ付けはvSwitchで処理されます。</td>
 </tr></table></div>
 </li>
@@ -2777,7 +2753,7 @@
 <li>
 <p> MTUを9000に設定します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ウィットネスノードをクラスターに追加する前にMTUが設定されていない場合、MTU設定に一貫性がないことを示すクラスター警告が表示されます。これにより、ガベージコレクションの実行が妨げられ、パフォーマンスの問題が発生する可能性があります。</td>
 </tr></table></div>
 </li>
@@ -2879,8 +2855,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hci_h410crepl.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BReplace%20H410C%20nodes%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hci_h410crepl.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hci_h410crepl.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BReplace%20H410C%20nodes%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hci_h410crepl.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2999,12 +2975,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

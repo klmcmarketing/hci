@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1218,9 +1202,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1294,9 +1276,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2066,7 +2042,7 @@
 </ul></div>
 <div class="paragraph"><p>（1）管理サービスのバージョンと（2）Elementストレージのバージョンを<strong>順次</strong>更新し、既存の管理ノードを<strong>保持</strong>する場合は、このオプションを選択します。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">管理サービスに続いてエレメントストレージを順番に更新しない場合、この手順を使用して再認証を再構成することはできません。代わりに、適切なアップグレード手順に従ってください。</td>
 </tr></table></div>
 <div class="ulist"><ul><li><p>既存の管理ノードを保持している場合：<br><a href="#reconfigure-authentication-using-the-management-node-rest-api">管理ノードRESTAPIを使用して認証を再構成します</a></p></li></ul></div>
@@ -2076,16 +2052,16 @@
 <div class="sectionbody">
 <div class="paragraph"><p>新しい管理ノード仮想マシンをプロビジョニングする必要なしに、バージョン12.0からバージョン12.2への管理ノードのインプレースアップグレードを実行できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> Element12.2管理ノードはオプションのアップグレードです。既存の展開には必要ありません。</td>
 </tr></table></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
 <li>
-<p>アップグレードする予定の管理ノードはバージョン12.0であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。 </p>
+<p>アップグレードする予定の管理ノードはバージョン12.0であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">管理ノードのバージョンを確認するには、管理ノードにログインし、ログインバナーに要素のバージョン番号を表示します。</td>
 </tr></table></div>
 </li>
@@ -2094,7 +2070,7 @@
 <li>
 <p><a href="task_mnode_install_add_storage_NIC.html">追加のストレージNIC</a>を<a href="task_mnode_install_add_storage_NIC.html">構成する</a>手順を使用して、追加のネットワークアダプター（必要な場合）を<a href="task_mnode_install_add_storage_NIC.html">構成しました</a>。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> eth0をSVIPにルーティングできない場合、永続ボリュームには追加のネットワークアダプターが必要になる場合があります。永続ボリュームの構成を可能にするために、iSCSIストレージネットワーク上に新しいネットワークアダプターを構成します。</td>
 </tr></table></div>
 </li>
@@ -2116,7 +2092,7 @@
 <li>
 <p> <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">NetAppHCI</a>または<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">Element</a>ソフトウェアの管理ノードISOをNetAppサポートサイトから管理ノード仮想マシンにダウンロードします。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> ISOの名前は、 <code>solidfire-fdva-&lt;Element release&gt;-patchX-XX.XXXXXX.iso</code>
 </td>
 </tr></table></div>
@@ -2151,12 +2127,12 @@
 <li>
 <p> （永続ボリュームのない構成の場合のみ）コンテナーフォルダーの内容を元の場所に戻します。</p>
 <div class="listingblock"><div class="content"><pre> sudo su
-mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div></div>
+mv / sf / etc / mnode / volume / * / var / lib / docker / volume /</pre></div></div>
 </li>
 <li>
 <p>管理ノードで、 <code>redeploy-mnode</code>スクリプトを実行して、以前の管理サービス構成設定を保持します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">スクリプトは、設定に応じて、Active IQコレクターサービス、コントローラー（vCenter）、またはプロキシからの構成を含む、以前の管理サービス構成を保持します。</td>
 </tr></table></div>
 <div class="listingblock"><div class="content"><pre> sudo / sf / packages / mnode / redeploy-mnode -mu &lt;mnodeユーザー&gt; </pre></div></div>
@@ -2170,16 +2146,16 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <div class="sectionbody">
 <div class="paragraph"><p>新しい管理ノード仮想マシンをプロビジョニングする必要なしに、バージョン11.3、11.5、11.7、または11.8からバージョン12.2への管理ノードのインプレースアップグレードを実行できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> Element12.2管理ノードはオプションのアップグレードです。既存の展開には必要ありません。</td>
 </tr></table></div>
 <div class="ulist">
 <div class="title">必要なもの</div>
 <ul>
 <li>
-<p>アップグレードする予定の管理ノードはバージョン11.3、11.5、11.7、または11.8であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。 </p>
+<p>アップグレードする予定の管理ノードはバージョン11.3、11.5、11.7、または11.8であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">管理ノードのバージョンを確認するには、管理ノードにログインし、ログインバナーに要素のバージョン番号を表示します。</td>
 </tr></table></div>
 </li>
@@ -2188,7 +2164,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li>
 <p><a href="task_mnode_install_add_storage_NIC.html">追加のストレージNIC</a>を<a href="task_mnode_install_add_storage_NIC.html">構成する</a>手順を使用して、追加のネットワークアダプター（必要な場合）を<a href="task_mnode_install_add_storage_NIC.html">構成しました</a>。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> eth0をSVIPにルーティングできない場合、永続ボリュームには追加のネットワークアダプターが必要になる場合があります。永続ボリュームの構成を可能にするために、iSCSIストレージネットワーク上に新しいネットワークアダプターを構成します。</td>
 </tr></table></div>
 </li>
@@ -2210,7 +2186,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li>
 <p> <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">NetAppHCI</a>または<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">Element</a>ソフトウェアの管理ノードISOをNetAppサポートサイトから管理ノード仮想マシンにダウンロードします。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> ISOの名前は、 <code>solidfire-fdva-&lt;Element release&gt;-patchX-XX.XXXXXX.iso</code>
 </td>
 </tr></table></div>
@@ -2241,7 +2217,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li>
 <p>管理ノードで、 <code>redeploy-mnode</code>スクリプトを実行して、以前の管理サービス構成設定を保持します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">スクリプトは、設定に応じて、Active IQコレクターサービス、コントローラー（vCenter）、またはプロキシからの構成を含む、以前の管理サービス構成を保持します。</td>
 </tr></table></div>
 <div class="listingblock"><div class="content"><pre> sudo / sf / packages / mnode / redeploy-mnode -mu &lt;mnodeユーザー&gt; </pre></div></div>
@@ -2260,21 +2236,21 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li>
 <p>ストレージノードはElement11.3以降を実行しています。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">最新のHealthToolsを使用して、Elementソフトウェアをアップグレードします。</td>
 </tr></table></div>
 </li>
 <li>
-<p>アップグレードする予定の管理ノードはバージョン11.0または11.1であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。 </p>
+<p>アップグレードする予定の管理ノードはバージョン11.0または11.1であり、IPv4ネットワークを使用します。管理ノードバージョン12.2はIPv6をサポートしていません。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">管理ノードのバージョンを確認するには、管理ノードにログインし、ログインバナーに要素のバージョン番号を表示します。管理ノード11.0の場合、VMメモリを手動で12GBに増やす必要があります。</td>
 </tr></table></div>
 </li>
 <li>
 <p>製品の管理ノードユーザーガイドでストレージNIC（eth1）を構成するための手順を使用して、追加のネットワークアダプター（必要な場合）を構成しました。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> eth0をSVIPにルーティングできない場合、永続ボリュームには追加のネットワークアダプターが必要になる場合があります。永続ボリュームの構成を可能にするために、iSCSIストレージネットワーク上に新しいネットワークアダプターを構成します。</td>
 </tr></table></div>
 </li>
@@ -2295,7 +2271,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li>
 <p> <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab">NetAppHCI</a>または<a href="https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab">Element</a>ソフトウェアの管理ノードISOをNetAppサポートサイトから管理ノード仮想マシンにダウンロードします。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> ISOの名前は、 <code>solidfire-fdva-&lt;Element release&gt;-patchX-XX.XXXXXX.iso</code>
 </td>
 </tr></table></div>
@@ -2339,7 +2315,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li>
 <p> 12.2管理ノードで、 <code>upgrade-mnode</code>スクリプトを実行して、以前の構成設定を保持します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> 11.0または11.1管理ノードから移行する場合、スクリプトはActiveIQコレクターを新しい構成形式にコピーします。</td>
 </tr></table></div>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
@@ -2433,7 +2409,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li><p>VMware vSphereインターフェースから、管理ノード11.1 OVAをデプロイし、電源を入れます。</p></li>
 <li><p>管理ノードVMコンソールを開きます。これにより、ターミナルユーザーインターフェイス（TUI）が表示されます。</p></li>
 <li><p> TUIを使用して、新しい管理者IDを作成し、パスワードを割り当てます。</p></li>
-<li><p>管理ノードTUIで、新しいIDとパスワードを使用して管理ノードにログインし、それが機能することを検証します。</p></li>
+<li><p>管理ノードTUIで、新しいIDとパスワードを使用して管理ノードにログインし、機能することを確認します。</p></li>
 <li>
 <p> vCenterまたは管理ノードのTUIから、管理ノード11.1のIPアドレスを取得し、ポート9443のIPアドレスを参照して、管理ノードのUIを開きます。</p>
 <div class="listingblock"><div class="content"><pre> https：// &lt;mNode 11.1 IPアドレス&gt;：9443</pre></div></div>
@@ -2443,7 +2419,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li>
 <p>確認するには、[<strong>はい</strong>]をクリックします。 mNodeステータスフィールドは、未構成を報告する必要があります。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">初めて[ <strong>mNode設定</strong>]タブに移動すると、 <strong>[</strong> mNodeステータス]フィールドに、予想される<strong>UP</strong>ではなく[<strong>未構成]と</strong>表示される場合が<strong>あり</strong>ます。 [<strong>アクション]</strong> &gt; [<strong>クリア]</strong>を選択できない場合があります。ブラウザを更新します。 mNodeステータスフィールドには、最終的に<strong>UP</strong>が表示されます。</td>
 </tr></table></div>
 </li>
@@ -2455,7 +2431,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 <li>
 <p>新しいQoSSIOCパスワードを設定します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">デフォルトのパスワードは<code>solidfire</code>です。このパスワードは、新しいパスワードを設定するために必要です。</td>
 </tr></table></div>
 </li>
@@ -2565,8 +2541,8 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_upgrade_management_node.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20a%20management%20node%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_upgrade_management_node.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_upgrade_management_node.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20a%20management%20node%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_upgrade_management_node.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2685,12 +2661,7 @@ mv / sf / etc / mnode / volume / * / var / lib / docker / Volumes /</pre></div><
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

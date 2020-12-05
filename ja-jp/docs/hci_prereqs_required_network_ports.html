@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -592,9 +582,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -681,9 +669,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -727,9 +713,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -913,9 +897,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2050,9 +2026,9 @@
 <p class="page-details"><time datetime="2020-11-05 20:30:26 +0000">2020年11月5日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/hci_prereqs_required_network_ports.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>システムをリモートで管理し、データセンター外のクライアントがリソースに接続できるようにし、内部サービスが正しく機能できるようにするには、データセンターのエッジファイアウォールを通過する次のポートを許可する必要がある場合があります。システムの使用方法によっては、これらのポート、URL、またはIPアドレスの一部が不要な場合があります。特に明記されていない限り、すべてのポートはTCPです。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">
-<div class="paragraph"><p> NetAppハイブリッドクラウドコントロールのWebUIおよびAPIは、NetAppオンラインソフトウェアリポジトリからソフトウェアパッケージをダウンロードします。このリポジトリは、JFrog Bintrayを配布ハブとして使用し、AkamaiTechnologiesをファイルホスティングに使用します。このため、一部のURLまたはIPアドレスは、コンテンツ配信ネットワークに基づいて他のURLまたはIPアドレスに解決される場合があります。可能であれば、ネットワークエンジニアと協力して、次の一般的な手順を使用して、これらのURLまたはIPアドレスをファイアウォールルールに追加する必要があります。</p></div>
+<div class="paragraph"><p> NetAppハイブリッドクラウドコントロールWebUIおよびAPIは、NetAppオンラインソフトウェアリポジトリからソフトウェアパッケージをダウンロードします。このリポジトリは、JFrog Bintrayを配布ハブとして使用し、AkamaiTechnologiesをファイルホスティングに使用します。このため、一部のURLまたはIPアドレスは、コンテンツ配信ネットワークに基づいて他のURLまたはIPアドレスに解決される場合があります。可能であれば、ネットワークエンジニアと協力して、次の一般的な手順を使用して、これらのURLまたはIPアドレスをファイアウォールルールに追加する必要があります。</p></div>
 <div class="olist arabic">
 <div class="title">ステップ</div>
 <ol class="arabic">
@@ -2437,8 +2413,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/hci_prereqs_required_network_ports.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BNetwork%20port%20requirements%5D(https://docs.netapp.com/ja-jp/hci/docs/hci_prereqs_required_network_ports.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/hci_prereqs_required_network_ports.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BNetwork%20port%20requirements%5D(https://docs.netapp.com/ja-jp/hci/docs/hci_prereqs_required_network_ports.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2557,12 +2533,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

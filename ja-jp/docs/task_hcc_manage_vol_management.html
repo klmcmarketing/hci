@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -997,9 +981,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2077,7 +2053,7 @@
 <li>
 <p>ボリュームの合計サイズを入力します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">デフォルトのボリュームサイズの選択はGB単位です。 GBまたはGiBで測定されたサイズを使用してボリュームを作成できます。<br> 1GB = 1 000 000000バイト<br>1GiB = 1 073 741824バイト</td>
 </tr></table></div>
 </li>
@@ -2085,7 +2061,7 @@
 <li>
 <p> [アカウント]リストから、ボリュームにアクセスする必要があるアカウントを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">アカウントが50を超える場合、リストは表示されません。入力を開始すると、オートコンプリート機能に選択可能な値が表示されます。</td>
 </tr></table></div>
 </li>
@@ -2122,11 +2098,11 @@
 <li>
 <p> [カスタム設定]で、IOPSの最小値、最大値、バースト値を設定するか、デフォルト値を使用します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ボリュームでQoSポリシーを使用している場合は、カスタムQoSを設定して、ボリュームとのQoSポリシーの関連付けを削除できます。カスタムQoSは、ボリュームQoS設定のQoSポリシー値を上書きします。 </td>
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content"> IOPS値を変更するときは、数十または数百単位で増分します。入力値には有効な整数が必要です。バースト値が非常に高いボリュームを構成します。これにより、システムは、ボリュームの持続的なIOPSを制限しながら、時折発生する大きなブロックの順次ワークロードをより迅速に処理できます。</td>
 </tr></table></div>
 </li>
@@ -2164,15 +2140,15 @@
 <li>
 <p>ボリュームの合計サイズを変更します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ボリュームのサイズを増やすことはできますが、減らすことはできません。 1回のサイズ変更操作で1つのボリュームのみサイズ変更できます。ガベージコレクション操作とソフトウェアのアップグレードによって、サイズ変更操作が中断されることはありません。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">レプリケーションのボリュームサイズを調整する場合は、最初にレプリケーションターゲットとして割り当てられたボリュームのサイズを増やします。次に、ソースボリュームのサイズを変更できます。ターゲットボリュームのサイズはソースボリューム以上にすることができますが、小さくすることはできません。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">デフォルトのボリュームサイズの選択はGB単位です。 GBまたはGiBで測定されたサイズを使用してボリュームを作成できます。<br> 1GB = 1 000 000000バイト<br>1GiB = 1 073 741824バイト</td>
 </tr></table></div>
 </li>
@@ -2196,11 +2172,11 @@
 <li>
 <p> [カスタム設定]で、IOPSの最小値、最大値、バースト値を設定するか、デフォルト値を使用します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ボリュームでQoSポリシーを使用している場合は、カスタムQoSを設定して、ボリュームとのQoSポリシーの関連付けを削除できます。カスタムQoSは、ボリュームQoS設定のQoSポリシー値を上書きします。 </td>
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content"> IOPS値を変更するときは、数十または数百単位で増分する必要があります。入力値には有効な整数が必要です。バースト値が非常に高いボリュームを構成します。これにより、システムは、ボリュームの持続的なIOPSを制限しながら、時折発生する大きなブロックの順次ワークロードをより迅速に処理できます。</td>
 </tr></table></div>
 </li>
@@ -2232,7 +2208,7 @@
 </div>
 <div class="paragraph"><p>ボリュームのクローン作成は非同期プロセスであり、プロセスに必要な時間は、クローン作成するボリュームのサイズと現在のクラスターの負荷によって異なります。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">クローンボリュームは、ソースボリュームからボリュームアクセスグループメンバーシップを継承しません。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2249,9 +2225,9 @@
 <p>単一のボリュームのクローンを作成するには、次の手順を実行します。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li>
-<p> [<strong>ボリューム</strong>の<strong>クローン</strong>]ダイアログボックスで、ボリュームクローンのボリューム名を入力します。 </p>
+<p> [<strong>ボリューム</strong>の<strong>クローン</strong>]ダイアログボックスで、ボリュームクローンのボリューム名を入力します。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">説明的な命名のベストプラクティスを使用します。これは、環境で複数のクラスターまたはvCenterServerが使用されている場合に特に重要です。</td>
 </tr></table></div>
 </li>
@@ -2267,7 +2243,7 @@
 <li>
 <p>ボリュームクローンのサイズをGBまたはGIBで選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">クローンのボリュームサイズを大きくすると、ボリュームの最後に空き領域が追加された新しいボリュームになります。ボリュームの使用方法によっては、パーティションを拡張するか、空き領域に新しいパーティションを作成して使用する必要がある場合があります。</td>
 </tr></table></div>
 </li>
@@ -2289,7 +2265,7 @@
 </ol>
 </div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">クローン作成操作を完了する時間は、ボリュームサイズと現在のクラスター負荷の影響を受けます。複製されたボリュームがボリュームリストに表示されない場合は、ページを更新してください。</td>
 </tr></table></div>
 </div>
@@ -2384,8 +2360,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_manage_vol_management.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BCreate%20and%20manage%20volumes%20by%20using%20NetApp%20Hybrid%20Cloud%20Control%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_manage_vol_management.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_manage_vol_management.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BCreate%20and%20manage%20volumes%20by%20using%20NetApp%20Hybrid%20Cloud%20Control%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_manage_vol_management.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2504,12 +2480,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

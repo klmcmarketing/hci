@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1003,9 +987,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2051,7 +2027,7 @@
 <div id="preamble"><div class="sectionbody">
 <div class="paragraph lead"><p>QoS（Quality of Service）ポリシーを使用すると、多くのボリュームに適用できる標準化されたQuality ofService設定を作成して保存できます。 QoSポリシーを使用するには、選択したクラスターがElement10.0以降である必要があります。それ以外の場合、QoSポリシー機能は使用できません。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">個々のボリューム<a href="concept_hci_performance.html">QoSの</a>代わりに<a href="concept_hci_performance.html#qos-policies">QoSポリシー</a>を使用する方法の詳細については、NetAppHCIの概念のコンテンツを参照してください。</td>
 </tr></table></div>
 <div class="paragraph"><p> NetApp Hybrid Cloud Controlを使用すると、次のタスクを実行してQoSポリシーを作成および管理できます。</p></div>
@@ -2068,7 +2044,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>QoSポリシーを作成し、同等のパフォーマンスが必要なボリュームに適用できます。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> QoSポリシーを使用している場合は、ボリュームでカスタムQoSを使用しないでください。カスタムQoSは、ボリュームQoS設定のQoSポリシー値を上書きおよび調整します。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2080,9 +2056,9 @@
 <li><p> [ <strong>QoSポリシー</strong>]タブをクリックします。</p></li>
 <li><p> [<strong>ポリシーの作成]を</strong>クリックし<strong>ます</strong>。</p></li>
 <li>
-<p><strong>ポリシー名を</strong>入力します。 </p>
+<p><strong>ポリシー名を</strong>入力します。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">説明的な命名のベストプラクティスを使用します。これは、環境で複数のクラスターまたはvCenterServerが使用されている場合に特に重要です。</td>
 </tr></table></div>
 </li>
@@ -2118,7 +2094,7 @@
 <li>
 <p>ダイアログボックスで、 <strong>[QoSポリシーの割り当て</strong>]を有効にし、ドロップダウンリストから<strong>QoSポリシー</strong>を選択して、選択したボリュームに適用します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> QoSを割り当てると、以前に適用された個々のボリュームQoS値が上書きされます。</td>
 </tr></table></div>
 </li>
@@ -2152,7 +2128,7 @@
 <li>
 <p> <strong>[QoSポリシーの割り当て]を</strong>無効にし、個々のボリュームQoSの<strong>最小IOPS</strong> 、<strong>最大IOPS</strong> 、および<strong>バーストIOPSの</strong>値を変更します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> QoSポリシーが無効になっている場合、特に変更がない限り、ボリュームはデフォルトのQoSIOPS値を使用します。</td>
 </tr></table></div>
 </li>
@@ -2193,7 +2169,7 @@
 <p> [<strong>保存]を</strong>クリックし<strong>ます</strong>。</p>
 <div class="paragraph"><p>更新されたQoSポリシーが[QoSポリシー]ページに表示されます。 </p></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">ポリシーの[<strong>アクティブボリューム</strong>]列のリンクをクリックすると、そのポリシーに割り当てられているボリュームのフィルターされたリストが表示されます。</td>
 </tr></table></div>
 </li>
@@ -2232,8 +2208,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_qos_policies.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BCreate%20and%20manage%20volume%20QoS%20policies%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_qos_policies.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_qos_policies.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BCreate%20and%20manage%20volume%20QoS%20policies%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_qos_policies.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2352,12 +2328,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

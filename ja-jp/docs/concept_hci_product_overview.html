@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -502,9 +494,7 @@
           
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -588,9 +578,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -681,9 +669,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -727,9 +713,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -913,9 +897,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2065,24 +2041,24 @@
 <div class="ulist"><ul>
 <li><p> NetApp HCIは、ストレージリソースとコンピューティングリソースの両方を提供します。 <strong>NetApp Deployment Engine</strong>ウィザードを使用して、 <strong>NetAppHCIを導入し</strong>ます。導入が成功すると、コンピューティングノードはESXiホストとして表示され、VMware vSphere WebClientで管理できます。</p></li>
 <li>
-<p><strong>管理サービス</strong>またはマイクロサービスには、Active IQコレクター、vCenterプラグイン用のQoSSIOC、およびmNodeサービスが含まれます。それらはサービスバンドルとして頻繁に更新されます。 Element 11.3リリース以降、<strong>管理サービス</strong>は管理ノードでホストされているため、メジャーリリース以外の選択したソフトウェアサービスをより迅速に更新できます。<strong>管理ノード</strong>（mNode）は、1つ以上のElementソフトウェアベースのストレージクラスターと並行して実行される仮想マシンです。これは、監視とテレメトリを含むシステムサービスのアップグレードと提供、クラスターアセットと設定の管理、システムテストとユーティリティの実行、トラブルシューティングのためのNetAppサポートアクセスの有効化に使用されます。 </p>
+<p><strong>管理サービス</strong>またはマイクロサービスには、Active IQコレクター、vCenterプラグイン用のQoSSIOC、およびmNodeサービスが含まれます。それらはサービスバンドルとして頻繁に更新されます。 Element 11.3リリース以降、<strong>管理サービス</strong>は管理ノードでホストされているため、メジャーリリース以外の選択したソフトウェアサービスをより迅速に更新できます。<strong>管理ノード</strong>（mNode）は、1つ以上のElementソフトウェアベースのストレージクラスターと並行して実行される仮想マシンです。これは、監視とテレメトリを含むシステムサービスのアップグレードと提供、クラスターアセットと設定の管理、システムテストとユーティリティの実行、トラブルシューティングのためのNetAppサポートアクセスの有効化に使用されます。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content"> <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes">管理サービスのリリースの</a>詳細をご覧ください。</td>
 </tr></table></div>
 </li>
 <li><p> <strong>NetApp Hybrid Cloud Controlを</strong>使用すると、NetAppHCIを管理できます。 NetApp SolidFire Active IQを使用して、管理サービスのアップグレード、システムの拡張、ログの収集、およびインストールの監視を行うことができます。管理ノードのIPアドレスを参照して、NetApp Hybrid CloudControlにログインします。</p></li>
 <li>
-<p> <strong>NetApp Element Plug-in for vCenter Server</strong> （VCP）は、vSphereユーザーインターフェイス（UI）と統合されたWebベースのツールです。プラグインは、 <strong>NetAppElementソフトウェアを</strong>実行しているストレージクラスターを管理および監視できるVMwarevSphereの拡張機能とスケーラブルでユーザーフレンドリーなインターフェイス<strong>です</strong>。プラグインは、ElementUIの代替手段を提供します。プラグインのユーザーインターフェイスを使用して、クラスターを検出および構成し、クラスター容量からストレージを管理、監視、および割り当てて、データストアおよび仮想データストア（仮想ボリューム用）を構成できます。クラスターは、仮想IPアドレスによってホストと管理者に表される単一のローカルグループとしてネットワーク上に表示されます。また、さまざまな操作の実行中に発生する可能性のあるイベントのエラーおよびアラートメッセージングを含む、リアルタイムレポートを使用してクラスターアクティビティを監視することもできます。 </p>
+<p> <strong>NetApp Element Plug-in for vCenter Server</strong> （VCP）は、vSphereユーザーインターフェイス（UI）と統合されたWebベースのツールです。プラグインは、 <strong>NetAppElementソフトウェアを</strong>実行しているストレージクラスターを管理および監視できるVMwarevSphereの拡張機能とスケーラブルでユーザーフレンドリーなインターフェイス<strong>です</strong>。プラグインは、ElementUIの代替手段を提供します。プラグインのユーザーインターフェイスを使用して、クラスターを検出および構成し、クラスター容量からストレージを管理、監視、および割り当てて、データストアおよび仮想データストア（仮想ボリューム用）を構成できます。クラスターは、仮想IPアドレスによってホストと管理者に表される単一のローカルグループとしてネットワーク上に表示されます。また、さまざまな操作の実行中に発生する可能性のあるイベントのエラーおよびアラートメッセージングを含む、リアルタイムレポートを使用してクラスターアクティビティを監視することもできます。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content"> <a href="https://docs.netapp.com/hci/topic/com.netapp.doc.hci-vcp-ug-180/home.html">VCPの</a>詳細をご覧ください。</td>
 </tr></table></div>
 </li>
 <li>
-<p>デフォルトでは、 <strong>NetAppHCI</strong>はパフォーマンスとアラートの統計を<strong>NetAppSolidFire ActiveIQ</strong>サービスに送信します。通常のサポート契約の一環として、ネットアップサポートはこのデータを監視し、パフォーマンスのボトルネックや潜在的なシステムの問題を警告します。このサービスを利用できるように、NetAppサポートアカウントをまだ持っていない場合は（既存のSolidFire Active IQアカウントを持っている場合でも）作成する必要があります。 </p>
+<p>デフォルトでは、 <strong>NetAppHCI</strong>はパフォーマンスとアラートの統計を<strong>NetAppSolidFire ActiveIQ</strong>サービスに送信します。通常のサポート契約の一環として、ネットアップサポートはこのデータを監視し、パフォーマンスのボトルネックや潜在的なシステムの問題を警告します。このサービスを利用できるように、NetAppサポートアカウントをまだ持っていない場合は（既存のSolidFire Active IQアカウントを持っている場合でも）作成する必要があります。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content"> <a href="https://help.monitoring.solidfire.com/">NetApp SolidFire ActiveIQの</a>詳細をご覧ください。</td>
 </tr></table></div>
 </li>
@@ -2148,8 +2124,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/concept_hci_product_overview.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BNetApp%20HCI%20product%20overview%5D(https://docs.netapp.com/ja-jp/hci/docs/concept_hci_product_overview.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/concept_hci_product_overview.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BNetApp%20HCI%20product%20overview%5D(https://docs.netapp.com/ja-jp/hci/docs/concept_hci_product_overview.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2268,12 +2244,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

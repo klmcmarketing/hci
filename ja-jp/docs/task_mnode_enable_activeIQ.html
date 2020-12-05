@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1121,9 +1105,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2048,7 +2024,7 @@
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> ActiveIQおよびNetAppHCIモニタリングを有効にする</h1></div>
 <p class="page-details"><time datetime="2020-11-05 23:42:31 +0000">2020年11月5日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_enable_activeIQ.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
-<div class="paragraph lead"><p>インストールまたはアップグレード中にまだ有効にしていない場合は、Active IQストレージモニタリング（SolidFireオールフラッシュストレージおよびNetApp HCIの場合）およびNetApp HCIコンピューティングモニタリング（NetApp HCIの場合のみ）を有効にできます。 NetApp HCI Deployment Engineを使用してテレメトリを無効にした場合、またはSolidFireオールフラッシュストレージシステムのインストール中にSolidFire Active IQをセットアップしなかった場合は、この手順を使用する必要があります。</p></div>
+<div class="paragraph lead"><p>インストールまたはアップグレード中にまだ有効にしていない場合は、Active IQストレージ監視（SolidFireオールフラッシュストレージおよびNetApp HCIの場合）およびNetApp HCIコンピューティング監視（NetApp HCIの場合のみ）を有効にできます。 NetApp HCI Deployment Engineを使用してテレメトリを無効にした場合、またはSolidFireオールフラッシュストレージシステムのインストール中にSolidFire Active IQをセットアップしなかった場合は、この手順を使用する必要があります。</p></div>
 <div class="paragraph"><p> Active IQコレクターサービスは、構成データとElementソフトウェアベースのクラスターパフォーマンスメトリックをNetApp Active IQに転送して、履歴レポートとほぼリアルタイムのパフォーマンス監視を行います。 NetApp HCI監視サービスを使用すると、ストレージクラスターの障害をvCenterに転送してアラートを通知できます。</p></div>
 <div class="ulist">
 <div class="title">あなたが始める前に</div>
@@ -2091,7 +2067,7 @@
       }、
       <strong>"id"： "abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x"、</strong> </pre></div></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">インストールには、インストールまたはアップグレード中に作成された基本資産構成があります。</td>
 </tr></table></div>
 </li>
@@ -2137,7 +2113,7 @@
 <li>
 <p>まだ行っていない場合は、NetApp HCIモニタリング（NetApp HCIインストールのみ）およびハイブリッドクラウドコントロール（すべてのインストール用）用のvCenterコントローラーアセットを管理ノードの既知のアセットに追加します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> NetApp HCI監視サービスには、コントローラーアセットが必要です。</td>
 </tr></table></div>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
@@ -2155,7 +2131,7 @@
 "config"：{}
 } </pre></div></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> <code>ip</code>はvCenterのIPアドレスです。</td>
 </tr></table></div>
 </li>
@@ -2177,8 +2153,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_mnode_enable_activeIQ.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BEnable%20Active%20IQ%20and%20NetApp%20HCI%20monitoring%5D(https://docs.netapp.com/ja-jp/hci/docs/task_mnode_enable_activeIQ.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_mnode_enable_activeIQ.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BEnable%20Active%20IQ%20and%20NetApp%20HCI%20monitoring%5D(https://docs.netapp.com/ja-jp/hci/docs/task_mnode_enable_activeIQ.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2297,12 +2273,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

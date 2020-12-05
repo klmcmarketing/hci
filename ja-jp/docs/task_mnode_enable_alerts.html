@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1083,9 +1067,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2052,8 +2028,8 @@
 <div class="paragraph lead"><p>NetAppHCIシステムでアラートを監視するように設定を構成できます。</p></div>
 <div class="paragraph"><p> NetApp HCIアラートモニタリングは、NetAppHCIストレージクラスターシステムアラートをvCenterServerに転送し、vSphere WebClientインターフェイスからNetAppHCIのすべてのアラートを表示できるようにします。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
-<td class="content">これらのツールは、SolidFireオールフラッシュストレージなどのストレージのみのクラスター用に構成または使用されていません。これらのクラスターのツールを実行すると、次の405エラーが発生します。これは、構成が与えられた場合に予想されます<code>webUIParseError : Invalid response from server. 405</code>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
+<td class="content">これらのツールは、SolidFireオールフラッシュストレージなどのストレージのみのクラスター用に構成または使用されていません。これらのクラスターのツールを実行すると、次の405エラーが発生します。これは、構成によって予想されます<code>webUIParseError : Invalid response from server. 405</code>
 </td>
 </tr></table></div>
 <div class="olist arabic"><ol class="arabic">
@@ -2104,7 +2080,7 @@
 <li><p>無効：vCenterアラーム、NetApp HCIストレージアラーム、またはサポートデータはNetApp SolidFire ActiveIQに送信されません。 </p></li>
 </ul></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> NetApp Deployment Engineを使用して[<strong>データをAIQに送信</strong>]オプションをオフにした場合は、管理ノードのREST APIを使用して<a href="task_mnode_enable_activeIQ.html">テレメトリを</a>再度<a href="task_mnode_enable_activeIQ.html">有効</a>にし、このページからサービスを構成する必要があります。 </td>
 </tr></table></div>
 </div></td>
@@ -2119,7 +2095,7 @@
 <li><p>無効：計算ノードに関するサポートおよび監視データは、NetApp SolidFire ActiveIQに送信されません。 </p></li>
 </ul></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> NetApp Deployment Engineを使用して[<strong>データをAIQに送信</strong>]オプションをオフにした場合は、管理ノードのREST APIを使用して<a href="task_mnode_enable_activeIQ.html">テレメトリを</a>再度<a href="task_mnode_enable_activeIQ.html">有効</a>にし、このページからサービスを構成する必要があります。 </td>
 </tr></table></div>
 </div></td>
@@ -2141,8 +2117,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_mnode_enable_alerts.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BConfigure%20alert%20monitoring%20on%20NetApp%20HCI%5D(https://docs.netapp.com/ja-jp/hci/docs/task_mnode_enable_alerts.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_mnode_enable_alerts.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BConfigure%20alert%20monitoring%20on%20NetApp%20HCI%5D(https://docs.netapp.com/ja-jp/hci/docs/task_mnode_enable_alerts.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2261,12 +2237,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

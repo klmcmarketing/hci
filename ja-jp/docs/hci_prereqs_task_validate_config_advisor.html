@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -691,9 +679,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -727,9 +713,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -913,9 +897,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2050,7 +2026,7 @@
 <p class="page-details"><time datetime="2020-09-21 19:09:19 +0000">2020年9月21日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/hci_prereqs_task_validate_config_advisor.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody"><div class="paragraph lead"><p>NetApp HCIハードウェアをラックに収納し、NetApp HCIのインストールを実行する前に、環境がNetAppHCIネットワーク要件を満たしていることを確認する必要があります。 Active IQ Config Advisorは、ネットワーク、スイッチ、およびVMware vSphereの構成を検証することにより、環境のチェックを実行します。このツールは、問題の解決に役立つレポートを生成し、そのレポートをプロフェッショナルサービスエンジニアに転送して、インストールの準備とスケジュールを立てることができます。</p></div></div></div>
 <div class="sect1">
-<h2 id="install-active-iq-config-advisor"> Active IQ ConfigAdvisorをインストールする</h2>
+<h2 id="install-active-iq-config-advisor"> Active IQ ConfigAdvisorをインストールします</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>NetAppHCIネットワークにアクセスできるPCにActiveIQ ConfigAdvisorをダウンロードしてインストールします。</p></div>
 <div class="olist arabic">
@@ -2083,7 +2059,7 @@
 <p>管理ネットワーク、VMware vCenter Serverネットワーク（既存のVMwareインストールに参加している場合）、およびNetAppHCIに使用されるスイッチにアクセスできるデバイスにActiveIQ ConfigAdvisorをインストールしました。 </p>
 </div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> Mellanoxスイッチを使用していて、NetApp Professional Servicesがそれらを展開の一部として構成している場合は、スイッチ情報を提供する必要はありません。</td>
 </tr></table></div>
 <div class="paragraph">
@@ -2110,7 +2086,7 @@
 <p> [<strong>タイプ</strong>]列のデバイスのタイプごとに、[<strong>アクション</strong>]ドロップダウンメニューでNetAppHCIネットワーク内のそのタイプのデバイスの番号を選択します。</p>
 <div class="paragraph"><p>たとえば、Ciscoスイッチが3つある場合は、その行の[ <strong>Actions</strong> ]列のドロップダウンメニューから[3]を選択します。識別したCiscoスイッチごとに1つずつ、合計3つの行が表示されます。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> Mellanoxスイッチを使用していて、NetApp Professional Servicesがそれらを展開の一部として構成している場合は、スイッチ情報を提供する必要はありません。</td>
 </tr></table></div>
 </li>
@@ -2127,7 +2103,7 @@
 <li><p> [<strong>コンピュートノードネットワーク]</strong>セクションに、個々のスイッチポートと、スイッチの管理、vMotion、およびストレージネットワークに使用する予定のVLANタグを入力します。</p></li>
 <li><p> [<strong>ストレージノードネットワーク]</strong>セクションに、スイッチの管理ネットワークとストレージネットワークに使用する予定の個々のスイッチポートとVLANタグを入力します。</p></li>
 <li>
-<p> <strong>[ネットワーク設定の確認]</strong>セクションで、管理ネットワークのIPアドレスとゲートウェイIPアドレスを入力し、続いてDNS、NTP、vCenter Serverのサーバーのリストを入力します（NetApp HCIを使用して新しいvsetサーバーを展開する場合）。</p>
+<p> <strong>[ネットワーク設定の確認]</strong>セクションで、管理ネットワークのIPアドレスとゲートウェイIPアドレスを入力し、続いてDNS、NTP、およびvCenter Serverのサーバーのリストを入力します（NetApp HCIを使用して新しいvsetサーバーを展開する場合）。</p>
 <div class="paragraph"><p>このセクションでは、Active IQ Config Advisorを使用して、管理ネットワークを使用できるようにし、DNSやNTPなどのサービスが正しく機能していることを確認します。</p></div>
 </li>
 <li><p> [<strong>検証]</strong>をクリックして、入力したすべてのIPアドレス情報と資格情報が有効であることを確認します。</p></li>
@@ -2150,7 +2126,7 @@
 <li>
 <p>コレクションレポートをPDFまたはMicrosoftWord文書としてエクスポートするには、[<strong>エクスポート]</strong>をクリックします。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> PDFおよびMicrosoftWordのドキュメント出力には、展開のスイッチ構成情報が含まれています。これは、ネットアッププロフェッショナルサービスがネットワーク設定を確認するために使用します。</td>
 </tr></table></div>
 </li>
@@ -2172,8 +2148,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/hci_prereqs_task_validate_config_advisor.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BValidate%20your%20environment%20with%20Active%20IQ%20Config%20Advisor%5D(https://docs.netapp.com/ja-jp/hci/docs/hci_prereqs_task_validate_config_advisor.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/hci_prereqs_task_validate_config_advisor.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BValidate%20your%20environment%20with%20Active%20IQ%20Config%20Advisor%5D(https://docs.netapp.com/ja-jp/hci/docs/hci_prereqs_task_validate_config_advisor.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2292,12 +2268,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

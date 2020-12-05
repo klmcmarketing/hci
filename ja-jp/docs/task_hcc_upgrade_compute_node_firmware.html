@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1218,9 +1202,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1306,9 +1288,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2094,15 +2070,15 @@
 </tbody>
 </table>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> H615C計算ノードは、<a href="https://docs.netapp.com/us-en/hci/docs/rn_compute_firmware_2.27.html">計算ファームウェアバンドル2.27</a>を使用してBMCファームウェアをバージョン4.68に更新し、NetApp Hybrid CloudControlが将来のファームウェアアップグレードを実行できるようにする必要があります。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> NetApp Hybrid Cloud Controlが将来のファームウェアアップグレードを実行できるようにするには、H300E、H500E、およびH700EコンピューティングノードにRedfishライセンスが必要です。ネットアップサポートに連絡して、新しいコンピューティングファームウェアバンドルが後続のリリースでこのプロセスを自動化するまで、ライセンスを手動でインストールしてください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ハードウェアのファームウェアとドライバーファームウェアの完全なマトリックスについては、 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software">このKB記事を</a>参照し<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software">てください</a>（ログインが必要です）。</td>
 </tr></table></div>
 </li>
@@ -2135,15 +2111,15 @@
 <div class="sectionbody">
 <div class="paragraph"><p>管理サービス2.14以降、NetAppハイブリッドクラウドコントロールUIを使用してコンピューティングノードをアップグレードできます。ノードのリストから、アップグレードするノードを選択する必要があります。 [<strong>現在のバージョン</strong>]タブには現在のファームウェアバージョンが表示され、[<strong>提案されたバージョン</strong>]タブには利用可能なアップグレードバージョンが表示<strong>され</strong>ます（存在する場合）。 </p></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">アップグレードを成功させるには、vSphereクラスターのヘルスチェックが成功していることを確認してください。 </td>
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">ダークサイトのアップグレードでは、アップグレードパッケージと管理ノードの両方がローカルである場合、アップロード時間を短縮できます。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> NIC、BIOS、およびBMCのアップグレードには、管理ノードとBMCホスト間のネットワーク接続の速度に応じて、ノードごとに約60分かかる場合があります。</td>
 </tr></table></div>
 <div class="ulist">
@@ -2151,7 +2127,7 @@
 <ul><li>
 <p>管理ノードがインターネットに接続されていない場合は、 <a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle" target="_blank" rel="noopener">ネットアップサポートサイト</a>からコンピュートノードファームウェアパッケージをダウンロードしています。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> <code>TAR.GZ</code>ファイルを<code>TAR</code>ファイルに抽出してから、 <code>TAR</code>ファイルをISOに抽出する必要があります。</td>
 </tr></table></div>
 </li></ul>
@@ -2198,7 +2174,7 @@
 <li><p>クラスターまたはノードレベルでのヘルスチェックが警告付きで合格したが、重大な障害が発生しなかった場合は、<strong>アップグレードの準備ができている</strong>と表示さ<strong>れます</strong>。 [<strong>ノードのアップグレード]を</strong>クリックします。 </p></li>
 </ol></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">アップグレードの進行中は、ページを離れて後でページに戻り、進行状況の監視を続けることができます。アップグレード中、UIにはアップグレードのステータスに関するさまざまなメッセージが表示されます。 </td>
 </tr></table></div>
 <div class="admonitionblock caution"><table><tr>
@@ -2217,7 +2193,7 @@
 <li><p>アップロードが完了するのを待ちます。プログレスバーにアップロードのステータスが表示されます。 </p></li>
 </ol></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">ブラウザウィンドウから移動すると、ファイルのアップロードはバックグラウンドで行われます。</td>
 </tr></table></div>
 <div class="paragraph"><p>ファイルが正常にアップロードおよび検証されると、画面上のメッセージが表示されます。検証には数分かかる場合があります。<br>アップグレードの完了後にログをダウンロードできます。さまざまなアップグレードのステータスの変更に関する情報は、以下を参照してください<a href="#upgrade-status-changes">アップグレードのステータスの変更を</a>。 </p></div>
@@ -2229,7 +2205,7 @@
 </ol>
 </div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">アップグレード中に障害が発生した場合、NetApp Hybrid Cloud Controlはノードを再起動し、メンテナンスモードを解除して、エラーログへのリンクとともに障害ステータスを表示します。特定の手順またはKB記事へのリンクを含むエラーログをダウンロードして、問題を診断および修正できます。 NetApp Hybrid Cloud Controlを使用したコンピューティングノードファームウェアのアップグレードの問題に関する追加の洞察については、この<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Known_issues_and_workarounds_for_Compute_Node_upgrades">KB</a>記事を参照してください。</td>
 </tr></table></div>
 <div class="sect2">
@@ -2337,9 +2313,9 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードは、外部接続のない暗いサイト内にあります。 </p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic"><ol class="arabic">
 <li>
-<p> NetApp HCIソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle">ダウンロードページに</a>移動し、管理ノードがアクセスできるデバイスに最新の計算ノードファームウェアイメージをダウンロードします。 </p>
+<p> NetApp HCIソフトウェアの<a href="https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab/download/62542/Compute_Firmware_Bundle">ダウンロードページに</a>移動し、管理ノードがアクセスできるデバイスに最新の計算ノードファームウェアイメージをダウンロードします。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">ダークサイトのアップグレードでは、アップグレードパッケージと管理ノードの両方がローカルである場合、アップロード時間を短縮できます。</td>
 </tr></table></div>
 </li>
@@ -2409,7 +2385,7 @@
 <li><p>インストール資産IDを<strong>id</strong>フィールドに貼り付けます。</p></li>
 <li><p> [<strong>実行]を</strong>クリックします。</p></li>
 <li>
-<p>応答から、後のステップで使用するために、クラスターコントローラーID（ <code>"controllerId"</code> ）とノードハードウェアID（ <code>"hardwareId"</code> ）をコピーして保存します。</p>
+<p>応答から、クラスターコントローラーID（ <code>"controllerId"</code> ）とノードハードウェアID（ <code>"hardwareId"</code> ）をコピーして保存し、後の手順で使用できるようにします。</p>
 <div class="listingblock"><div class="content"><pre> 「計算」：{
   「エラー」：[]、
   「在庫」：{
@@ -2565,7 +2541,7 @@
 <li>
 <p> VMware vCenterを使用して計算ノードをメンテナンスモードにし、すべての仮想マシンをホストから退避させます。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">クラスターでVMwareDistributed Resource Scheduler（DRS）が有効になっている場合（これはNetApp HCIインストールのデフォルトです）、仮想マシンはクラスター内の他のノードに自動的に移行されます。</td>
 </tr></table></div>
 </li>
@@ -2588,11 +2564,11 @@
 <div class="sectionbody">
 <div class="paragraph"><p>アップグレードが成功することを確認するには、一連の手順を実行して計算ノードファームウェアISOをロードし、ノードをISOで再起動する必要があります。 ISOは、Webブラウザをホストしているシステムまたは仮想マシン（VM）に配置する必要があります。プロセスを開始する前に、ISOをダウンロードしたことを確認してください。 </p></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">システムまたはVMとノードを同じネットワーク上に配置することをお勧めします。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> BMC UIを介したアップグレードには、約25〜30分かかります。</td>
 </tr></table></div>
 <div class="ulist"><ul>
@@ -2603,7 +2579,7 @@
 <h3 id="upgrade-firmware-on-h410c-and-h300eh500eh700e-nodes">H410CおよびH300E / H500E / H700Eノードのファームウェアをアップグレードします</h3>
 <div class="paragraph"><p>ノードがクラスターの一部である場合は、アップグレード前にノードをメンテナンスモードにし、アップグレード後にメンテナンスモードを解除する必要があります。 </p></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">プロセス中に表示される次の情報メッセージは無視してください。 <code>Untrusty Debug Firmware Key is used, SecureFlash is currently in Debug Mode</code>
 </td>
 </tr></table></div>
@@ -2630,7 +2606,7 @@
 <li>
 <p> [<strong>コンソールの起動]を</strong>クリックします。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> Javaをインストールするか、更新する必要がある場合があります。</td>
 </tr></table></div>
 </li>
@@ -2651,14 +2627,14 @@
 <li>
 <p>上記の画面で、 <strong>Enterキーを</strong>押します。ネットワークによっては、 <strong>Enterキー</strong>を押してからアップグレードを開始するまでに数分かかる場合があります。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">注：ファームウェアのアップグレードによっては、コンソールが切断されたり、BMCのセッションが切断されたりする場合があります。 BMCに再度ログインすることはできますが、ファームウェアのアップグレードにより、コンソールなどの一部のサービスが利用できない場合があります。アップグレードが完了すると、ノードはコールドリブートを実行します。これには約5分かかる場合があります。</td>
 </tr></table></div>
 </li>
 <li>
 <p> BMC UIに再度ログインし、[<strong>システム</strong>]をクリックして、OSの起動後にBIOSバージョンとビルド時間を確認します。アップグレードが正しく完了すると、新しいBIOSとBMCのバージョンが表示されます。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> BIOSバージョンは、ノードが完全に起動するまで、アップグレードされたバージョンを表示しません。</td>
 </tr></table></div>
 </li>
@@ -2714,7 +2690,7 @@
 <li>
 <p>表示された画面で、 <strong>Enterを</strong>クリック<strong>し</strong>ます。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">一部のファームウェアアップグレードにより、コンソールが切断されたり、BMCのセッションが切断されたりする場合があります。 BMCに再度ログインすることはできますが、ファームウェアのアップグレードにより、コンソールなどの一部のサービスが利用できない場合があります。アップグレードが完了すると、ノードはコールドリブートを実行します。これには約5分かかる場合があります。</td>
 </tr></table></div>
 </li>
@@ -2746,8 +2722,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_upgrade_compute_node_firmware.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20compute%20node%20firmware%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_upgrade_compute_node_firmware.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_upgrade_compute_node_firmware.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20compute%20node%20firmware%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_upgrade_compute_node_firmware.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2866,12 +2842,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

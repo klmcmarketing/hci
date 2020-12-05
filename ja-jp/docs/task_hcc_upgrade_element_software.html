@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1218,9 +1202,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1288,9 +1270,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2103,7 +2079,7 @@
 <td class="content"> NetApp Hybrid Cloud Controlを使用してストレージクラスターをアップグレードする際の潜在的な問題とその回避策については、 <a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">KBの記事を</a>参照して<a href="https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Potential_issues_and_workarounds_when_running_storage_upgrades_using_NetApp_Hybrid_Cloud_Control" target="_blank" rel="noopener">ください</a>。 </td>
 </tr></table></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content"> H610S以外のプラットフォームの場合、アップグレードプロセスにはノードあたり約30分かかります。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2139,12 +2115,12 @@
 <li><p> [<strong>アップグレードの開始]を</strong>クリックします。 </p></li>
 </ol></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">
 <strong>アップグレードステータス</strong>は、プロセスのステータスを反映するためにアップグレード中に変更されます。また、アップグレードの一時停止やアップグレードがエラーを返した場合など、実行したアクションに応じて変化します。<a href="#upgrade-status-changes">アップグレードステータスの変更を</a>参照してください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">アップグレードの進行中は、ページを離れて後でページに戻り、進行状況の監視を続けることができます。クラスタ行が折りたたまれている場合、ページはステータスと現在のバージョンを動的に更新しません。テーブルを更新するには、クラスター行を展開する必要があります。そうしないと、ページを更新できます。</td>
 </tr></table></div>
 <div class="paragraph"><p>アップグレードの完了後にログをダウンロードできます。</p></div>
@@ -2549,7 +2525,7 @@
 <li>
 <p>ストレージアップグレードパッケージをダウンロードします。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> Elementストレージソフトウェアをアップグレードするには、HealthToolsの最新バージョンが必要です。</td>
 </tr></table></div>
 <div class="ulist"><ul>
@@ -2566,7 +2542,7 @@
 <div class="paragraph"><p>この手順では、ストレージノードでISOを事前ステージングし、追加の内部チェックを実行して、クラスターがアップグレードに適した状態にあることを確認することにより、アップグレード時間を短縮します。この操作を実行しても、クラスターが「アップグレード」モードになったり、クラスター操作が制限されたりすることはありません。</p></div>
 <div class="listingblock"><div class="content"><pre> sfinstall &lt;MVIP&gt; -u &lt;cluster_username&gt; &lt;path-toinstall-file-ISO&gt; --stage </pre></div></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">コマンドラインからパスワードを省略して、 <code>sfinstall</code>が情報の入力を求められるようにします。特殊文字を含むパスワードの場合、各特殊文字の前に円記号（ <code>\</code> ）を追加します。たとえば、 <code>mypass!@1</code>は<code>mypass\!\@</code>として入力する必要があります。</td>
 </tr></table></div>
 <div class="paragraph"><p><strong>例</strong><br>次のサンプル入力を参照してください。</p></div>
@@ -2581,7 +2557,7 @@ https://mysupport.netapp.com/NOW/cgi-bin/software/
 または--skip-version-checkで再実行します</pre></div></div>
 <div class="paragraph"><p>成功した前段階操作からの次のサンプル抜粋を参照してください。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ステージングが完了すると、アップグレードイベント後に<code>Storage Node Upgrade Staging Successful</code>したというメッセージが表示されます。</td>
 </tr></table></div>
 <div class="listingblock"><div class="content"><pre> flabv0004〜＃sfinstall -u admin
@@ -2685,15 +2661,15 @@ nodeID = [2]にステージングされたビルドは存在しません
 <li>
 <p>正しいソフトウェアリリースを選択し、最新のストレージノードイメージを管理ノードではないコンピューターにダウンロードします。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> Elementストレージソフトウェアをアップグレードするには、HealthToolsの最新バージョンが必要です。</td>
 </tr></table></div>
 </li>
-<li><p>この<a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740">JSONファイル</a>（ <a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740" class="bare">https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740</a> ）を管理ノードではないコンピューターのNetAppサポートサイトからダウンロードし、名前を<code>metadata.json</code>変更します。</p></li>
+<li><p>この<a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740">JSONファイル</a>（ <a href="https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740" class="bare">https://library.netapp.com/ecm/ecm_get_file/ECMLP2840740</a> ）を、管理ノードではないコンピューターのNetAppサポートサイトからダウンロードし、名前を<code>metadata.json</code>変更します。</p></li>
 <li>
-<p> ISOファイルを<code>/tmp</code>などのアクセス可能な場所の管理ノードにコピーします。 </p>
+<p> ISOファイルを<code>/tmp</code>などのアクセス可能な場所の管理ノードにコピーします。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">これは、たとえばSCPを使用して行うことができます。 ISOファイルをアップロードするときは、ファイルの名前が変更されていないことを確認してください。変更されていない場合、後の手順は失敗します。</td>
 </tr></table></div>
 </li>
@@ -2738,7 +2714,7 @@ nodeID = [2]にステージングされたビルドは存在しません
 <div class="sectionbody">
 <div class="paragraph"><p>ソフトウェアのアップグレードが失敗した場合は、アップグレードを一時停止できます。 </p></div>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content"> Ctrl-Cでのみアップグレードを一時停止する必要があります。これにより、システムはそれ自体をクリーンアップできます。</td>
 </tr></table></div>
 <div class="paragraph"><p> <code>sfinstall</code>がクラスター障害がクリアされるのを待機し、障害が発生して障害が残る場合、 <code>sfinstall</code>は次のノードに進みません。</p></div>
@@ -2756,7 +2732,7 @@ nodeID = [2]にステージングされたビルドは存在しません
 <li>
 <p><strong>中止</strong>：クラスター定数をリセットし、アップグレードをただちに中止します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ノードの更新中にクラスターのアップグレードを中止すると、ドライブがノードから正常に削除されない場合があります。ドライブが正常に取り外されていない場合、アップグレード中にドライブを追加し直すには、ネットアップサポートによる手動の介入が必要になります。ノードは、ファームウェアの更新または更新後の同期アクティビティの実行に時間がかかる場合があります。アップグレードの進行が停滞していると思われる場合は、ネットアップサポートにお問い合わせください。 </td>
 </tr></table></div>
 </li>
@@ -2781,7 +2757,7 @@ nodeID = [2]にステージングされたビルドは存在しません
 <ul><li><p>H610Sアップグレードプロセスのフェーズ1を完了し、標準のElementストレージアップグレード手順の1つを使用してストレージノードをアップグレードしました。 </p></li></ul>
 </div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">フェーズ2には、現場の担当者が必要です。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2789,7 +2765,7 @@ nodeID = [2]にステージングされたビルドは存在しません
 <ol class="arabic"><li><p>（フェーズ2）クラスター内の各H610Sノードに必要な電源リセットプロセスを完了します。 </p></li></ol>
 </div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">クラスタに非H610Sノードもある場合、これらの非H610Sノードはフェーズ2から免除されるため、シャットダウンしたり、電源を切断したりする必要はありません。</td>
 </tr></table></div>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
@@ -2811,8 +2787,8 @@ nodeID = [2]にステージングされたビルドは存在しません
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_upgrade_element_software.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20Element%20software%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_upgrade_element_software.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_upgrade_element_software.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20Element%20software%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_upgrade_element_software.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2931,12 +2907,7 @@ nodeID = [2]にステージングされたビルドは存在しません
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

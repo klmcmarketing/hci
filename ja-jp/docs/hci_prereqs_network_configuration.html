@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -617,9 +607,7 @@
           
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -681,9 +669,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -727,9 +713,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -913,9 +897,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1233,9 +1215,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2085,7 +2061,7 @@
 <div class="paragraph"><p> NetApp DeploymentEngineでNetAppHCIノードを自動検出および構成するには、ノードのSFP + / SFP28インターフェイスに使用されるすべてのスイッチポートでタグなしVLANまたはネイティブVLANとして使用できるネットワークセグメントが必要です。これにより、検出と展開のためにすべてのノード間でレイヤー2通信が提供されます。ネイティブVLANがない場合は、VLANとIPv4アドレスを使用して、すべてのノードのSFP + / SFP28インターフェイスを手動で構成して検出可能にする必要があります。このドキュメントのネットワーク構成例では、この目的のために管理ネットワーク（VLAN ID 100）が使用されています。</p></div>
 <div class="paragraph"><p> NetApp Deployment Engineを使用すると、初期展開時にコンピューティングノードとストレージノードのネットワークをすばやく構成できます。 vCenterや管理ノードなどの特定の組み込み管理コンポーネントを独自のネットワークセグメントに配置できます。これらのネットワークセグメントには、vCenterと管理ノードがストレージおよびコンピューティング管理ネットワークと通信できるようにするためのルーティングが必要です。ほとんどの展開では、これらのコンポーネントは同じ管理ネットワーク（この例ではVLAN ID 100）を使用します。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> vCenterを使用して仮想マシンネットワークを構成します。 NetApp HCI展開のデフォルトの仮想マシンネットワーク（ポートグループ「VM_Network」）は、VLANIDなしで構成されます。複数のタグ付き仮想マシンネットワーク（前の例ではVLAN ID 200および201）を使用する場合は、それらを最初のネットワーク計画に含めるようにしてください。 </td>
 </tr></table></div>
 </div>
@@ -2130,7 +2106,7 @@
 </table>
 <div class="paragraph"><p>正しい数のケーブルが接続されていないノードは、展開に参加できません。たとえば、ポートDとEのみが接続されている場合、6ケーブル構成で計算ノードを展開することはできません。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">導入後にNetAppHCIネットワーク構成を調整して、インフラストラクチャのニーズを満たすことができます。ただし、NetApp HCIリソースを拡張するときは、新しいノードは既存のコンピューティングノードおよびストレージノードと同じケーブル構成である必要があることに注意してください。</td>
 </tr></table></div>
 <div class="ulist">
@@ -2156,8 +2132,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/hci_prereqs_network_configuration.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BNetwork%20configuration%5D(https://docs.netapp.com/ja-jp/hci/docs/hci_prereqs_network_configuration.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/hci_prereqs_network_configuration.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BNetwork%20configuration%5D(https://docs.netapp.com/ja-jp/hci/docs/hci_prereqs_network_configuration.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2276,12 +2252,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

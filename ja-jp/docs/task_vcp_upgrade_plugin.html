@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1218,9 +1202,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1297,9 +1279,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1378,9 +1358,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2049,7 +2025,7 @@
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> vCenterServerのElementプラグインをアップグレードします</h1></div>
 <p class="page-details"><time datetime="2020-11-13 17:01:49 +0000">2020年11月13日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/dbag-personal"><img class="avatar avatar-small" alt="dbag-パーソナル" width="20" height="20" src="https://avatars0.githubusercontent.com/u/56609800?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-amitha"><img class="avatar avatar-small" alt="netapp-amitha" width="20" height="20" src="https://avatars1.githubusercontent.com/u/42010398?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_vcp_upgrade_plugin.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div class="paragraph lead"><p>NetApp Element Plug-in for vCenter Server（VCP）が登録されている既存のvSphere環境の場合、プラグインサービスを含む管理サービスパッケージを最初に更新した後で、プラグイン登録を更新できます。</p></div>
-<div class="paragraph"><p>登録ユーティリティを使用して、vCenter Server仮想アプライアンス（vCSA）またはWindowsでプラグイン登録を更新できます。プラグインを使用する必要があるすべてのvCenterServerで、vCenterプラグインの登録を変更する必要があります。</p></div>
+<div class="paragraph"><p>登録ユーティリティを使用して、vCenter Server Virtual Appliance（vCSA）またはWindowsでプラグイン登録を更新できます。プラグインを使用する必要があるすべてのvCenterServerで、vCenterプラグインの登録を変更する必要があります。</p></div>
 <div class="paragraph"><p>このアップグレード手順では、次のアップグレードシナリオについて説明します。</p></div>
 <div class="ulist"><ul>
 <li><p> VCP 4.6、4.5、または4.4にアップグレードしています。</p></li>
@@ -2091,7 +2067,7 @@
 <li>
 <p> vCenterAdministratorのユーザー名。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">入力するユーザー名とパスワードの資格情報は、vCenter管理者ロール権限を持つユーザーのものである必要があります。</td>
 </tr></table></div>
 </li>
@@ -2099,7 +2075,7 @@
 <li>
 <p> （社内サーバー/ダークサイトの場合）プラグインZIPのカスタムURL。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> HTTPまたはHTTPSサーバー（ダークサイト）を使用している場合、またはZIPファイル名またはネットワーク設定を変更した場合は、[<strong>カスタムURL</strong> ]をクリックして<strong>URL</strong>をカスタマイズできます。 URLをカスタマイズする場合の追加の構成手順については、社内（ダークサイト）HTTPサーバーのvCenterプロパティの変更に関するvCenterServerの要素プラグインのドキュメントを参照してください。</td>
 </tr></table></div>
 </li>
@@ -2112,7 +2088,7 @@
 <li>
 <p> （vSphere 6.5および6.7ユーザーの場合）vCenterAdministratorとしてvSphereWebClientにログインします。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">このアクションにより、新しいデータベースが作成され、vSphere WebClientへのインストールが完了します。</td>
 </tr></table></div>
 </li>
@@ -2121,7 +2097,7 @@
 <p> NetApp Element Configuration andManagement拡張ポイントが<strong>vSphereWebClientの</strong>[ <strong>Shortcuts</strong> ]タブとサイドパネルに表示されていることを確認します。 </p>
 <div class="imageblock"><div class="content"><img src="../media/vcp_shortcuts_page_accessing_plugin.png" alt="アップグレードまたはインストールが成功した後のプラグイン拡張ポイントを示しています"></div></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> vCenter Plug-inアイコンが表示されない場合は、プラグインのトラブルシューティングについて、vCenterServerのElementPlug-inのドキュメントを参照してください。</td>
 </tr></table></div>
 </li>
@@ -2134,7 +2110,7 @@
 <div class="listingblock"><div class="content"><pre> NetApp Elementプラグインバージョン：4.6
 NetApp Elementプラグインビルド番号：29 </pre></div></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> vCenter Plug-inには、オンラインヘルプコンテンツが含まれています。ヘルプに最新のコンテンツが含まれていることを確認するには、プラグインをアップグレードした後にブラウザのキャッシュをクリアします。</td>
 </tr></table></div>
 <h2 id="find-more-information" class="discrete">詳細情報を探す</h2>
@@ -2150,8 +2126,8 @@ NetApp Elementプラグインビルド番号：29 </pre></div></div>
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_vcp_upgrade_plugin.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20the%20Element%20Plug-in%20for%20vCenter%20Server%5D(https://docs.netapp.com/ja-jp/hci/docs/task_vcp_upgrade_plugin.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_vcp_upgrade_plugin.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BUpgrade%20the%20Element%20Plug-in%20for%20vCenter%20Server%5D(https://docs.netapp.com/ja-jp/hci/docs/task_vcp_upgrade_plugin.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2270,12 +2246,7 @@ NetApp Elementプラグインビルド番号：29 </pre></div></div>
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

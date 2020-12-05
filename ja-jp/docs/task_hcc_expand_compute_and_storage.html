@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1218,9 +1202,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1363,9 +1345,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1388,9 +1368,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -1424,9 +1402,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -2077,7 +2053,7 @@
 <div class="ulist">
 <div class="title">このタスクについて</div>
 <ul>
-<li><p>H410C計算ノードを、同じシャーシおよびクラスター内の既存のNetAppHCI計算ノードおよびストレージノードと混在させることができます。</p></li>
+<li><p>H410Cコンピューティングノードを、同じシャーシおよびクラスター内の既存のNetAppHCIコンピューティングノードおよびストレージノードと混在させることができます。</p></li>
 <li><p>同じクラスター内で計算ノードとBPU対応の計算ノードを混在させることはできません。 GPU対応の計算ノードを選択すると、CPUのみの計算ノードが選択できなくなり、その逆も同様です。</p></li>
 <li><p>既存の計算ノードのCPU世代とは異なるCPU世代の計算ノードを追加し、制御するvCenterインスタンスで拡張vMotion互換性（EVC）が無効になっている場合は、続行する前にEVCを有効にする必要があります。これにより、拡張が完了した後のvMotion機能が保証されます。</p></li>
 </ul>
@@ -2105,14 +2081,14 @@
 <li>
 <p>計算ノードを追加するvSphereデータセンターを選択するか、[<strong>新しいデータセンターの作成</strong>]をクリックして計算ノードを新しいデータ<strong>センター</strong>に追加します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> [Create New Datacenter]をクリックすると、[クラスター]フィールドに自動的に入力されます。</td>
 </tr></table></div>
 </li>
 <li>
 <p>既存のデータセンターを選択した場合は、新しい計算ノードを関連付ける必要があるvSphereクラスターを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> NetApp HCIが、拡張用に選択したクラスターのネットワーク設定を認識できない場合は、管理、ストレージ、およびvMotionネットワークのvmkernelおよびvmnicマッピングがデプロイメントのデフォルトに設定されていることを確認してください。詳細については、 <a href="https://docs.netapp.com/hci/index.jsp" target="_blank" rel="noopener">NetAppHCIドキュメントセンター</a>でサポートされているネットワークの変更を参照してください。</td>
 </tr></table></div>
 </li>
@@ -2127,7 +2103,7 @@
 <li>
 <p>新しいvSphereデータセンタークラスターを作成した場合は、[<strong>ネットワークトポロジ]</strong>ページで、追加する新しい計算ノードに一致するネットワークトポロジを選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">計算ノードが2ケーブルトポロジを使用していて、既存のNetAppHCI展開がVLANIDで構成されている場合にのみ、2ケーブルオプションを選択します。</td>
 </tr></table></div>
 </li>
@@ -2152,7 +2128,7 @@
 <li>
 <p> [<strong>続行]を</strong>クリックします。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> NetApp HCIは、入力したIPアドレスの検証に時間がかかる場合があります。 IPアドレスの検証が完了すると、[続行]ボタンが使用可能になります。</td>
 </tr></table></div>
 </li>
@@ -2176,7 +2152,7 @@
 <li>
 <p><strong>オプション</strong>：新しいノードがVMware vSphere Web Client（計算ノードの場合）またはvCenter Serverの要素プラグイン（ストレージノードの場合）に表示されることを確認します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content"> 2ノードのストレージクラスターを4ノード以上に拡張した場合、以前にストレージクラスターによって使用されていたWitnessノードのペアは、vSphereのスタンバイ仮想マシンとして引き続き表示されます。新しく拡張されたストレージクラスターはそれらを使用しません。 VMリソースを再利用する場合は、WitnessNode仮想マシンを<a href="task_hci_removewn.html" target="_blank" rel="noopener">手動で削除</a>できます。</td>
 </tr></table></div>
 </li>
@@ -2197,8 +2173,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_expand_compute_and_storage.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BExpand%20NetApp%20HCI%20storage%20and%20compute%20resources%20at%20the%20same%20time%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_expand_compute_and_storage.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hcc_expand_compute_and_storage.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BExpand%20NetApp%20HCI%20storage%20and%20compute%20resources%20at%20the%20same%20time%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hcc_expand_compute_and_storage.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2317,12 +2293,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>

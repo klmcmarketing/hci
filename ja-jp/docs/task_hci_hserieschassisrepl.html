@@ -249,7 +249,7 @@
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
-          <div id="react-search"></div>
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="Search for {suggestion}." data-did-you-mean="No results were found for {query}" data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -418,17 +418,13 @@
   
   <div class="col-md-3">
       <div class="n-pdf-header">
-  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    PDFs
-    <span>
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
     </span>
   </a>
 </div>
 <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;">
 <div class="n-pdf-section">
-      <span class="n-pdf-section-title">
-        Site
-      </span>
+      <span class="n-pdf-section-title">Site</span>
     </div>
     <li>
       <a target="_blank" href="/hci/ja-jp/pdfs/fullsite-docs_sidebar/NetApp_HCI_configuration_and_management_documentation.pdf">
@@ -449,9 +445,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -486,9 +480,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -573,9 +565,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -666,9 +656,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -712,9 +700,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -898,9 +884,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1218,9 +1202,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1363,9 +1345,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1409,9 +1389,7 @@
         
           <div class="n-pdf-section">
             <span class="n-pdf-section-title">
-              
-                Sections
-              
+              Sections
             </span>
           </div>
         
@@ -1428,9 +1406,7 @@
 
   
     <div class="n-pdf-section">
-  <span class="n-pdf-section-title">
-    This page
-  </span>
+  <span class="n-pdf-section-title">This page</span>
 </div>
 
 <li class="active">
@@ -2071,7 +2047,7 @@
 <div class="sectionbody">
 <div class="paragraph"><p>ラックに追加のスペースがある場合は、新しいシャーシを取り付けて、ノードを1つずつ新しいシャーシに移動できます。インストールされているシャーシのいずれかに未使用のノードスロットがある場合は、障害が発生したシャーシから未使用のスロットにノードを1つずつ移動してから、障害が発生したシャーシを削除できます。手順を実行する前に、ケーブルの長さが十分であり、スイッチポートが使用可能であることを確認してください。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">計算ノードを移動する手順は、ストレージノードを移動する手順とは異なります。ノードを移動する前に、ノードが正しくシャットダウンされていることを確認する必要があります。障害が発生したシャーシからすべてのノードを移動した後、シャーシをラックから取り外してNetAppに戻す必要があります。</td>
 </tr></table></div>
 <div class="sect2">
@@ -2093,9 +2069,9 @@
 <li><p>交換用のシャーシを開梱します。<br>故障したシャーシをネットアップに返却するときのために、パッケージを保管してください。</p></li>
 <li><p>出荷されたレールをシャーシと一緒に挿入します。</p></li>
 <li>
-<p>交換用のシャーシをラックにスライドさせます。 </p>
+<p>交換用のシャーシをラックにスライドさせます。</p>
 <div class="admonitionblock tip"><table><tr>
-<td class="icon"><i class="fa icon-tip" title="ヒント"></i></td>
+<td class="icon"><i class="fa icon-tip" title="苦"></i></td>
 <td class="content">シャーシを取り付けるときは、常に十分な人員またはリフトを使用してください。</td>
 </tr></table></div>
 </li>
@@ -2107,7 +2083,7 @@
 <h3 id="move-a-compute-node">計算ノードを移動する</h3>
 <div class="paragraph"><p>計算ノードを新しいシャーシまたは未使用のスロットが追加されている既存のシャーシに移動する前に、仮想マシン（VM）を移行し、ノードを正しくシャットダウンして、ノードに挿入されたケーブルにラベルを付ける必要があります。 </p></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ノードを移動するときは、帯電防止保護があることを確認してください。</td>
 </tr></table></div>
 <div class="olist arabic">
@@ -2119,7 +2095,7 @@
 <li>
 <p>一致するシリアル番号を見つけたら、VMを別の利用可能なホストに移行します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">移行手順については、VMwareのドキュメントを参照してください。</td>
 </tr></table></div>
 </li>
@@ -2133,7 +2109,7 @@
 <td class="content">インストールするときは、ノードを下からサポートしていることを確認してください。ノードをシャーシに押し込むときに、過度の力を加えないでください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">新しいシャーシに取り付ける場合は、ノードをシャーシの元のスロットに取り付けてください。</td>
 </tr></table></div>
 </li>
@@ -2170,7 +2146,7 @@
 <li>
 <p> [<strong>クラスター]&gt; [ドライブ]</strong>を選択して、ノードに関連付けられている<strong>ドライブ</strong>を削除します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ノードを削除する前に、削除したドライブが「使用可能」として表示されるのを待つ必要があります。</td>
 </tr></table></div>
 </li>
@@ -2199,7 +2175,7 @@
 <td class="content">インストールするときは、ノードを下からサポートしていることを確認してください。ノードをシャーシに押し込むときに、過度の力を加えないでください。 </td>
 </tr></table></div>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">新しいシャーシに取り付ける場合は、ノードをシャーシの元のスロットに取り付けてください。</td>
 </tr></table></div>
 </li>
@@ -2214,7 +2190,7 @@
 <li>
 <p>ノードの電源がオンになったら、ノードをクラスターに追加します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ノードが追加され、 <strong>[ノード]&gt; [アクティブ]の</strong>下に表示されるまで、最大15分かかる場合があります。</td>
 </tr></table></div>
 </li>
@@ -2249,7 +2225,7 @@
 <li>
 <p>一致するシリアル番号を見つけたら、VMを別の利用可能なホストに移行します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">移行手順については、VMwareのドキュメントを参照してください。</td>
 </tr></table></div>
 </li>
@@ -2298,7 +2274,7 @@
 <li>
 <p>故障したシャーシをラックから取り外し、平らな面に置きます。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">シャーシを移動するときは、十分な人員またはリフトを使用してください。</td>
 </tr></table></div>
 </li>
@@ -2353,7 +2329,7 @@
 <li>
 <p>ノードを選択し、[<strong>追加]</strong>を選択します。 </p>
 <div class="admonitionblock note"><table><tr>
-<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="icon"><i class="fa icon-note" title="到"></i></td>
 <td class="content">ノードが追加され、 <strong>[ノード]&gt; [アクティブ]の</strong>下に表示されるまで、最大15分かかる場合があります。</td>
 </tr></table></div>
 </li>
@@ -2386,8 +2362,8 @@
   <div class="page-nav-toolbar">
     <div class="page-nav-contribute">
       <div class="page-nav-contribute-title">CONTRIBUTE</div>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hci_hserieschassisrepl.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Edit on GitHub</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BReplace%202U%20H-series%20chassis%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hci_hserieschassisrepl.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon"> Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/blob/master/docs/task_hci_hserieschassisrepl.adoc" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/hci/issues/new?body=Page%3A%20%5BReplace%202U%20H-series%20chassis%5D(https://docs.netapp.com/ja-jp/hci/docs/task_hci_hserieschassisrepl.html)" class="btn btn-default githubEditButton" role="button"><img src="/hci/ja-jp/images/github.png" class="github-icon">Request doc changes</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link">Contributor's Guide</a>
     </div>
     <div class="page-nav-container">
@@ -2506,12 +2482,7 @@
 
 </div>
 <div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">
-
-
-  Have feedback for our website?
-
-  <a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
   <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">Announcements</a>
   </p>
 </div>
