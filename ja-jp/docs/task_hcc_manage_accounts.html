@@ -2047,11 +2047,9 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading"> NetApp Hybrid CloudControlを使用してユーザーアカウントを作成および管理する</h1></div>
-<p class="page-details"><time datetime="2020-11-12 02:19:33 +0000">2020年11月12日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_manage_accounts.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<p class="page-details"><time datetime="2020-12-04 23:21:28 +0000">2020年12月4日</time><span>寄稿者<a target="_blank" href="https://github.com/amgrissino"><img class="avatar avatar-small" alt="amgrissino" width="20" height="20" src="https://avatars2.githubusercontent.com/u/36450105?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a> <a target="_blank" href="https://github.com/netapp-mwallis"><img class="avatar avatar-small" alt="netapp-mwallis" width="20" height="20" src="https://avatars3.githubusercontent.com/u/53353653?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_hcc_manage_accounts.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
 <div id="preamble"><div class="sectionbody">
-<div class="paragraph lead"><p>SolidFireストレージシステムでは、権限のあるクラスターユーザーを作成して、「管理者」または「読み取り専用」ユーザーに付与する権限に応じて、ネットアップハイブリッドクラウドコントロールへのログインアクセスを有効にすることができます。クラスタユーザーに加えて、クライアントがストレージノード上のボリュームに接続できるようにするボリュームアカウントもあります。</p></div>
-<div class="paragraph"><p>ボリュームを作成すると、特定のボリュームアカウントに割り当てられます。</p></div>
-<div class="paragraph"><p>アカウントには最大2,000のボリュームを割り当てることができますが、ボリュームは1つのアカウントにのみ属することができます。</p></div>
+<div class="paragraph lead"><p>Elementベースのストレージシステムでは、権限のあるクラスターユーザーを作成して、「管理者」または「読み取り専用」ユーザーに付与する権限に応じて、NetApp Hybrid CloudControlへのログインアクセスを有効にすることができます。クラスタユーザーに加えて、クライアントがストレージノード上のボリュームに接続できるようにするボリュームアカウントもあります。</p></div>
 <div class="paragraph"><p>次の種類のアカウントを管理します。</p></div>
 <div class="ulist"><ul>
 <li><p><a href="#manage-authoritative-cluster-accounts">信頼できるクラスターアカウントを管理する</a></p></li>
@@ -2061,7 +2059,7 @@
 <div class="sect1">
 <h2 id="manage-authoritative-cluster-accounts">信頼できるクラスターアカウントを管理する</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>権限のあるユーザーアカウントは、NetApp Hybrid CloudControlの右上のメニューの[ユーザー管理]オプションから管理されます。これらのタイプのアカウントを使用すると、ノードおよびクラスターのNetAppハイブリッドクラウドコントロールインスタンスに関連付けられているストレージアセットに対して認証できます。このアカウントを使用すると、すべてのクラスターでボリューム、アカウント、アクセスグループなどを管理できます。</p></div>
+<div class="paragraph"><p><a href="concept_cg_hci_accounts.html#authoritative-user-accounts">権限のあるユーザーアカウント</a>は、NetApp Hybrid CloudControlの右上のメニュー[ユーザー管理]オプションから管理されます。これらのタイプのアカウントを使用すると、ノードおよびクラスターのNetAppハイブリッドクラウドコントロールインスタンスに関連付けられているストレージアセットに対して認証できます。このアカウントを使用すると、すべてのクラスターでボリューム、アカウント、アクセスグループなどを管理できます。</p></div>
 <div class="sect2">
 <h3 id="create-an-authoritative-cluster-account">信頼できるクラスターアカウントを作成する</h3>
 <div class="paragraph"><p>NetApp Hybrid CloudControlを使用してアカウントを作成できます。</p></div>
@@ -2100,6 +2098,15 @@
 <li><p>表の「<strong>アクション」</strong>列で、アカウントのメニューを展開し、 <strong>「編集」</strong>を選択します。</p></li>
 <li><p>必要に応じて変更を加えます。</p></li>
 <li><p> [<strong>保存]を</strong>選択し<strong>ます</strong>。</p></li>
+<li><p> NetApp Hybrid CloudControlからログアウトします。</p></li>
+<li>
+<p> NetApp Hybrid Cloud Control APIを使用して、信頼できるクラスターアセットの<a href="task_mnode_manage_storage_cluster_assets.html#edit-the-stored-credentials-for-a-storage-cluster-asset">認証情報</a>を<a href="task_mnode_manage_storage_cluster_assets.html#edit-the-stored-credentials-for-a-storage-cluster-asset">更新し</a>ます。 </p>
+<div class="admonitionblock note"><table><tr>
+<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="content">ネットアップハイブリッドクラウドコントロールUIがインベントリを更新するのに最大15分かかる場合があります。インベントリを手動で更新するには、REST API UIインベントリサービス<code>https://[management node IP]/inventory/1/</code>にアクセスし、クラスターに対して<code>GET /installations​/{id}</code>を実行します。</td>
+</tr></table></div>
+</li>
+<li><p> NetApp Hybrid CloudControlにログインします。</p></li>
 </ol>
 </div>
 </div>
@@ -2122,7 +2129,7 @@
 <div class="sect1">
 <h2 id="manage-volume-accounts">ボリュームアカウントを管理する</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>ボリュームアカウントは、NetAppハイブリッドクラウドコントロールボリュームテーブル内で管理されます。これらのアカウントは、それらが作成されたストレージクラスターにのみ固有です。これらのタイプのアカウントを使用すると、ネットワーク全体のボリュームにアクセス許可を設定できますが、それらのボリューム以外では効果がありません。</p></div>
+<div class="paragraph"><p><a href="concept_cg_hci_accounts.html#volume-accounts">ボリュームアカウント</a>は、NetAppハイブリッドクラウドコントロールボリュームテーブル内で管理されます。これらのアカウントは、それらが作成されたストレージクラスターにのみ固有です。これらのタイプのアカウントを使用すると、ネットワーク全体のボリュームにアクセス許可を設定できますが、それらのボリューム以外では効果がありません。</p></div>
 <div class="paragraph"><p>ボリュームアカウントには、割り当てられたボリュームにアクセスするために必要なCHAP認証が含まれています。</p></div>
 <div class="sect2">
 <h3 id="create-a-volume-account">ボリュームアカウントを作成する</h3>

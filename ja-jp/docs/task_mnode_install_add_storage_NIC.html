@@ -9,7 +9,7 @@
   <meta property="og:title" content="Configure a storage Network Interface Controller (NIC)">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://docs.netapp.com/hci/ja-jp/docs/task_mnode_install_add_storage_NIC.html">
-	<meta property="og:description" content="If you are using an additional NIC for storage, you should set up that network interface.">
+	<meta property="og:description" content="If you are using an additional NIC for storage, you should set up an untagged or tagged network interface.">
   <meta property="og:image" content="https://docs.netapp.com/hci/ja-jp/images/logo-tophat-social.png">
   <meta property="og:image:alt" content="NetApp Logo">
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation">
   <meta http-equiv="nss-subtype" content="User Guide">
   
-  <meta name="description" content="If you are using an additional NIC for storage, you should set up that network interface.">
+  <meta name="description" content="If you are using an additional NIC for storage, you should set up an untagged or tagged network interface.">
   <meta name="keywords" content=" netapp, element, management node, mnode, network, nic, storage nic">
   
   
@@ -2047,8 +2047,9 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container -->
     <article class="page-content"><div class="n-doc__component-detail-heading-wrap"><h1 class="n-doc__component-detail-heading">ストレージネットワークインターフェイスコントローラー（NIC）を構成する</h1></div>
-<p class="page-details"><time datetime="2020-06-25 16:50:51 +0000">2020年6月25日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_install_add_storage_NIC.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
-<div class="paragraph lead"><p>ストレージに追加のNICを使用している場合は、管理ノードにSSHで接続するか、vCenterコンソールを使用してcurlコマンドを実行し、そのネットワークインターフェイスを設定できます。</p></div>
+<p class="page-details"><time datetime="2020-11-18 20:57:13 +0000">2020年11月18日</time><span>寄稿者<a target="_blank" href="https://github.com/netapp-dbagwell"><img class="avatar avatar-small" alt="netapp-dbagwell" width="20" height="20" src="https://avatars0.githubusercontent.com/u/53352450?v=4" style="border-radius: 50%;"></a></span> <span><a target="_blank" href="/hci/ja-jp/pdfs/pages/docs/task_mnode_install_add_storage_NIC.pdf" role="button"><img src="/hci/ja-jp/images/pdf.png" width="20" height="20">このページのPDFをダウンロード</a></span></p>
+<div id="preamble"><div class="sectionbody">
+<div class="paragraph lead"><p>ストレージに追加のNICを使用している場合は、管理ノードにSSHで接続するか、vCenterコンソールを使用してcurlコマンドを実行し、タグ付きまたはタグなしのネットワークインターフェイスを設定できます。</p></div>
 <div class="ulist">
 <div class="title">あなたが始める前に</div>
 <ul>
@@ -2057,7 +2058,18 @@
 <li><p>管理ノード11.3以降をデプロイしました。</p></li>
 </ul>
 </div>
-<div class="olist arabic">
+<div class="paragraph">
+<div class="title">構成オプション</div>
+<p>ご使用の環境に関連するオプションを選択してください。</p>
+</div>
+<div class="ulist"><ul>
+<li><p> <a href="#configure-a-storage-network-interface-controller-nic-for-an-untagged-network-interface">タグなしネットワークインターフェイス用にストレージネットワークインターフェイスコントローラー（NIC）を構成する</a></p></li>
+<li><p><a href="#configure-a-storage-network-interface-controller-nic-for-a-tagged-network-interface">タグ付きネットワークインターフェイスのストレージネットワークインターフェイスコントローラー（NIC）を構成します</a></p></li>
+</ul></div>
+</div></div>
+<div class="sect1">
+<h2 id="configure-a-storage-network-interface-controller-nic-for-an-untagged-network-interface">タグなしネットワークインターフェイス用にストレージネットワークインターフェイスコントローラー（NIC）を構成する</h2>
+<div class="sectionbody"><div class="olist arabic">
 <div class="title">ステップ</div>
 <ol class="arabic">
 <li><p>SSHまたはvCenterコンソールを開きます。</p></li>
@@ -2085,8 +2097,53 @@ https：// $ mnode_IP：442 / json-rpc / 10.0 \
                                    「ステータス」：「アップ」
                                    }
                           }、
-              "集まる"： {
+               "集まる"： {
                          "名前"： "$ mnode_host_name"
+                         }
+             }、
+    "メソッド"： "SetConfig"
+}
+「」 </pre></div></div>
+</li>
+</ol>
+</div></div>
+</div>
+<div class="sect1">
+<h2 id="configure-a-storage-network-interface-controller-nic-for-a-tagged-network-interface">タグ付きネットワークインターフェイスのストレージネットワークインターフェイスコントローラー（NIC）を構成します</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<div class="title">ステップ</div>
+<ol class="arabic">
+<li><p>SSHまたはvCenterコンソールを開きます。</p></li>
+<li>
+<p>次のコマンドテンプレートの値を置き換えて、コマンドを実行します。 </p>
+<div class="admonitionblock note"><table><tr>
+<td class="icon"><i class="fa icon-note" title="注意"></i></td>
+<td class="content">新しいストレージネットワークインターフェイスに必要な各パラメーターの値は、 <code>$</code>で表されます。次のテンプレートの<code>cluster</code>オブジェクトは必須であり、管理ノードのホスト名の名前変更に使用できます。 <code>--insecure</code>または<code>-k</code>オプションは、実稼働環境では使用しないでください。</td>
+</tr></table></div>
+<div class="listingblock"><div class="content"><pre> curl -u $ mnode_user_name：$ mnode_password --insecure -X POST \
+https：// $ mnode_IP：442 / json-rpc / 10.0 \
+-H "Content-Type：application / json" \
+-H "cache-control：no-cache" \
+-d "{
+     "params"：{
+               "通信網"： {
+                          "$ eth1"：{
+                                   "#default"：false、
+                                   "アドレス"： "$ storage_IP"、
+                                   「自動」：true、
+                                   「家族」：「inet」、
+                                   "メソッド"： "静的"、
+                                   "mtu"： "9000"、
+                                   "netmask"： "$サブネットマスク"、
+                                   「ステータス」：「アップ」、
+                                   "virtualNetworkTag"： "$ vlan_id"
+                                   }
+                          }、
+               "集まる"： {
+                         "名前"： "$ mnode_host_name"、
+                         "cipi"： "$ eth1。$ vlan_id"、
+                         "sipi"： "$ eth1。$ vlan_id"
                          }
              }、
     "メソッド"： "SetConfig"
@@ -2100,7 +2157,9 @@ https：// $ mnode_IP：442 / json-rpc / 10.0 \
 <li><p><a href="task_mnode_add_assets.html">管理ノードに資産を追加します</a></p></li>
 <li><p><a href="https://docs.netapp.com/hci/index.jsp" target="_blank" rel="noopener">NetAppHCIドキュメンテーションセンター</a></p></li>
 <li><p><a href="https://docs.netapp.com/us-en/documentation/hci.aspx" target="_blank" rel="noopener">NetAppHCIリソースページ</a></p></li>
-</ul></div></article>
+</ul></div>
+</div>
+</div></article>
     <!-- Page Container -->
   </div>
 

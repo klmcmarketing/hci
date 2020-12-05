@@ -9,7 +9,7 @@
   <meta property="og:title" content="Configure a storage Network Interface Controller (NIC)" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/hci/docs/task_mnode_install_add_storage_NIC.html" />
-	<meta property="og:description" content="If you are using an additional NIC for storage, you should set up that network interface." />
+	<meta property="og:description" content="If you are using an additional NIC for storage, you should set up an untagged or tagged network interface." />
   <meta property="og:image" content="https://docs.netapp.com/hci/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="If you are using an additional NIC for storage, you should set up that network interface.">
+  <meta name="description" content="If you are using an additional NIC for storage, you should set up an untagged or tagged network interface.">
   <meta name="keywords" content=" netapp, element, management node, mnode, network, nic, storage nic">
   
   
@@ -1818,7 +1818,7 @@
 <p class="page-details">
   
     
-    <time datetime="2020-06-25 16:50:51 +0000">06/25/2020</time>
+    <time datetime="2020-11-18 20:57:13 +0000">11/18/2020</time>
     
   
 
@@ -1844,8 +1844,10 @@
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>If you are using an additional NIC for storage, you can SSH in to the management node or use the vCenter console and run a curl command to set up that network interface.</p>
+<p>If you are using an additional NIC for storage, you can SSH in to the management node or use the vCenter console and run a curl command to set up a tagged or untagged network interface.</p>
 </div>
 <div class="ulist">
 <div class="title">Before you begin</div>
@@ -1861,6 +1863,25 @@
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<div class="title">Configuration options</div>
+<p>Choose the option that is relevant for your environment:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#configure-a-storage-network-interface-controller-nic-for-an-untagged-network-interface">Configure a storage Network Interface Controller (NIC) for an untagged network interface</a></p>
+</li>
+<li>
+<p><a href="#configure-a-storage-network-interface-controller-nic-for-a-tagged-network-interface">Configure a storage Network Interface Controller (NIC) for a tagged network interface</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="configure-a-storage-network-interface-controller-nic-for-an-untagged-network-interface">Configure a storage Network Interface Controller (NIC) for an untagged network interface</h2>
+<div class="sectionbody">
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
@@ -1876,7 +1897,7 @@
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Values are represented by <code>$</code> for each of the required parameters for your new storage network interface. The <code>cluster</code> object in the following template is required and can be used for management node host name renaming. The <code>--insecure</code> or <code>-k</code> options should not be used in production environments.
+Values are represented by <code>$</code> for each of the required parameters for your new storage network interface. The <code>cluster</code> object in the following template is required and can be used for management node host name renaming. <code>--insecure</code> or <code>-k</code> options should not be used in production environments.
 </td>
 </tr>
 </table>
@@ -1901,8 +1922,68 @@ https://$mnode_IP:442/json-rpc/10.0 \
                                    "status" : "Up"
                                    }
                           },
-              "cluster": {
+               "cluster": {
                          "name": "$mnode_host_name"
+                         }
+             },
+    "method": "SetConfig"
+}
+'</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="configure-a-storage-network-interface-controller-nic-for-a-tagged-network-interface">Configure a storage Network Interface Controller (NIC) for a tagged network interface</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Open an SSH or vCenter console.</p>
+</li>
+<li>
+<p>Replace the values in the following command template and run the command:</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Values are represented by <code>$</code> for each of the required parameters for your new storage network interface. The <code>cluster</code> object in the following template is required and can be used for management node host name renaming. <code>--insecure</code> or <code>-k</code> options should not be used in production environments.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>curl -u $mnode_user_name:$mnode_password --insecure -X POST \
+https://$mnode_IP:442/json-rpc/10.0 \
+-H 'Content-Type: application/json' \
+-H 'cache-control: no-cache' \
+-d ' {
+     "params": {
+               "network": {
+                          "$eth1": {
+                                   "#default" : false,
+                                   "address" : "$storage_IP",
+                                   "auto" : true,
+                                   "family" : "inet",
+                                   "method" : "static",
+                                   "mtu" : "9000",
+                                   "netmask" : "$subnet_mask",
+                                   "status" : "Up",
+                                   "virtualNetworkTag" : "$vlan_id"
+                                   }
+                          },
+               "cluster": {
+                         "name": "$mnode_host_name",
+                         "cipi": "$eth1.$vlan_id",
+                         "sipi": "$eth1.$vlan_id"
                          }
              },
     "method": "SetConfig"
@@ -1926,6 +2007,8 @@ https://$mnode_IP:442/json-rpc/10.0 \
 <p><a href="https://docs.netapp.com/us-en/documentation/hci.aspx" target="_blank" rel="noopener">NetApp HCI Resources Page</a></p>
 </li>
 </ul>
+</div>
+</div>
 </div>
 
     </article>
