@@ -2115,7 +2115,7 @@
 <div class="sect1">
 <h2 id="monitor-storage-performance">ストレージパフォーマンスを監視する</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>[ストレージパフォーマンス]ペインを使用すると、そのリソースの有用なパフォーマンスを超えることなく、クラスターから取得できるIOPSまたはスループットを確認できます。ストレージのパフォーマンスは、遅延が問題になる前に最大の使用率が得られるポイントです。</p></div>
+<div class="paragraph"><p>[ストレージパフォーマンス]ペインを使用すると、そのリソースの有用なパフォーマンスを超えることなく、クラスターから取得できるIOPSまたはスループットを確認できます。ストレージのパフォーマンスは、遅延が問題になる前に最大の使用率を得るポイントです。</p></div>
 <div class="paragraph"><p> [ストレージパフォーマンス]ペインは、ワークロードが増加した場合にパフォーマンスが低下する可能性があるポイントにパフォーマンスが到達しているかどうかを識別するのに役立ちます。</p></div>
 <div class="paragraph"><p>このペインの情報は10秒ごとに更新され、グラフ上のすべてのポイントの平均が表示されます。</p></div>
 <div class="paragraph"><p>関連する<a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/GUID-63BEAEDE-74F7-421E-9360-08F166A603F4.html">ElementAPI</a>メソッドの詳細については、 『 <em>Element APIリファレンスガイド』の「</em> <a href="http://docs.netapp.com/sfe-122/topic/com.netapp.doc.sfe-api/GUID-63BEAEDE-74F7-421E-9360-08F166A603F4.html">GetClusterStats</a>メソッド」を参照してください。</p></div>
@@ -2126,7 +2126,7 @@
 <p>[ストレージパフォーマンス]ペインを表示します。詳細については、グラフ内のポイントにカーソルを合わせてください。</p>
 <div class="olist loweralpha"><ol class="loweralpha" type="a">
 <li>
-<p> [ <strong>IOPS</strong> ]タブ：1秒あたりの現在の操作を確認します。データまたはスパイクの傾向を探します。たとえば、最大IOPSが160Kで、そのうちの100Kが無料または利用可能なIOPSであることがわかった場合は、このクラスターにワークロードを追加することを検討してください。一方、140Kしか使用できない場合は、ワークロードをオフロードするか、システムを拡張することを検討してください。 </p>
+<p> [ <strong>IOPS</strong> ]タブ：1秒あたりの現在の操作を確認します。データまたはスパイクの傾向を探します。たとえば、最大IOPSが160Kで、そのうちの100Kが無料または使用可能なIOPSであることがわかった場合は、このクラスターにワークロードを追加することを検討してください。一方、140Kしか使用できない場合は、ワークロードをオフロードするか、システムを拡張することを検討してください。 </p>
 <div class="imageblock"><div class="content"><img src="../media/hcc_dashboard_storage_perform_iops.png" alt="ストレージパフォーマンス&gt; IOPSタブ"></div></div>
 </li>
 <li>
@@ -2150,7 +2150,7 @@
 <div class="sect1">
 <h2 id="monitor-compute-utilization">コンピューティング使用率を監視する</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>ストレージリソースのIOPSとスループットを監視することに加えて、コンピューティング資産のCPUとメモリの使用状況を表示することもできます。ノードが提供できる合計IOPSは、CPUの数、CPU速度、RAMの容量など、ノードの物理的特性に基づいています。</p></div>
+<div class="paragraph"><p>ストレージリソースのIOPSとスループットを監視することに加えて、コンピューティング資産のCPUとメモリの使用状況を表示することもできます。ノードが提供できる合計IOPSは、ノードの物理的特性（CPUの数、CPUの速度、RAMの量など）に基づいています。</p></div>
 <div class="olist arabic">
 <div class="title">ステップ</div>
 <ol class="arabic">
